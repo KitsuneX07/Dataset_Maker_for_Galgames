@@ -70,8 +70,8 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 >>
 >> 输入：
 >>> 输入参数：<br>
-> 1.包含JSON文件的路径 / 单个JSON文件的路径 <br>
-> 2.包含所有音频文件的路径。<br>
+> 1. 包含JSON文件的路径 / 单个JSON文件的路径 <br>
+> 2. 包含所有音频文件的路径。<br>
 >>> 推荐使用Text_Cleaner.py脚本先对JSON文件进行处理。<br>
 >>
 >> 输出：
