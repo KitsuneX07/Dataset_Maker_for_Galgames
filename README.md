@@ -7,7 +7,7 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 本文档为大致的介绍与使用说明。与此同时，每个脚本内也会含有对应的注释。一个成熟的创作者应该学会自己看代码了（逃）<br>
 本仓库不会提供任何游戏的解包工具的可执行文件（但会尽量给出源码的链接）或者游戏本体。请利用搜索引擎自行寻找途径。<br>
 <br>
-![图片](\pictures\6bd238950a7b0208a6450fb175d9f2d3562cc822.jpg "")
+![图片](https://github.com/KitsuneX07/Dataset_Maker_for_Galgames/blob/main/pictures/6bd238950a7b0208a6450fb175d9f2d3562cc822.jpg)
 <br>
 由于文件体积的原因，本仓库也不会提供解包后的音频文件。请自行解包。但是，本仓库会提供解包方法和用于制作TTS项目数据集所需要的标注文件。具体请在对应文件夹下的`README.md`中查看。<br>
 <br>
