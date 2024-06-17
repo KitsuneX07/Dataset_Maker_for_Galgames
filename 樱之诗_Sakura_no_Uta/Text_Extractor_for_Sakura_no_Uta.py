@@ -4,13 +4,16 @@ import re
 import json
 
 # 获取scripts文件夹的路径
-scripts_dir = os.path.join(os.getcwd(), 'scripts')
+scripts_dir = r'E:\gal\workspace\scripts'
+if scripts_dir == '':
+    # 如果没有指定路径，使用当前工作目录下的scripts文件夹
+    scripts_dir = os.path.join(os.getcwd(), 'scripts')
 
 # 获取scripts文件夹下所有txt文件的路径
 txt_files = glob.glob(os.path.join(scripts_dir, '*.txt'))
 
 # 创建一个新的文件夹用于存放输出文件
-os.makedirs('output', exist_ok=True)
+os.makedirs('scripts_json', exist_ok=True)
 
 # 初始化一个空的字典来存储数据
 data = {}
@@ -43,5 +46,5 @@ for txt_file in txt_files:
 # 遍历数据字典，为每个说话人创建一个JSON文件
 for prefix, prefix_data in data.items():
     # 将数据写入JSON文件
-    with open(os.path.join('output', f'{prefix}.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join('scripts_json', f'{prefix}.json'), 'w', encoding='utf-8') as f:
         json.dump(prefix_data, f, ensure_ascii=False, indent=4)
