@@ -24,7 +24,7 @@ def copy_files(path, search_dir):
     else:
         print(f'Invalid path: {path}')
 
-def process_file(json_file_path, search_dir, output_dir_path):
+def process_file(json_file_path, search_dir, output_dir_path, convert_to_wav=False): # convert_to_wav=False 则仅仅复制，不进行重采样和转换
     # 读取JSON文件
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -41,10 +41,15 @@ def process_file(json_file_path, search_dir, output_dir_path):
     for file_name in os.listdir(search_dir):
         # 如果文件名在JSON文件中，则复制文件到输出文件夹
         if os.path.splitext(file_name)[0] in file_names:
-            # 使用ffmpeg将音频文件转换为.wav格式并重采样到44100hz
             input_file_path = os.path.join(search_dir, file_name)
-            output_file_path = os.path.join(sub_output_dir_path, os.path.splitext(file_name)[0] + '.wav')
-            subprocess.run(['ffmpeg', '-i', input_file_path, '-ar', '44100', output_file_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            if convert_to_wav:
+                # 使用ffmpeg将音频文件转换为.wav格式并重采样到44100hz
+                output_file_path = os.path.join(sub_output_dir_path, os.path.splitext(file_name)[0] + '.wav')
+                subprocess.run(['ffmpeg', '-i', input_file_path, '-ar', '44100', output_file_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            else:
+                # 保留原格式
+                output_file_path = os.path.join(sub_output_dir_path, file_name)
+                shutil.copy(input_file_path, output_file_path)
             print(f'\rprocessing file: {file_name}', end='')
 
             # 创建对应的lab文件
