@@ -41,5 +41,6 @@ wtd 明石亘 Akashi Wataru<br>
 ymd 川内野優美 Kawachino Yūmi<br>
 yod 中村義貞 Nakamura Yoshisada<br>
 
-之后就可以按照操作指示制作数据集了。
+之后就可以按照操作指示制作数据集了。<br>
+处理好的文件可以在本目录下的``scripts_json``文件夹中找到。<br>
 
