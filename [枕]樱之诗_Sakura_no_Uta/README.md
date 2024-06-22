@@ -18,7 +18,7 @@ ked 夏目圭 Natsume Kei<br>
 kid 草薙健一郎 Kusanagi Ken'ichirō<br>
 kmd 明石小牧 Akashi Komaki<br>
 ksd 明石小沙智 Akashi Kosachi<br>
-ktd 片貝<br>
+ktd 片贝巧实 Katagai Kozumi<br>
 ktkd 夏目琴子 Natsume Kotoko<br>
 kzd 夏目雫（草薙葛）Kusanagi Kuzu<br>
 mkd 鳥谷真琴 Toritani Makoto<br>
