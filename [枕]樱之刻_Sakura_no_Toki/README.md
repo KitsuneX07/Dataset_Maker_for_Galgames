@@ -1,6 +1,6 @@
 # 1.解包
 ``[枕]樱之刻_Sakura_no_Toki``可以使用工具``GARbro``进行解包。 <https://github.com/morkt/GARbro> <br>
-剧本文件位于``scripts``文件夹。说话语音文件位于``/sound/vo``文件夹。 <br>
+剧本文件位于``scripts``文件夹。对话语音文件位于``/sound/vo``文件夹。 <br>
 # 2.处理
 使用``Text_Extractor_for_Sakura_no_Toki.py``进行操作整理成按说话人分好的``.json``文件。<br>
 其中，说话人的对应是: <br>
