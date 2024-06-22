@@ -9,7 +9,7 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 <br>
 ![图片](https://github.com/KitsuneX07/Dataset_Maker_for_Galgames/blob/main/pictures/6bd238950a7b0208a6450fb175d9f2d3562cc822.jpg)
 <br>
-由于文件体积的原因，本仓库也不会提供解包后的音频文件。请自行解包。但是，本仓库会提供解包方法和用于制作TTS项目数据集所需要的标注文件。具体请在对应文件夹下的`README.md`中查看。<br>
+由于文件体积的原因，本仓库也不会提供解包后的音频文件。请自行解包。部分数据集会传至``huggingface.co``。但是，本仓库会提供解包方法和用于制作TTS项目数据集所需要的标注文件。具体请在对应文件夹下的`README.md`中查看。<br>
 <br>
 # 2. 在开始之前你需要具备：
 1. 基础的计算机操作能力。如：如何**解压文件**，如何**运行一个python文件**。
