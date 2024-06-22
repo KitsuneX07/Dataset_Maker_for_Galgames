@@ -63,4 +63,4 @@ def process_file(json_file_path, search_dir, output_dir_path, convert_to_wav=Fal
     print('\nDone!')
 
 # 使用示例
-copy_files(r'E:\gal\workspace\scripts_json', r'E:\gal\解包\sound\vo')
+copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]魔女的夜宴_Sabbat_of_the_Witch\scripts_json', r'E:\gal\workspace\voice')

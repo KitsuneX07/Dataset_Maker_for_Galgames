@@ -4,7 +4,7 @@ import re
 import json
 
 # 获取scripts文件夹的路径
-scripts_dir = r'E:\gal\workspace\scripts'
+scripts_dir = r''
 if scripts_dir == '':
     # 如果没有指定路径，使用当前工作目录下的scripts文件夹
     scripts_dir = os.path.join(os.getcwd(), 'scripts')
