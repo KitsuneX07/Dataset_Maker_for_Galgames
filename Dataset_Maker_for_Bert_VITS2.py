@@ -65,4 +65,4 @@ def process_file(json_file_path, search_dir, output_dir_path, list_dir_path):
         print('\nDone!')
 
 # 使用示例
-copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]千恋万花_Senren_Banka\scripts_json', r'E:\gal\workspace\Senren Banka\voice')
+copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]魔女的夜宴_Sabbat_of_the_Witch\scripts_json', r'E:\gal\workspace\Sabbat of the Witch\voice')

@@ -65,4 +65,4 @@ def clean_json_files(dir_path):
         clean_json_file(json_file)
         print('Done!')
 
-clean_json_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]千恋万花_Senren_Banka\scripts_json')
+clean_json_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]魔女的夜宴_Sabbat_of_the_Witch\scripts_json')
