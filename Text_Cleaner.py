@@ -30,6 +30,7 @@ def clean_text(text):
     text = re.sub(r'。\\n', '。', text)
     text = re.sub(r'\\n', '。', text)
     text = re.sub(r'～', '。', text)
+    text = re.sub(r'\n', '。', text)
 
     return text
 
@@ -65,4 +66,4 @@ def clean_json_files(dir_path):
         clean_json_file(json_file)
         print('Done!')
 
-clean_json_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]谜语小丑_Riidle_Joker\scripts_json')
+clean_json_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json')

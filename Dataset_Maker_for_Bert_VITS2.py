@@ -58,11 +58,16 @@ def process_file(json_file_path, search_dir, output_dir_path, list_dir_path):
                     output_file_path = os.path.join(sub_output_dir_path, os.path.splitext(file_name)[0] + '.wav')
                     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
                     # subprocess.run(['ffmpeg', '-i', input_file_path, '-ar', '44100', output_file_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                    print(f'\rprocessing file: {file_name}', end='')
+                    # print(f'\rprocessing file: {file_name}', end='')
 
                     # 在列表文件中添加一行
                     list_file.write(f'./Data/{name}/wavs/{name}/{os.path.splitext(file_name)[0]}.wav|{name}|JP|{next(item["Text"] for item in data if item["File"] == os.path.splitext(file_name)[0])}\n')
+
+                    # 在json文件中删除已处理的文件
+                    file_names.remove(os.path.splitext(file_name)[0])
+
         print('\nDone!')
+        print(file_names)
 
 # 使用示例
-copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]谜语小丑_Riidle_Joker\scripts_json', r'E:\gal\workspace\Riddle Joker\voice')
+copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json', r'E:\gal\解包\pjsk\wav')

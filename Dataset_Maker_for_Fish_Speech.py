@@ -42,7 +42,7 @@ def process_file(json_file_path, search_dir, output_dir_path, convert_to_wav=Fal
     # 遍历搜索目录及其所有子目录中的所有文件
     for dirpath, dirnames, filenames in os.walk(search_dir):
         for file_name in filenames:
-            # 如果文件名在JSON文件中，则复制文件到输出文件夹
+
             if os.path.splitext(file_name)[0] in file_names:
                 input_file_path = os.path.join(dirpath, file_name)
                 if convert_to_wav:
@@ -63,4 +63,4 @@ def process_file(json_file_path, search_dir, output_dir_path, convert_to_wav=Fal
     print('\nDone!')
 
 # 使用示例
-copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[yuzusoft]谜语小丑_Riidle_Joker\scripts_json', r'E:\gal\workspace\Riddle Joker\voice')
+copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json', r'E:\gal\解包\pjsk\wav')
