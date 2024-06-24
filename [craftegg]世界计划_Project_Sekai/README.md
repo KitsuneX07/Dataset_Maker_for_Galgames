@@ -41,7 +41,7 @@
 ![图片](https://github.com/KitsuneX07/Dataset_Maker_for_Galgames/blob/main/pictures/bg.png)
 > もう無理だって思ったら、逃げていいって ボクは思うんだ<br>
 > 誰でもない。まふゆ自身のために<br>
-当觉得撑不下去的时候，我认为逃避也没有关系。<br>
 
+当觉得撑不下去的时候，我认为逃避也没有关系。<br>
 我希望所有天台都能有围栏。<br>
 我希望所有天台都没有围栏。<br>
