@@ -31,6 +31,7 @@
 20: "瑞希",晓山瑞希<br>
 
 之后就可以按照操作指示制作数据集了。<br>
+数据集已经上传至huggingface仓库。<https://huggingface.co/datasets/KitsuneX07/Datasets_for_Project_Sekai/tree/main>
 
 # 3.提醒
 由于版本问题，该份数据集并不是当前版本的所有数据，而且由于使用脚本对数据集进行了一个筛选，所以可能会有一些数据集的缺失。如果你想要去全部数据，可以去<sekai.best>自行寻找。 <br>
