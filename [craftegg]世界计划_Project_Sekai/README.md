@@ -38,6 +38,7 @@
 
 # 4.胡言乱语
 在第九十三期活动剧情第七集中，mizuki如是说：
+![图片](https://github.com/KitsuneX07/Dataset_Maker_for_Galgames/blob/main/pictures/bg.png)
 > もう無理だって思ったら、逃げていいって ボクは思うんだ<br>
 > 誰でもない。まふゆ自身のために<br>
 当觉得撑不下去的时候，我认为逃避也没有关系。<br>
