@@ -63,4 +63,4 @@ def process_file(json_file_path, search_dir, output_dir_path, convert_to_wav=Fal
     print('\nDone!')
 
 # 使用示例
-copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json', r'E:\gal\解包\pjsk\wav')
+copy_files(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]少女乐团派对_BanG_Dream\scripts_json", r"D:\ghast\downloads\bestdori-voice-extractor-main\mp3")

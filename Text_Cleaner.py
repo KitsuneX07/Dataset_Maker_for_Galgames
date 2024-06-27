@@ -66,4 +66,4 @@ def clean_json_files(dir_path):
         clean_json_file(json_file)
         print('Done!')
 
-clean_json_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json')
+clean_json_files(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]少女乐团派对_BanG_Dream\scripts_json")

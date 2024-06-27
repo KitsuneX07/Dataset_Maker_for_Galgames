@@ -63,11 +63,11 @@ def process_file(json_file_path, search_dir, output_dir_path, list_dir_path):
                     # 在列表文件中添加一行
                     list_file.write(f'./Data/{name}/wavs/{name}/{os.path.splitext(file_name)[0]}.wav|{name}|JP|{next(item["Text"] for item in data if item["File"] == os.path.splitext(file_name)[0])}\n')
 
-                    # 在json文件中删除已处理的文件
+                    # 删除已处理的文件
                     file_names.remove(os.path.splitext(file_name)[0])
 
         print('\nDone!')
         print(file_names)
 
 # 使用示例
-copy_files(r'E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]世界计划_Project_Sekai\scripts_json', r'E:\gal\解包\pjsk\wav')
+copy_files(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]少女乐团派对_BanG_Dream\scripts_json", r"D:\ghast\downloads\bestdori-voice-extractor-main\mp3")
