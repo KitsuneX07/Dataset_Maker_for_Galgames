@@ -1,0 +1,3361 @@
+{
+  "hash": "965abd229f62457fd42643f2a8583ceb",
+  "llmap": [{
+      "*start": [3,5,7,9,11,13,15,17,19,21,23,25,27],
+      "name": "b999_en.ks"
+    },{
+      "*start": [3,5,7,9,11,13,15,17,19,21,23,25,27],
+      "name": "b999_cn.ks"
+    },{
+      "*start": [3,5,7,9,11,13,15,17,19,21,23,25,27],
+      "name": "b999_tw.ks"
+    }],
+  "name": "b999.ks",
+  "outlines": [],
+  "scenes": [{
+      "firstLine": 0,
+      "label": "*start",
+      "lines": [[1,{
+            "data": [],
+            "env": {
+              "action": [null,null,null,null,null,null,null,null,null],
+              "name": "env"
+            }
+          },null,1,2],["envupdate","update",[["init",0],["new","bgm","bgm"],{
+              "action": [null],
+              "name": "env"
+            }],"wait",{
+            "list": [{
+                "mode": 0,
+                "name": "env"
+              }]
+          }],[2,{
+            "data": [["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,2],["meswinload","page","both"],[3,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["zpos",233.33333333333337],["xpos",-60],["zoomy",55],["ypos",-30],["zoomx",55]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg3","stage",{
+                  "action": [["order",1],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "12_立ち上る泡"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,2],["msgoff"],["envupdate","update",[["new","lse1","loopse"],{
+              "action": [["fade",70]],
+              "name": "lse1",
+              "replay": {
+                "filename": "se162b",
+                "loop": 1,
+                "start": null,
+                "state": 1,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": "1000"
+              },
+              "update": {
+                "state": 1
+              }
+            }]],[4,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["zpos",233.33333333333337],["xpos",-60],["zoomy",55],["ypos",-30],["zoomx",55]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg3","stage",{
+                  "action": [["order",1],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "12_立ち上る泡"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,12],["envupdate","update",[["new","bg","stage"],["new","bg2","stage"],["new","bg3","stage"],{
+              "action": [["zpos",233.33333333333337],["leveloffset",""],null,["order",1]],
+              "class": "stage",
+              "link": "",
+              "name": "bg3",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "12_立ち上る泡"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [null,["zpos",233.33333333333337],["leveloffset",""],null,["zoomx",55],["zoomy",55],["xpos",-60],["ypos",-30]],
+              "class": "stage",
+              "link": "",
+              "name": "bg2",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "bg017nl"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [null,["zpos",233.33333333333337],["leveloffset",""],null],
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "lay_white"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],"cg_lay_white","cg_bg017nl","cg_12_立ち上る泡",[5,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["zpos",233.33333333333337],["xpos",-60],["zoomy",55],["ypos",-30],["zoomx",55]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg3","stage",{
+                  "action": [["order",1],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "12_立ち上る泡"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,17],["wait","time","3000"],[6,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["zpos",233.33333333333337],["xpos",-60],["zoomy",55],["ypos",-30],["zoomx",55]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg3","stage",{
+                  "action": [["order",1],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "12_立ち上る泡"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,18],["envupdate","update",[{
+              "name": "lse1",
+              "replay": {
+                "filename": "se162b",
+                "loop": 1,
+                "start": null,
+                "state": 0,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": "2000"
+              }
+            }]],[7,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["xpos",-460],["ypos",-330],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,21],["envupdate","update",[{
+              "name": "bg3",
+              "showmode": 2
+            },{
+              "action": [["zoomx",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": "true",
+                      "time": 80000,
+                      "value": 100
+                    }]],["zoomy",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": "true",
+                      "time": 80000,
+                      "value": 100
+                    }]],["xpos",-60],["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": -60,
+                      "time": 80000,
+                      "value": -460
+                    }],1],["ypos",-30],["ypos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": -30,
+                      "time": 80000,
+                      "value": -330
+                    }],1]],
+              "name": "bg2",
+              "showmode": 3
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],["envupdate","update",[["del","bg3"]]],[8,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["xpos",-460],["ypos",-330],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": null,
+                    "loop": null,
+                    "start": null,
+                    "state": null,
+                    "volume": null
+                  },
+                  "update": {
+                    "state": null
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,24],["envupdate","update",[{
+              "name": "bgm",
+              "replay": {
+                "filename": "BGM01",
+                "loop": 1,
+                "start": null,
+                "state": 1,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": 0
+              }
+            }]],"bgm_BGM01",[9,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["xpos",-460],["ypos",-330],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,27],["wait","time","500"],[10,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["xpos",-460],["ypos",-330],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },1,null,37,1728,null,null],1,[11,1,null,null,37],["msgoff"],["envupdate","update",[{
+              "hideact": [["visvalue",[{
+                      "delay": null,
+                      "handler": "MoveAction",
+                      "time": "2000",
+                      "value": 0
+                    }]]],
+              "name": "bg2",
+              "showmode": 2,
+              "trans": {
+                "method": "",
+                "sync": 1,
+                "time": "2000"
+              }
+            }],"wait",{
+            "list": [{
+                "mode": 0,
+                "name": "bg2"
+              }]
+          }],["envupdate","update",[["del","bg2"]]],[12,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,40],["envupdate","update",[{
+              "action": [["fade",70],["fade",100]],
+              "name": "lse1",
+              "replay": {
+                "filename": "se171b",
+                "loop": 1,
+                "start": null,
+                "state": 1,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": 0
+              },
+              "update": {
+                "state": 1
+              }
+            }]],[13,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70],["fade",100]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,43],["wait","time","1000"],[14,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70],["fade",100]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,43],["envupdate","update",[["new","tatr","character"],["new","ev3","event"],["new","ev4","event"],{
+              "action": [["leveloffset",""],["zpos",-60.0],null,["xpos",0],["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 0,
+                      "time": 30000,
+                      "value": -360
+                    }],1],["ypos",200],["ypos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 200,
+                      "time": 30000,
+                      "value": 320
+                    }],1]],
+              "class": "event",
+              "link": "",
+              "name": "ev4",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "bg001dll"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [["leveloffset",""],["zpos",-60.0],null,["zoomx",80],["zoomy",80],["xpos",-1760],["ypos",1650]],
+              "class": "event",
+              "link": "",
+              "name": "ev3",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "ev000al"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },["new","tatr","bu"],{
+              "action": [null,["zpos",-50.0],null,["order",0],["xpos",-100],["ypos",-20],["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"]],
+              "class": "bu",
+              "link": "",
+              "name": "tatr",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "アトリ.stand",
+                  "options": {
+                    "dress": "d1",
+                    "face": "",
+                    "pose": "p4"
+                  }
+                },
+                "posName": "cx_c"
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [["leveloffset",""],null,["xpos",-2300],["ypos",1300]],
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "ev000al",
+                  "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                },
+                "posName": null
+              },
+              "showmode": 3,
+              "type": null
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1500"
+          }],"cg_ev000al","cg_アトリ.stand","cg_ev000al","cg_bg001dll",[15,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-2300],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev3","event",{
+                  "action": [["zpos",-60.0],["xpos",-1760],["zoomy",80],["ypos",1650],["zoomx",80]],
+                  "class": "event",
+                  "name": "ev3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev4","event",{
+                  "action": [["xpos",-360],["ypos",320],["zpos",-60.0]],
+                  "class": "event",
+                  "name": "ev4",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg001dll"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",-100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },2,null,68,1752,null,null],2,[16,2,null,null,68],["msgoff"],["envupdate","update",[{
+              "name": "lse1",
+              "replay": {
+                "filename": "se171b",
+                "loop": 1,
+                "start": null,
+                "state": 0,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": "1000"
+              }
+            }]],["envupdate","update",[["new","lse2","loopse"],{
+              "action": [["fade",50]],
+              "name": "lse2",
+              "replay": {
+                "filename": "se172b",
+                "loop": 1,
+                "start": null,
+                "state": 1,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": 0
+              },
+              "update": {
+                "state": 1
+              }
+            }]],[17,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-2300],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev3","event",{
+                  "action": [["zpos",-60.0],["xpos",-1000],["zoomy",80],["ypos",1650],["zoomx",80]],
+                  "class": "event",
+                  "name": "ev3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",-100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,78],["envupdate","update",[{
+              "name": "ev4",
+              "showmode": 2
+            },{
+              "action": [["xpos",-1760],["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": -1760,
+                      "time": 30000,
+                      "value": -1000
+                    }],1]],
+              "name": "ev3",
+              "showmode": 3
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],["envupdate","update",[["del","ev4"]]],[18,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-2300],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev3","event",{
+                  "action": [["zpos",-60.0],["xpos",-1000],["zoomy",80],["ypos",1650],["zoomx",80]],
+                  "class": "event",
+                  "name": "ev3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",-100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },3,null,89,1736,null,null],3,[19,3,null,null,89],["msgoff"],["envupdate","update",[{
+              "name": "lse2",
+              "replay": {
+                "filename": "se172b",
+                "loop": 1,
+                "start": null,
+                "state": 0,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": "2000"
+              }
+            }]],[20,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,101],["envupdate","update",[{
+              "name": "ev3",
+              "showmode": 2
+            },{
+              "action": [["xpos",-100],["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": -100,
+                      "time": 200000,
+                      "value": 100
+                    }],1]],
+              "name": "tatr",
+              "showmode": 3
+            },{
+              "action": [["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": "true",
+                      "time": 400000,
+                      "value": -1150
+                    }]]],
+              "name": "bg",
+              "showmode": 3
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],["envupdate","update",[["del","ev3"]]],[21,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },4,null,113,1728,null,null],4,[22,4,5,null,119,1728,null,null],5,[23,5,6,null,125,1728,null,null],6,[24,6,7,null,131,1728,null,null],7,[25,7,8,null,137,1728,null,null],8,[26,8,null,null,137],["msgoff"],["envupdate","update",[{
+              "name": "tatr",
+              "showmode": 2
+            },{
+              "action": [["leveloffset",""],["xpos",0],["ypos",0],null],
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "lay_white"
+                },
+                "posName": null
+              },
+              "showmode": 3,
+              "type": null
+            }],"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],"cg_lay_white",[27,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337],["leveloffset",""],["xpos",0],["ypos",0],null],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 2,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,142],["wait","time","1500","wait","500"],[28,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337],["leveloffset",""],["xpos",0],["ypos",0],null],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 2,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,142],["envupdate","update",[["new","ev","event"],["new","ev2","event"],{
+              "action": [["leveloffset",""],["zpos",-60.0],null,["zoomx",75],["zoomx",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 75,
+                      "time": 60000,
+                      "value": 40
+                    }],1],["zoomy",75],["zoomy",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 75,
+                      "time": 60000,
+                      "value": 40
+                    }],1],["xpos",1560],["xpos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 1560,
+                      "time": 60000,
+                      "value": 640
+                    }],1],["ypos",880],["ypos",[{
+                      "accel": "const",
+                      "handler": "MoveAction",
+                      "nowait": 1,
+                      "start": 880,
+                      "time": 60000,
+                      "value": 480
+                    }],1]],
+              "class": "event",
+              "link": "",
+              "name": "ev2",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "ev000al"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [["leveloffset",""],["zpos",-60.0],null,["zoomx",75],["zoomy",75],["xpos",320],["ypos",240]],
+              "class": "event",
+              "link": "",
+              "name": "ev",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "ev000a"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "action": [null],
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "lay_white"
+                },
+                "posName": null
+              },
+              "showmode": 3,
+              "type": null
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": "1000"
+          }],"cg_lay_white","cg_ev000a","cg_ev000al",[29,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev2","event",{
+                  "action": [["zpos",-60.0],["xpos",640],["zoomy",40],["ypos",480],["zoomx",40]],
+                  "class": "event",
+                  "name": "ev2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },9,null,163,1752,null,null],9,[30,9,10,null,169,1736,null,null],10,[31,10,11,null,175,1736,null,null],11,[32,11,12,null,181,1736,null,null],12,[33,12,null,null,181],["msgoff"],["envupdate","update",[{
+              "hideact": [["visvalue",[{
+                      "delay": null,
+                      "handler": "MoveAction",
+                      "time": "2000",
+                      "value": 0
+                    }]]],
+              "name": "ev2",
+              "showmode": 2,
+              "trans": {
+                "method": "",
+                "sync": 1,
+                "time": "2000"
+              }
+            }],"wait",{
+            "list": [{
+                "mode": 0,
+                "name": "ev2"
+              }]
+          }],["envupdate","update",[["del","ev2"]]],[34,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },13,null,190,200,null,null],13,[35,13,null,null,190],["msgoff"],["envupdate","update",[{
+              "name": "bgm",
+              "replay": {
+                "filename": "BGM01",
+                "loop": 1,
+                "start": null,
+                "state": 0,
+                "volume": 100.0
+              },
+              "trans": {
+                "method": "",
+                "time": "3000"
+              }
+            }]],[36,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,196],["envupdate","update",[["del","bg"],["new","bg","stage"],{
+              "action": [null,["zpos",233.33333333333337],["leveloffset",""],null],
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "lay_black"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "class": "event",
+              "link": "",
+              "name": "ev",
+              "showmode": 2,
+              "type": null
+            },{
+              "action": [null],
+              "name": "env"
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }],
+            "wait": 1000
+          },"trans",{
+            "method": "crossfade",
+            "time": "3000"
+          }],["envupdate","update",[["del","ev"],["del","tatr"]]],"cg_lay_black",[37,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,200],["msgoff","normal","true"],["envupdate","update",[["tag",{
+                "runLineStr": "[bgm stop time=1000][allse stop time=1000][msgoff normal][begintrans][env resetcolor][clearlayers][allimage delete][ev lay_black][endtrans trans=%trans|normal wait=%wait|0][bgm wait][macropop]",
+                "taglist": ["tagname"],
+                "tagname": "clearlayers"
+              }],["new","ev","event"],{
+              "action": [["leveloffset",""],["zpos",-60.0],null],
+              "class": "event",
+              "link": "",
+              "name": "ev",
+              "redraw": {
+                "disp": 2,
+                "imageFile": {
+                  "file": "lay_black"
+                },
+                "posName": null
+              },
+              "showmode": 1,
+              "type": null
+            },{
+              "class": "stage",
+              "link": "",
+              "name": "bg",
+              "showmode": 2,
+              "type": null
+            }],"wait",{
+            "list": [null,{
+                "mode": 0,
+                "name": "env"
+              }]
+          },"trans",{
+            "method": "crossfade",
+            "time": 1000
+          }],["envupdate","update",[["del","bg"]]],"cg_lay_black",[38,{
+            "data": [["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,205],["envupdate","wait",{
+            "list": [{
+                "mode": 0,
+                "name": "bgm"
+              }],
+            "wait": 1
+          }],[39,{
+            "data": [["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,null,205],["er","all","true"],[40,{
+            "data": [["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,1,206]],
+      "nexts": [{
+          "storage": "b999.ks",
+          "target": "*end",
+          "type": 0
+        }],
+      "spCount": 40,
+      "texts": [["アトリ"," ",[[" ","この星は沈みゆこうとしている――"],["　","This world is sinking."],["　","\"这颗星球正在沉没——\""],["　","\"這顆星球正在沉沒——\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_001"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bg2","stage",{
+                  "action": [["xpos",-460],["ypos",-330],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg017nl"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "action": [["fade",70]],
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se162b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","原因不明の急激な海面上昇により、沿岸部の大半が海に呑まれ、今もまだ地表への浸食は続いている。"],["　","It is being swallowed up by the rising seas."],["　","\"海平面因不明原因急速上升，海洋吞没了大部分沿海地区，如今也不断蚕食着陆地。\""],["　","\"海平面因不明原因急速上升，海洋吞沒了大部分沿海地區，如今也不斷蠶食著陸地。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_002"
+            }],1752,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-2300],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev3","event",{
+                  "action": [["zpos",-60.0],["xpos",-1760],["zoomy",80],["ypos",1650],["zoomx",80]],
+                  "class": "event",
+                  "name": "ev3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev4","event",{
+                  "action": [["xpos",-360],["ypos",320],["zpos",-60.0]],
+                  "class": "event",
+                  "name": "ev4",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "bg001dll"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",-100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","ヒトの生息域は狭まり、ピークを迎えた科学技術は失われつつあった。"],["　","Humanity has less and less land to live on, and the technological advances they have made are being lost."],["　","\"人类的栖息地被迫收缩，处于巅峰的科学技术渐渐流失。\""],["　","\"人類的棲息地被迫收縮，處於巔峰的科學技術漸漸流失。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_003"
+            }],1736,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-2300],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev3","event",{
+                  "action": [["zpos",-60.0],["xpos",-1000],["zoomy",80],["ypos",1650],["zoomx",80]],
+                  "class": "event",
+                  "name": "ev3",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",-100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","ゆるやかな滅びを迎えようとしていた、けれどおだやかな時代。"],["　","I remember a time when they seemed content to peacefully accept their extinction."],["　","\"这是缓步迈向灭亡的平静时代。\""],["　","\"這是緩步邁向滅亡的平靜時代。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_004"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","わたしは、そのヒトと出逢った。"],["　","It was then that I met him."],["　","\"我与他邂逅了\""],["　","\"我與他邂逅了\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_005"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","ボクは地球を救わなくちゃいけないんだ――"],["　","He said that if he couldn't save the world, he wouldn't be saved."],["　","\"他说自己必须拯救地球——\""],["　","\"他說自己必須拯救地球——\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_006"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","わたしは尋ねた。"],["　","I asked him a question."],["　","\"于是我问道。\""],["　","\"於是我問道。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_007"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","――地球にわたしも含まれますか……？"],["　","Does the world include me?"],["　","\"——地球也包括我吗……？\""],["　","\"——地球也包括我嗎……？\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_008"
+            }],1728,{
+            "data": [["bg","stage",{
+                  "action": [["xpos",-1150],["ypos",1300],["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al",
+                      "redraw": [["doBoxBlur",2,2],["doBoxBlur",2,2]]
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "アトリ.stand",
+                      "options": {
+                        "dress": "d1",
+                        "face": "",
+                        "pose": "p4"
+                      }
+                    },
+                    "posName": "cx_c"
+                  },
+                  "showmode": 3,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","わたしは見守る。"],["　","I will look over this planet."],["　","\"我守望着。\""],["　","\"我守望著。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_009"
+            }],1752,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev2","event",{
+                  "action": [["zpos",-60.0],["xpos",640],["zoomy",40],["ypos",480],["zoomx",40]],
+                  "class": "event",
+                  "name": "ev2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","沈みゆく地球を。"],["　","I will watch it sink."],["　","\"守望着渐渐沉没的地球。\""],["　","\"守望著漸漸沉沒的地球。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_010"
+            }],1736,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev2","event",{
+                  "action": [["zpos",-60.0],["xpos",640],["zoomy",40],["ypos",480],["zoomx",40]],
+                  "class": "event",
+                  "name": "ev2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","滅びの運命に抗おうと、あがくヒトたちを。"],["　","And I will watch them, as they fight back against their fate."],["　","\"守望着反抗灭亡的宿命，奋力挣扎的人们。\""],["　","\"守望著反抗滅亡的宿命，奮力掙扎的人們。\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_011"
+            }],1736,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev2","event",{
+                  "action": [["zpos",-60.0],["xpos",640],["zoomy",40],["ypos",480],["zoomx",40]],
+                  "class": "event",
+                  "name": "ev2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","無限に続く、孤独の中で。"],["　","Here, in this infinite loneliness."],["　","\"身处无限的孤独之中……\""],["　","\"身處無限的孤獨之中……\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_012"
+            }],1736,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["ev2","event",{
+                  "action": [["zpos",-60.0],["xpos",640],["zoomy",40],["ypos",480],["zoomx",40]],
+                  "class": "event",
+                  "name": "ev2",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000al"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }],["アトリ"," ",[[" ","時よ過ぎゆけ、おまえは残酷だ――。"],["　","Time is a cruel thief to rob us of our former selves. We lose as much to life as we do to death...'"],["　","\"“时间流逝吧，你是多么的残酷——”\""],["　","\"“時間流逝吧，你是多麼的殘酷——”\""]],[{
+              "name": "アトリ",
+              "pan": 0,
+              "type": 0,
+              "voice": "ATR_b999_013"
+            }],200,{
+            "data": [["bg","stage",{
+                  "action": [["zpos",233.33333333333337]],
+                  "class": "stage",
+                  "name": "bg",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_white"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 1,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 1
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0],["xpos",320],["zoomy",75],["ypos",240],["zoomx",75]],
+                  "class": "event",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "ev000a"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 3,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100.0
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["tatr","bu",{
+                  "action": [["leveloffset","#9,81,-1,147,1,522,-2,300,2,350"],["zpos",-50.0],["xpos",100],["ypos",-20]],
+                  "class": "bu",
+                  "name": "tatr",
+                  "showmode": 0,
+                  "type": null
+                }]],
+            "env": {
+              "name": "env"
+            }
+          }]],
+      "title": ["プロローグ","Prologue","沉没的星星","沉沒的星星"]
+    },{
+      "firstLine": 206,
+      "label": "*end",
+      "lines": [[1,{
+            "data": [["bgm","bgm",{
+                  "name": "bgm",
+                  "replay": {
+                    "filename": "BGM01",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["ev","event",{
+                  "action": [["zpos",-60.0]],
+                  "class": "event",
+                  "link": "",
+                  "name": "ev",
+                  "redraw": {
+                    "disp": 2,
+                    "imageFile": {
+                      "file": "lay_black"
+                    },
+                    "posName": null
+                  },
+                  "showmode": 1,
+                  "type": null
+                }],["lse1","loopse",{
+                  "name": "lse1",
+                  "replay": {
+                    "filename": "se171b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }],["lse2","loopse",{
+                  "action": [["fade",50]],
+                  "name": "lse2",
+                  "replay": {
+                    "filename": "se172b",
+                    "loop": 1,
+                    "start": null,
+                    "state": 0,
+                    "volume": 100
+                  },
+                  "update": {
+                    "state": 0
+                  }
+                }]],
+            "env": {
+              "name": "env"
+            }
+          },null,1,206],"ac_b999クリア"],
+      "nexts": [{
+          "storage": "b101.ks",
+          "target": "*start",
+          "type": 0
+        }],
+      "postevals": ["kag.errorCmd(\"実績:b999クリア\")"],
+      "spCount": 1,
+      "title": ["プロローグ","Prologue","沉没的星星","沉沒的星星"]
+    }]
+}
