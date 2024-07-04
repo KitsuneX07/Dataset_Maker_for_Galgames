@@ -32,7 +32,7 @@ def process_folder(path, search_dir, output_dir_path):
         files = os.listdir(path)
         json_files = [file for file in files if file.endswith('.json')]
         for json_file in json_files:
-            process_file(os.path.join(path, json_file))
+            process_file(os.path.join(path, json_file), search_dir, output_dir_path)
             print(f'processed {json_file}')
     else:
         print(f'{path} is not a directory')
@@ -59,11 +59,11 @@ def process_file(path, search_dir, output_dir_path):
                     if os.path.splitext(file_name)[0] == searching_file_name:
                         input_file_path = os.path.join(dirpath, file_name)
 
-                        # output_file_path = os.path.join(output_path, file_name)
-                        output_file_path = os.path.join(output_path, os.path.splitext(file_name)[0] + '.wav')
+                        output_file_path = os.path.join(output_path, file_name)
+                        # output_file_path = os.path.join(output_path, os.path.splitext(file_name)[0] + '.wav')
 
-                        subprocess.run(['ffmpeg', '-i', input_file_path, '-ar', '44100', output_file_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                        # shutil.copy(input_file_path, output_file_path) # 保留原格式
+                        # subprocess.run(['ffmpeg', '-i', input_file_path, '-ar', '44100', output_file_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                        shutil.copy(input_file_path, output_file_path) # 保留原格式
 
                         # 创建对应的lab文件
                         lab_file_path = os.path.join(output_path, os.path.splitext(file_name)[0] + '.lab')
@@ -76,4 +76,4 @@ def process_file(path, search_dir, output_dir_path):
                         proceesed.append(searching_file_name)
 
 
-process(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[craftegg]少女乐团派对_BanG_Dream\scripts_json\愛音.json", r"D:\ghast\downloads\bestdori-voice-extractor-main\mp3")
+process(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[ANIPLEX.EXE]亚托莉_ATRI\scripts_json", r"E:\gal\解包\ATRI")
