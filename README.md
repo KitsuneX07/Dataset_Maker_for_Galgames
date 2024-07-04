@@ -33,57 +33,12 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 >>
 >> 输出：
 >>> 将直接对原文件进行操作。调试时请**注意备份！**<br>
-> 
-> `Dataset_Maker_for_Bert_VITS2.py`
->> 用于Bert_VITS2项目的数据集制作。<https://github.com/fishaudio/Bert-VITS2><br>
->>
->> 这个脚本的主要功能是从指定的目录中读取JSON文件，并根据这些JSON文件中的信息，从另一个指定的目录中复制音频文件，然后将这些音频文件转换为.wav格式并重采样到44100hz。同时，它还会创建一个列表文件，用于作为Bert_Vits2项目的标注文件。 <br>
->> 以下是这个脚本的详细步骤：
->> 1. `copy_files` 函数接收两个参数：一个是包含JSON文件的路径，另一个是包含音频文件的路径。
->> 2. 在当前工作目录下创建两个新的文件夹：`datasets_for_bert_vits2` 和 `list_files_for_bert_vits2`。
->> 3. 判断给定的路径是文件还是文件夹。如果是单个JSON文件，那么只处理这个文件；如果是文件夹，那么处理文件夹中的所有JSON文件。
->> 4. `process_file` 函数接收四个参数：JSON文件的路径，音频文件的路径，输出文件夹的路径，和列表文件夹的路径。
->> 5. 读取JSON文件，并获取其中所有的文件名。
->> 6. 为每个JSON文件创建一个子文件夹和一个列表文件。
->> 7. 遍历搜索目录中的所有文件。如果文件名在JSON文件中，那么将这个文件复制到输出文件夹，并使用ffmpeg将其转换为.wav格式并重采样到44100hz。
->> 8. 在列表文件中添加一行，包含了音频文件的路径，文件名，语言（这里是JP），以及在JSON文件中对应的文本。<br>
->>
->> 输入：
->>> 输入参数：<br>
->>> 1. 包含JSON文件的路径 / 单个JSON文件的路径 <br>
->>> 2. 包含所有音频文件的路径。<br>
->>
->> 推荐使用Text_Cleaner.py脚本先对JSON文件进行处理。<br>
->>
->> 输出：
->>> 输出的文件夹位于当前工作目录下。<br>
->>> 1.`list_files_for_bert_vits2`文件夹。里面按说话人分类放置了对应的标注文件（`.list文件`）<br>
->>> 2.`datasets_for_bert_vits2`文件夹。里面按说话人分类放置了对应的音频文件（`.wav文件`）<br>
-> 
-> `Dataset_Maker_for_GPT_Sovits.py`
->> 用于GPT_Sovits项目的数据集制作。<https://github.com/RVC-Boss/GPT-SoVITS> <br>
->>
->> 这个脚本的主要功能和具体介绍和`Dataset_Maker_for_Bert_VITS2.py`一致，仅仅是输出的标注文件（`.list文件`）结构有一些变化。在此不再过多赘述。 <br>
 >
-> `Dataset_Maker_for_Fish_Speech.py`
->> 用于Fish_Speech项目的数据集制作。<https://github.com/fishaudio/fish-speech> <br>
->> 1. copy_files 函数接收两个参数：一个是包含JSON文件的路径，另一个是包含音频文件的路径。
->> 2. 在当前工作目录下创建一个新的文件夹：datasets_for_Fish_Speech，用于存放输出的数据集文件夹。  
->> 3. 判断给定的路径是文件还是文件夹。如果是文件，那么只处理这个文件；如果是文件夹，那么处理文件夹中的所有JSON文件。  
->> 4. process_file 函数接收三个参数：JSON文件的路径，音频文件的路径，和输出文件夹的路径。  
->> 5. 读取JSON文件，并获取其中所有的文件名。  
->> 6. 为每个JSON文件创建一个子文件夹。  
->> 7. 遍历搜索目录中的所有文件。如果文件名在JSON文件中，那么将这个文件复制到输出文件夹，并使用ffmpeg将其转换为.wav格式并重采样到44100hz。  
->> 8. 在子文件夹中创建一个与音频文件同名的标注文件（`.lab文件`），包含了该音频文件对应的文本。<br>
->>
->> 输入：
->>> 输入参数：<br>
->>> 1. 包含JSON文件的路径 / 单个JSON文件的路径 <br>
->>> 2. 包含所有音频文件的路径。<br>
->>
->> 推荐使用Text_Cleaner.py脚本先对JSON文件进行处理。<br>
->>
->> 输出：
->>> 输出的文件夹位于当前工作目录下。<br>
->>> 1. `datasets_for_Fish_Speech`文件夹。里面按说话人分类放置了对应的音频文件（`.wav文件`）和标注文件（`.lab文件`）<br>
-
+> `Dataset_Maker.py`
+>> 这个脚本的主要功能是从指定的目录中读取JSON文件，并根据这些JSON文件中的信息，从另一个指定的目录中复制音频文件，然后将这些音频文件转换为.wav格式并重采样到44100hz。同时，它还会创建一个与原音频同名的``.lab``文件，作为标注文件。 <br>
+>> 可以直接用于Fish_Speech项目的数据集制作。<https://github.com/fishaudio/fish-speech> <br> 
+> 
+> 
+> `List_Generator.py`
+>> 用于生成列表文件。这个文件可以用于训练模型。<br>
+>> 调整参数一输出适合GPT_Sovits项目<https://github.com/RVC-Boss/GPT-SoVITS> 和 Bert_VITS2项目。<https://github.com/fishaudio/Bert-VITS2> <br>
