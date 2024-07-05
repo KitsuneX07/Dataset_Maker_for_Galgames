@@ -76,4 +76,4 @@ def process_file(path, search_dir, output_dir_path):
                         proceesed.append(searching_file_name)
 
 
-process(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[ANIPLEX.EXE]亚托莉_ATRI\scripts_json", r"E:\gal\解包\ATRI")
+process(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[枕]向日葵的教会与长长的暑假_Himawari_no_Kyoukai_to_Nagai_Natsuyasumi\scripts_json", r"E:\gal\workspace\ogg")
