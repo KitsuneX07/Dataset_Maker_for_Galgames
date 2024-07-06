@@ -66,4 +66,4 @@ def clean_json_files(dir_path):
         clean_json_file(json_file)
         print('Done!')
 
-clean_json_files(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[枕]向日葵的教会与长长的暑假_Himawari_no_Kyoukai_to_Nagai_Natsuyasumi\scripts_json")
+clean_json_files(r"E:\gal\workspace\Dataset_Maker_for_Galgames\[Sphere]缘之空_Yosuga_no_Sora\scripts_json")
