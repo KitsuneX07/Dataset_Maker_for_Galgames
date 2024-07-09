@@ -1,0 +1,55 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9070.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+DrawManual
+FlushClick
+intC[0] = 4500
+InitExFrames ({0, 0, 1, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @2
+intF[1000] = 1
+goto @5
+
+  @2
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @3
+intF[1000] = 1
+goto @5
+
+  @3
+goto_unless (intA[1002] == 2) @4
+intF[1000] = 1
+FlushClick
+goto @5
+
+  @4
+intF[1000] = 0
+
+  @5
+goto_unless (intF[1000] == 1) @6
+intC[0] = 0
+intC[1] = 1
+
+  @6
+refresh
+goto_unless (!intC[0]) @7
+goto @8
+
+  @7
+goto @1
+
+  @8
+DrawAuto
+EnableSyscom
+rtl
+eof

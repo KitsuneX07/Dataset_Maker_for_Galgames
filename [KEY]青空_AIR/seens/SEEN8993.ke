@@ -1,0 +1,519 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8993.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+HideCursor
+DrawManual
+msgHide
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @2
+intF[1000] = 1
+FlushClick
+goto @3
+
+  @2
+intF[1000] = 0
+
+  @3
+goto_unless (intF[1000] == 1) @4
+intC[0] = 0
+intC[1] = 255
+
+  @4
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @5
+goto @6
+
+  @5
+goto @1
+
+  @6
+recFill (1, 0, 0, 0)
+waitC (3000)
+setarray (intA[100], 52, 28, 28, 52, 28, 28, 28, 14, 40, 52, 64, 40, 40, 64, 52)
+setarray (intA[200], 2, 4, 4, 2, 4, 4, 4, 5, 3, 2, 1, 3, 3, 1, 2)
+bgmLoop ('BGM20')
+waitC (1000)
+recCopy (0, 0, 640, 480, 0, 0, 0, 2)
+intA[300] = 160
+intA[301] = 0
+gosub @64
+waitC (5200)
+gosub @79
+waitC (1000)
+intA[301] = 1
+gosub @64
+waitC (3200)
+grpBuffer ('FGMZ16A', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @7
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @8
+intF[1000] = 1
+FlushClick
+goto @9
+
+  @8
+intF[1000] = 0
+
+  @9
+goto_unless (intF[1000] == 1) @10
+intC[0] = 0
+intC[1] = 255
+
+  @10
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @11
+goto @12
+
+  @11
+goto @7
+
+  @12
+goto_unless (intF[1500] == 1) @13
+goto @32
+
+  @13
+waitC (5000)
+bgmFadeOut (6500)
+grpBuffer ('R1_00A', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @14
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @15
+intF[1000] = 1
+FlushClick
+goto @16
+
+  @15
+intF[1000] = 0
+
+  @16
+goto_unless (intF[1000] == 1) @17
+intC[0] = 0
+intC[1] = 255
+
+  @17
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @18
+goto @19
+
+  @18
+goto @14
+
+  @19
+waitC (5000)
+grpBuffer ('R1_00B', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @20
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @21
+intF[1000] = 1
+FlushClick
+goto @22
+
+  @21
+intF[1000] = 0
+
+  @22
+goto_unless (intF[1000] == 1) @23
+intC[0] = 0
+intC[1] = 255
+
+  @23
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @24
+goto @25
+
+  @24
+goto @20
+
+  @25
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @26
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @27
+intF[1000] = 1
+FlushClick
+goto @28
+
+  @27
+intF[1000] = 0
+
+  @28
+goto_unless (intF[1000] == 1) @29
+intC[0] = 0
+intC[1] = 255
+
+  @29
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @30
+goto @31
+
+  @30
+goto @26
+
+  @31
+recFill (1, 0, 0, 0)
+bgmStop
+stackClear
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+goto @63
+
+  @32
+waitC (2000)
+intA[300] = 270
+intA[301] = 3
+intA[10] = 0
+
+  @33
+goto_unless (intA[10] < 7) @34
+gosub @64
+waitC (5200)
+gosub @79
+waitC (1000)
+intA[301] += 1
+intA[10] += 1
+goto @33
+
+  @34
+bgmFadeOut (1500)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @35
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @36
+intF[1000] = 1
+FlushClick
+goto @37
+
+  @36
+intF[1000] = 0
+
+  @37
+goto_unless (intF[1000] == 1) @38
+intC[0] = 0
+intC[1] = 255
+
+  @38
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @39
+goto @40
+
+  @39
+goto @35
+
+  @40
+waitC (3000)
+bgmStop
+bgmPlay ('BGM08')
+intA[300] = 160
+intA[10] = 0
+
+  @41
+goto_unless (intA[10] < 5) @42
+gosub @64
+waitC (5200)
+gosub @79
+waitC (1000)
+intA[301] += 1
+intA[10] += 1
+goto @41
+
+  @42
+recFill (1, 0, 0, 0)
+freeDC (2)
+freeDC (3)
+grpBuffer ('FGMZ16B', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 6000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @43
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @44
+intF[1000] = 1
+FlushClick
+goto @45
+
+  @44
+intF[1000] = 0
+
+  @45
+goto_unless (intF[1000] == 1) @46
+intC[0] = 0
+intC[1] = 255
+
+  @46
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @47
+goto @48
+
+  @47
+goto @43
+
+  @48
+freeDC (2)
+waitC (4000)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 900
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @49
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @50
+intF[1000] = 1
+FlushClick
+goto @51
+
+  @50
+intF[1000] = 0
+
+  @51
+goto_unless (intF[1000] == 1) @52
+intC[0] = 0
+intC[1] = 255
+
+  @52
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @53
+goto @54
+
+  @53
+goto @49
+
+  @54
+recFill (1, 0, 0, 0)
+waitC (3000)
+strS[0] = 'FGMZ16C1'
+strS[1] = 'FGMZ16C2'
+strS[2] = 'FGMZ16C3'
+strS[3] = 'FGMZ16C4'
+strS[4] = 'FGMZ16C5'
+strS[5] = 'FGMZ16C6'
+strS[6] = 'FGMZ16C7'
+strS[7] = 'FGMZ16C8'
+strS[8] = 'FGMZ16C9'
+strS[9] = 'FGMZ16C'
+ResetExTimer (0)
+intA[1] = 0
+intA[0] = 0
+
+  @55
+goto_unless (intA[0] <= 9) @56
+timeEx (intA[1], 0)
+intA[1] += 200
+grpBuffer (strS[intA[0]], 0)
+refresh
+intA[0] += 1
+goto @55
+
+  @56
+waitC (4000)
+bgmFadeOut (6500)
+waitC (5000)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @57
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @58
+intF[1000] = 1
+FlushClick
+goto @59
+
+  @58
+intF[1000] = 0
+
+  @59
+goto_unless (intF[1000] == 1) @60
+intC[0] = 0
+intC[1] = 255
+
+  @60
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @61
+goto @62
+
+  @61
+goto @57
+
+  @62
+recFill (1, 0, 0, 0)
+bgmStop
+stackClear
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+goto @63
+
+  @63
+DrawAuto
+ShowCursor
+EnableSyscom
+rtl
+
+  @64
+intA[0] = intA[301] / 3
+goto_case intA[0] { 0: @65; 1: @66; 2: @67; 3: @68; 4: @69; _: @70 }
+
+  @65
+grpBuffer ('RMB_1', 3)
+goto @70
+
+  @66
+grpBuffer ('RMB_2', 3)
+goto @70
+
+  @67
+grpBuffer ('RMB_3', 3)
+goto @70
+
+  @68
+grpBuffer ('RMB_4', 3)
+goto @70
+
+  @69
+grpBuffer ('RMB_5', 3)
+goto @70
+
+  @70
+recCopy (0, 0, 640, 480, 2, 0, 0, 1)
+intA[0] = intA[301] % 3
+recMaskCopy (0, 160 * intA[0], 640, 160, 3, 0, intA[300], 1)
+intA[0] = 0
+
+  @71
+goto_unless (intA[0] < intA[200 + intA[301]]) @78
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @72
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @73
+intF[1000] = 1
+FlushClick
+goto @74
+
+  @73
+intF[1000] = 0
+
+  @74
+goto_unless (intF[1000] == 1) @75
+intC[0] = 0
+intC[1] = 255
+
+  @75
+intA[1] = intA[300] + intA[100 + intA[301]] + 25 * intA[0]
+recCopy (0, intA[1], 640, 25, 2, 0, intA[1], 0)
+recCopy (0, intA[1], 640, 25, 1, 0, intA[1], 0, intC[1])
+refresh
+goto_unless (!intC[0]) @76
+goto @77
+
+  @76
+goto @72
+
+  @77
+intA[0] += 1
+goto @71
+
+  @78
+ret
+
+  @79
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @80
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @81
+intF[1000] = 1
+FlushClick
+goto @82
+
+  @81
+intF[1000] = 0
+
+  @82
+goto_unless (intF[1000] == 1) @83
+intC[0] = 0
+intC[1] = 255
+
+  @83
+intA[0] = intA[300] + intA[100 + intA[301]]
+intA[1] = 25 * intA[200 + intA[301]]
+recCopy (0, intA[0], 640, intA[1], 1, 0, intA[0], 0)
+recCopy (0, intA[0], 640, intA[1], 2, 0, intA[0], 0, intC[1])
+refresh
+goto_unless (!intC[0]) @84
+goto @85
+
+  @84
+goto @80
+
+  @85
+ret
+eof

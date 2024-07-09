@@ -1,0 +1,238 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8163.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+DrawManual
+bgmLoop ('BGM05')
+wait (5000)
+msgHide
+wait (1000)
+grpBuffer ('FGMZ05A', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @2
+intF[1000] = 1
+FlushClick
+goto @3
+
+  @2
+intF[1000] = 0
+
+  @3
+goto_unless (intF[1000] == 1) @4
+intC[0] = 0
+intC[1] = 255
+
+  @4
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @5
+goto @6
+
+  @5
+goto @1
+
+  @6
+recFill (1, 0, 0, 0)
+freeDC (2)
+waitC (5000)
+grpBuffer ('FGMZ05B', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @7
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @8
+intF[1000] = 1
+FlushClick
+goto @9
+
+  @8
+intF[1000] = 0
+
+  @9
+goto_unless (intF[1000] == 1) @10
+intC[0] = 0
+intC[1] = 255
+
+  @10
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @11
+goto @12
+
+  @11
+goto @7
+
+  @12
+recFill (1, 0, 0, 0)
+freeDC (2)
+recFill (1, 255, 255, 255)
+recLoad ('FGMZ05B', 1, 0, 100, 640, 238, 0, 100)
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @13
+intG[1050] = 1
+goto @14
+
+  @13
+goto_unless (intA[1000] == 1) @14
+intG[1050] = 0
+
+  @14
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @15
+intF[1017] = 1
+goto @16
+
+  @15
+goto_unless (intA[1000] == 1) @16
+intF[1017] = 0
+
+  @16
+SetSkipAnimations (0)
+goto @17
+goto @17
+SetSkipAnimations (1)
+
+  @17
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 2800, 120, 2, 0, 16, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @19
+goto_unless (intG[1050] == 1) @18
+SetSkipAnimations (0)
+goto @19
+
+  @18
+goto_unless (!intG[1050]) @19
+SetSkipAnimations (1)
+
+  @19
+intG[1049] = 0
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+recLoad ('FGMZ05B', 2, 0, 100, 640, 238, 0, 100)
+recMaskLoad ('AIRLOGO', 2, 280, 20, 360, 200, 280, 220)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @20
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @21
+intF[1000] = 1
+FlushClick
+goto @22
+
+  @21
+intF[1000] = 0
+
+  @22
+goto_unless (intF[1000] == 1) @23
+intC[0] = 0
+intC[1] = 255
+
+  @23
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @24
+goto @25
+
+  @24
+goto @20
+
+  @25
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+recLoad ('FGMZ05B', 2, 0, 100, 640, 238, 0, 100)
+recMaskLoad ('AIRLOGO', 2, 280, 220, 360, 200, 280, 220)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @26
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @27
+intF[1000] = 1
+FlushClick
+goto @28
+
+  @27
+intF[1000] = 0
+
+  @28
+goto_unless (intF[1000] == 1) @29
+intC[0] = 0
+intC[1] = 255
+
+  @29
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @30
+goto @31
+
+  @30
+goto @26
+
+  @31
+recFill (1, 0, 0, 0)
+freeDC (2)
+waitC (3000)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @32
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @33
+intF[1000] = 1
+FlushClick
+goto @34
+
+  @33
+intF[1000] = 0
+
+  @34
+goto_unless (intF[1000] == 1) @35
+intC[0] = 0
+intC[1] = 255
+
+  @35
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @36
+goto @37
+
+  @36
+goto @32
+
+  @37
+recFill (1, 0, 0, 0)
+stackClear
+recFill (0, 0, 0, 0)
+DrawAuto
+EnableSyscom
+rtl
+eof

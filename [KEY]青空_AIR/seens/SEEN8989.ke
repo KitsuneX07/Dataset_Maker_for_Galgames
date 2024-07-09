@@ -1,0 +1,97 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8989.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+DrawManual
+msgHide
+grpBuffer ('FGMZ15B', 0)
+grpBuffer ('FLY_04', 2)
+grpBuffer ('FLY_05', 3)
+intA[0] = 0
+ResetExTimer (0)
+recStretchBlt (0, 240, 320, 240, 2, 0, 0, 640, 480, 1)
+intA[0] += 100
+timeEx (intA[0], 0)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 80)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 80)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (0, 240, 320, 240, 2, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (320, 0, 320, 240, 2, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (320, 240, 320, 240, 2, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (0, 0, 320, 240, 3, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (0, 240, 320, 240, 3, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (320, 0, 320, 240, 3, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 100
+timeEx (intA[0], 0)
+recStretchBlt (320, 240, 320, 240, 3, 0, 0, 640, 480, 0)
+refresh
+intA[0] += 1000
+timeEx (intA[0], 0)
+grpBuffer ('FGMZ15C', 2)
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 2200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @2
+intF[1000] = 1
+FlushClick
+goto @3
+
+  @2
+intF[1000] = 0
+
+  @3
+goto_unless (intF[1000] == 1) @4
+intC[0] = 0
+intC[1] = 255
+
+  @4
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @5
+goto @6
+
+  @5
+goto @1
+
+  @6
+recFill (1, 0, 0, 0)
+freeDC (2)
+freeDC (3)
+stackClear
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGMZ15C', 0, 0, 640, 480, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 255, 0)
+DrawAuto
+EnableSyscom
+rtl
+eof

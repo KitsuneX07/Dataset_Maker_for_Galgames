@@ -1,0 +1,134 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9031.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+refresh
+intA[0] = ScreenMode
+goto_unless (!intA[0]) @2
+wait (800)
+goto @3
+
+  @2
+goto_unless (intA[0] == 1) @3
+wait (200)
+
+  @3
+objClear (0)
+objOfFile (0, 'S_TT_BG00')
+objMove (0, 0, 0)
+objPattNo (0, 0)
+objShow (0, 1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @4
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @5
+intF[1000] = 1
+FlushClick
+goto @6
+
+  @5
+intF[1000] = 0
+
+  @6
+goto_unless (intF[1000] == 1) @7
+intC[0] = 0
+intC[1] = 255
+
+  @7
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @8
+goto @9
+
+  @8
+goto @4
+
+  @9
+objClear (1)
+objOfFile (1, 'KEYLOGO0')
+objMove (1, 240, -190)
+objPattNo (1, 0)
+objDispRect (1, 240, 170, 160, 120)
+objShow (1, 1)
+FlushClick
+intC[0] = 2000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @10
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @11
+intF[1000] = 1
+FlushClick
+goto @12
+
+  @11
+intF[1000] = 0
+
+  @12
+goto_unless (intF[1000] == 1) @13
+intC[0] = 0
+intC[1] = 255
+
+  @13
+objAlpha (1, intC[1])
+refresh
+goto_unless (!intC[0]) @14
+goto @15
+
+  @14
+goto @10
+
+  @15
+waitC (5000)
+wavPlay ('NAMI', 0)
+FlushClick
+intC[0] = 3500
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @16
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @17
+intF[1000] = 1
+FlushClick
+goto @18
+
+  @17
+intF[1000] = 0
+
+  @18
+goto_unless (intF[1000] == 1) @19
+intC[0] = 0
+intC[1] = 0
+
+  @19
+objAlpha (1, intC[1])
+refresh
+goto_unless (!intC[0]) @20
+goto @21
+
+  @20
+goto @16
+
+  @21
+waitC (1000)
+objDelete (0)
+objDelete (1)
+DrawAuto
+EnableSyscom
+intA[800] = 1
+jump (9032)
+eof

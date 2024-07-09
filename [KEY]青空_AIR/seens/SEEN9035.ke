@@ -1,0 +1,8058 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9035.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+goto @147
+
+  @1
+setrng (intA[300], intA[311], 0)
+setrng (intA[400], intA[411], 0)
+setrng (intA[500], intA[511], 0)
+goto_unless (!intG[400]) @45
+goto_unless (!intG[401]) @20
+intA[0] = cgStatus ('FGMZ01')
+goto_unless (intA[0] == 1) @2
+intA[300] = 1
+
+  @2
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGMZ02A')
+goto_unless (intA[0] == 1) @3
+intA[301] = 1
+
+  @3
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGMZ02B')
+goto_unless (intA[0] == 1) @4
+intA[301] = 1
+
+  @4
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGMZ03A')
+goto_unless (intA[0] == 1) @5
+intA[302] = 1
+
+  @5
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ03B')
+goto_unless (intA[0] == 1) @6
+intA[302] = 1
+
+  @6
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ04A')
+goto_unless (intA[0] == 1) @7
+intA[303] = 1
+
+  @7
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMZ04C')
+goto_unless (intA[0] == 1) @8
+intA[303] = 1
+
+  @8
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMZ04B')
+goto_unless (intA[0] == 1) @9
+intA[303] = 1
+
+  @9
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMZ05A')
+goto_unless (intA[0] == 1) @10
+intA[304] = 1
+
+  @10
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ23A')
+goto_unless (intA[0] == 1) @11
+intA[305] = 1
+
+  @11
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ23B')
+goto_unless (intA[0] == 1) @12
+intA[305] = 1
+
+  @12
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ23C')
+goto_unless (intA[0] == 1) @13
+intA[305] = 1
+
+  @13
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ06')
+goto_unless (intA[0] == 1) @14
+intA[306] = 1
+
+  @14
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGMZ07')
+goto_unless (intA[0] == 1) @15
+intA[307] = 1
+
+  @15
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGMZ08')
+goto_unless (intA[0] == 1) @16
+intA[308] = 1
+
+  @16
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGMZ09')
+goto_unless (intA[0] == 1) @17
+intA[309] = 1
+
+  @17
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMZ10')
+goto_unless (intA[0] == 1) @18
+intA[310] = 1
+
+  @18
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGMZ11')
+goto_unless (intA[0] == 1) @19
+intA[311] = 1
+
+  @19
+intA[411] += intA[0]
+intA[511] += 1
+goto @44
+
+  @20
+goto_unless (intG[401] == 1) @44
+intA[0] = cgStatus ('FGMZ12')
+goto_unless (intA[0] == 1) @21
+intA[300] = 1
+
+  @21
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGMZ13')
+goto_unless (intA[0] == 1) @22
+intA[301] = 1
+
+  @22
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGMZ14A')
+goto_unless (intA[0] == 1) @23
+intA[302] = 1
+
+  @23
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ14B')
+goto_unless (intA[0] == 1) @24
+intA[302] = 1
+
+  @24
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ14C')
+goto_unless (intA[0] == 1) @25
+intA[302] = 1
+
+  @25
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ14G')
+goto_unless (intA[0] == 1) @26
+intA[302] = 1
+
+  @26
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMZ24A')
+goto_unless (intA[0] == 1) @27
+intA[303] = 1
+
+  @27
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMZ25A')
+goto_unless (intA[0] == 1) @28
+intA[304] = 1
+
+  @28
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ25B')
+goto_unless (intA[0] == 1) @29
+intA[304] = 1
+
+  @29
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ25C')
+goto_unless (intA[0] == 1) @30
+intA[304] = 1
+
+  @30
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ25D')
+goto_unless (intA[0] == 1) @31
+intA[304] = 1
+
+  @31
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ25E')
+goto_unless (intA[0] == 1) @32
+intA[304] = 1
+
+  @32
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ25F')
+goto_unless (intA[0] == 1) @33
+intA[304] = 1
+
+  @33
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMZ16A')
+goto_unless (intA[0] == 1) @34
+intA[305] = 1
+
+  @34
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ16B')
+goto_unless (intA[0] == 1) @35
+intA[305] = 1
+
+  @35
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ16C')
+goto_unless (intA[0] == 1) @36
+intA[305] = 1
+
+  @36
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMZ17A')
+goto_unless (intA[0] == 1) @37
+intA[306] = 1
+
+  @37
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGMZ17B')
+goto_unless (intA[0] == 1) @38
+intA[306] = 1
+
+  @38
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGMZ18')
+goto_unless (intA[0] == 1) @39
+intA[307] = 1
+
+  @39
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGMZ19')
+goto_unless (intA[0] == 1) @40
+intA[308] = 1
+
+  @40
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGMZ20')
+goto_unless (intA[0] == 1) @41
+intA[309] = 1
+
+  @41
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMZ21')
+goto_unless (intA[0] == 1) @42
+intA[310] = 1
+
+  @42
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGMZ22')
+goto_unless (intA[0] == 1) @43
+intA[311] = 1
+
+  @43
+intA[411] += intA[0]
+intA[511] += 1
+
+  @44
+goto @146
+
+  @45
+goto_unless (intG[400] == 1) @84
+goto_unless (!intG[401]) @67
+intA[0] = cgStatus ('FGMG03A')
+goto_unless (intA[0] == 1) @46
+intA[300] = 1
+
+  @46
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGMG03B')
+goto_unless (intA[0] == 1) @47
+intA[300] = 1
+
+  @47
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGMG16')
+goto_unless (intA[0] == 1) @48
+intA[301] = 1
+
+  @48
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGMG01')
+goto_unless (intA[0] == 1) @49
+intA[302] = 1
+
+  @49
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMG02A')
+goto_unless (intA[0] == 1) @50
+intA[303] = 1
+
+  @50
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMG02B')
+goto_unless (intA[0] == 1) @51
+intA[303] = 1
+
+  @51
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMG15')
+goto_unless (intA[0] == 1) @52
+intA[304] = 1
+
+  @52
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMG04')
+goto_unless (intA[0] == 1) @53
+intA[305] = 1
+
+  @53
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMG06')
+goto_unless (intA[0] == 1) @54
+intA[306] = 1
+
+  @54
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGMG05')
+goto_unless (intA[0] == 1) @55
+intA[307] = 1
+
+  @55
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGMG14A')
+goto_unless (intA[0] == 1) @56
+intA[308] = 1
+
+  @56
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGMG14B')
+goto_unless (intA[0] == 1) @57
+intA[308] = 1
+
+  @57
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGMG21A')
+goto_unless (intA[0] == 1) @58
+intA[309] = 1
+
+  @58
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG21B')
+goto_unless (intA[0] == 1) @59
+intA[309] = 1
+
+  @59
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG21C')
+goto_unless (intA[0] == 1) @60
+intA[309] = 1
+
+  @60
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG21D')
+goto_unless (intA[0] == 1) @61
+intA[309] = 1
+
+  @61
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG21E')
+goto_unless (intA[0] == 1) @62
+intA[309] = 1
+
+  @62
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG20A')
+goto_unless (intA[0] == 1) @63
+intA[310] = 1
+
+  @63
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGMG20B')
+goto_unless (intA[0] == 1) @64
+intA[310] = 1
+
+  @64
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGMG17A')
+goto_unless (intA[0] == 1) @65
+intA[311] = 1
+
+  @65
+intA[411] += intA[0]
+intA[511] += 1
+intA[0] = cgStatus ('FGMG17B')
+goto_unless (intA[0] == 1) @66
+intA[311] = 1
+
+  @66
+intA[411] += intA[0]
+intA[511] += 1
+goto @83
+
+  @67
+goto_unless (intG[401] == 1) @83
+intA[0] = cgStatus ('FGMG22')
+goto_unless (intA[0] == 1) @68
+intA[300] = 1
+
+  @68
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGMG07')
+goto_unless (intA[0] == 1) @69
+intA[301] = 1
+
+  @69
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGMG11')
+goto_unless (intA[0] == 1) @70
+intA[302] = 1
+
+  @70
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGMG18A')
+goto_unless (intA[0] == 1) @71
+intA[303] = 1
+
+  @71
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMG18B')
+goto_unless (intA[0] == 1) @72
+intA[303] = 1
+
+  @72
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMG18C')
+goto_unless (intA[0] == 1) @73
+intA[303] = 1
+
+  @73
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGMG13A')
+goto_unless (intA[0] == 1) @74
+intA[304] = 1
+
+  @74
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMG13B')
+goto_unless (intA[0] == 1) @75
+intA[304] = 1
+
+  @75
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGMG12')
+goto_unless (intA[0] == 1) @76
+intA[305] = 1
+
+  @76
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGMG23')
+goto_unless (intA[0] == 1) @77
+intA[306] = 1
+
+  @77
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGMG24')
+goto_unless (intA[0] == 1) @78
+intA[307] = 1
+
+  @78
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGMG08')
+goto_unless (intA[0] == 1) @79
+intA[308] = 1
+
+  @79
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGMG09')
+goto_unless (intA[0] == 1) @80
+intA[309] = 1
+
+  @80
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGMG10')
+goto_unless (intA[0] == 1) @81
+intA[310] = 1
+
+  @81
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGMG19')
+goto_unless (intA[0] == 1) @82
+intA[311] = 1
+
+  @82
+intA[411] += intA[0]
+intA[511] += 1
+
+  @83
+goto @146
+
+  @84
+goto_unless (intG[400] == 2) @116
+goto_unless (!intG[401]) @105
+intA[0] = cgStatus ('FGKA01')
+goto_unless (intA[0] == 1) @85
+intA[300] = 1
+
+  @85
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKA02B')
+goto_unless (intA[0] == 1) @86
+intA[301] = 1
+
+  @86
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKA02A')
+goto_unless (intA[0] == 1) @87
+intA[301] = 1
+
+  @87
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKA17')
+goto_unless (intA[0] == 1) @88
+intA[302] = 1
+
+  @88
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGKA23')
+goto_unless (intA[0] == 1) @89
+intA[303] = 1
+
+  @89
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGKA18A')
+goto_unless (intA[0] == 1) @90
+intA[304] = 1
+
+  @90
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA18B')
+goto_unless (intA[0] == 1) @91
+intA[304] = 1
+
+  @91
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA18C')
+goto_unless (intA[0] == 1) @92
+intA[304] = 1
+
+  @92
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA18D')
+goto_unless (intA[0] == 1) @93
+intA[304] = 1
+
+  @93
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA16')
+goto_unless (intA[0] == 1) @94
+intA[305] = 1
+
+  @94
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGKA03')
+goto_unless (intA[0] == 1) @95
+intA[306] = 1
+
+  @95
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGKA21A')
+goto_unless (intA[0] == 1) @96
+intA[307] = 1
+
+  @96
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKA21B')
+goto_unless (intA[0] == 1) @97
+intA[307] = 1
+
+  @97
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKA10A')
+goto_unless (intA[0] == 1) @98
+intA[308] = 1
+
+  @98
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGKA10B')
+goto_unless (intA[0] == 1) @99
+intA[308] = 1
+
+  @99
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGKA06')
+goto_unless (intA[0] == 1) @100
+intA[309] = 1
+
+  @100
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGKA19A')
+goto_unless (intA[0] == 1) @101
+intA[310] = 1
+
+  @101
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGKA19B')
+goto_unless (intA[0] == 1) @102
+intA[310] = 1
+
+  @102
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGKA08A')
+goto_unless (intA[0] == 1) @103
+intA[311] = 1
+
+  @103
+intA[411] += intA[0]
+intA[511] += 1
+intA[0] = cgStatus ('FGKA08B')
+goto_unless (intA[0] == 1) @104
+intA[311] = 1
+
+  @104
+intA[411] += intA[0]
+intA[511] += 1
+goto @115
+
+  @105
+goto_unless (intG[401] == 1) @115
+intA[0] = cgStatus ('FGKA04')
+goto_unless (intA[0] == 1) @106
+intA[300] = 1
+
+  @106
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKA05')
+goto_unless (intA[0] == 1) @107
+intA[301] = 1
+
+  @107
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKA15A')
+goto_unless (intA[0] == 1) @108
+intA[302] = 1
+
+  @108
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGKA15B')
+goto_unless (intA[0] == 1) @109
+intA[302] = 1
+
+  @109
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGKA11')
+goto_unless (intA[0] == 1) @110
+intA[303] = 1
+
+  @110
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGKA12A')
+goto_unless (intA[0] == 1) @111
+intA[304] = 1
+
+  @111
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA12B')
+goto_unless (intA[0] == 1) @112
+intA[304] = 1
+
+  @112
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKA13')
+goto_unless (intA[0] == 1) @113
+intA[305] = 1
+
+  @113
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGKA20')
+goto_unless (intA[0] == 1) @114
+intA[306] = 1
+
+  @114
+intA[406] += intA[0]
+intA[506] += 1
+
+  @115
+goto @146
+
+  @116
+goto_unless (intG[400] == 3) @146
+goto_unless (!intG[401]) @140
+intA[0] = cgStatus ('FGKN01C')
+goto_unless (intA[0] == 1) @117
+intA[300] = 1
+
+  @117
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKN01A')
+goto_unless (intA[0] == 1) @118
+intA[300] = 1
+
+  @118
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKN01B')
+goto_unless (intA[0] == 1) @119
+intA[300] = 1
+
+  @119
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKN16')
+goto_unless (intA[0] == 1) @120
+intA[301] = 1
+
+  @120
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKN02A')
+goto_unless (intA[0] == 1) @121
+intA[302] = 1
+
+  @121
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGKN02B')
+goto_unless (intA[0] == 1) @122
+intA[302] = 1
+
+  @122
+intA[402] += intA[0]
+intA[502] += 1
+intA[0] = cgStatus ('FGKN17A')
+goto_unless (intA[0] == 1) @123
+intA[303] = 1
+
+  @123
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGKN17B')
+goto_unless (intA[0] == 1) @124
+intA[303] = 1
+
+  @124
+intA[403] += intA[0]
+intA[503] += 1
+intA[0] = cgStatus ('FGKN05')
+goto_unless (intA[0] == 1) @125
+intA[304] = 1
+
+  @125
+intA[404] += intA[0]
+intA[504] += 1
+intA[0] = cgStatus ('FGKN06')
+goto_unless (intA[0] == 1) @126
+intA[305] = 1
+
+  @126
+intA[405] += intA[0]
+intA[505] += 1
+intA[0] = cgStatus ('FGKN07')
+goto_unless (intA[0] == 1) @127
+intA[306] = 1
+
+  @127
+intA[406] += intA[0]
+intA[506] += 1
+intA[0] = cgStatus ('FGKN08A')
+goto_unless (intA[0] == 1) @128
+intA[307] = 1
+
+  @128
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKN08D')
+goto_unless (intA[0] == 1) @129
+intA[307] = 1
+
+  @129
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKN08B')
+goto_unless (intA[0] == 1) @130
+intA[307] = 1
+
+  @130
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKN08C')
+goto_unless (intA[0] == 1) @131
+intA[307] = 1
+
+  @131
+intA[407] += intA[0]
+intA[507] += 1
+intA[0] = cgStatus ('FGKN09A')
+goto_unless (intA[0] == 1) @132
+intA[308] = 1
+
+  @132
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGKN09B')
+goto_unless (intA[0] == 1) @133
+intA[308] = 1
+
+  @133
+intA[408] += intA[0]
+intA[508] += 1
+intA[0] = cgStatus ('FGKN10')
+goto_unless (intA[0] == 1) @134
+intA[309] = 1
+
+  @134
+intA[409] += intA[0]
+intA[509] += 1
+intA[0] = cgStatus ('FGKN12A')
+goto_unless (intA[0] == 1) @135
+intA[310] = 1
+
+  @135
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGKN12B')
+goto_unless (intA[0] == 1) @136
+intA[310] = 1
+
+  @136
+intA[410] += intA[0]
+intA[510] += 1
+intA[0] = cgStatus ('FGKN11A')
+goto_unless (intA[0] == 1) @137
+intA[311] = 1
+
+  @137
+intA[411] += intA[0]
+intA[511] += 1
+intA[0] = cgStatus ('FGKN11B')
+goto_unless (intA[0] == 1) @138
+intA[311] = 1
+
+  @138
+intA[411] += intA[0]
+intA[511] += 1
+intA[0] = cgStatus ('FGKN11C')
+goto_unless (intA[0] == 1) @139
+intA[311] = 1
+
+  @139
+intA[411] += intA[0]
+intA[511] += 1
+goto @146
+
+  @140
+goto_unless (intG[401] == 1) @146
+intA[0] = cgStatus ('FGKN13')
+goto_unless (intA[0] == 1) @141
+intA[300] = 1
+
+  @141
+intA[400] += intA[0]
+intA[500] += 1
+intA[0] = cgStatus ('FGKN14A')
+goto_unless (intA[0] == 1) @142
+intA[301] = 1
+
+  @142
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKN14B')
+goto_unless (intA[0] == 1) @143
+intA[301] = 1
+
+  @143
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKN14C')
+goto_unless (intA[0] == 1) @144
+intA[301] = 1
+
+  @144
+intA[401] += intA[0]
+intA[501] += 1
+intA[0] = cgStatus ('FGKN15')
+goto_unless (intA[0] == 1) @145
+intA[302] = 1
+
+  @145
+intA[402] += intA[0]
+intA[502] += 1
+
+  @146
+ret
+
+  @147
+HideSyscom
+DrawManual
+
+  @148
+gosub @1
+objBgClear (0)
+objBgClear (10)
+objBgClear (11)
+objBgClear (12)
+objBgClear (13)
+objBgClear (14)
+objBgClear (15)
+objBgClear (16)
+objBgClear (17)
+objBgClear (18)
+objBgClear (19)
+objBgClear (20)
+objBgClear (21)
+objBgClear (30)
+objBgClear (31)
+objBgClear (32)
+objBgClear (33)
+objBgClear (34)
+objBgClear (35)
+objBgClear (36)
+objBgClear (37)
+objBgClear (38)
+objBgClear (39)
+objBgClear (40)
+objBgClear (41)
+objBgClear (50)
+objBgClear (51)
+objBgClear (52)
+objBgClear (53)
+objBgClear (60)
+objBgClear (70)
+goto_unless (!intG[400]) @151
+goto_unless (!intG[401]) @149
+objBgOfFile (0, 'S_CGM_BGA00')
+objBgOfFile (10, 'S_CGM_SA00')
+objBgOfFile (11, 'S_CGM_SA01')
+objBgOfFile (12, 'S_CGM_SA02')
+objBgOfFile (13, 'S_CGM_SA03')
+objBgOfFile (14, 'S_CGM_SA04')
+objBgOfFile (15, 'S_CGM_SA05')
+objBgOfFile (16, 'S_CGM_SA06')
+objBgOfFile (17, 'S_CGM_SA07')
+objBgOfFile (18, 'S_CGM_SA08')
+objBgOfFile (19, 'S_CGM_SA09')
+objBgOfFile (20, 'S_CGM_SA10')
+objBgOfFile (21, 'S_CGM_SA11')
+goto @150
+
+  @149
+goto_unless (intG[401] == 1) @150
+objBgOfFile (0, 'S_CGM_BGA01')
+objBgOfFile (10, 'S_CGM_SA12')
+objBgOfFile (11, 'S_CGM_SA13')
+objBgOfFile (12, 'S_CGM_SA14')
+objBgOfFile (13, 'S_CGM_SA15')
+objBgOfFile (14, 'S_CGM_SA16')
+objBgOfFile (15, 'S_CGM_SA17')
+objBgOfFile (16, 'S_CGM_SA18')
+objBgOfFile (17, 'S_CGM_SA19')
+objBgOfFile (18, 'S_CGM_SA20')
+objBgOfFile (19, 'S_CGM_SA21')
+objBgOfFile (20, 'S_CGM_SA22')
+objBgOfFile (21, 'S_CGM_SA23')
+
+  @150
+objBgOfFile (50, 'S_CGM_BTNA00')
+objBgOfFile (51, 'S_CGM_BTNA01')
+objBgOfFile (52, 'S_CGM_BTNA02')
+objBgOfFile (53, 'S_CGM_BTNA03')
+goto @160
+
+  @151
+goto_unless (intG[400] == 1) @154
+goto_unless (!intG[401]) @152
+objBgOfFile (0, 'S_CGM_BGB00')
+objBgOfFile (10, 'S_CGM_SB00')
+objBgOfFile (11, 'S_CGM_SB01')
+objBgOfFile (12, 'S_CGM_SB02')
+objBgOfFile (13, 'S_CGM_SB03')
+objBgOfFile (14, 'S_CGM_SB04')
+objBgOfFile (15, 'S_CGM_SB05')
+objBgOfFile (16, 'S_CGM_SB06')
+objBgOfFile (17, 'S_CGM_SB07')
+objBgOfFile (18, 'S_CGM_SB08')
+objBgOfFile (19, 'S_CGM_SB09')
+objBgOfFile (20, 'S_CGM_SB10')
+objBgOfFile (21, 'S_CGM_SB11')
+goto @153
+
+  @152
+goto_unless (intG[401] == 1) @153
+objBgOfFile (0, 'S_CGM_BGB01')
+objBgOfFile (10, 'S_CGM_SB12')
+objBgOfFile (11, 'S_CGM_SB13')
+objBgOfFile (12, 'S_CGM_SB14')
+objBgOfFile (13, 'S_CGM_SB15')
+objBgOfFile (14, 'S_CGM_SB16')
+objBgOfFile (15, 'S_CGM_SB17')
+objBgOfFile (16, 'S_CGM_SB18')
+objBgOfFile (17, 'S_CGM_SB19')
+objBgOfFile (18, 'S_CGM_SB20')
+objBgOfFile (19, 'S_CGM_SB21')
+objBgOfFile (20, 'S_CGM_SB22')
+objBgOfFile (21, 'S_CGM_SB23')
+
+  @153
+objBgOfFile (50, 'S_CGM_BTNB00')
+objBgOfFile (51, 'S_CGM_BTNB01')
+objBgOfFile (52, 'S_CGM_BTNB02')
+objBgOfFile (53, 'S_CGM_BTNB03')
+goto @160
+
+  @154
+goto_unless (intG[400] == 2) @157
+goto_unless (!intG[401]) @155
+objBgOfFile (0, 'S_CGM_BGC00')
+objBgOfFile (10, 'S_CGM_SC00')
+objBgOfFile (11, 'S_CGM_SC01')
+objBgOfFile (12, 'S_CGM_SC02')
+objBgOfFile (13, 'S_CGM_SC03')
+objBgOfFile (14, 'S_CGM_SC04')
+objBgOfFile (15, 'S_CGM_SC05')
+objBgOfFile (16, 'S_CGM_SC06')
+objBgOfFile (17, 'S_CGM_SC07')
+objBgOfFile (18, 'S_CGM_SC08')
+objBgOfFile (19, 'S_CGM_SC09')
+objBgOfFile (20, 'S_CGM_SC10')
+objBgOfFile (21, 'S_CGM_SC11')
+goto @156
+
+  @155
+goto_unless (intG[401] == 1) @156
+objBgOfFile (0, 'S_CGM_BGC01')
+objBgOfFile (10, 'S_CGM_SC12')
+objBgOfFile (11, 'S_CGM_SC13')
+objBgOfFile (12, 'S_CGM_SC14')
+objBgOfFile (13, 'S_CGM_SC15')
+objBgOfFile (14, 'S_CGM_SC16')
+objBgOfFile (15, 'S_CGM_SC17')
+objBgOfFile (16, 'S_CGM_SC18')
+
+  @156
+objBgOfFile (50, 'S_CGM_BTNC00')
+objBgOfFile (51, 'S_CGM_BTNC01')
+objBgOfFile (52, 'S_CGM_BTNC02')
+objBgOfFile (53, 'S_CGM_BTNC03')
+goto @160
+
+  @157
+goto_unless (intG[400] == 3) @160
+goto_unless (!intG[401]) @158
+objBgOfFile (0, 'S_CGM_BGD00')
+objBgOfFile (10, 'S_CGM_SD00')
+objBgOfFile (11, 'S_CGM_SD01')
+objBgOfFile (12, 'S_CGM_SD02')
+objBgOfFile (13, 'S_CGM_SD03')
+objBgOfFile (14, 'S_CGM_SD04')
+objBgOfFile (15, 'S_CGM_SD05')
+objBgOfFile (16, 'S_CGM_SD06')
+objBgOfFile (17, 'S_CGM_SD07')
+objBgOfFile (18, 'S_CGM_SD08')
+objBgOfFile (19, 'S_CGM_SD09')
+objBgOfFile (20, 'S_CGM_SD10')
+objBgOfFile (21, 'S_CGM_SD11')
+goto @159
+
+  @158
+goto_unless (intG[401] == 1) @159
+objBgOfFile (0, 'S_CGM_BGD01')
+objBgOfFile (10, 'S_CGM_SD12')
+objBgOfFile (11, 'S_CGM_SD13')
+objBgOfFile (12, 'S_CGM_SD14')
+
+  @159
+objBgOfFile (50, 'S_CGM_BTND00')
+objBgOfFile (51, 'S_CGM_BTND01')
+objBgOfFile (52, 'S_CGM_BTND02')
+objBgOfFile (53, 'S_CGM_BTND03')
+
+  @160
+objBgOfFile (30, 'S_CGM_CNT00')
+objBgOfFile (31, 'S_CGM_CNT00')
+objBgOfFile (32, 'S_CGM_CNT00')
+objBgOfFile (33, 'S_CGM_CNT00')
+objBgOfFile (34, 'S_CGM_CNT00')
+objBgOfFile (35, 'S_CGM_CNT00')
+objBgOfFile (36, 'S_CGM_CNT00')
+objBgOfFile (37, 'S_CGM_CNT00')
+objBgOfFile (38, 'S_CGM_CNT00')
+objBgOfFile (39, 'S_CGM_CNT00')
+objBgOfFile (40, 'S_CGM_CNT00')
+objBgOfFile (41, 'S_CGM_CNT00')
+objBgOfFile (70, 'S_TT_BG00')
+objBgMove (0, 0, 0)
+objBgMove (10, 40, 116)
+objBgMove (11, 183, 116)
+objBgMove (12, 326, 116)
+objBgMove (13, 469, 116)
+objBgMove (14, 40, 229)
+objBgMove (15, 183, 229)
+objBgMove (16, 326, 229)
+objBgMove (17, 469, 229)
+objBgMove (18, 40, 342)
+objBgMove (19, 183, 342)
+objBgMove (20, 326, 342)
+objBgMove (21, 469, 342)
+objBgMove (30, 127, 192)
+objBgMove (31, 270, 192)
+objBgMove (32, 413, 192)
+objBgMove (33, 556, 192)
+objBgMove (34, 127, 305)
+objBgMove (35, 270, 305)
+objBgMove (36, 413, 305)
+objBgMove (37, 556, 305)
+objBgMove (38, 127, 418)
+objBgMove (39, 270, 418)
+objBgMove (40, 413, 418)
+objBgMove (41, 556, 418)
+objBgMove (50, 4, 260)
+objBgMove (51, 604, 260)
+objBgMove (52, 560, 12)
+objBgMove (53, 14, 446)
+objBgMove (60, 0, 0)
+objBgMove (70, 0, 0)
+objBgPattNo (0, 0)
+objBgPattNo (10, 0)
+objBgPattNo (11, 0)
+objBgPattNo (12, 0)
+objBgPattNo (13, 0)
+objBgPattNo (14, 0)
+objBgPattNo (15, 0)
+objBgPattNo (16, 0)
+objBgPattNo (17, 0)
+objBgPattNo (18, 0)
+objBgPattNo (19, 0)
+objBgPattNo (20, 0)
+objBgPattNo (21, 0)
+objBgPattNo (30, 0)
+objBgPattNo (31, 0)
+objBgPattNo (32, 0)
+objBgPattNo (33, 0)
+objBgPattNo (34, 0)
+objBgPattNo (35, 0)
+objBgPattNo (36, 0)
+objBgPattNo (37, 0)
+objBgPattNo (38, 0)
+objBgPattNo (39, 0)
+objBgPattNo (40, 0)
+objBgPattNo (41, 0)
+objBgPattNo (50, 0)
+objBgPattNo (51, 0)
+objBgPattNo (52, 0)
+objBgPattNo (53, 0)
+objBgPattNo (60, 0)
+objBgPattNo (70, 0)
+objBgShow (0, 1)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+objBgShow (16, 0)
+objBgShow (17, 0)
+objBgShow (18, 0)
+objBgShow (19, 0)
+objBgShow (20, 0)
+objBgShow (21, 0)
+objBgShow (30, 0)
+objBgShow (31, 0)
+objBgShow (32, 0)
+objBgShow (33, 0)
+objBgShow (34, 0)
+objBgShow (35, 0)
+objBgShow (36, 0)
+objBgShow (37, 0)
+objBgShow (38, 0)
+objBgShow (39, 0)
+objBgShow (40, 0)
+objBgShow (41, 0)
+objBgShow (50, 0)
+objBgShow (51, 0)
+objBgShow (52, 1)
+objBgShow (53, 1)
+objBgShow (60, 0)
+objBgShow (70, 0)
+setarray (intA[0], 0, 1, 3, 6, 10, 15, 21, 28, 36, 45)
+objBgPattNo (30, intA[intA[500]] + intA[400])
+objBgPattNo (31, intA[intA[501]] + intA[401])
+objBgPattNo (32, intA[intA[502]] + intA[402])
+objBgPattNo (33, intA[intA[503]] + intA[403])
+objBgPattNo (34, intA[intA[504]] + intA[404])
+objBgPattNo (35, intA[intA[505]] + intA[405])
+objBgPattNo (36, intA[intA[506]] + intA[406])
+objBgPattNo (37, intA[intA[507]] + intA[407])
+objBgPattNo (38, intA[intA[508]] + intA[408])
+objBgPattNo (39, intA[intA[509]] + intA[409])
+objBgPattNo (40, intA[intA[510]] + intA[410])
+objBgPattNo (41, intA[intA[511]] + intA[411])
+goto_unless (intA[300] == 1) @161
+objBgShow (10, 1)
+
+  @161
+goto_unless (intA[301] == 1) @162
+objBgShow (11, 1)
+
+  @162
+goto_unless (intA[302] == 1) @163
+objBgShow (12, 1)
+
+  @163
+goto_unless (intA[303] == 1) @164
+objBgShow (13, 1)
+
+  @164
+goto_unless (intA[304] == 1) @165
+objBgShow (14, 1)
+
+  @165
+goto_unless (intA[305] == 1) @166
+objBgShow (15, 1)
+
+  @166
+goto_unless (intA[306] == 1) @167
+objBgShow (16, 1)
+
+  @167
+goto_unless (intA[307] == 1) @168
+objBgShow (17, 1)
+
+  @168
+goto_unless (intA[308] == 1) @169
+objBgShow (18, 1)
+
+  @169
+goto_unless (intA[309] == 1) @170
+objBgShow (19, 1)
+
+  @170
+goto_unless (intA[310] == 1) @171
+objBgShow (20, 1)
+
+  @171
+goto_unless (intA[311] == 1) @172
+objBgShow (21, 1)
+
+  @172
+goto_unless (intA[300] == 1 && 1 < intA[500]) @173
+objBgShow (30, 1)
+
+  @173
+goto_unless (intA[301] == 1 && 1 < intA[501]) @174
+objBgShow (31, 1)
+
+  @174
+goto_unless (intA[302] == 1 && 1 < intA[502]) @175
+objBgShow (32, 1)
+
+  @175
+goto_unless (intA[303] == 1 && 1 < intA[503]) @176
+objBgShow (33, 1)
+
+  @176
+goto_unless (intA[304] == 1 && 1 < intA[504]) @177
+objBgShow (34, 1)
+
+  @177
+goto_unless (intA[305] == 1 && 1 < intA[505]) @178
+objBgShow (35, 1)
+
+  @178
+goto_unless (intA[306] == 1 && 1 < intA[506]) @179
+objBgShow (36, 1)
+
+  @179
+goto_unless (intA[307] == 1 && 1 < intA[507]) @180
+objBgShow (37, 1)
+
+  @180
+goto_unless (intA[308] == 1 && 1 < intA[508]) @181
+objBgShow (38, 1)
+
+  @181
+goto_unless (intA[309] == 1 && 1 < intA[509]) @182
+objBgShow (39, 1)
+
+  @182
+goto_unless (intA[310] == 1 && 1 < intA[510]) @183
+objBgShow (40, 1)
+
+  @183
+goto_unless (intA[311] == 1 && 1 < intA[511]) @184
+objBgShow (41, 1)
+
+  @184
+goto_unless (!intG[401]) @185
+objBgShow (51, 1)
+goto @186
+
+  @185
+goto_unless (intG[401] == 1) @186
+objBgShow (50, 1)
+
+  @186
+grpBuffer ('S_CGM_AREA00', 2)
+goto_unless (intA[700] == 1) @194
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @187
+intG[1050] = 1
+goto @188
+
+  @187
+goto_unless (intA[1000] == 1) @188
+intG[1050] = 0
+
+  @188
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @189
+intF[1017] = 1
+goto @190
+
+  @189
+goto_unless (intA[1000] == 1) @190
+intF[1017] = 0
+
+  @190
+SetSkipAnimations (0)
+goto @191
+goto @191
+SetSkipAnimations (1)
+
+  @191
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 600, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @193
+goto_unless (intG[1050] == 1) @192
+SetSkipAnimations (0)
+goto @193
+
+  @192
+goto_unless (!intG[1050]) @193
+SetSkipAnimations (1)
+
+  @193
+intG[1049] = 0
+goto @201
+
+  @194
+goto_unless (!intA[700]) @201
+objBgCopyToFg (0, 0)
+objBgCopyToFg (10, 10)
+objBgCopyToFg (11, 11)
+objBgCopyToFg (12, 12)
+objBgCopyToFg (13, 13)
+objBgCopyToFg (14, 14)
+objBgCopyToFg (15, 15)
+objBgCopyToFg (16, 16)
+objBgCopyToFg (17, 17)
+objBgCopyToFg (18, 18)
+objBgCopyToFg (19, 19)
+objBgCopyToFg (20, 20)
+objBgCopyToFg (21, 21)
+objBgCopyToFg (30, 30)
+objBgCopyToFg (31, 31)
+objBgCopyToFg (32, 32)
+objBgCopyToFg (33, 33)
+objBgCopyToFg (34, 34)
+objBgCopyToFg (35, 35)
+objBgCopyToFg (36, 36)
+objBgCopyToFg (37, 37)
+objBgCopyToFg (38, 38)
+objBgCopyToFg (39, 39)
+objBgCopyToFg (40, 40)
+objBgCopyToFg (41, 41)
+objBgCopyToFg (50, 50)
+objBgCopyToFg (51, 51)
+objBgCopyToFg (52, 52)
+objBgCopyToFg (53, 53)
+objBgCopyToFg (60, 60)
+objBgCopyToFg (70, 70)
+objShow (70, 1)
+FlushClick
+intC[0] = 600
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @195
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @196
+intF[1000] = 1
+FlushClick
+goto @197
+
+  @196
+intF[1000] = 0
+
+  @197
+goto_unless (intF[1000] == 1) @198
+intC[0] = 0
+intC[1] = 0
+
+  @198
+objAlpha (70, intC[1])
+refresh
+goto_unless (!intC[0]) @199
+goto @200
+
+  @199
+goto @195
+
+  @200
+objShow (70, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 255, 0)
+
+  @201
+intA[700] = 1
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @202
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @203
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 1) @203
+goto_unless (intA[300] == 1) @203
+intF[1006] = 0
+
+  @203
+goto_unless (intF[1006] == 99) @204
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 2) @204
+goto_unless (intA[301] == 1) @204
+intF[1006] = 1
+
+  @204
+goto_unless (intF[1006] == 99) @205
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 3) @205
+goto_unless (intA[302] == 1) @205
+intF[1006] = 2
+
+  @205
+goto_unless (intF[1006] == 99) @206
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 4) @206
+goto_unless (intA[303] == 1) @206
+intF[1006] = 3
+
+  @206
+goto_unless (intF[1006] == 99) @207
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 5) @207
+goto_unless (intA[304] == 1) @207
+intF[1006] = 4
+
+  @207
+goto_unless (intF[1006] == 99) @208
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 6) @208
+goto_unless (intA[305] == 1) @208
+intF[1006] = 5
+
+  @208
+goto_unless (intF[1006] == 99) @209
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 7) @209
+goto_unless (intA[306] == 1) @209
+intF[1006] = 6
+
+  @209
+goto_unless (intF[1006] == 99) @210
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 8) @210
+goto_unless (intA[307] == 1) @210
+intF[1006] = 7
+
+  @210
+goto_unless (intF[1006] == 99) @211
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 9) @211
+goto_unless (intA[308] == 1) @211
+intF[1006] = 8
+
+  @211
+goto_unless (intF[1006] == 99) @212
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 10) @212
+goto_unless (intA[309] == 1) @212
+intF[1006] = 9
+
+  @212
+goto_unless (intF[1006] == 99) @213
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 11) @213
+goto_unless (intA[310] == 1) @213
+intF[1006] = 10
+
+  @213
+goto_unless (intF[1006] == 99) @214
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 12) @214
+goto_unless (intA[311] == 1) @214
+intF[1006] = 11
+
+  @214
+goto_unless (intF[1006] == 99) @215
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 13) @215
+goto_unless (intG[401] == 1) @215
+intF[1006] = 12
+
+  @215
+goto_unless (intF[1006] == 99) @216
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 14) @216
+goto_unless (!intG[401]) @216
+intF[1006] = 13
+
+  @216
+goto_unless (intF[1006] == 99) @217
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 15) @217
+intF[1006] = 14
+
+  @217
+goto_unless (intF[1006] == 99) @218
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 16) @218
+intF[1006] = 15
+
+  @218
+goto_unless (!intF[1003]) @222
+goto_unless (intF[1006] != 99) @220
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @219
+
+  @219
+intF[1009] = 2
+goto @221
+
+  @220
+intF[1009] = 0
+
+  @221
+goto @232
+
+  @222
+goto_unless (intF[1003] == 1) @228
+goto_unless (intF[1008] != -1) @226
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @224
+goto_unless (intF[1009] != 3) @223
+
+  @223
+intF[1009] = 3
+goto @225
+
+  @224
+intF[1009] = 0
+
+  @225
+goto @227
+
+  @226
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @227
+goto @232
+
+  @228
+goto_unless (intF[1003] == 2) @232
+goto_unless (intF[1008] != -1) @231
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @229
+intF[1009] = 2
+intF[1012] = 1
+goto @230
+
+  @229
+intF[1009] = 0
+
+  @230
+intF[1008] = -1
+
+  @231
+FlushClick
+
+  @232
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @233
+intE[intF[1006]] = intF[1009]
+
+  @233
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+objPattNo (13, intE[3])
+objPattNo (14, intE[4])
+objPattNo (15, intE[5])
+objPattNo (16, intE[6])
+objPattNo (17, intE[7])
+objPattNo (18, intE[8])
+objPattNo (19, intE[9])
+objPattNo (20, intE[10])
+objPattNo (21, intE[11])
+objPattNo (50, intE[12])
+objPattNo (51, intE[13])
+objPattNo (52, intE[14])
+objPattNo (53, intE[15])
+refresh
+goto_unless (intF[1012] == 1) @234
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @236
+goto @235
+
+  @234
+goto_unless (intF[1004] == 2) @235
+intF[1013] = 14
+goto @236
+
+  @235
+goto @202
+
+  @236
+goto_unless (0 <= intF[1013] && intF[1013] <= 11) @472
+goto_unless (!intG[400]) @306
+goto_unless (!intG[401]) @268
+goto_case intF[1013] { 0: @237; 1: @239; 2: @242; 3: @245; 4: @249; 5: @251; 6: @255; 7: @257; 8: @259; 9: @261; 10: @263; 11: @265; _: @267 }
+
+  @237
+intA[0] = cgStatus ('FGMZ01')
+goto_unless (intA[0] == 1) @238
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ01')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @238
+goto @471
+
+  @238
+goto @267
+
+  @239
+intA[0] = cgStatus ('FGMZ02A')
+goto_unless (intA[0] == 1) @240
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ02A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @240
+goto @471
+
+  @240
+intA[0] = cgStatus ('FGMZ02B')
+goto_unless (intA[0] == 1) @241
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ02B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @241
+goto @471
+
+  @241
+goto @267
+
+  @242
+intA[0] = cgStatus ('FGMZ03A')
+goto_unless (intA[0] == 1) @243
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ03A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @243
+goto @471
+
+  @243
+intA[0] = cgStatus ('FGMZ03B')
+goto_unless (intA[0] == 1) @244
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ03B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @244
+goto @471
+
+  @244
+goto @267
+
+  @245
+intA[0] = cgStatus ('FGMZ04A')
+goto_unless (intA[0] == 1) @246
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ04A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @246
+goto @471
+
+  @246
+intA[0] = cgStatus ('FGMZ04C')
+goto_unless (intA[0] == 1) @247
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ04C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @247
+goto @471
+
+  @247
+intA[0] = cgStatus ('FGMZ04B')
+goto_unless (intA[0] == 1) @248
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ04B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @248
+goto @471
+
+  @248
+goto @267
+
+  @249
+intA[0] = cgStatus ('FGMZ05A')
+goto_unless (intA[0] == 1) @250
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ05A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @250
+goto @471
+
+  @250
+goto @267
+
+  @251
+intA[0] = cgStatus ('FGMZ23A')
+goto_unless (intA[0] == 1) @252
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ23A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @252
+goto @471
+
+  @252
+intA[0] = cgStatus ('FGMZ23B')
+goto_unless (intA[0] == 1) @253
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ23B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @253
+goto @471
+
+  @253
+intA[0] = cgStatus ('FGMZ23C')
+goto_unless (intA[0] == 1) @254
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ23C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @254
+goto @471
+
+  @254
+goto @267
+
+  @255
+intA[0] = cgStatus ('FGMZ06')
+goto_unless (intA[0] == 1) @256
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ06')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @256
+goto @471
+
+  @256
+goto @267
+
+  @257
+intA[0] = cgStatus ('FGMZ07')
+goto_unless (intA[0] == 1) @258
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ07')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @258
+goto @471
+
+  @258
+goto @267
+
+  @259
+intA[0] = cgStatus ('FGMZ08')
+goto_unless (intA[0] == 1) @260
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ08')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @260
+goto @471
+
+  @260
+goto @267
+
+  @261
+intA[0] = cgStatus ('FGMZ09')
+goto_unless (intA[0] == 1) @262
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ09')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @262
+goto @471
+
+  @262
+goto @267
+
+  @263
+intA[0] = cgStatus ('FGMZ10')
+goto_unless (intA[0] == 1) @264
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ10')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @264
+goto @471
+
+  @264
+goto @267
+
+  @265
+intA[0] = cgStatus ('FGMZ11')
+goto_unless (intA[0] == 1) @266
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ11')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @266
+goto @471
+
+  @266
+goto @267
+
+  @267
+goto @305
+
+  @268
+goto_unless (intG[401] == 1) @305
+goto_case intF[1013] { 0: @269; 1: @271; 2: @273; 3: @278; 4: @280; 5: @287; 6: @291; 7: @294; 8: @296; 9: @298; 10: @300; 11: @302; _: @304 }
+
+  @269
+intA[0] = cgStatus ('FGMZ12')
+goto_unless (intA[0] == 1) @270
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ12')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @270
+goto @471
+
+  @270
+goto @304
+
+  @271
+intA[0] = cgStatus ('FGMZ13')
+goto_unless (intA[0] == 1) @272
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ13')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @272
+goto @471
+
+  @272
+goto @304
+
+  @273
+intA[0] = cgStatus ('FGMZ14A')
+goto_unless (intA[0] == 1) @274
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ14A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @274
+goto @471
+
+  @274
+intA[0] = cgStatus ('FGMZ14B')
+goto_unless (intA[0] == 1) @275
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ14B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @275
+goto @471
+
+  @275
+intA[0] = cgStatus ('FGMZ14C')
+goto_unless (intA[0] == 1) @276
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ14C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @276
+goto @471
+
+  @276
+intA[0] = cgStatus ('FGMZ14G')
+goto_unless (intA[0] == 1) @277
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ14G')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @277
+goto @471
+
+  @277
+goto @304
+
+  @278
+intA[0] = cgStatus ('FGMZ24A')
+goto_unless (intA[0] == 1) @279
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ24A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @279
+goto @471
+
+  @279
+goto @304
+
+  @280
+intA[0] = cgStatus ('FGMZ25A')
+goto_unless (intA[0] == 1) @281
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @281
+goto @471
+
+  @281
+intA[0] = cgStatus ('FGMZ25B')
+goto_unless (intA[0] == 1) @282
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @282
+goto @471
+
+  @282
+intA[0] = cgStatus ('FGMZ25C')
+goto_unless (intA[0] == 1) @283
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @283
+goto @471
+
+  @283
+intA[0] = cgStatus ('FGMZ25D')
+goto_unless (intA[0] == 1) @284
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25D')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @284
+goto @471
+
+  @284
+intA[0] = cgStatus ('FGMZ25E')
+goto_unless (intA[0] == 1) @285
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25E')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @285
+goto @471
+
+  @285
+intA[0] = cgStatus ('FGMZ25F')
+goto_unless (intA[0] == 1) @286
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ25F')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @286
+goto @471
+
+  @286
+goto @304
+
+  @287
+intA[0] = cgStatus ('FGMZ16A')
+goto_unless (intA[0] == 1) @288
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ16A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @288
+goto @471
+
+  @288
+intA[0] = cgStatus ('FGMZ16B')
+goto_unless (intA[0] == 1) @289
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ16B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @289
+goto @471
+
+  @289
+intA[0] = cgStatus ('FGMZ16C')
+goto_unless (intA[0] == 1) @290
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ16C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @290
+goto @471
+
+  @290
+goto @304
+
+  @291
+intA[0] = cgStatus ('FGMZ17A')
+goto_unless (intA[0] == 1) @292
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ17A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @292
+goto @471
+
+  @292
+intA[0] = cgStatus ('FGMZ17B')
+goto_unless (intA[0] == 1) @293
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ17B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @293
+goto @471
+
+  @293
+goto @304
+
+  @294
+intA[0] = cgStatus ('FGMZ18')
+goto_unless (intA[0] == 1) @295
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ18')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @295
+goto @471
+
+  @295
+goto @304
+
+  @296
+intA[0] = cgStatus ('FGMZ19')
+goto_unless (intA[0] == 1) @297
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ19')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @297
+goto @471
+
+  @297
+goto @304
+
+  @298
+intA[0] = cgStatus ('FGMZ20')
+goto_unless (intA[0] == 1) @299
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ20')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @299
+goto @471
+
+  @299
+goto @304
+
+  @300
+intA[0] = cgStatus ('FGMZ21')
+goto_unless (intA[0] == 1) @301
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ21')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @301
+goto @471
+
+  @301
+goto @304
+
+  @302
+intA[0] = cgStatus ('FGMZ22')
+goto_unless (intA[0] == 1) @303
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMZ22')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @303
+goto @471
+
+  @303
+goto @304
+
+  @304
+
+  @305
+goto @471
+
+  @306
+goto_unless (intG[400] == 1) @371
+goto_unless (!intG[401]) @341
+goto_case intF[1013] { 0: @307; 1: @310; 2: @312; 3: @314; 4: @317; 5: @319; 6: @321; 7: @323; 8: @325; 9: @328; 10: @334; 11: @337; _: @340 }
+
+  @307
+intA[0] = cgStatus ('FGMG03A')
+goto_unless (intA[0] == 1) @308
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG03A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @308
+goto @471
+
+  @308
+intA[0] = cgStatus ('FGMG03B')
+goto_unless (intA[0] == 1) @309
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG03B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @309
+goto @471
+
+  @309
+goto @340
+
+  @310
+intA[0] = cgStatus ('FGMG16')
+goto_unless (intA[0] == 1) @311
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG16')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @311
+goto @471
+
+  @311
+goto @340
+
+  @312
+intA[0] = cgStatus ('FGMG01')
+goto_unless (intA[0] == 1) @313
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG01')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @313
+goto @471
+
+  @313
+goto @340
+
+  @314
+intA[0] = cgStatus ('FGMG02A')
+goto_unless (intA[0] == 1) @315
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG02A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @315
+goto @471
+
+  @315
+intA[0] = cgStatus ('FGMG02B')
+goto_unless (intA[0] == 1) @316
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG02B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @316
+goto @471
+
+  @316
+goto @340
+
+  @317
+intA[0] = cgStatus ('FGMG15')
+goto_unless (intA[0] == 1) @318
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG15')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @318
+goto @471
+
+  @318
+goto @340
+
+  @319
+intA[0] = cgStatus ('FGMG04')
+goto_unless (intA[0] == 1) @320
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG04')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @320
+goto @471
+
+  @320
+goto @340
+
+  @321
+intA[0] = cgStatus ('FGMG06')
+goto_unless (intA[0] == 1) @322
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG06')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @322
+goto @471
+
+  @322
+goto @340
+
+  @323
+intA[0] = cgStatus ('FGMG05')
+goto_unless (intA[0] == 1) @324
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG05')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @324
+goto @471
+
+  @324
+goto @340
+
+  @325
+intA[0] = cgStatus ('FGMG14A')
+goto_unless (intA[0] == 1) @326
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG14A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @326
+goto @471
+
+  @326
+intA[0] = cgStatus ('FGMG14B')
+goto_unless (intA[0] == 1) @327
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG14B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @327
+goto @471
+
+  @327
+goto @340
+
+  @328
+intA[0] = cgStatus ('FGMG21A')
+goto_unless (intA[0] == 1) @329
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG21A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @329
+goto @471
+
+  @329
+intA[0] = cgStatus ('FGMG21B')
+goto_unless (intA[0] == 1) @330
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG21B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @330
+goto @471
+
+  @330
+intA[0] = cgStatus ('FGMG21C')
+goto_unless (intA[0] == 1) @331
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG21C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @331
+goto @471
+
+  @331
+intA[0] = cgStatus ('FGMG21D')
+goto_unless (intA[0] == 1) @332
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG21D')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @332
+goto @471
+
+  @332
+intA[0] = cgStatus ('FGMG21E')
+goto_unless (intA[0] == 1) @333
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG21E')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @333
+goto @471
+
+  @333
+goto @340
+
+  @334
+intA[0] = cgStatus ('FGMG20A')
+goto_unless (intA[0] == 1) @335
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG20A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @335
+goto @471
+
+  @335
+intA[0] = cgStatus ('FGMG20B')
+goto_unless (intA[0] == 1) @336
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG20B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @336
+goto @471
+
+  @336
+goto @340
+
+  @337
+intA[0] = cgStatus ('FGMG17A')
+goto_unless (intA[0] == 1) @338
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG17A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @338
+goto @471
+
+  @338
+intA[0] = cgStatus ('FGMG17B')
+goto_unless (intA[0] == 1) @339
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG17B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @339
+goto @471
+
+  @339
+goto @340
+
+  @340
+goto @370
+
+  @341
+goto_unless (intG[401] == 1) @370
+goto_case intF[1013] { 0: @342; 1: @344; 2: @346; 3: @348; 4: @352; 5: @355; 6: @357; 7: @359; 8: @361; 9: @363; 10: @365; 11: @367; _: @369 }
+
+  @342
+intA[0] = cgStatus ('FGMG22')
+goto_unless (intA[0] == 1) @343
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG22')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @343
+goto @471
+
+  @343
+goto @369
+
+  @344
+intA[0] = cgStatus ('FGMG07')
+goto_unless (intA[0] == 1) @345
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG07')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @345
+goto @471
+
+  @345
+goto @369
+
+  @346
+intA[0] = cgStatus ('FGMG11')
+goto_unless (intA[0] == 1) @347
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG11')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @347
+goto @471
+
+  @347
+goto @369
+
+  @348
+intA[0] = cgStatus ('FGMG18A')
+goto_unless (intA[0] == 1) @349
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG18A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @349
+goto @471
+
+  @349
+intA[0] = cgStatus ('FGMG18B')
+goto_unless (intA[0] == 1) @350
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG18B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @350
+goto @471
+
+  @350
+intA[0] = cgStatus ('FGMG18C')
+goto_unless (intA[0] == 1) @351
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG18C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @351
+goto @471
+
+  @351
+goto @369
+
+  @352
+intA[0] = cgStatus ('FGMG13A')
+goto_unless (intA[0] == 1) @353
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG13A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @353
+goto @471
+
+  @353
+intA[0] = cgStatus ('FGMG13B')
+goto_unless (intA[0] == 1) @354
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG13B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @354
+goto @471
+
+  @354
+goto @369
+
+  @355
+intA[0] = cgStatus ('FGMG12')
+goto_unless (intA[0] == 1) @356
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG12')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @356
+goto @471
+
+  @356
+goto @369
+
+  @357
+intA[0] = cgStatus ('FGMG23')
+goto_unless (intA[0] == 1) @358
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG23')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @358
+goto @471
+
+  @358
+goto @369
+
+  @359
+intA[0] = cgStatus ('FGMG24')
+goto_unless (intA[0] == 1) @360
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG24')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @360
+goto @471
+
+  @360
+goto @369
+
+  @361
+intA[0] = cgStatus ('FGMG08')
+goto_unless (intA[0] == 1) @362
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG08')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @362
+goto @471
+
+  @362
+goto @369
+
+  @363
+intA[0] = cgStatus ('FGMG09')
+goto_unless (intA[0] == 1) @364
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG09')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @364
+goto @471
+
+  @364
+goto @369
+
+  @365
+intA[0] = cgStatus ('FGMG10')
+goto_unless (intA[0] == 1) @366
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG10')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @366
+goto @471
+
+  @366
+goto @369
+
+  @367
+intA[0] = cgStatus ('FGMG19')
+goto_unless (intA[0] == 1) @368
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGMG19')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @368
+goto @471
+
+  @368
+goto @369
+
+  @369
+
+  @370
+goto @471
+
+  @371
+goto_unless (intG[400] == 2) @424
+goto_unless (!intG[401]) @405
+goto_case intF[1013] { 0: @372; 1: @374; 2: @377; 3: @379; 4: @381; 5: @386; 6: @388; 7: @390; 8: @393; 9: @396; 10: @398; 11: @401; _: @404 }
+
+  @372
+intA[0] = cgStatus ('FGKA01')
+goto_unless (intA[0] == 1) @373
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA01')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @373
+goto @471
+
+  @373
+goto @404
+
+  @374
+intA[0] = cgStatus ('FGKA02B')
+goto_unless (intA[0] == 1) @375
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA02B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @375
+goto @471
+
+  @375
+intA[0] = cgStatus ('FGKA02A')
+goto_unless (intA[0] == 1) @376
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA02A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @376
+goto @471
+
+  @376
+goto @404
+
+  @377
+intA[0] = cgStatus ('FGKA17')
+goto_unless (intA[0] == 1) @378
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA17')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @378
+goto @471
+
+  @378
+goto @404
+
+  @379
+intA[0] = cgStatus ('FGKA23')
+goto_unless (intA[0] == 1) @380
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA23')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @380
+goto @471
+
+  @380
+goto @404
+
+  @381
+intA[0] = cgStatus ('FGKA18A')
+goto_unless (intA[0] == 1) @382
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA18A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @382
+goto @471
+
+  @382
+intA[0] = cgStatus ('FGKA18B')
+goto_unless (intA[0] == 1) @383
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA18B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @383
+goto @471
+
+  @383
+intA[0] = cgStatus ('FGKA18C')
+goto_unless (intA[0] == 1) @384
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA18C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @384
+goto @471
+
+  @384
+intA[0] = cgStatus ('FGKA18D')
+goto_unless (intA[0] == 1) @385
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA18D')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @385
+goto @471
+
+  @385
+goto @404
+
+  @386
+intA[0] = cgStatus ('FGKA16')
+goto_unless (intA[0] == 1) @387
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA16')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @387
+goto @471
+
+  @387
+goto @404
+
+  @388
+intA[0] = cgStatus ('FGKA03')
+goto_unless (intA[0] == 1) @389
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA03')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @389
+goto @471
+
+  @389
+goto @404
+
+  @390
+intA[0] = cgStatus ('FGKA21A')
+goto_unless (intA[0] == 1) @391
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA21A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @391
+goto @471
+
+  @391
+intA[0] = cgStatus ('FGKA21B')
+goto_unless (intA[0] == 1) @392
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA21B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @392
+goto @471
+
+  @392
+goto @404
+
+  @393
+intA[0] = cgStatus ('FGKA10A')
+goto_unless (intA[0] == 1) @394
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA10A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @394
+goto @471
+
+  @394
+intA[0] = cgStatus ('FGKA10B')
+goto_unless (intA[0] == 1) @395
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA10B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @395
+goto @471
+
+  @395
+goto @404
+
+  @396
+intA[0] = cgStatus ('FGKA06')
+goto_unless (intA[0] == 1) @397
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA06')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @397
+goto @471
+
+  @397
+goto @404
+
+  @398
+intA[0] = cgStatus ('FGKA19A')
+goto_unless (intA[0] == 1) @399
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA19A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @399
+goto @471
+
+  @399
+intA[0] = cgStatus ('FGKA19B')
+goto_unless (intA[0] == 1) @400
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA19B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @400
+goto @471
+
+  @400
+goto @404
+
+  @401
+intA[0] = cgStatus ('FGKA08A')
+goto_unless (intA[0] == 1) @402
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA08A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @402
+goto @471
+
+  @402
+intA[0] = cgStatus ('FGKA08B')
+goto_unless (intA[0] == 1) @403
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA08B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @403
+goto @471
+
+  @403
+goto @404
+
+  @404
+goto @423
+
+  @405
+goto_unless (intG[401] == 1) @423
+goto_case intF[1013] { 0: @406; 1: @408; 2: @410; 3: @413; 4: @415; 5: @418; 6: @420; _: @422 }
+
+  @406
+intA[0] = cgStatus ('FGKA04')
+goto_unless (intA[0] == 1) @407
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA04')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @407
+goto @471
+
+  @407
+goto @422
+
+  @408
+intA[0] = cgStatus ('FGKA05')
+goto_unless (intA[0] == 1) @409
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA05')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @409
+goto @471
+
+  @409
+goto @422
+
+  @410
+intA[0] = cgStatus ('FGKA15A')
+goto_unless (intA[0] == 1) @411
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA15A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @411
+goto @471
+
+  @411
+intA[0] = cgStatus ('FGKA15B')
+goto_unless (intA[0] == 1) @412
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA15B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @412
+goto @471
+
+  @412
+goto @422
+
+  @413
+intA[0] = cgStatus ('FGKA11')
+goto_unless (intA[0] == 1) @414
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA11')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @414
+goto @471
+
+  @414
+goto @422
+
+  @415
+intA[0] = cgStatus ('FGKA12A')
+goto_unless (intA[0] == 1) @416
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA12A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @416
+goto @471
+
+  @416
+intA[0] = cgStatus ('FGKA12B')
+goto_unless (intA[0] == 1) @417
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA12B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @417
+goto @471
+
+  @417
+goto @422
+
+  @418
+intA[0] = cgStatus ('FGKA13')
+goto_unless (intA[0] == 1) @419
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA13')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @419
+goto @471
+
+  @419
+goto @422
+
+  @420
+intA[0] = cgStatus ('FGKA20')
+goto_unless (intA[0] == 1) @421
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKA20')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @421
+goto @471
+
+  @421
+goto @422
+
+  @422
+
+  @423
+goto @471
+
+  @424
+goto_unless (intG[400] == 3) @471
+goto_unless (!intG[401]) @461
+goto_case intF[1013] { 0: @425; 1: @429; 2: @431; 3: @434; 4: @437; 5: @439; 6: @441; 7: @443; 8: @448; 9: @451; 10: @453; 11: @456; _: @460 }
+
+  @425
+intA[0] = cgStatus ('FGKN01C')
+goto_unless (intA[0] == 1) @426
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN01C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @426
+goto @471
+
+  @426
+intA[0] = cgStatus ('FGKN01A')
+goto_unless (intA[0] == 1) @427
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN01A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @427
+goto @471
+
+  @427
+intA[0] = cgStatus ('FGKN01B')
+goto_unless (intA[0] == 1) @428
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN01B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @428
+goto @471
+
+  @428
+goto @460
+
+  @429
+intA[0] = cgStatus ('FGKN16')
+goto_unless (intA[0] == 1) @430
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN16')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @430
+goto @471
+
+  @430
+goto @460
+
+  @431
+intA[0] = cgStatus ('FGKN02A')
+goto_unless (intA[0] == 1) @432
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN02A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @432
+goto @471
+
+  @432
+intA[0] = cgStatus ('FGKN02B')
+goto_unless (intA[0] == 1) @433
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN02B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @433
+goto @471
+
+  @433
+goto @460
+
+  @434
+intA[0] = cgStatus ('FGKN17A')
+goto_unless (intA[0] == 1) @435
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN17A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @435
+goto @471
+
+  @435
+intA[0] = cgStatus ('FGKN17B')
+goto_unless (intA[0] == 1) @436
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN17B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @436
+goto @471
+
+  @436
+goto @460
+
+  @437
+intA[0] = cgStatus ('FGKN05')
+goto_unless (intA[0] == 1) @438
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN05')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @438
+goto @471
+
+  @438
+goto @460
+
+  @439
+intA[0] = cgStatus ('FGKN06')
+goto_unless (intA[0] == 1) @440
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN06')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @440
+goto @471
+
+  @440
+goto @460
+
+  @441
+intA[0] = cgStatus ('FGKN07')
+goto_unless (intA[0] == 1) @442
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN07')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @442
+goto @471
+
+  @442
+goto @460
+
+  @443
+intA[0] = cgStatus ('FGKN08A')
+goto_unless (intA[0] == 1) @444
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN08A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @444
+goto @471
+
+  @444
+intA[0] = cgStatus ('FGKN08D')
+goto_unless (intA[0] == 1) @445
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN08D')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @445
+goto @471
+
+  @445
+intA[0] = cgStatus ('FGKN08B')
+goto_unless (intA[0] == 1) @446
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN08B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @446
+goto @471
+
+  @446
+intA[0] = cgStatus ('FGKN08C')
+goto_unless (intA[0] == 1) @447
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN08C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @447
+goto @471
+
+  @447
+goto @460
+
+  @448
+intA[0] = cgStatus ('FGKN09A')
+goto_unless (intA[0] == 1) @449
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN09A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @449
+goto @471
+
+  @449
+intA[0] = cgStatus ('FGKN09B')
+goto_unless (intA[0] == 1) @450
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN09B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @450
+goto @471
+
+  @450
+goto @460
+
+  @451
+intA[0] = cgStatus ('FGKN10')
+goto_unless (intA[0] == 1) @452
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN10')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @452
+goto @471
+
+  @452
+goto @460
+
+  @453
+intA[0] = cgStatus ('FGKN12A')
+goto_unless (intA[0] == 1) @454
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN12A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @454
+goto @471
+
+  @454
+intA[0] = cgStatus ('FGKN12B')
+goto_unless (intA[0] == 1) @455
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN12B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @455
+goto @471
+
+  @455
+goto @460
+
+  @456
+intA[0] = cgStatus ('FGKN11A')
+goto_unless (intA[0] == 1) @457
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN11A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @457
+goto @471
+
+  @457
+intA[0] = cgStatus ('FGKN11B')
+goto_unless (intA[0] == 1) @458
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN11B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @458
+goto @471
+
+  @458
+intA[0] = cgStatus ('FGKN11C')
+goto_unless (intA[0] == 1) @459
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN11C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @459
+goto @471
+
+  @459
+goto @460
+
+  @460
+goto @471
+
+  @461
+goto_unless (intG[401] == 1) @471
+goto_case intF[1013] { 0: @462; 1: @464; 2: @468; _: @470 }
+
+  @462
+intA[0] = cgStatus ('FGKN13')
+goto_unless (intA[0] == 1) @463
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN13')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @463
+goto @471
+
+  @463
+goto @470
+
+  @464
+intA[0] = cgStatus ('FGKN14A')
+goto_unless (intA[0] == 1) @465
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN14A')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @465
+goto @471
+
+  @465
+intA[0] = cgStatus ('FGKN14B')
+goto_unless (intA[0] == 1) @466
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN14B')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @466
+goto @471
+
+  @466
+intA[0] = cgStatus ('FGKN14C')
+goto_unless (intA[0] == 1) @467
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN14C')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @467
+goto @471
+
+  @467
+goto @470
+
+  @468
+intA[0] = cgStatus ('FGKN15')
+goto_unless (intA[0] == 1) @469
+objCopyFgToBg (0)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (16)
+objCopyFgToBg (17)
+objCopyFgToBg (18)
+objCopyFgToBg (19)
+objCopyFgToBg (20)
+objCopyFgToBg (21)
+objCopyFgToBg (30)
+objCopyFgToBg (31)
+objCopyFgToBg (32)
+objCopyFgToBg (33)
+objCopyFgToBg (34)
+objCopyFgToBg (35)
+objCopyFgToBg (36)
+objCopyFgToBg (37)
+objCopyFgToBg (38)
+objCopyFgToBg (39)
+objCopyFgToBg (40)
+objCopyFgToBg (41)
+objCopyFgToBg (50)
+objCopyFgToBg (51)
+objCopyFgToBg (52)
+objCopyFgToBg (53)
+objCopyFgToBg (60)
+objCopyFgToBg (70)
+objBgClear (60)
+objBgOfFile (60, 'FGKN15')
+objBgMove (60, 0, 0)
+objBgPattNo (60, 0)
+objBgShow (60, 1)
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+intA[0] = GetClick (intA[1], intA[2])
+goto_unless (intA[0] == -1) @469
+goto @471
+
+  @469
+goto @470
+
+  @470
+
+  @471
+goto @148
+goto @476
+
+  @472
+goto_unless (intF[1013] == 12) @473
+intG[401] -= 1
+goto @148
+goto @476
+
+  @473
+goto_unless (intF[1013] == 13) @474
+intG[401] += 1
+goto @148
+goto @476
+
+  @474
+goto_unless (intF[1013] == 14) @475
+freeDC (2)
+intA[700] = 1
+jump (9034)
+goto @476
+
+  @475
+goto_unless (intF[1013] == 15) @476
+freeDC (2)
+intA[700] = 1
+jump (9036, 1)
+
+  @476
+objShow (70, 1)
+FlushClick
+intC[0] = 600
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @477
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @478
+intF[1000] = 1
+FlushClick
+goto @479
+
+  @478
+intF[1000] = 0
+
+  @479
+goto_unless (intF[1000] == 1) @480
+intC[0] = 0
+intC[1] = 255
+
+  @480
+objAlpha (70, intC[1])
+refresh
+goto_unless (!intC[0]) @481
+goto @482
+
+  @481
+goto @477
+
+  @482
+freeDC (2)
+objDelete (0)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (13)
+objDelete (14)
+objDelete (15)
+objDelete (16)
+objDelete (17)
+objDelete (18)
+objDelete (19)
+objDelete (20)
+objDelete (21)
+objDelete (30)
+objDelete (31)
+objDelete (32)
+objDelete (33)
+objDelete (34)
+objDelete (35)
+objDelete (36)
+objDelete (37)
+objDelete (38)
+objDelete (39)
+objDelete (40)
+objDelete (41)
+objDelete (50)
+objDelete (51)
+objDelete (52)
+objDelete (53)
+objDelete (60)
+objDelete (70)
+DrawAuto
+EnableSyscom
+goto_unless (0 <= intF[1013] && intF[1013] <= 11) @483
+goto @487
+
+  @483
+goto_unless (intF[1013] == 12) @484
+goto @487
+
+  @484
+goto_unless (intF[1013] == 13) @485
+goto @487
+
+  @485
+goto_unless (intF[1013] == 14) @486
+goto @487
+
+  @486
+goto_unless (intF[1013] == 15) @487
+
+  @487
+eof

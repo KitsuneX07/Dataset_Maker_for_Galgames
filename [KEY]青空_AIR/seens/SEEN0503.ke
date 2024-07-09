@@ -1,0 +1,9831 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN0503.TXT'
+#resource 'SEEN0503.utf'
+
+#kidoku_type 2
+#entrypoint 000
+intF[3] = 3
+intF[4] = 1
+title (#res<0000>)
+msgHide
+intF[1107] = 1
+grpMulti ('DAY_000', 0, copy('DAY_803', 0))
+farcall (9070, 0)
+wavStop
+wavLoop ('KAZE', 0)
+msgHide
+intF[1107] = 1
+recOpenBg ('SIRO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+#res<0001>
+pause
+#res<0002>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA19A', 56)
+#res<0003>
+pause
+#res<0004>
+pause
+#res<0005>
+pause
+#res<0006>
+pause
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+#res<0010>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 56)
+#res<0011>
+pause
+#res<0012>
+pause
+#res<0013>
+pause
+#res<0014>
+pause
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG015'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @5
+goto_unless (!intF[4]) @2
+strS[1003] = 'SDT07'
+goto @3
+
+  @2
+goto_unless (intF[4] == 1) @3
+strS[1003] = 'SDT08'
+
+  @3
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @4
+objBgMove (83, 16, 16)
+goto @5
+
+  @4
+goto_unless (intB[2] == 1) @5
+objBgMove (83, 16, 66)
+
+  @5
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @6
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @6
+bgrMulti (strS[1000], 26)
+#res<0015>
+pause
+#res<0016>
+pause
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+bgmLoop ('BGM11')
+#res<0020>
+pause
+#res<0021>
+pause
+#res<0022>
+pause
+koePlay (1111058)
+#res<0023>
+pause
+#res<0024>
+pause
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+#res<0028>
+pause
+#res<0029>
+pause
+#res<0030>
+pause
+#res<0031>
+pause
+#res<0032>
+pause
+#res<0033>
+pause
+koePlay (1111059)
+#res<0034>
+pause
+#res<0035>
+pause
+#res<0036>
+pause
+#res<0037>
+pause
+#res<0038>
+pause
+#res<0039>
+pause
+#res<0040>
+pause
+#res<0041>
+pause
+#res<0042>
+pause
+#res<0043>
+pause
+#res<0044>
+pause
+#res<0045>
+pause
+koePlay (1111060)
+#res<0046>
+pause
+#res<0047>
+pause
+#res<0048>
+pause
+#res<0049>
+pause
+#res<0050>
+pause
+#res<0051>
+pause
+#res<0052>
+pause
+#res<0053>
+pause
+#res<0054>
+pause
+bgmStop
+koePlay (1111061)
+#res<0055>
+pause
+koePlay (1111062)
+#res<0056>
+pause
+#res<0057>
+pause
+bgmLoop ('BGM02')
+goto_unless (intF[1107] == 1) @7
+intF[1107] = 0
+msgHide
+
+  @7
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @11
+goto_unless (!intF[4]) @8
+strS[1003] = 'SDT07'
+goto @9
+
+  @8
+goto_unless (intF[4] == 1) @9
+strS[1003] = 'SDT08'
+
+  @9
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @10
+objBgMove (83, 16, 16)
+goto @11
+
+  @10
+goto_unless (intB[2] == 1) @11
+objBgMove (83, 16, 66)
+
+  @11
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @12
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @12
+bgrMulti (strS[1000], 60, copy('CGKA20S', 61))
+koePlay (1111063)
+#res<0058>
+pause
+koePlay (1111064)
+#res<0059>
+pause
+koePlay (1111065)
+#res<0060>
+pause
+#res<0061>
+pause
+#res<0062>
+pause
+koePlay (1111066)
+#res<0063>
+pause
+#res<0064>
+pause
+goto_unless (intF[1107] == 1) @13
+intF[1107] = 0
+msgHide
+
+  @13
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @17
+goto_unless (!intF[4]) @14
+strS[1003] = 'SDT07'
+goto @15
+
+  @14
+goto_unless (intF[4] == 1) @15
+strS[1003] = 'SDT08'
+
+  @15
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @16
+objBgMove (83, 16, 16)
+goto @17
+
+  @16
+goto_unless (intB[2] == 1) @17
+objBgMove (83, 16, 66)
+
+  @17
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @18
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @18
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111067)
+#res<0065>
+pause
+#res<0066>
+pause
+#res<0067>
+pause
+koePlay (1111068)
+#res<0068>
+pause
+goto_unless (intF[1107] == 1) @19
+intF[1107] = 0
+msgHide
+
+  @19
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @23
+goto_unless (!intF[4]) @20
+strS[1003] = 'SDT07'
+goto @21
+
+  @20
+goto_unless (intF[4] == 1) @21
+strS[1003] = 'SDT08'
+
+  @21
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @22
+objBgMove (83, 16, 16)
+goto @23
+
+  @22
+goto_unless (intB[2] == 1) @23
+objBgMove (83, 16, 66)
+
+  @23
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @24
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @24
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111069)
+#res<0069>
+pause
+koePlay (1111070)
+#res<0070>
+pause
+#res<0071>
+pause
+koePlay (1111071)
+#res<0072>
+pause
+goto_unless (intF[1107] == 1) @25
+intF[1107] = 0
+msgHide
+
+  @25
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @29
+goto_unless (!intF[4]) @26
+strS[1003] = 'SDT07'
+goto @27
+
+  @26
+goto_unless (intF[4] == 1) @27
+strS[1003] = 'SDT08'
+
+  @27
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @28
+objBgMove (83, 16, 16)
+goto @29
+
+  @28
+goto_unless (intB[2] == 1) @29
+objBgMove (83, 16, 66)
+
+  @29
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @30
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @30
+bgrMulti (strS[1000], 60, copy('CGKA10S', 61))
+koePlay (1111072)
+#res<0073>
+pause
+koePlay (1111073)
+#res<0074>
+pause
+#res<0075>
+pause
+#res<0076>
+pause
+goto_unless (intF[1107] == 1) @31
+intF[1107] = 0
+msgHide
+
+  @31
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @35
+goto_unless (!intF[4]) @32
+strS[1003] = 'SDT07'
+goto @33
+
+  @32
+goto_unless (intF[4] == 1) @33
+strS[1003] = 'SDT08'
+
+  @33
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @34
+objBgMove (83, 16, 16)
+goto @35
+
+  @34
+goto_unless (intB[2] == 1) @35
+objBgMove (83, 16, 66)
+
+  @35
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @36
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @36
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111074)
+#res<0077>
+pause
+#res<0078>
+pause
+koePlay (1111075)
+#res<0079>
+pause
+#res<0080>
+pause
+#res<0081>
+pause
+goto_unless (intF[1107] == 1) @37
+intF[1107] = 0
+msgHide
+
+  @37
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @41
+goto_unless (!intF[4]) @38
+strS[1003] = 'SDT07'
+goto @39
+
+  @38
+goto_unless (intF[4] == 1) @39
+strS[1003] = 'SDT08'
+
+  @39
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @40
+objBgMove (83, 16, 16)
+goto @41
+
+  @40
+goto_unless (intB[2] == 1) @41
+objBgMove (83, 16, 66)
+
+  @41
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @42
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @42
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111076)
+#res<0082>
+pause
+koePlay (1111077)
+#res<0083>
+pause
+#res<0084>
+pause
+#res<0085>
+pause
+#res<0086>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016'
+goto_unless (intF[1107] == 1) @43
+intF[1107] = 0
+msgHide
+
+  @43
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @47
+goto_unless (!intF[4]) @44
+strS[1003] = 'SDT07'
+goto @45
+
+  @44
+goto_unless (intF[4] == 1) @45
+strS[1003] = 'SDT08'
+
+  @45
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @46
+objBgMove (83, 16, 16)
+goto @47
+
+  @46
+goto_unless (intB[2] == 1) @47
+objBgMove (83, 16, 66)
+
+  @47
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @48
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @48
+bgrMulti (strS[1000], 48)
+goto_unless (intF[1107] == 1) @49
+intF[1107] = 0
+msgHide
+
+  @49
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @53
+goto_unless (!intF[4]) @50
+strS[1003] = 'SDT07'
+goto @51
+
+  @50
+goto_unless (intF[4] == 1) @51
+strS[1003] = 'SDT08'
+
+  @51
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @52
+objBgMove (83, 16, 16)
+goto @53
+
+  @52
+goto_unless (intB[2] == 1) @53
+objBgMove (83, 16, 66)
+
+  @53
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @54
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @54
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111078)
+#res<0087>
+pause
+#res<0088>
+pause
+goto_unless (intF[1107] == 1) @55
+intF[1107] = 0
+msgHide
+
+  @55
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @59
+goto_unless (!intF[4]) @56
+strS[1003] = 'SDT07'
+goto @57
+
+  @56
+goto_unless (intF[4] == 1) @57
+strS[1003] = 'SDT08'
+
+  @57
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @58
+objBgMove (83, 16, 16)
+goto @59
+
+  @58
+goto_unless (intB[2] == 1) @59
+objBgMove (83, 16, 66)
+
+  @59
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @60
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @60
+bgrMulti (strS[1000], 60, copy('CGHI21T', 61))
+koePlay (1111079)
+#res<0089>
+pause
+#res<0090>
+pause
+#res<0091>
+pause
+koePlay (1111080)
+#res<0092>
+pause
+goto_unless (intF[1107] == 1) @61
+intF[1107] = 0
+msgHide
+
+  @61
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @65
+goto_unless (!intF[4]) @62
+strS[1003] = 'SDT07'
+goto @63
+
+  @62
+goto_unless (intF[4] == 1) @63
+strS[1003] = 'SDT08'
+
+  @63
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @64
+objBgMove (83, 16, 16)
+goto @65
+
+  @64
+goto_unless (intB[2] == 1) @65
+objBgMove (83, 16, 66)
+
+  @65
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @66
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @66
+bgrMulti (strS[1000], 0)
+#res<0093>
+pause
+goto_unless (intF[1107] == 1) @67
+intF[1107] = 0
+msgHide
+
+  @67
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @71
+goto_unless (!intF[4]) @68
+strS[1003] = 'SDT07'
+goto @69
+
+  @68
+goto_unless (intF[4] == 1) @69
+strS[1003] = 'SDT08'
+
+  @69
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @70
+objBgMove (83, 16, 16)
+goto @71
+
+  @70
+goto_unless (intB[2] == 1) @71
+objBgMove (83, 16, 66)
+
+  @71
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @72
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @72
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111081)
+#res<0094>
+pause
+#res<0095>
+pause
+#res<0096>
+pause
+koePlay (1111082)
+#res<0097>
+pause
+koePlay (1111083)
+#res<0098>
+pause
+koePlay (1111084)
+#res<0099>
+pause
+#res<0100>
+pause
+goto_unless (intF[1107] == 1) @73
+intF[1107] = 0
+msgHide
+
+  @73
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @77
+goto_unless (!intF[4]) @74
+strS[1003] = 'SDT07'
+goto @75
+
+  @74
+goto_unless (intF[4] == 1) @75
+strS[1003] = 'SDT08'
+
+  @75
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @76
+objBgMove (83, 16, 16)
+goto @77
+
+  @76
+goto_unless (intB[2] == 1) @77
+objBgMove (83, 16, 66)
+
+  @77
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @78
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @78
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111085)
+#res<0101>
+pause
+goto_unless (intF[1107] == 1) @79
+intF[1107] = 0
+msgHide
+
+  @79
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @83
+goto_unless (!intF[4]) @80
+strS[1003] = 'SDT07'
+goto @81
+
+  @80
+goto_unless (intF[4] == 1) @81
+strS[1003] = 'SDT08'
+
+  @81
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @82
+objBgMove (83, 16, 16)
+goto @83
+
+  @82
+goto_unless (intB[2] == 1) @83
+objBgMove (83, 16, 66)
+
+  @83
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @84
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @84
+bgrMulti (strS[1000], 60, copy('CGHI21T', 61))
+koePlay (1111086)
+#res<0102>
+pause
+#res<0103>
+pause
+koePlay (1111087)
+#res<0104>
+pause
+koePlay (1111088)
+#res<0105>
+pause
+koePlay (1111089)
+#res<0106>
+pause
+goto_unless (intF[1107] == 1) @85
+intF[1107] = 0
+msgHide
+
+  @85
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @89
+goto_unless (!intF[4]) @86
+strS[1003] = 'SDT07'
+goto @87
+
+  @86
+goto_unless (intF[4] == 1) @87
+strS[1003] = 'SDT08'
+
+  @87
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @88
+objBgMove (83, 16, 16)
+goto @89
+
+  @88
+goto_unless (intB[2] == 1) @89
+objBgMove (83, 16, 66)
+
+  @89
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @90
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @90
+bgrMulti (strS[1000], 60, copy('CGHI24T', 61))
+koePlay (1111090)
+#res<0107>
+pause
+#res<0108>
+pause
+#res<0109>
+pause
+goto_unless (intF[1107] == 1) @91
+intF[1107] = 0
+msgHide
+
+  @91
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @95
+goto_unless (!intF[4]) @92
+strS[1003] = 'SDT07'
+goto @93
+
+  @92
+goto_unless (intF[4] == 1) @93
+strS[1003] = 'SDT08'
+
+  @93
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @94
+objBgMove (83, 16, 16)
+goto @95
+
+  @94
+goto_unless (intB[2] == 1) @95
+objBgMove (83, 16, 66)
+
+  @95
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @96
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @96
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111091)
+#res<0110>
+pause
+koePlay (1111092)
+#res<0111>
+pause
+koePlay (1111093)
+#res<0112>
+pause
+#res<0113>
+pause
+goto_unless (intF[1107] == 1) @97
+intF[1107] = 0
+msgHide
+
+  @97
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @101
+goto_unless (!intF[4]) @98
+strS[1003] = 'SDT07'
+goto @99
+
+  @98
+goto_unless (intF[4] == 1) @99
+strS[1003] = 'SDT08'
+
+  @99
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @100
+objBgMove (83, 16, 16)
+goto @101
+
+  @100
+goto_unless (intB[2] == 1) @101
+objBgMove (83, 16, 66)
+
+  @101
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @102
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @102
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111094)
+#res<0114>
+pause
+koePlay (1111095)
+#res<0115>
+pause
+koePlay (1111096)
+#res<0116>
+pause
+#res<0117>
+pause
+#res<0118>
+pause
+goto_unless (intF[1107] == 1) @103
+intF[1107] = 0
+msgHide
+
+  @103
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @107
+goto_unless (!intF[4]) @104
+strS[1003] = 'SDT07'
+goto @105
+
+  @104
+goto_unless (intF[4] == 1) @105
+strS[1003] = 'SDT08'
+
+  @105
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @106
+objBgMove (83, 16, 16)
+goto @107
+
+  @106
+goto_unless (intB[2] == 1) @107
+objBgMove (83, 16, 66)
+
+  @107
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @108
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @108
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111097)
+#res<0119>
+pause
+goto_unless (intF[1107] == 1) @109
+intF[1107] = 0
+msgHide
+
+  @109
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @113
+goto_unless (!intF[4]) @110
+strS[1003] = 'SDT07'
+goto @111
+
+  @110
+goto_unless (intF[4] == 1) @111
+strS[1003] = 'SDT08'
+
+  @111
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @112
+objBgMove (83, 16, 16)
+goto @113
+
+  @112
+goto_unless (intB[2] == 1) @113
+objBgMove (83, 16, 66)
+
+  @113
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @114
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @114
+bgrMulti (strS[1000], 60, copy('CGHI27T', 61))
+#res<0120>
+pause
+koePlay (1111098)
+#res<0121>
+pause
+koePlay (1111099)
+#res<0122>
+pause
+koePlay (1111100)
+#res<0123>
+pause
+goto_unless (intF[1107] == 1) @115
+intF[1107] = 0
+msgHide
+
+  @115
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @119
+goto_unless (!intF[4]) @116
+strS[1003] = 'SDT07'
+goto @117
+
+  @116
+goto_unless (intF[4] == 1) @117
+strS[1003] = 'SDT08'
+
+  @117
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @118
+objBgMove (83, 16, 16)
+goto @119
+
+  @118
+goto_unless (intB[2] == 1) @119
+objBgMove (83, 16, 66)
+
+  @119
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @120
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @120
+bgrMulti (strS[1000], 0)
+#res<0124>
+pause
+goto_unless (intF[1107] == 1) @121
+intF[1107] = 0
+msgHide
+
+  @121
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @125
+goto_unless (!intF[4]) @122
+strS[1003] = 'SDT07'
+goto @123
+
+  @122
+goto_unless (intF[4] == 1) @123
+strS[1003] = 'SDT08'
+
+  @123
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @124
+objBgMove (83, 16, 16)
+goto @125
+
+  @124
+goto_unless (intB[2] == 1) @125
+objBgMove (83, 16, 66)
+
+  @125
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @126
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @126
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111101)
+#res<0125>
+pause
+goto_unless (intF[1107] == 1) @127
+intF[1107] = 0
+msgHide
+
+  @127
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @131
+goto_unless (!intF[4]) @128
+strS[1003] = 'SDT07'
+goto @129
+
+  @128
+goto_unless (intF[4] == 1) @129
+strS[1003] = 'SDT08'
+
+  @129
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @130
+objBgMove (83, 16, 16)
+goto @131
+
+  @130
+goto_unless (intB[2] == 1) @131
+objBgMove (83, 16, 66)
+
+  @131
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @132
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @132
+bgrMulti (strS[1000], 0)
+#res<0126>
+pause
+#res<0127>
+pause
+koePlay (1111102)
+#res<0128>
+pause
+#res<0129>
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG010'
+goto_unless (intF[1107] == 1) @133
+intF[1107] = 0
+msgHide
+
+  @133
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @137
+goto_unless (!intF[4]) @134
+strS[1003] = 'SDT07'
+goto @135
+
+  @134
+goto_unless (intF[4] == 1) @135
+strS[1003] = 'SDT08'
+
+  @135
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @136
+objBgMove (83, 16, 16)
+goto @137
+
+  @136
+goto_unless (intB[2] == 1) @137
+objBgMove (83, 16, 66)
+
+  @137
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @138
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @138
+bgrMulti (strS[1000], 48)
+bgmLoop ('BGM00')
+#res<0130>
+pause
+#res<0131>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016'
+goto_unless (intF[1107] == 1) @139
+intF[1107] = 0
+msgHide
+
+  @139
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @143
+goto_unless (!intF[4]) @140
+strS[1003] = 'SDT07'
+goto @141
+
+  @140
+goto_unless (intF[4] == 1) @141
+strS[1003] = 'SDT08'
+
+  @141
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @142
+objBgMove (83, 16, 16)
+goto @143
+
+  @142
+goto_unless (intB[2] == 1) @143
+objBgMove (83, 16, 66)
+
+  @143
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @144
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @144
+bgrMulti (strS[1000], 0)
+#res<0132>
+pause
+#res<0133>
+pause
+intF[1107] = 1
+strS[1000] = 'BG017'
+goto_unless (intF[1107] == 1) @145
+intF[1107] = 0
+msgHide
+
+  @145
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @149
+goto_unless (!intF[4]) @146
+strS[1003] = 'SDT07'
+goto @147
+
+  @146
+goto_unless (intF[4] == 1) @147
+strS[1003] = 'SDT08'
+
+  @147
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @148
+objBgMove (83, 16, 16)
+goto @149
+
+  @148
+goto_unless (intB[2] == 1) @149
+objBgMove (83, 16, 66)
+
+  @149
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @150
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @150
+bgrMulti (strS[1000], 0)
+#res<0134>
+pause
+#res<0135>
+pause
+#res<0136>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG016'
+goto_unless (intF[1107] == 1) @151
+intF[1107] = 0
+msgHide
+
+  @151
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @155
+goto_unless (!intF[4]) @152
+strS[1003] = 'SDT07'
+goto @153
+
+  @152
+goto_unless (intF[4] == 1) @153
+strS[1003] = 'SDT08'
+
+  @153
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @154
+objBgMove (83, 16, 16)
+goto @155
+
+  @154
+goto_unless (intB[2] == 1) @155
+objBgMove (83, 16, 66)
+
+  @155
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @156
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @156
+bgrMulti (strS[1000], 48)
+#res<0137>
+pause
+#res<0138>
+pause
+#res<0139>
+pause
+#res<0140>
+pause
+goto_unless (intF[1107] == 1) @157
+intF[1107] = 0
+msgHide
+
+  @157
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @161
+goto_unless (!intF[4]) @158
+strS[1003] = 'SDT07'
+goto @159
+
+  @158
+goto_unless (intF[4] == 1) @159
+strS[1003] = 'SDT08'
+
+  @159
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @160
+objBgMove (83, 16, 16)
+goto @161
+
+  @160
+goto_unless (intB[2] == 1) @161
+objBgMove (83, 16, 66)
+
+  @161
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @162
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @162
+bgrMulti (strS[1000], 60, copy('CGKA10S', 61))
+koePlay (1111103)
+#res<0141>
+pause
+#res<0142>
+pause
+koePlay (1111104)
+#res<0143>
+pause
+koePlay (1111105)
+#res<0144>
+pause
+goto_unless (intF[1107] == 1) @163
+intF[1107] = 0
+msgHide
+
+  @163
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @167
+goto_unless (!intF[4]) @164
+strS[1003] = 'SDT07'
+goto @165
+
+  @164
+goto_unless (intF[4] == 1) @165
+strS[1003] = 'SDT08'
+
+  @165
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @166
+objBgMove (83, 16, 16)
+goto @167
+
+  @166
+goto_unless (intB[2] == 1) @167
+objBgMove (83, 16, 66)
+
+  @167
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @168
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @168
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111106)
+#res<0145>
+pause
+goto_unless (intF[1107] == 1) @169
+intF[1107] = 0
+msgHide
+
+  @169
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @173
+goto_unless (!intF[4]) @170
+strS[1003] = 'SDT07'
+goto @171
+
+  @170
+goto_unless (intF[4] == 1) @171
+strS[1003] = 'SDT08'
+
+  @171
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @172
+objBgMove (83, 16, 16)
+goto @173
+
+  @172
+goto_unless (intB[2] == 1) @173
+objBgMove (83, 16, 66)
+
+  @173
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @174
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @174
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111107)
+#res<0146>
+pause
+#res<0147>
+pause
+koePlay (1111108)
+#res<0148>
+pause
+koePlay (1111109)
+#res<0149>
+pause
+goto_unless (intF[1107] == 1) @175
+intF[1107] = 0
+msgHide
+
+  @175
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @179
+goto_unless (!intF[4]) @176
+strS[1003] = 'SDT07'
+goto @177
+
+  @176
+goto_unless (intF[4] == 1) @177
+strS[1003] = 'SDT08'
+
+  @177
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @178
+objBgMove (83, 16, 16)
+goto @179
+
+  @178
+goto_unless (intB[2] == 1) @179
+objBgMove (83, 16, 66)
+
+  @179
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @180
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @180
+bgrMulti (strS[1000], 60, copy('CGHI21T', 61))
+koePlay (1111110)
+#res<0150>
+pause
+koePlay (1111111)
+#res<0151>
+pause
+koePlay (1111112)
+#res<0152>
+pause
+koePlay (1111113)
+#res<0153>
+pause
+goto_unless (intF[1107] == 1) @181
+intF[1107] = 0
+msgHide
+
+  @181
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @185
+goto_unless (!intF[4]) @182
+strS[1003] = 'SDT07'
+goto @183
+
+  @182
+goto_unless (intF[4] == 1) @183
+strS[1003] = 'SDT08'
+
+  @183
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @184
+objBgMove (83, 16, 16)
+goto @185
+
+  @184
+goto_unless (intB[2] == 1) @185
+objBgMove (83, 16, 66)
+
+  @185
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @186
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @186
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+#res<0154>
+pause
+koePlay (1111114)
+#res<0155>
+pause
+goto_unless (intF[1107] == 1) @187
+intF[1107] = 0
+msgHide
+
+  @187
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @191
+goto_unless (!intF[4]) @188
+strS[1003] = 'SDT07'
+goto @189
+
+  @188
+goto_unless (intF[4] == 1) @189
+strS[1003] = 'SDT08'
+
+  @189
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @190
+objBgMove (83, 16, 16)
+goto @191
+
+  @190
+goto_unless (intB[2] == 1) @191
+objBgMove (83, 16, 66)
+
+  @191
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @192
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @192
+bgrMulti (strS[1000], 60, copy('CGHI26T', 61))
+#res<0156>
+pause
+koePlay (1111115)
+#res<0157>
+pause
+#res<0158>
+pause
+koePlay (1111116)
+#res<0159>
+pause
+goto_unless (intF[1107] == 1) @193
+intF[1107] = 0
+msgHide
+
+  @193
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @197
+goto_unless (!intF[4]) @194
+strS[1003] = 'SDT07'
+goto @195
+
+  @194
+goto_unless (intF[4] == 1) @195
+strS[1003] = 'SDT08'
+
+  @195
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @196
+objBgMove (83, 16, 16)
+goto @197
+
+  @196
+goto_unless (intB[2] == 1) @197
+objBgMove (83, 16, 66)
+
+  @197
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @198
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @198
+bgrMulti (strS[1000], 60, copy('CGHI12T', 61))
+koePlay (1111117)
+#res<0160>
+pause
+koePlay (1111118)
+#res<0161>
+pause
+koePlay (1111119)
+#res<0162>
+pause
+#res<0163>
+pause
+goto_unless (intF[1107] == 1) @199
+intF[1107] = 0
+msgHide
+
+  @199
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @203
+goto_unless (!intF[4]) @200
+strS[1003] = 'SDT07'
+goto @201
+
+  @200
+goto_unless (intF[4] == 1) @201
+strS[1003] = 'SDT08'
+
+  @201
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @202
+objBgMove (83, 16, 16)
+goto @203
+
+  @202
+goto_unless (intB[2] == 1) @203
+objBgMove (83, 16, 66)
+
+  @203
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @204
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @204
+bgrMulti (strS[1000], 0)
+#res<0164>
+pause
+koePlay (1111120)
+#res<0165>
+pause
+goto_unless (intF[1107] == 1) @205
+intF[1107] = 0
+msgHide
+
+  @205
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @209
+goto_unless (!intF[4]) @206
+strS[1003] = 'SDT07'
+goto @207
+
+  @206
+goto_unless (intF[4] == 1) @207
+strS[1003] = 'SDT08'
+
+  @207
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @208
+objBgMove (83, 16, 16)
+goto @209
+
+  @208
+goto_unless (intB[2] == 1) @209
+objBgMove (83, 16, 66)
+
+  @209
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @210
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @210
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111121)
+#res<0166>
+pause
+koePlay (1111122)
+#res<0167>
+pause
+goto_unless (intF[1107] == 1) @211
+intF[1107] = 0
+msgHide
+
+  @211
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @215
+goto_unless (!intF[4]) @212
+strS[1003] = 'SDT07'
+goto @213
+
+  @212
+goto_unless (intF[4] == 1) @213
+strS[1003] = 'SDT08'
+
+  @213
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @214
+objBgMove (83, 16, 16)
+goto @215
+
+  @214
+goto_unless (intB[2] == 1) @215
+objBgMove (83, 16, 66)
+
+  @215
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @216
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @216
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111123)
+#res<0168>
+pause
+#res<0169>
+pause
+bgmFadeOut (1200)
+wavStop
+wavLoop ('MINMIN', 0)
+intF[1107] = 1
+strS[1000] = 'BG010'
+goto_unless (intF[1107] == 1) @217
+intF[1107] = 0
+msgHide
+
+  @217
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @221
+goto_unless (!intF[4]) @218
+strS[1003] = 'SDT07'
+goto @219
+
+  @218
+goto_unless (intF[4] == 1) @219
+strS[1003] = 'SDT08'
+
+  @219
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @220
+objBgMove (83, 16, 16)
+goto @221
+
+  @220
+goto_unless (intB[2] == 1) @221
+objBgMove (83, 16, 66)
+
+  @221
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @222
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @222
+bgrMulti (strS[1000], 48)
+goto_unless (intF[1107] == 1) @223
+intF[1107] = 0
+msgHide
+
+  @223
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @227
+goto_unless (!intF[4]) @224
+strS[1003] = 'SDT07'
+goto @225
+
+  @224
+goto_unless (intF[4] == 1) @225
+strS[1003] = 'SDT08'
+
+  @225
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @226
+objBgMove (83, 16, 16)
+goto @227
+
+  @226
+goto_unless (intB[2] == 1) @227
+objBgMove (83, 16, 66)
+
+  @227
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @228
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @228
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111124)
+#res<0170>
+pause
+goto_unless (intF[1107] == 1) @229
+intF[1107] = 0
+msgHide
+
+  @229
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @233
+goto_unless (!intF[4]) @230
+strS[1003] = 'SDT07'
+goto @231
+
+  @230
+goto_unless (intF[4] == 1) @231
+strS[1003] = 'SDT08'
+
+  @231
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @232
+objBgMove (83, 16, 16)
+goto @233
+
+  @232
+goto_unless (intB[2] == 1) @233
+objBgMove (83, 16, 66)
+
+  @233
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @234
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @234
+bgrMulti (strS[1000], 60, copy('CGHI23T', 61))
+koePlay (1111125)
+#res<0171>
+pause
+bgmLoop ('BGM00')
+goto_unless (intF[1107] == 1) @235
+intF[1107] = 0
+msgHide
+
+  @235
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @239
+goto_unless (!intF[4]) @236
+strS[1003] = 'SDT07'
+goto @237
+
+  @236
+goto_unless (intF[4] == 1) @237
+strS[1003] = 'SDT08'
+
+  @237
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @238
+objBgMove (83, 16, 16)
+goto @239
+
+  @238
+goto_unless (intB[2] == 1) @239
+objBgMove (83, 16, 66)
+
+  @239
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @240
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @240
+bgrMulti (strS[1000], 0)
+#res<0172>
+pause
+#res<0173>
+pause
+#res<0174>
+pause
+#res<0175>
+pause
+#res<0176>
+pause
+#res<0177>
+pause
+#res<0178>
+pause
+goto_unless (intF[1107] == 1) @241
+intF[1107] = 0
+msgHide
+
+  @241
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @245
+goto_unless (!intF[4]) @242
+strS[1003] = 'SDT07'
+goto @243
+
+  @242
+goto_unless (intF[4] == 1) @243
+strS[1003] = 'SDT08'
+
+  @243
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @244
+objBgMove (83, 16, 16)
+goto @245
+
+  @244
+goto_unless (intB[2] == 1) @245
+objBgMove (83, 16, 66)
+
+  @245
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @246
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @246
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+#res<0179>
+pause
+koePlay (1111126)
+#res<0180>
+pause
+koePlay (1111127)
+#res<0181>
+pause
+#res<0182>
+pause
+#res<0183>
+pause
+#res<0184>
+pause
+#res<0185>
+pause
+#res<0186>
+pause
+koePlay (1111128)
+#res<0187>
+pause
+goto_unless (intF[1107] == 1) @247
+intF[1107] = 0
+msgHide
+
+  @247
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @251
+goto_unless (!intF[4]) @248
+strS[1003] = 'SDT07'
+goto @249
+
+  @248
+goto_unless (intF[4] == 1) @249
+strS[1003] = 'SDT08'
+
+  @249
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @250
+objBgMove (83, 16, 16)
+goto @251
+
+  @250
+goto_unless (intB[2] == 1) @251
+objBgMove (83, 16, 66)
+
+  @251
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @252
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @252
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111129)
+#res<0188>
+pause
+#res<0189>
+pause
+#res<0190>
+pause
+goto_unless (intF[1107] == 1) @253
+intF[1107] = 0
+msgHide
+
+  @253
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @257
+goto_unless (!intF[4]) @254
+strS[1003] = 'SDT07'
+goto @255
+
+  @254
+goto_unless (intF[4] == 1) @255
+strS[1003] = 'SDT08'
+
+  @255
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @256
+objBgMove (83, 16, 16)
+goto @257
+
+  @256
+goto_unless (intB[2] == 1) @257
+objBgMove (83, 16, 66)
+
+  @257
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @258
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @258
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111130)
+#res<0191>
+pause
+koePlay (1111131)
+#res<0192>
+pause
+koePlay (1111132)
+#res<0193>
+pause
+#res<0194>
+pause
+goto_unless (intF[1107] == 1) @259
+intF[1107] = 0
+msgHide
+
+  @259
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @263
+goto_unless (!intF[4]) @260
+strS[1003] = 'SDT07'
+goto @261
+
+  @260
+goto_unless (intF[4] == 1) @261
+strS[1003] = 'SDT08'
+
+  @261
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @262
+objBgMove (83, 16, 16)
+goto @263
+
+  @262
+goto_unless (intB[2] == 1) @263
+objBgMove (83, 16, 66)
+
+  @263
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @264
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @264
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111133)
+#res<0195>
+pause
+goto_unless (intF[1107] == 1) @265
+intF[1107] = 0
+msgHide
+
+  @265
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @269
+goto_unless (!intF[4]) @266
+strS[1003] = 'SDT07'
+goto @267
+
+  @266
+goto_unless (intF[4] == 1) @267
+strS[1003] = 'SDT08'
+
+  @267
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @268
+objBgMove (83, 16, 16)
+goto @269
+
+  @268
+goto_unless (intB[2] == 1) @269
+objBgMove (83, 16, 66)
+
+  @269
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @270
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @270
+bgrMulti (strS[1000], 0)
+#res<0196>
+pause
+#res<0197>
+pause
+#res<0198>
+pause
+#res<0199>
+pause
+#res<0200>
+pause
+goto_unless (intF[1107] == 1) @271
+intF[1107] = 0
+msgHide
+
+  @271
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @275
+goto_unless (!intF[4]) @272
+strS[1003] = 'SDT07'
+goto @273
+
+  @272
+goto_unless (intF[4] == 1) @273
+strS[1003] = 'SDT08'
+
+  @273
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @274
+objBgMove (83, 16, 16)
+goto @275
+
+  @274
+goto_unless (intB[2] == 1) @275
+objBgMove (83, 16, 66)
+
+  @275
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @276
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @276
+bgrMulti (strS[1000], 60, copy('CGKA20S', 61))
+koePlay (1111134)
+#res<0201>
+pause
+#res<0202>
+pause
+#res<0203>
+pause
+koePlay (1111135)
+#res<0204>
+pause
+goto_unless (intF[1107] == 1) @277
+intF[1107] = 0
+msgHide
+
+  @277
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @281
+goto_unless (!intF[4]) @278
+strS[1003] = 'SDT07'
+goto @279
+
+  @278
+goto_unless (intF[4] == 1) @279
+strS[1003] = 'SDT08'
+
+  @279
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @280
+objBgMove (83, 16, 16)
+goto @281
+
+  @280
+goto_unless (intB[2] == 1) @281
+objBgMove (83, 16, 66)
+
+  @281
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @282
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @282
+bgrMulti (strS[1000], 60, copy('CGKA22S', 61))
+koePlay (1111136)
+#res<0205>
+pause
+koePlay (1111137)
+#res<0206>
+pause
+goto_unless (intF[1107] == 1) @283
+intF[1107] = 0
+msgHide
+
+  @283
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @287
+goto_unless (!intF[4]) @284
+strS[1003] = 'SDT07'
+goto @285
+
+  @284
+goto_unless (intF[4] == 1) @285
+strS[1003] = 'SDT08'
+
+  @285
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @286
+objBgMove (83, 16, 16)
+goto @287
+
+  @286
+goto_unless (intB[2] == 1) @287
+objBgMove (83, 16, 66)
+
+  @287
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @288
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @288
+bgrMulti (strS[1000], 60, copy('CGKA15S', 61))
+koePlay (1111138)
+#res<0207>
+pause
+#res<0208>
+pause
+goto_unless (intF[1107] == 1) @289
+intF[1107] = 0
+msgHide
+
+  @289
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @293
+goto_unless (!intF[4]) @290
+strS[1003] = 'SDT07'
+goto @291
+
+  @290
+goto_unless (intF[4] == 1) @291
+strS[1003] = 'SDT08'
+
+  @291
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @292
+objBgMove (83, 16, 16)
+goto @293
+
+  @292
+goto_unless (intB[2] == 1) @293
+objBgMove (83, 16, 66)
+
+  @293
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @294
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @294
+bgrMulti (strS[1000], 0)
+#res<0209>
+pause
+#res<0210>
+pause
+#res<0211>
+pause
+goto_unless (intF[1107] == 1) @295
+intF[1107] = 0
+msgHide
+
+  @295
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @299
+goto_unless (!intF[4]) @296
+strS[1003] = 'SDT07'
+goto @297
+
+  @296
+goto_unless (intF[4] == 1) @297
+strS[1003] = 'SDT08'
+
+  @297
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @298
+objBgMove (83, 16, 16)
+goto @299
+
+  @298
+goto_unless (intB[2] == 1) @299
+objBgMove (83, 16, 66)
+
+  @299
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @300
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @300
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111139)
+#res<0212>
+pause
+koePlay (1111140)
+#res<0213>
+pause
+bgmFadeOut (1200)
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG014'
+goto_unless (intF[1107] == 1) @301
+intF[1107] = 0
+msgHide
+
+  @301
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @305
+goto_unless (!intF[4]) @302
+strS[1003] = 'SDT07'
+goto @303
+
+  @302
+goto_unless (intF[4] == 1) @303
+strS[1003] = 'SDT08'
+
+  @303
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @304
+objBgMove (83, 16, 16)
+goto @305
+
+  @304
+goto_unless (intB[2] == 1) @305
+objBgMove (83, 16, 66)
+
+  @305
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @306
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @306
+bgrMulti (strS[1000], 48)
+koePlay (1111141)
+#res<0214>
+pause
+goto_unless (intF[1107] == 1) @307
+intF[1107] = 0
+msgHide
+
+  @307
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @311
+goto_unless (!intF[4]) @308
+strS[1003] = 'SDT07'
+goto @309
+
+  @308
+goto_unless (intF[4] == 1) @309
+strS[1003] = 'SDT08'
+
+  @309
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @310
+objBgMove (83, 16, 16)
+goto @311
+
+  @310
+goto_unless (intB[2] == 1) @311
+objBgMove (83, 16, 66)
+
+  @311
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @312
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @312
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111142)
+#res<0215>
+pause
+bgmLoop ('BGM07')
+#res<0216>
+pause
+#res<0217>
+pause
+#res<0218>
+pause
+#res<0219>
+pause
+koePlay (1111143)
+#res<0220>
+pause
+goto_unless (intF[1107] == 1) @313
+intF[1107] = 0
+msgHide
+
+  @313
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @317
+goto_unless (!intF[4]) @314
+strS[1003] = 'SDT07'
+goto @315
+
+  @314
+goto_unless (intF[4] == 1) @315
+strS[1003] = 'SDT08'
+
+  @315
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @316
+objBgMove (83, 16, 16)
+goto @317
+
+  @316
+goto_unless (intB[2] == 1) @317
+objBgMove (83, 16, 66)
+
+  @317
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @318
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @318
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111144)
+#res<0221>
+pause
+koePlay (1111145)
+#res<0222>
+pause
+koePlay (1111146)
+#res<0223>
+pause
+goto_unless (intF[1107] == 1) @319
+intF[1107] = 0
+msgHide
+
+  @319
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @323
+goto_unless (!intF[4]) @320
+strS[1003] = 'SDT07'
+goto @321
+
+  @320
+goto_unless (intF[4] == 1) @321
+strS[1003] = 'SDT08'
+
+  @321
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @322
+objBgMove (83, 16, 16)
+goto @323
+
+  @322
+goto_unless (intB[2] == 1) @323
+objBgMove (83, 16, 66)
+
+  @323
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @324
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @324
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111147)
+#res<0224>
+pause
+#res<0225>
+pause
+#res<0226>
+pause
+koePlay (1111148)
+#res<0227>
+pause
+#res<0228>
+pause
+#res<0229>
+pause
+goto_unless (intF[1107] == 1) @325
+intF[1107] = 0
+msgHide
+
+  @325
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @329
+goto_unless (!intF[4]) @326
+strS[1003] = 'SDT07'
+goto @327
+
+  @326
+goto_unless (intF[4] == 1) @327
+strS[1003] = 'SDT08'
+
+  @327
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @328
+objBgMove (83, 16, 16)
+goto @329
+
+  @328
+goto_unless (intB[2] == 1) @329
+objBgMove (83, 16, 66)
+
+  @329
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @330
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @330
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111149)
+#res<0230>
+pause
+goto_unless (intF[1107] == 1) @331
+intF[1107] = 0
+msgHide
+
+  @331
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @335
+goto_unless (!intF[4]) @332
+strS[1003] = 'SDT07'
+goto @333
+
+  @332
+goto_unless (intF[4] == 1) @333
+strS[1003] = 'SDT08'
+
+  @333
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @334
+objBgMove (83, 16, 16)
+goto @335
+
+  @334
+goto_unless (intB[2] == 1) @335
+objBgMove (83, 16, 66)
+
+  @335
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @336
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @336
+bgrMulti (strS[1000], 60, copy('CGKA10S', 61))
+koePlay (1111150)
+#res<0231>
+pause
+koePlay (1111151)
+#res<0232>
+pause
+#res<0233>
+pause
+koePlay (1111152)
+#res<0234>
+pause
+#res<0235>
+pause
+goto_unless (intF[1107] == 1) @337
+intF[1107] = 0
+msgHide
+
+  @337
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @341
+goto_unless (!intF[4]) @338
+strS[1003] = 'SDT07'
+goto @339
+
+  @338
+goto_unless (intF[4] == 1) @339
+strS[1003] = 'SDT08'
+
+  @339
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @340
+objBgMove (83, 16, 16)
+goto @341
+
+  @340
+goto_unless (intB[2] == 1) @341
+objBgMove (83, 16, 66)
+
+  @341
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @342
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @342
+bgrMulti (strS[1000], 0)
+#res<0236>
+pause
+#res<0237>
+pause
+#res<0238>
+pause
+koePlay (1111153)
+#res<0239>
+pause
+goto_unless (intF[1107] == 1) @343
+intF[1107] = 0
+msgHide
+
+  @343
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @347
+goto_unless (!intF[4]) @344
+strS[1003] = 'SDT07'
+goto @345
+
+  @344
+goto_unless (intF[4] == 1) @345
+strS[1003] = 'SDT08'
+
+  @345
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @346
+objBgMove (83, 16, 16)
+goto @347
+
+  @346
+goto_unless (intB[2] == 1) @347
+objBgMove (83, 16, 66)
+
+  @347
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @348
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @348
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111154)
+#res<0240>
+pause
+koePlay (1111155)
+#res<0241>
+pause
+koePlay (1111156)
+#res<0242>
+pause
+#res<0243>
+pause
+goto_unless (intF[1107] == 1) @349
+intF[1107] = 0
+msgHide
+
+  @349
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @353
+goto_unless (!intF[4]) @350
+strS[1003] = 'SDT07'
+goto @351
+
+  @350
+goto_unless (intF[4] == 1) @351
+strS[1003] = 'SDT08'
+
+  @351
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @352
+objBgMove (83, 16, 16)
+goto @353
+
+  @352
+goto_unless (intB[2] == 1) @353
+objBgMove (83, 16, 66)
+
+  @353
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @354
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @354
+bgrMulti (strS[1000], 0)
+#res<0244>
+pause
+#res<0245>
+pause
+goto_unless (intF[1107] == 1) @355
+intF[1107] = 0
+msgHide
+
+  @355
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @359
+goto_unless (!intF[4]) @356
+strS[1003] = 'SDT07'
+goto @357
+
+  @356
+goto_unless (intF[4] == 1) @357
+strS[1003] = 'SDT08'
+
+  @357
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @358
+objBgMove (83, 16, 16)
+goto @359
+
+  @358
+goto_unless (intB[2] == 1) @359
+objBgMove (83, 16, 66)
+
+  @359
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @360
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @360
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111157)
+#res<0246>
+pause
+koePlay (1111158)
+#res<0247>
+pause
+koePlay (1111159)
+#res<0248>
+pause
+goto_unless (intF[1107] == 1) @361
+intF[1107] = 0
+msgHide
+
+  @361
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @365
+goto_unless (!intF[4]) @362
+strS[1003] = 'SDT07'
+goto @363
+
+  @362
+goto_unless (intF[4] == 1) @363
+strS[1003] = 'SDT08'
+
+  @363
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @364
+objBgMove (83, 16, 16)
+goto @365
+
+  @364
+goto_unless (intB[2] == 1) @365
+objBgMove (83, 16, 66)
+
+  @365
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @366
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @366
+bgrMulti (strS[1000], 60, copy('CGKA15S', 61))
+koePlay (1111160)
+#res<0249>
+pause
+#res<0250>
+pause
+goto_unless (intF[1107] == 1) @367
+intF[1107] = 0
+msgHide
+
+  @367
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @371
+goto_unless (!intF[4]) @368
+strS[1003] = 'SDT07'
+goto @369
+
+  @368
+goto_unless (intF[4] == 1) @369
+strS[1003] = 'SDT08'
+
+  @369
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @370
+objBgMove (83, 16, 16)
+goto @371
+
+  @370
+goto_unless (intB[2] == 1) @371
+objBgMove (83, 16, 66)
+
+  @371
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @372
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @372
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111161)
+#res<0251>
+pause
+koePlay (1111162)
+#res<0252>
+pause
+goto_unless (intF[1107] == 1) @373
+intF[1107] = 0
+msgHide
+
+  @373
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @377
+goto_unless (!intF[4]) @374
+strS[1003] = 'SDT07'
+goto @375
+
+  @374
+goto_unless (intF[4] == 1) @375
+strS[1003] = 'SDT08'
+
+  @375
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @376
+objBgMove (83, 16, 16)
+goto @377
+
+  @376
+goto_unless (intB[2] == 1) @377
+objBgMove (83, 16, 66)
+
+  @377
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @378
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @378
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111163)
+#res<0253>
+pause
+koePlay (1111164)
+#res<0254>
+pause
+goto_unless (intF[1107] == 1) @379
+intF[1107] = 0
+msgHide
+
+  @379
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @383
+goto_unless (!intF[4]) @380
+strS[1003] = 'SDT07'
+goto @381
+
+  @380
+goto_unless (intF[4] == 1) @381
+strS[1003] = 'SDT08'
+
+  @381
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @382
+objBgMove (83, 16, 16)
+goto @383
+
+  @382
+goto_unless (intB[2] == 1) @383
+objBgMove (83, 16, 66)
+
+  @383
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @384
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @384
+bgrMulti (strS[1000], 0)
+#res<0255>
+pause
+#res<0256>
+pause
+#res<0257>
+pause
+#res<0258>
+pause
+#res<0259>
+pause
+#res<0260>
+pause
+#res<0261>
+pause
+#res<0262>
+pause
+#res<0263>
+pause
+#res<0264>
+pause
+koePlay (1111165)
+#res<0265>
+pause
+#res<0266>
+pause
+#res<0267>
+pause
+#res<0268>
+pause
+goto_unless (intF[1107] == 1) @385
+intF[1107] = 0
+msgHide
+
+  @385
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @389
+goto_unless (!intF[4]) @386
+strS[1003] = 'SDT07'
+goto @387
+
+  @386
+goto_unless (intF[4] == 1) @387
+strS[1003] = 'SDT08'
+
+  @387
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @388
+objBgMove (83, 16, 16)
+goto @389
+
+  @388
+goto_unless (intB[2] == 1) @389
+objBgMove (83, 16, 66)
+
+  @389
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @390
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @390
+bgrMulti (strS[1000], 60, copy('CGKA15S', 61))
+#res<0269>
+pause
+koePlay (1111166)
+#res<0270>
+pause
+koePlay (1111167)
+#res<0271>
+pause
+goto_unless (intF[1107] == 1) @391
+intF[1107] = 0
+msgHide
+
+  @391
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @395
+goto_unless (!intF[4]) @392
+strS[1003] = 'SDT07'
+goto @393
+
+  @392
+goto_unless (intF[4] == 1) @393
+strS[1003] = 'SDT08'
+
+  @393
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @394
+objBgMove (83, 16, 16)
+goto @395
+
+  @394
+goto_unless (intB[2] == 1) @395
+objBgMove (83, 16, 66)
+
+  @395
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @396
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @396
+bgrMulti (strS[1000], 60, copy('CGKA23S', 61))
+koePlay (1111168)
+#res<0272>
+pause
+#res<0273>
+pause
+#res<0274>
+pause
+koePlay (1111169)
+#res<0275>
+pause
+koePlay (1111170)
+#res<0276>
+pause
+koePlay (1111171)
+#res<0277>
+pause
+goto_unless (intF[1107] == 1) @397
+intF[1107] = 0
+msgHide
+
+  @397
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @401
+goto_unless (!intF[4]) @398
+strS[1003] = 'SDT07'
+goto @399
+
+  @398
+goto_unless (intF[4] == 1) @399
+strS[1003] = 'SDT08'
+
+  @399
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @400
+objBgMove (83, 16, 16)
+goto @401
+
+  @400
+goto_unless (intB[2] == 1) @401
+objBgMove (83, 16, 66)
+
+  @401
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @402
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @402
+bgrMulti (strS[1000], 60, copy('CGKA15S', 61))
+koePlay (1111172)
+#res<0278>
+pause
+koePlay (1111173)
+#res<0279>
+pause
+koePlay (1111174)
+#res<0280>
+pause
+koePlay (1111175)
+#res<0281>
+pause
+#res<0282>
+pause
+goto_unless (intF[1107] == 1) @403
+intF[1107] = 0
+msgHide
+
+  @403
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @407
+goto_unless (!intF[4]) @404
+strS[1003] = 'SDT07'
+goto @405
+
+  @404
+goto_unless (intF[4] == 1) @405
+strS[1003] = 'SDT08'
+
+  @405
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @406
+objBgMove (83, 16, 16)
+goto @407
+
+  @406
+goto_unless (intB[2] == 1) @407
+objBgMove (83, 16, 66)
+
+  @407
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @408
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @408
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+#res<0283>
+pause
+#res<0284>
+pause
+#res<0285>
+pause
+#res<0286>
+pause
+#res<0287>
+pause
+#res<0288>
+pause
+goto_unless (intF[1107] == 1) @409
+intF[1107] = 0
+msgHide
+
+  @409
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @413
+goto_unless (!intF[4]) @410
+strS[1003] = 'SDT07'
+goto @411
+
+  @410
+goto_unless (intF[4] == 1) @411
+strS[1003] = 'SDT08'
+
+  @411
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @412
+objBgMove (83, 16, 16)
+goto @413
+
+  @412
+goto_unless (intB[2] == 1) @413
+objBgMove (83, 16, 66)
+
+  @413
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @414
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @414
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111176)
+#res<0289>
+pause
+koePlay (1111177)
+#res<0290>
+pause
+koePlay (1111178)
+#res<0291>
+pause
+koePlay (1111179)
+#res<0292>
+pause
+koePlay (1111180)
+#res<0293>
+pause
+koePlay (1111181)
+#res<0294>
+pause
+goto_unless (intF[1107] == 1) @415
+intF[1107] = 0
+msgHide
+
+  @415
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @419
+goto_unless (!intF[4]) @416
+strS[1003] = 'SDT07'
+goto @417
+
+  @416
+goto_unless (intF[4] == 1) @417
+strS[1003] = 'SDT08'
+
+  @417
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @418
+objBgMove (83, 16, 16)
+goto @419
+
+  @418
+goto_unless (intB[2] == 1) @419
+objBgMove (83, 16, 66)
+
+  @419
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @420
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @420
+bgrMulti (strS[1000], 60, copy('CGKA14S', 61))
+koePlay (1111182)
+#res<0295>
+pause
+#res<0296>
+pause
+#res<0297>
+pause
+#res<0298>
+pause
+#res<0299>
+pause
+#res<0300>
+pause
+goto_unless (intF[1107] == 1) @421
+intF[1107] = 0
+msgHide
+
+  @421
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @425
+goto_unless (!intF[4]) @422
+strS[1003] = 'SDT07'
+goto @423
+
+  @422
+goto_unless (intF[4] == 1) @423
+strS[1003] = 'SDT08'
+
+  @423
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @424
+objBgMove (83, 16, 16)
+goto @425
+
+  @424
+goto_unless (intB[2] == 1) @425
+objBgMove (83, 16, 66)
+
+  @425
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @426
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @426
+bgrMulti (strS[1000], 0)
+koePlay (1111183)
+#res<0301>
+pause
+#res<0302>
+pause
+koePlay (1111184)
+#res<0303>
+pause
+goto_unless (intF[1107] == 1) @427
+intF[1107] = 0
+msgHide
+
+  @427
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @431
+goto_unless (!intF[4]) @428
+strS[1003] = 'SDT07'
+goto @429
+
+  @428
+goto_unless (intF[4] == 1) @429
+strS[1003] = 'SDT08'
+
+  @429
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @430
+objBgMove (83, 16, 16)
+goto @431
+
+  @430
+goto_unless (intB[2] == 1) @431
+objBgMove (83, 16, 66)
+
+  @431
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @432
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @432
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111185)
+#res<0304>
+pause
+#res<0305>
+pause
+#res<0306>
+pause
+goto_unless (intF[1107] == 1) @433
+intF[1107] = 0
+msgHide
+
+  @433
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @437
+goto_unless (!intF[4]) @434
+strS[1003] = 'SDT07'
+goto @435
+
+  @434
+goto_unless (intF[4] == 1) @435
+strS[1003] = 'SDT08'
+
+  @435
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @436
+objBgMove (83, 16, 16)
+goto @437
+
+  @436
+goto_unless (intB[2] == 1) @437
+objBgMove (83, 16, 66)
+
+  @437
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @438
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @438
+bgrMulti (strS[1000], 60, copy('CGKA10S', 61))
+koePlay (1111186)
+#res<0307>
+pause
+goto_unless (intF[1107] == 1) @439
+intF[1107] = 0
+msgHide
+
+  @439
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @443
+goto_unless (!intF[4]) @440
+strS[1003] = 'SDT07'
+goto @441
+
+  @440
+goto_unless (intF[4] == 1) @441
+strS[1003] = 'SDT08'
+
+  @441
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @442
+objBgMove (83, 16, 16)
+goto @443
+
+  @442
+goto_unless (intB[2] == 1) @443
+objBgMove (83, 16, 66)
+
+  @443
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @444
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @444
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111187)
+#res<0308>
+pause
+#res<0309>
+pause
+#res<0310>
+pause
+#res<0311>
+pause
+#res<0312>
+pause
+goto_unless (intF[1107] == 1) @445
+intF[1107] = 0
+msgHide
+
+  @445
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @449
+goto_unless (!intF[4]) @446
+strS[1003] = 'SDT07'
+goto @447
+
+  @446
+goto_unless (intF[4] == 1) @447
+strS[1003] = 'SDT08'
+
+  @447
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @448
+objBgMove (83, 16, 16)
+goto @449
+
+  @448
+goto_unless (intB[2] == 1) @449
+objBgMove (83, 16, 66)
+
+  @449
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @450
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @450
+bgrMulti (strS[1000], 60, copy('CGKA22S', 61))
+koePlay (1111188)
+#res<0313>
+pause
+#res<0314>
+pause
+koePlay (1111189)
+#res<0315>
+pause
+koePlay (1111190)
+#res<0316>
+pause
+goto_unless (intF[1107] == 1) @451
+intF[1107] = 0
+msgHide
+
+  @451
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @455
+goto_unless (!intF[4]) @452
+strS[1003] = 'SDT07'
+goto @453
+
+  @452
+goto_unless (intF[4] == 1) @453
+strS[1003] = 'SDT08'
+
+  @453
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @454
+objBgMove (83, 16, 16)
+goto @455
+
+  @454
+goto_unless (intB[2] == 1) @455
+objBgMove (83, 16, 66)
+
+  @455
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @456
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @456
+bgrMulti (strS[1000], 60, copy('CGKA20S', 61))
+koePlay (1111191)
+#res<0317>
+pause
+koePlay (1111192)
+#res<0318>
+pause
+goto_unless (intF[1107] == 1) @457
+intF[1107] = 0
+msgHide
+
+  @457
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @461
+goto_unless (!intF[4]) @458
+strS[1003] = 'SDT07'
+goto @459
+
+  @458
+goto_unless (intF[4] == 1) @459
+strS[1003] = 'SDT08'
+
+  @459
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @460
+objBgMove (83, 16, 16)
+goto @461
+
+  @460
+goto_unless (intB[2] == 1) @461
+objBgMove (83, 16, 66)
+
+  @461
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @462
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @462
+bgrMulti (strS[1000], 60, copy('CGKA14S', 61))
+koePlay (1111193)
+#res<0319>
+pause
+#res<0320>
+pause
+koePlay (1111194)
+#res<0321>
+pause
+koePlay (1111195)
+#res<0322>
+pause
+#res<0323>
+pause
+goto_unless (intF[1107] == 1) @463
+intF[1107] = 0
+msgHide
+
+  @463
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @467
+goto_unless (!intF[4]) @464
+strS[1003] = 'SDT07'
+goto @465
+
+  @464
+goto_unless (intF[4] == 1) @465
+strS[1003] = 'SDT08'
+
+  @465
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @466
+objBgMove (83, 16, 16)
+goto @467
+
+  @466
+goto_unless (intB[2] == 1) @467
+objBgMove (83, 16, 66)
+
+  @467
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @468
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @468
+bgrMulti (strS[1000], 0)
+koePlay (1111196)
+#res<0324>
+pause
+#res<0325>
+pause
+goto_unless (intF[1107] == 1) @469
+intF[1107] = 0
+msgHide
+
+  @469
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @473
+goto_unless (!intF[4]) @470
+strS[1003] = 'SDT07'
+goto @471
+
+  @470
+goto_unless (intF[4] == 1) @471
+strS[1003] = 'SDT08'
+
+  @471
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @472
+objBgMove (83, 16, 16)
+goto @473
+
+  @472
+goto_unless (intB[2] == 1) @473
+objBgMove (83, 16, 66)
+
+  @473
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @474
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @474
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111197)
+#res<0326>
+pause
+koePlay (1111198)
+#res<0327>
+pause
+goto_unless (intF[1107] == 1) @475
+intF[1107] = 0
+msgHide
+
+  @475
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @479
+goto_unless (!intF[4]) @476
+strS[1003] = 'SDT07'
+goto @477
+
+  @476
+goto_unless (intF[4] == 1) @477
+strS[1003] = 'SDT08'
+
+  @477
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @478
+objBgMove (83, 16, 16)
+goto @479
+
+  @478
+goto_unless (intB[2] == 1) @479
+objBgMove (83, 16, 66)
+
+  @479
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @480
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @480
+bgrMulti (strS[1000], 60, copy('CGKA16S', 61))
+koePlay (1111199)
+#res<0328>
+pause
+goto_unless (intF[1107] == 1) @481
+intF[1107] = 0
+msgHide
+
+  @481
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @485
+goto_unless (!intF[4]) @482
+strS[1003] = 'SDT07'
+goto @483
+
+  @482
+goto_unless (intF[4] == 1) @483
+strS[1003] = 'SDT08'
+
+  @483
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @484
+objBgMove (83, 16, 16)
+goto @485
+
+  @484
+goto_unless (intB[2] == 1) @485
+objBgMove (83, 16, 66)
+
+  @485
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @486
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @486
+bgrMulti (strS[1000], 60, copy('CGKA12S', 61))
+koePlay (1111200)
+#res<0329>
+pause
+koePlay (1111201)
+#res<0330>
+pause
+goto_unless (intF[1107] == 1) @487
+intF[1107] = 0
+msgHide
+
+  @487
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @491
+goto_unless (!intF[4]) @488
+strS[1003] = 'SDT07'
+goto @489
+
+  @488
+goto_unless (intF[4] == 1) @489
+strS[1003] = 'SDT08'
+
+  @489
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @490
+objBgMove (83, 16, 16)
+goto @491
+
+  @490
+goto_unless (intB[2] == 1) @491
+objBgMove (83, 16, 66)
+
+  @491
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @492
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @492
+bgrMulti (strS[1000], 60, copy('CGKA13S', 61))
+koePlay (1111202)
+#res<0331>
+pause
+#res<0332>
+pause
+goto_unless (intF[1107] == 1) @493
+intF[1107] = 0
+msgHide
+
+  @493
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @497
+goto_unless (!intF[4]) @494
+strS[1003] = 'SDT07'
+goto @495
+
+  @494
+goto_unless (intF[4] == 1) @495
+strS[1003] = 'SDT08'
+
+  @495
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @496
+objBgMove (83, 16, 16)
+goto @497
+
+  @496
+goto_unless (intB[2] == 1) @497
+objBgMove (83, 16, 66)
+
+  @497
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @498
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @498
+bgrMulti (strS[1000], 0)
+#res<0333>
+pause
+#res<0334>
+pause
+#res<0335>
+pause
+#res<0336>
+pause
+#res<0337>
+pause
+#res<0338>
+pause
+#res<0339>
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+bgmFadeOutEx
+bgmLoop ('BGM01')
+#res<0340>
+pause
+#res<0341>
+pause
+#res<0342>
+pause
+#res<0343>
+pause
+#res<0344>
+pause
+intF[1107] = 1
+strS[1000] = 'BG008'
+goto_unless (intF[1107] == 1) @499
+intF[1107] = 0
+msgHide
+
+  @499
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @503
+goto_unless (!intF[4]) @500
+strS[1003] = 'SDT07'
+goto @501
+
+  @500
+goto_unless (intF[4] == 1) @501
+strS[1003] = 'SDT08'
+
+  @501
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @502
+objBgMove (83, 16, 16)
+goto @503
+
+  @502
+goto_unless (intB[2] == 1) @503
+objBgMove (83, 16, 66)
+
+  @503
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @504
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @504
+bgrMulti (strS[1000], 48)
+#res<0345>
+pause
+#res<0346>
+pause
+#res<0347>
+pause
+#res<0348>
+pause
+#res<0349>
+pause
+#res<0350>
+pause
+#res<0351>
+pause
+#res<0352>
+pause
+#res<0353>
+pause
+#res<0354>
+pause
+#res<0355>
+pause
+#res<0356>
+pause
+#res<0357>
+pause
+#res<0358>
+pause
+#res<0359>
+pause
+#res<0360>
+pause
+#res<0361>
+pause
+#res<0362>
+pause
+#res<0363>
+pause
+#res<0364>
+pause
+#res<0365>
+pause
+#res<0366>
+pause
+#res<0367>
+pause
+#res<0368>
+pause
+#res<0369>
+pause
+#res<0370>
+pause
+#res<0371>
+pause
+#res<0372>
+pause
+#res<0373>
+pause
+#res<0374>
+pause
+#res<0375>
+pause
+#res<0376>
+pause
+koePlay (1111203)
+#res<0377>
+pause
+koePlay (1111204)
+#res<0378>
+pause
+koePlay (1111205)
+#res<0379>
+pause
+koePlay (1111206)
+#res<0380>
+pause
+koePlay (1111207)
+#res<0381>
+pause
+koePlay (1111208)
+#res<0382>
+pause
+koePlay (1111209)
+#res<0383>
+pause
+koePlay (1111210)
+#res<0384>
+pause
+koePlay (1111211)
+#res<0385>
+pause
+koePlay (1111212)
+#res<0386>
+pause
+koePlay (1111213)
+#res<0387>
+pause
+koePlay (1111214)
+#res<0388>
+pause
+koePlay (1111215)
+#res<0389>
+pause
+koePlay (1111216)
+#res<0390>
+pause
+intF[399] = select (#res<0391>, #res<0392>)
+goto_unless (!intF[399]) @505
+#res<0393>
+pause
+#res<0394>
+pause
+#res<0395>
+pause
+#res<0396>
+pause
+#res<0397>
+pause
+#res<0398>
+pause
+#res<0399>
+pause
+#res<0400>
+pause
+#res<0401>
+pause
+#res<0402>
+pause
+#res<0403>
+pause
+#res<0404>
+pause
+#res<0405>
+pause
+#res<0406>
+pause
+#res<0407>
+pause
+#res<0408>
+pause
+#res<0409>
+pause
+#res<0410>
+pause
+#res<0411>
+pause
+#res<0412>
+pause
+#res<0413>
+pause
+#res<0414>
+pause
+koePlay (1111217)
+#res<0415>
+pause
+#res<0416>
+pause
+
+  @505
+goto_unless (intF[399] == 1) @506
+koePlay (1111218)
+#res<0417>
+pause
+koePlay (1111219)
+#res<0418>
+pause
+#res<0419>
+pause
+#res<0420>
+pause
+#res<0421>
+pause
+#res<0422>
+pause
+#res<0423>
+pause
+#res<0424>
+pause
+koePlay (1111220)
+#res<0425>
+pause
+koePlay (1111221)
+#res<0426>
+pause
+koePlay (1111222)
+#res<0427>
+pause
+koePlay (1111223)
+#res<0428>
+pause
+koePlay (1111224)
+#res<0429>
+pause
+koePlay (1111225)
+#res<0430>
+pause
+koePlay (1111226)
+#res<0431>
+pause
+#res<0432>
+pause
+#res<0433>
+pause
+#res<0434>
+pause
+#res<0435>
+pause
+#res<0436>
+pause
+#res<0437>
+pause
+intF[406] = 1
+
+  @506
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG010Y'
+goto_unless (intF[1107] == 1) @507
+intF[1107] = 0
+msgHide
+
+  @507
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @511
+goto_unless (!intF[4]) @508
+strS[1003] = 'SDT07'
+goto @509
+
+  @508
+goto_unless (intF[4] == 1) @509
+strS[1003] = 'SDT08'
+
+  @509
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @510
+objBgMove (83, 16, 16)
+goto @511
+
+  @510
+goto_unless (intB[2] == 1) @511
+objBgMove (83, 16, 66)
+
+  @511
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @512
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @512
+bgrMulti (strS[1000], 48)
+#res<0438>
+pause
+#res<0439>
+pause
+#res<0440>
+pause
+#res<0441>
+pause
+koePlay (1111227)
+#res<0442>
+pause
+koePlay (1111228)
+#res<0443>
+pause
+koePlay (1111229)
+#res<0444>
+pause
+koePlay (1111230)
+#res<0445>
+pause
+koePlay (1111231)
+#res<0446>
+pause
+koePlay (1111232)
+#res<0447>
+pause
+koePlay (1111233)
+#res<0448>
+pause
+koePlay (1111234)
+#res<0449>
+pause
+#res<0450>
+pause
+koePlay (1111235)
+#res<0451>
+pause
+koePlay (1111236)
+#res<0452>
+pause
+koePlay (1111237)
+#res<0453>
+pause
+koePlay (1111238)
+#res<0454>
+pause
+koePlay (1111239)
+#res<0455>
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG016Y'
+goto_unless (intF[1107] == 1) @513
+intF[1107] = 0
+msgHide
+
+  @513
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @517
+goto_unless (!intF[4]) @514
+strS[1003] = 'SDT07'
+goto @515
+
+  @514
+goto_unless (intF[4] == 1) @515
+strS[1003] = 'SDT08'
+
+  @515
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @516
+objBgMove (83, 16, 16)
+goto @517
+
+  @516
+goto_unless (intB[2] == 1) @517
+objBgMove (83, 16, 66)
+
+  @517
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @518
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @518
+bgrMulti (strS[1000], 48)
+bgmLoop ('BGM02')
+goto_unless (intF[1107] == 1) @519
+intF[1107] = 0
+msgHide
+
+  @519
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @523
+goto_unless (!intF[4]) @520
+strS[1003] = 'SDT07'
+goto @521
+
+  @520
+goto_unless (intF[4] == 1) @521
+strS[1003] = 'SDT08'
+
+  @521
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @522
+objBgMove (83, 16, 16)
+goto @523
+
+  @522
+goto_unless (intB[2] == 1) @523
+objBgMove (83, 16, 66)
+
+  @523
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @524
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @524
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111240)
+#res<0456>
+pause
+#res<0457>
+pause
+#res<0458>
+pause
+koePlay (1111241)
+#res<0459>
+pause
+goto_unless (intF[1107] == 1) @525
+intF[1107] = 0
+msgHide
+
+  @525
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @529
+goto_unless (!intF[4]) @526
+strS[1003] = 'SDT07'
+goto @527
+
+  @526
+goto_unless (intF[4] == 1) @527
+strS[1003] = 'SDT08'
+
+  @527
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @528
+objBgMove (83, 16, 16)
+goto @529
+
+  @528
+goto_unless (intB[2] == 1) @529
+objBgMove (83, 16, 66)
+
+  @529
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @530
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @530
+bgrMulti (strS[1000], 60, copy('CGHI12T', 61))
+koePlay (1111242)
+#res<0460>
+pause
+koePlay (1111243)
+#res<0461>
+pause
+goto_unless (intF[1107] == 1) @531
+intF[1107] = 0
+msgHide
+
+  @531
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @535
+goto_unless (!intF[4]) @532
+strS[1003] = 'SDT07'
+goto @533
+
+  @532
+goto_unless (intF[4] == 1) @533
+strS[1003] = 'SDT08'
+
+  @533
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @534
+objBgMove (83, 16, 16)
+goto @535
+
+  @534
+goto_unless (intB[2] == 1) @535
+objBgMove (83, 16, 66)
+
+  @535
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @536
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @536
+bgrMulti (strS[1000], 60, copy('CGHI21T', 61))
+koePlay (1111244)
+#res<0462>
+pause
+koePlay (1111245)
+#res<0463>
+pause
+goto_unless (intF[1107] == 1) @537
+intF[1107] = 0
+msgHide
+
+  @537
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @541
+goto_unless (!intF[4]) @538
+strS[1003] = 'SDT07'
+goto @539
+
+  @538
+goto_unless (intF[4] == 1) @539
+strS[1003] = 'SDT08'
+
+  @539
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @540
+objBgMove (83, 16, 16)
+goto @541
+
+  @540
+goto_unless (intB[2] == 1) @541
+objBgMove (83, 16, 66)
+
+  @541
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @542
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @542
+bgrMulti (strS[1000], 0)
+#res<0464>
+pause
+#res<0465>
+pause
+koePlay (1111246)
+#res<0466>
+pause
+goto_unless (intF[1107] == 1) @543
+intF[1107] = 0
+msgHide
+
+  @543
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @547
+goto_unless (!intF[4]) @544
+strS[1003] = 'SDT07'
+goto @545
+
+  @544
+goto_unless (intF[4] == 1) @545
+strS[1003] = 'SDT08'
+
+  @545
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @546
+objBgMove (83, 16, 16)
+goto @547
+
+  @546
+goto_unless (intB[2] == 1) @547
+objBgMove (83, 16, 66)
+
+  @547
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @548
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @548
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111247)
+#res<0467>
+pause
+koePlay (1111248)
+#res<0468>
+pause
+koePlay (1111249)
+#res<0469>
+pause
+goto_unless (intF[1107] == 1) @549
+intF[1107] = 0
+msgHide
+
+  @549
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @553
+goto_unless (!intF[4]) @550
+strS[1003] = 'SDT07'
+goto @551
+
+  @550
+goto_unless (intF[4] == 1) @551
+strS[1003] = 'SDT08'
+
+  @551
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @552
+objBgMove (83, 16, 16)
+goto @553
+
+  @552
+goto_unless (intB[2] == 1) @553
+objBgMove (83, 16, 66)
+
+  @553
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @554
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @554
+bgrMulti (strS[1000], 60, copy('CGHI12T', 61))
+koePlay (1111250)
+#res<0470>
+pause
+koePlay (1111251)
+#res<0471>
+pause
+koePlay (1111252)
+#res<0472>
+pause
+#res<0473>
+pause
+#res<0474>
+pause
+koePlay (1111253)
+#res<0475>
+pause
+koePlay (1111254)
+#res<0476>
+pause
+koePlay (1111255)
+#res<0477>
+pause
+goto_unless (intF[1107] == 1) @555
+intF[1107] = 0
+msgHide
+
+  @555
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @559
+goto_unless (!intF[4]) @556
+strS[1003] = 'SDT07'
+goto @557
+
+  @556
+goto_unless (intF[4] == 1) @557
+strS[1003] = 'SDT08'
+
+  @557
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @558
+objBgMove (83, 16, 16)
+goto @559
+
+  @558
+goto_unless (intB[2] == 1) @559
+objBgMove (83, 16, 66)
+
+  @559
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @560
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @560
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111256)
+#res<0478>
+pause
+#res<0479>
+pause
+koePlay (1111257)
+#res<0480>
+pause
+goto_unless (intF[1107] == 1) @561
+intF[1107] = 0
+msgHide
+
+  @561
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @565
+goto_unless (!intF[4]) @562
+strS[1003] = 'SDT07'
+goto @563
+
+  @562
+goto_unless (intF[4] == 1) @563
+strS[1003] = 'SDT08'
+
+  @563
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @564
+objBgMove (83, 16, 16)
+goto @565
+
+  @564
+goto_unless (intB[2] == 1) @565
+objBgMove (83, 16, 66)
+
+  @565
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @566
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @566
+bgrMulti (strS[1000], 0)
+#res<0481>
+pause
+#res<0482>
+pause
+#res<0483>
+pause
+koePlay (1111258)
+#res<0484>
+pause
+goto_unless (intF[1107] == 1) @567
+intF[1107] = 0
+msgHide
+
+  @567
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @571
+goto_unless (!intF[4]) @568
+strS[1003] = 'SDT07'
+goto @569
+
+  @568
+goto_unless (intF[4] == 1) @569
+strS[1003] = 'SDT08'
+
+  @569
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @570
+objBgMove (83, 16, 16)
+goto @571
+
+  @570
+goto_unless (intB[2] == 1) @571
+objBgMove (83, 16, 66)
+
+  @571
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @572
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @572
+bgrMulti (strS[1000], 60, copy('CGHI14T', 61))
+koePlay (1111259)
+#res<0485>
+pause
+koePlay (1111260)
+#res<0486>
+pause
+goto_unless (intF[1107] == 1) @573
+intF[1107] = 0
+msgHide
+
+  @573
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @577
+goto_unless (!intF[4]) @574
+strS[1003] = 'SDT07'
+goto @575
+
+  @574
+goto_unless (intF[4] == 1) @575
+strS[1003] = 'SDT08'
+
+  @575
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @576
+objBgMove (83, 16, 16)
+goto @577
+
+  @576
+goto_unless (intB[2] == 1) @577
+objBgMove (83, 16, 66)
+
+  @577
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @578
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @578
+bgrMulti (strS[1000], 60, copy('CGHI15T', 61))
+koePlay (1111261)
+#res<0487>
+pause
+#res<0488>
+pause
+#res<0489>
+pause
+goto_unless (intF[1107] == 1) @579
+intF[1107] = 0
+msgHide
+
+  @579
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @583
+goto_unless (!intF[4]) @580
+strS[1003] = 'SDT07'
+goto @581
+
+  @580
+goto_unless (intF[4] == 1) @581
+strS[1003] = 'SDT08'
+
+  @581
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @582
+objBgMove (83, 16, 16)
+goto @583
+
+  @582
+goto_unless (intB[2] == 1) @583
+objBgMove (83, 16, 66)
+
+  @583
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @584
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @584
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111262)
+#res<0490>
+pause
+koePlay (1111263)
+#res<0491>
+pause
+#res<0492>
+pause
+#res<0493>
+pause
+#res<0494>
+pause
+goto_unless (intF[1107] == 1) @585
+intF[1107] = 0
+msgHide
+
+  @585
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @589
+goto_unless (!intF[4]) @586
+strS[1003] = 'SDT07'
+goto @587
+
+  @586
+goto_unless (intF[4] == 1) @587
+strS[1003] = 'SDT08'
+
+  @587
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @588
+objBgMove (83, 16, 16)
+goto @589
+
+  @588
+goto_unless (intB[2] == 1) @589
+objBgMove (83, 16, 66)
+
+  @589
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @590
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @590
+bgrMulti (strS[1000], 60, copy('CGHI12T', 61))
+koePlay (1111264)
+#res<0495>
+pause
+koePlay (1111265)
+#res<0496>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 48)
+#res<0497>
+pause
+#res<0498>
+pause
+koePlay (1111266)
+#res<0499>
+pause
+#res<0500>
+pause
+intF[1107] = 1
+strS[1000] = 'BG015Y'
+goto_unless (intF[1107] == 1) @591
+intF[1107] = 0
+msgHide
+
+  @591
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @595
+goto_unless (!intF[4]) @592
+strS[1003] = 'SDT07'
+goto @593
+
+  @592
+goto_unless (intF[4] == 1) @593
+strS[1003] = 'SDT08'
+
+  @593
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @594
+objBgMove (83, 16, 16)
+goto @595
+
+  @594
+goto_unless (intB[2] == 1) @595
+objBgMove (83, 16, 66)
+
+  @595
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @596
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @596
+bgrMulti (strS[1000], 48)
+#res<0501>
+pause
+#res<0502>
+pause
+#res<0503>
+pause
+#res<0504>
+pause
+#res<0505>
+pause
+#res<0506>
+pause
+#res<0507>
+pause
+#res<0508>
+pause
+bgmFadeOut (1200)
+#res<0509>
+pause
+#res<0510>
+pause
+#res<0511>
+pause
+#res<0512>
+pause
+bgmFadeOutEx
+bgmLoop ('BGM24')
+koePlay (1111267)
+#res<0513>
+pause
+koePlay (1111268)
+#res<0514>
+pause
+koePlay (1111269)
+#res<0515>
+pause
+koePlay (1111270)
+#res<0516>
+pause
+koePlay (1111271)
+#res<0517>
+pause
+koePlay (1111272)
+#res<0518>
+pause
+koePlay (1111273)
+#res<0519>
+pause
+koePlay (1111274)
+#res<0520>
+pause
+koePlay (1111275)
+#res<0521>
+pause
+koePlay (1111276)
+#res<0522>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016Y'
+goto_unless (intF[1107] == 1) @597
+intF[1107] = 0
+msgHide
+
+  @597
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @601
+goto_unless (!intF[4]) @598
+strS[1003] = 'SDT07'
+goto @599
+
+  @598
+goto_unless (intF[4] == 1) @599
+strS[1003] = 'SDT08'
+
+  @599
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @600
+objBgMove (83, 16, 16)
+goto @601
+
+  @600
+goto_unless (intB[2] == 1) @601
+objBgMove (83, 16, 66)
+
+  @601
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @602
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @602
+bgrMulti (strS[1000], 48)
+koePlay (1111277)
+#res<0523>
+pause
+goto_unless (intF[1107] == 1) @603
+intF[1107] = 0
+msgHide
+
+  @603
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @607
+goto_unless (!intF[4]) @604
+strS[1003] = 'SDT07'
+goto @605
+
+  @604
+goto_unless (intF[4] == 1) @605
+strS[1003] = 'SDT08'
+
+  @605
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @606
+objBgMove (83, 16, 16)
+goto @607
+
+  @606
+goto_unless (intB[2] == 1) @607
+objBgMove (83, 16, 66)
+
+  @607
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @608
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @608
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111278)
+#res<0524>
+pause
+#res<0525>
+pause
+goto_unless (intF[1107] == 1) @609
+intF[1107] = 0
+msgHide
+
+  @609
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @613
+goto_unless (!intF[4]) @610
+strS[1003] = 'SDT07'
+goto @611
+
+  @610
+goto_unless (intF[4] == 1) @611
+strS[1003] = 'SDT08'
+
+  @611
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @612
+objBgMove (83, 16, 16)
+goto @613
+
+  @612
+goto_unless (intB[2] == 1) @613
+objBgMove (83, 16, 66)
+
+  @613
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @614
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @614
+bgrMulti (strS[1000], 0)
+#res<0526>
+pause
+#res<0527>
+pause
+goto_unless (intF[1107] == 1) @615
+intF[1107] = 0
+msgHide
+
+  @615
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @619
+goto_unless (!intF[4]) @616
+strS[1003] = 'SDT07'
+goto @617
+
+  @616
+goto_unless (intF[4] == 1) @617
+strS[1003] = 'SDT08'
+
+  @617
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @618
+objBgMove (83, 16, 16)
+goto @619
+
+  @618
+goto_unless (intB[2] == 1) @619
+objBgMove (83, 16, 66)
+
+  @619
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @620
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @620
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111279)
+#res<0528>
+pause
+#res<0529>
+pause
+koePlay (1111280)
+#res<0530>
+pause
+#res<0531>
+pause
+goto_unless (intF[1107] == 1) @621
+intF[1107] = 0
+msgHide
+
+  @621
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @625
+goto_unless (!intF[4]) @622
+strS[1003] = 'SDT07'
+goto @623
+
+  @622
+goto_unless (intF[4] == 1) @623
+strS[1003] = 'SDT08'
+
+  @623
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @624
+objBgMove (83, 16, 16)
+goto @625
+
+  @624
+goto_unless (intB[2] == 1) @625
+objBgMove (83, 16, 66)
+
+  @625
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @626
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @626
+bgrMulti (strS[1000], 60, copy('CGHI14T', 61))
+koePlay (1111281)
+#res<0532>
+pause
+koePlay (1111282)
+#res<0533>
+pause
+koePlay (1111283)
+#res<0534>
+pause
+koePlay (1111284)
+#res<0535>
+pause
+goto_unless (intF[1107] == 1) @627
+intF[1107] = 0
+msgHide
+
+  @627
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @631
+goto_unless (!intF[4]) @628
+strS[1003] = 'SDT07'
+goto @629
+
+  @628
+goto_unless (intF[4] == 1) @629
+strS[1003] = 'SDT08'
+
+  @629
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @630
+objBgMove (83, 16, 16)
+goto @631
+
+  @630
+goto_unless (intB[2] == 1) @631
+objBgMove (83, 16, 66)
+
+  @631
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @632
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @632
+bgrMulti (strS[1000], 60, copy('CGHI13T', 61))
+koePlay (1111285)
+#res<0536>
+pause
+koePlay (1111286)
+#res<0537>
+pause
+#res<0538>
+pause
+#res<0539>
+pause
+koePlay (1111287)
+#res<0540>
+pause
+koePlay (1111288)
+#res<0541>
+pause
+goto_unless (intF[1107] == 1) @633
+intF[1107] = 0
+msgHide
+
+  @633
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @637
+goto_unless (!intF[4]) @634
+strS[1003] = 'SDT07'
+goto @635
+
+  @634
+goto_unless (intF[4] == 1) @635
+strS[1003] = 'SDT08'
+
+  @635
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @636
+objBgMove (83, 16, 16)
+goto @637
+
+  @636
+goto_unless (intB[2] == 1) @637
+objBgMove (83, 16, 66)
+
+  @637
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @638
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @638
+bgrMulti (strS[1000], 60, copy('CGHI14T', 61))
+koePlay (1111289)
+#res<0542>
+pause
+koePlay (1111290)
+#res<0543>
+pause
+koePlay (1111291)
+#res<0544>
+pause
+intF[399] = select (#res<0545>, #res<0546>)
+goto_unless (intF[399] == 1) @693
+#res<0547>
+pause
+#res<0548>
+pause
+#res<0549>
+pause
+#res<0550>
+pause
+#res<0551>
+pause
+#res<0552>
+pause
+koePlay (1111292)
+#res<0553>
+pause
+#res<0554>
+pause
+#res<0555>
+pause
+goto_unless (intF[1107] == 1) @639
+intF[1107] = 0
+msgHide
+
+  @639
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @643
+goto_unless (!intF[4]) @640
+strS[1003] = 'SDT07'
+goto @641
+
+  @640
+goto_unless (intF[4] == 1) @641
+strS[1003] = 'SDT08'
+
+  @641
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @642
+objBgMove (83, 16, 16)
+goto @643
+
+  @642
+goto_unless (intB[2] == 1) @643
+objBgMove (83, 16, 66)
+
+  @643
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @644
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @644
+bgrMulti (strS[1000], 60, copy('CGHI13T', 61))
+koePlay (1111293)
+#res<0556>
+pause
+#res<0557>
+pause
+goto_unless (intF[1107] == 1) @645
+intF[1107] = 0
+msgHide
+
+  @645
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @649
+goto_unless (!intF[4]) @646
+strS[1003] = 'SDT07'
+goto @647
+
+  @646
+goto_unless (intF[4] == 1) @647
+strS[1003] = 'SDT08'
+
+  @647
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @648
+objBgMove (83, 16, 16)
+goto @649
+
+  @648
+goto_unless (intB[2] == 1) @649
+objBgMove (83, 16, 66)
+
+  @649
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @650
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @650
+bgrMulti (strS[1000], 60, copy('CGHI10T', 61))
+koePlay (1111294)
+#res<0558>
+pause
+koePlay (1111295)
+#res<0559>
+pause
+koePlay (1111296)
+#res<0560>
+pause
+goto_unless (intF[1107] == 1) @651
+intF[1107] = 0
+msgHide
+
+  @651
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @655
+goto_unless (!intF[4]) @652
+strS[1003] = 'SDT07'
+goto @653
+
+  @652
+goto_unless (intF[4] == 1) @653
+strS[1003] = 'SDT08'
+
+  @653
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @654
+objBgMove (83, 16, 16)
+goto @655
+
+  @654
+goto_unless (intB[2] == 1) @655
+objBgMove (83, 16, 66)
+
+  @655
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @656
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @656
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111297)
+#res<0561>
+pause
+koePlay (1111298)
+#res<0562>
+pause
+goto_unless (intF[1107] == 1) @657
+intF[1107] = 0
+msgHide
+
+  @657
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @661
+goto_unless (!intF[4]) @658
+strS[1003] = 'SDT07'
+goto @659
+
+  @658
+goto_unless (intF[4] == 1) @659
+strS[1003] = 'SDT08'
+
+  @659
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @660
+objBgMove (83, 16, 16)
+goto @661
+
+  @660
+goto_unless (intB[2] == 1) @661
+objBgMove (83, 16, 66)
+
+  @661
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @662
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @662
+bgrMulti (strS[1000], 60, copy('CGHI13T', 61))
+koePlay (1111299)
+#res<0563>
+pause
+koePlay (1111300)
+#res<0564>
+pause
+#res<0565>
+pause
+koePlay (1111301)
+#res<0566>
+pause
+koePlay (1111302)
+#res<0567>
+pause
+koePlay (1111303)
+#res<0568>
+pause
+koePlay (1111304)
+#res<0569>
+pause
+#res<0570>
+pause
+#res<0571>
+pause
+koePlay (1111305)
+#res<0572>
+pause
+goto_unless (intF[1107] == 1) @663
+intF[1107] = 0
+msgHide
+
+  @663
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @667
+goto_unless (!intF[4]) @664
+strS[1003] = 'SDT07'
+goto @665
+
+  @664
+goto_unless (intF[4] == 1) @665
+strS[1003] = 'SDT08'
+
+  @665
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @666
+objBgMove (83, 16, 16)
+goto @667
+
+  @666
+goto_unless (intB[2] == 1) @667
+objBgMove (83, 16, 66)
+
+  @667
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @668
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @668
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111306)
+#res<0573>
+pause
+koePlay (1111307)
+#res<0574>
+pause
+koePlay (1111308)
+#res<0575>
+pause
+koePlay (1111309)
+#res<0576>
+pause
+koePlay (1111310)
+#res<0577>
+pause
+goto_unless (intF[1107] == 1) @669
+intF[1107] = 0
+msgHide
+
+  @669
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @673
+goto_unless (!intF[4]) @670
+strS[1003] = 'SDT07'
+goto @671
+
+  @670
+goto_unless (intF[4] == 1) @671
+strS[1003] = 'SDT08'
+
+  @671
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @672
+objBgMove (83, 16, 16)
+goto @673
+
+  @672
+goto_unless (intB[2] == 1) @673
+objBgMove (83, 16, 66)
+
+  @673
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @674
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @674
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111311)
+#res<0578>
+pause
+koePlay (1111312)
+#res<0579>
+pause
+koePlay (1111313)
+#res<0580>
+pause
+goto_unless (intF[1107] == 1) @675
+intF[1107] = 0
+msgHide
+
+  @675
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @679
+goto_unless (!intF[4]) @676
+strS[1003] = 'SDT07'
+goto @677
+
+  @676
+goto_unless (intF[4] == 1) @677
+strS[1003] = 'SDT08'
+
+  @677
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @678
+objBgMove (83, 16, 16)
+goto @679
+
+  @678
+goto_unless (intB[2] == 1) @679
+objBgMove (83, 16, 66)
+
+  @679
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @680
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @680
+bgrMulti (strS[1000], 0)
+#res<0581>
+pause
+koePlay (1111314)
+#res<0582>
+pause
+#res<0583>
+pause
+#res<0584>
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+intF[2] = 0
+title (#res<0585>)
+intF[1107] = 1
+strS[1000] = 'BG010Y'
+goto_unless (intF[1107] == 1) @681
+intF[1107] = 0
+msgHide
+
+  @681
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @685
+goto_unless (!intF[4]) @682
+strS[1003] = 'SDT07'
+goto @683
+
+  @682
+goto_unless (intF[4] == 1) @683
+strS[1003] = 'SDT08'
+
+  @683
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @684
+objBgMove (83, 16, 16)
+goto @685
+
+  @684
+goto_unless (intB[2] == 1) @685
+objBgMove (83, 16, 66)
+
+  @685
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @686
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @686
+bgrMulti (strS[1000], 48)
+#res<0586>
+pause
+#res<0587>
+pause
+#res<0588>
+pause
+#res<0589>
+pause
+#res<0590>
+pause
+#res<0591>
+pause
+#res<0592>
+pause
+intF[1107] = 1
+strS[1000] = 'BG003Y'
+goto_unless (intF[1107] == 1) @687
+intF[1107] = 0
+msgHide
+
+  @687
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @691
+goto_unless (!intF[4]) @688
+strS[1003] = 'SDT07'
+goto @689
+
+  @688
+goto_unless (intF[4] == 1) @689
+strS[1003] = 'SDT08'
+
+  @689
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @690
+objBgMove (83, 16, 16)
+goto @691
+
+  @690
+goto_unless (intB[2] == 1) @691
+objBgMove (83, 16, 66)
+
+  @691
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @692
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @692
+bgrMulti (strS[1000], 0)
+#res<0593>
+pause
+#res<0594>
+pause
+#res<0595>
+pause
+#res<0596>
+pause
+#res<0597>
+pause
+#res<0598>
+pause
+#res<0599>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+#res<0600>
+pause
+#res<0601>
+pause
+#res<0602>
+pause
+#res<0603>
+pause
+#res<0604>
+pause
+#res<0605>
+pause
+#res<0606>
+pause
+#res<0607>
+pause
+#res<0608>
+pause
+#res<0609>
+pause
+bgmFadeOut (1200)
+#res<0610>
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+ReturnMenu
+
+  @693
+#res<0611>
+pause
+goto_unless (intF[1107] == 1) @694
+intF[1107] = 0
+msgHide
+
+  @694
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @698
+goto_unless (!intF[4]) @695
+strS[1003] = 'SDT07'
+goto @696
+
+  @695
+goto_unless (intF[4] == 1) @696
+strS[1003] = 'SDT08'
+
+  @696
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @697
+objBgMove (83, 16, 16)
+goto @698
+
+  @697
+goto_unless (intB[2] == 1) @698
+objBgMove (83, 16, 66)
+
+  @698
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @699
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @699
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111315)
+#res<0612>
+pause
+goto_unless (intF[1107] == 1) @700
+intF[1107] = 0
+msgHide
+
+  @700
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @704
+goto_unless (!intF[4]) @701
+strS[1003] = 'SDT07'
+goto @702
+
+  @701
+goto_unless (intF[4] == 1) @702
+strS[1003] = 'SDT08'
+
+  @702
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @703
+objBgMove (83, 16, 16)
+goto @704
+
+  @703
+goto_unless (intB[2] == 1) @704
+objBgMove (83, 16, 66)
+
+  @704
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @705
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @705
+bgrMulti (strS[1000], 0)
+#res<0613>
+pause
+#res<0614>
+pause
+koePlay (1111316)
+#res<0615>
+pause
+koePlay (1111317)
+#res<0616>
+pause
+koePlay (1111318)
+#res<0617>
+pause
+koePlay (1111319)
+#res<0618>
+pause
+#res<0619>
+pause
+#res<0620>
+pause
+#res<0621>
+pause
+koePlay (1111320)
+#res<0622>
+pause
+#res<0623>
+pause
+koePlay (1111321)
+#res<0624>
+pause
+#res<0625>
+pause
+bgmStop
+bgmLoop ('BGM11')
+intF[1107] = 1
+strS[1000] = 'BG010Y'
+goto_unless (intF[1107] == 1) @706
+intF[1107] = 0
+msgHide
+
+  @706
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @710
+goto_unless (!intF[4]) @707
+strS[1003] = 'SDT07'
+goto @708
+
+  @707
+goto_unless (intF[4] == 1) @708
+strS[1003] = 'SDT08'
+
+  @708
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @709
+objBgMove (83, 16, 16)
+goto @710
+
+  @709
+goto_unless (intB[2] == 1) @710
+objBgMove (83, 16, 66)
+
+  @710
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @711
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @711
+bgrMulti (strS[1000], 48)
+#res<0626>
+pause
+#res<0627>
+pause
+#res<0628>
+pause
+#res<0629>
+pause
+#res<0630>
+pause
+#res<0631>
+pause
+#res<0632>
+pause
+#res<0633>
+pause
+#res<0634>
+pause
+intF[399] = select (#res<0635>, #res<0636>, #res<0637>)
+goto_unless (intF[399] == 2) @759
+
+  @712
+goto_unless (intF[408] != 1) @731
+koePlay (1111322)
+#res<0638>
+pause
+#res<0639>
+pause
+#res<0640>
+pause
+#res<0641>
+pause
+#res<0642>
+pause
+#res<0643>
+pause
+#res<0644>
+pause
+#res<0645>
+pause
+intF[1107] = 1
+strS[1000] = 'BG014Y'
+goto_unless (intF[1107] == 1) @713
+intF[1107] = 0
+msgHide
+
+  @713
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @717
+goto_unless (!intF[4]) @714
+strS[1003] = 'SDT07'
+goto @715
+
+  @714
+goto_unless (intF[4] == 1) @715
+strS[1003] = 'SDT08'
+
+  @715
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @716
+objBgMove (83, 16, 16)
+goto @717
+
+  @716
+goto_unless (intB[2] == 1) @717
+objBgMove (83, 16, 66)
+
+  @717
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @718
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @718
+bgrMulti (strS[1000], 48)
+#res<0646>
+pause
+#res<0647>
+pause
+#res<0648>
+pause
+#res<0649>
+pause
+#res<0650>
+pause
+intF[1107] = 1
+strS[1000] = 'BG013Y'
+goto_unless (intF[1107] == 1) @719
+intF[1107] = 0
+msgHide
+
+  @719
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @723
+goto_unless (!intF[4]) @720
+strS[1003] = 'SDT07'
+goto @721
+
+  @720
+goto_unless (intF[4] == 1) @721
+strS[1003] = 'SDT08'
+
+  @721
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @722
+objBgMove (83, 16, 16)
+goto @723
+
+  @722
+goto_unless (intB[2] == 1) @723
+objBgMove (83, 16, 66)
+
+  @723
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @724
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @724
+bgrMulti (strS[1000], 48)
+#res<0651>
+pause
+#res<0652>
+pause
+#res<0653>
+pause
+#res<0654>
+pause
+#res<0655>
+pause
+intF[1107] = 1
+strS[1000] = 'BG012Y'
+goto_unless (intF[1107] == 1) @725
+intF[1107] = 0
+msgHide
+
+  @725
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @729
+goto_unless (!intF[4]) @726
+strS[1003] = 'SDT07'
+goto @727
+
+  @726
+goto_unless (intF[4] == 1) @727
+strS[1003] = 'SDT08'
+
+  @727
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @728
+objBgMove (83, 16, 16)
+goto @729
+
+  @728
+goto_unless (intB[2] == 1) @729
+objBgMove (83, 16, 66)
+
+  @729
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @730
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @730
+bgrMulti (strS[1000], 48)
+#res<0656>
+pause
+#res<0657>
+pause
+#res<0658>
+pause
+#res<0659>
+pause
+koePlay (1111323)
+#res<0660>
+pause
+#res<0661>
+pause
+koePlay (1111324)
+#res<0662>
+pause
+#res<0663>
+pause
+#res<0664>
+pause
+#res<0665>
+pause
+#res<0666>
+pause
+#res<0667>
+pause
+#res<0668>
+pause
+#res<0669>
+pause
+#res<0670>
+pause
+koePlay (1111325)
+#res<0671>
+pause
+#res<0672>
+pause
+koePlay (1111326)
+#res<0673>
+pause
+#res<0674>
+pause
+#res<0675>
+pause
+#res<0676>
+pause
+#res<0677>
+pause
+#res<0678>
+pause
+#res<0679>
+pause
+#res<0680>
+pause
+#res<0681>
+pause
+#res<0682>
+pause
+intF[407] = 1
+goto @756
+
+  @731
+koePlay (1111327)
+#res<0683>
+pause
+#res<0684>
+pause
+#res<0685>
+pause
+#res<0686>
+pause
+#res<0687>
+pause
+#res<0688>
+pause
+#res<0689>
+pause
+#res<0690>
+pause
+intF[1107] = 1
+strS[1000] = 'BG014Y'
+goto_unless (intF[1107] == 1) @732
+intF[1107] = 0
+msgHide
+
+  @732
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @736
+goto_unless (!intF[4]) @733
+strS[1003] = 'SDT07'
+goto @734
+
+  @733
+goto_unless (intF[4] == 1) @734
+strS[1003] = 'SDT08'
+
+  @734
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @735
+objBgMove (83, 16, 16)
+goto @736
+
+  @735
+goto_unless (intB[2] == 1) @736
+objBgMove (83, 16, 66)
+
+  @736
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @737
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @737
+bgrMulti (strS[1000], 48)
+#res<0691>
+pause
+#res<0692>
+pause
+#res<0693>
+pause
+#res<0694>
+pause
+#res<0695>
+pause
+#res<0696>
+pause
+#res<0697>
+pause
+#res<0698>
+pause
+intF[1107] = 1
+strS[1000] = 'BG013Y'
+goto_unless (intF[1107] == 1) @738
+intF[1107] = 0
+msgHide
+
+  @738
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @742
+goto_unless (!intF[4]) @739
+strS[1003] = 'SDT07'
+goto @740
+
+  @739
+goto_unless (intF[4] == 1) @740
+strS[1003] = 'SDT08'
+
+  @740
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @741
+objBgMove (83, 16, 16)
+goto @742
+
+  @741
+goto_unless (intB[2] == 1) @742
+objBgMove (83, 16, 66)
+
+  @742
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @743
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @743
+bgrMulti (strS[1000], 48)
+#res<0699>
+pause
+#res<0700>
+pause
+#res<0701>
+pause
+#res<0702>
+pause
+#res<0703>
+pause
+intF[1107] = 1
+strS[1000] = 'BG012Y'
+goto_unless (intF[1107] == 1) @744
+intF[1107] = 0
+msgHide
+
+  @744
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @748
+goto_unless (!intF[4]) @745
+strS[1003] = 'SDT07'
+goto @746
+
+  @745
+goto_unless (intF[4] == 1) @746
+strS[1003] = 'SDT08'
+
+  @746
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @747
+objBgMove (83, 16, 16)
+goto @748
+
+  @747
+goto_unless (intB[2] == 1) @748
+objBgMove (83, 16, 66)
+
+  @748
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @749
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @749
+bgrMulti (strS[1000], 48)
+#res<0704>
+pause
+#res<0705>
+pause
+#res<0706>
+pause
+#res<0707>
+pause
+koePlay (1111328)
+#res<0708>
+pause
+#res<0709>
+pause
+koePlay (1111329)
+#res<0710>
+pause
+#res<0711>
+pause
+#res<0712>
+pause
+#res<0713>
+pause
+#res<0714>
+pause
+#res<0715>
+pause
+#res<0716>
+pause
+#res<0717>
+pause
+koePlay (1111330)
+#res<0718>
+pause
+#res<0719>
+pause
+#res<0720>
+pause
+koePlay (1111331)
+#res<0721>
+pause
+#res<0722>
+pause
+#res<0723>
+pause
+#res<0724>
+pause
+#res<0725>
+pause
+#res<0726>
+pause
+bgmFadeOut (1200)
+#res<0727>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 0)
+intF[1107] = 1
+strS[1000] = 'BG012N'
+goto_unless (intF[1107] == 1) @750
+intF[1107] = 0
+msgHide
+
+  @750
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @754
+goto_unless (!intF[4]) @751
+strS[1003] = 'SDT07'
+goto @752
+
+  @751
+goto_unless (intF[4] == 1) @752
+strS[1003] = 'SDT08'
+
+  @752
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @753
+objBgMove (83, 16, 16)
+goto @754
+
+  @753
+goto_unless (intB[2] == 1) @754
+objBgMove (83, 16, 66)
+
+  @754
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @755
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @755
+bgrMulti (strS[1000], 0)
+bgmFadeOutEx
+bgmLoop ('BGM09')
+#res<0728>
+pause
+#res<0729>
+pause
+#res<0730>
+pause
+#res<0731>
+pause
+#res<0732>
+pause
+koePlay (1111332)
+#res<0733>
+pause
+#res<0734>
+pause
+intF[407] = 1
+
+  @756
+goto_unless (intF[408] != 1) @758
+intF[408] = 1
+intF[399] = select (#res<0735>, #res<0736>)
+goto_unless (!intF[399]) @757
+goto @798
+
+  @757
+goto_unless (intF[399] == 1) @758
+goto @760
+
+  @758
+goto @821
+
+  @759
+goto_unless (intF[399] == 1) @797
+
+  @760
+goto_unless (intF[408] != 1) @775
+#res<0737>
+pause
+#res<0738>
+pause
+#res<0739>
+pause
+#res<0740>
+pause
+#res<0741>
+pause
+intF[1107] = 1
+strS[1000] = 'BG003Y'
+goto_unless (intF[1107] == 1) @761
+intF[1107] = 0
+msgHide
+
+  @761
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @765
+goto_unless (!intF[4]) @762
+strS[1003] = 'SDT07'
+goto @763
+
+  @762
+goto_unless (intF[4] == 1) @763
+strS[1003] = 'SDT08'
+
+  @763
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @764
+objBgMove (83, 16, 16)
+goto @765
+
+  @764
+goto_unless (intB[2] == 1) @765
+objBgMove (83, 16, 66)
+
+  @765
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @766
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @766
+bgrMulti (strS[1000], 48)
+#res<0742>
+pause
+#res<0743>
+pause
+#res<0744>
+pause
+#res<0745>
+pause
+#res<0746>
+pause
+#res<0747>
+pause
+#res<0748>
+pause
+#res<0749>
+pause
+#res<0750>
+pause
+#res<0751>
+pause
+#res<0752>
+pause
+intF[1107] = 1
+strS[1000] = 'BG004Y'
+goto_unless (intF[1107] == 1) @767
+intF[1107] = 0
+msgHide
+
+  @767
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @771
+goto_unless (!intF[4]) @768
+strS[1003] = 'SDT07'
+goto @769
+
+  @768
+goto_unless (intF[4] == 1) @769
+strS[1003] = 'SDT08'
+
+  @769
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @770
+objBgMove (83, 16, 16)
+goto @771
+
+  @770
+goto_unless (intB[2] == 1) @771
+objBgMove (83, 16, 66)
+
+  @771
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @772
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @772
+bgrMulti (strS[1000], 48)
+koePlay (1111333)
+#res<0753>
+pause
+#res<0754>
+pause
+#res<0755>
+pause
+#res<0756>
+pause
+#res<0757>
+pause
+#res<0758>
+pause
+#res<0759>
+pause
+koePlay (1111334)
+#res<0760>
+pause
+#res<0761>
+pause
+#res<0762>
+pause
+koePlay (1111335)
+#res<0763>
+pause
+#res<0764>
+pause
+koePlay (1111336)
+#res<0765>
+pause
+koePlay (1111337)
+#res<0766>
+pause
+koePlay (1111338)
+#res<0767>
+pause
+goto_unless (intF[413] == 1) @773
+koePlay (1111339)
+#res<0768>
+pause
+koePlay (1111340)
+#res<0769>
+pause
+#res<0770>
+pause
+koePlay (1111341)
+#res<0771>
+pause
+goto @774
+
+  @773
+koePlay (1111342)
+#res<0772>
+pause
+
+  @774
+koePlay (1111343)
+#res<0773>
+pause
+koePlay (1111344)
+#res<0774>
+pause
+#res<0775>
+pause
+#res<0776>
+pause
+#res<0777>
+pause
+#res<0778>
+pause
+#res<0779>
+pause
+#res<0780>
+pause
+#res<0781>
+pause
+#res<0782>
+pause
+goto @794
+
+  @775
+#res<0783>
+pause
+#res<0784>
+pause
+#res<0785>
+pause
+#res<0786>
+pause
+#res<0787>
+pause
+#res<0788>
+pause
+#res<0789>
+pause
+intF[1107] = 1
+strS[1000] = 'BG003Y'
+goto_unless (intF[1107] == 1) @776
+intF[1107] = 0
+msgHide
+
+  @776
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @780
+goto_unless (!intF[4]) @777
+strS[1003] = 'SDT07'
+goto @778
+
+  @777
+goto_unless (intF[4] == 1) @778
+strS[1003] = 'SDT08'
+
+  @778
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @779
+objBgMove (83, 16, 16)
+goto @780
+
+  @779
+goto_unless (intB[2] == 1) @780
+objBgMove (83, 16, 66)
+
+  @780
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @781
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @781
+bgrMulti (strS[1000], 48)
+#res<0790>
+pause
+#res<0791>
+pause
+#res<0792>
+pause
+#res<0793>
+pause
+#res<0794>
+pause
+#res<0795>
+pause
+#res<0796>
+pause
+#res<0797>
+pause
+#res<0798>
+pause
+#res<0799>
+pause
+#res<0800>
+pause
+intF[1107] = 1
+strS[1000] = 'BG004Y'
+goto_unless (intF[1107] == 1) @782
+intF[1107] = 0
+msgHide
+
+  @782
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @786
+goto_unless (!intF[4]) @783
+strS[1003] = 'SDT07'
+goto @784
+
+  @783
+goto_unless (intF[4] == 1) @784
+strS[1003] = 'SDT08'
+
+  @784
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @785
+objBgMove (83, 16, 16)
+goto @786
+
+  @785
+goto_unless (intB[2] == 1) @786
+objBgMove (83, 16, 66)
+
+  @786
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @787
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @787
+bgrMulti (strS[1000], 48)
+#res<0801>
+pause
+#res<0802>
+pause
+#res<0803>
+pause
+#res<0804>
+pause
+#res<0805>
+pause
+#res<0806>
+pause
+#res<0807>
+pause
+#res<0808>
+pause
+#res<0809>
+pause
+koePlay (1111345)
+#res<0810>
+pause
+#res<0811>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+#res<0812>
+pause
+#res<0813>
+pause
+#res<0814>
+pause
+#res<0815>
+pause
+#res<0816>
+pause
+#res<0817>
+pause
+#res<0818>
+pause
+bgmFadeOut (1200)
+#res<0819>
+pause
+bgmFadeOutEx
+bgmLoop ('BGM09')
+intF[1107] = 1
+strS[1000] = 'BG019N'
+goto_unless (intF[1107] == 1) @788
+intF[1107] = 0
+msgHide
+
+  @788
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @792
+goto_unless (!intF[4]) @789
+strS[1003] = 'SDT07'
+goto @790
+
+  @789
+goto_unless (intF[4] == 1) @790
+strS[1003] = 'SDT08'
+
+  @790
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @791
+objBgMove (83, 16, 16)
+goto @792
+
+  @791
+goto_unless (intB[2] == 1) @792
+objBgMove (83, 16, 66)
+
+  @792
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @793
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @793
+bgrMulti (strS[1000], 48)
+#res<0820>
+pause
+#res<0821>
+pause
+#res<0822>
+pause
+#res<0823>
+pause
+koePlay (1111346)
+#res<0824>
+pause
+#res<0825>
+pause
+
+  @794
+goto_unless (intF[408] != 1) @796
+intF[408] = 1
+intF[399] = select (#res<0826>, #res<0827>)
+goto_unless (!intF[399]) @795
+goto @798
+
+  @795
+goto_unless (intF[399] == 1) @796
+goto @712
+
+  @796
+goto @821
+
+  @797
+goto_unless (!intF[399]) @821
+
+  @798
+goto_unless (intF[408] != 1) @805
+#res<0828>
+pause
+#res<0829>
+pause
+#res<0830>
+pause
+#res<0831>
+pause
+#res<0832>
+pause
+#res<0833>
+pause
+#res<0834>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+#res<0835>
+pause
+#res<0836>
+pause
+koePlay (1111347)
+#res<0837>
+pause
+koePlay (1111348)
+#res<0838>
+pause
+koePlay (1111349)
+#res<0839>
+pause
+koePlay (1111350)
+#res<0840>
+pause
+#res<0841>
+pause
+#res<0842>
+pause
+#res<0843>
+pause
+#res<0844>
+pause
+#res<0845>
+pause
+#res<0846>
+pause
+#res<0847>
+pause
+#res<0848>
+pause
+#res<0849>
+pause
+intF[1107] = 1
+strS[1000] = 'BG008Y'
+goto_unless (intF[1107] == 1) @799
+intF[1107] = 0
+msgHide
+
+  @799
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @803
+goto_unless (!intF[4]) @800
+strS[1003] = 'SDT07'
+goto @801
+
+  @800
+goto_unless (intF[4] == 1) @801
+strS[1003] = 'SDT08'
+
+  @801
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @802
+objBgMove (83, 16, 16)
+goto @803
+
+  @802
+goto_unless (intB[2] == 1) @803
+objBgMove (83, 16, 66)
+
+  @803
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @804
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @804
+bgrMulti (strS[1000], 48)
+#res<0850>
+pause
+#res<0851>
+pause
+#res<0852>
+pause
+#res<0853>
+pause
+koePlay (1111351)
+#res<0854>
+pause
+#res<0855>
+pause
+#res<0856>
+pause
+#res<0857>
+pause
+#res<0858>
+pause
+#res<0859>
+pause
+#res<0860>
+pause
+#res<0861>
+pause
+#res<0862>
+pause
+#res<0863>
+pause
+#res<0864>
+pause
+#res<0865>
+pause
+#res<0866>
+pause
+#res<0867>
+pause
+#res<0868>
+pause
+#res<0869>
+pause
+#res<0870>
+pause
+goto @818
+
+  @805
+#res<0871>
+pause
+#res<0872>
+pause
+#res<0873>
+pause
+#res<0874>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+#res<0875>
+pause
+#res<0876>
+pause
+koePlay (1111352)
+#res<0877>
+pause
+koePlay (1111353)
+#res<0878>
+pause
+koePlay (1111354)
+#res<0879>
+pause
+koePlay (1111355)
+#res<0880>
+pause
+#res<0881>
+pause
+#res<0882>
+pause
+#res<0883>
+pause
+#res<0884>
+pause
+#res<0885>
+pause
+#res<0886>
+pause
+#res<0887>
+pause
+#res<0888>
+pause
+#res<0889>
+pause
+intF[1107] = 1
+strS[1000] = 'BG008Y'
+goto_unless (intF[1107] == 1) @806
+intF[1107] = 0
+msgHide
+
+  @806
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @810
+goto_unless (!intF[4]) @807
+strS[1003] = 'SDT07'
+goto @808
+
+  @807
+goto_unless (intF[4] == 1) @808
+strS[1003] = 'SDT08'
+
+  @808
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @809
+objBgMove (83, 16, 16)
+goto @810
+
+  @809
+goto_unless (intB[2] == 1) @810
+objBgMove (83, 16, 66)
+
+  @810
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @811
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @811
+bgrMulti (strS[1000], 48)
+#res<0890>
+pause
+#res<0891>
+pause
+#res<0892>
+pause
+#res<0893>
+pause
+koePlay (1111356)
+#res<0894>
+pause
+koePlay (1111357)
+#res<0895>
+pause
+koePlay (1111358)
+#res<0896>
+pause
+koePlay (1111359)
+#res<0897>
+pause
+koePlay (1111360)
+#res<0898>
+pause
+koePlay (1111361)
+#res<0899>
+pause
+koePlay (1111362)
+#res<0900>
+pause
+koePlay (1111363)
+#res<0901>
+pause
+koePlay (1111364)
+#res<0902>
+pause
+koePlay (1111365)
+#res<0903>
+pause
+koePlay (1111366)
+#res<0904>
+pause
+koePlay (1111367)
+#res<0905>
+pause
+#res<0906>
+pause
+bgmFadeOut (1200)
+#res<0907>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 0)
+bgmFadeOutEx
+bgmLoop ('BGM09')
+intF[1107] = 1
+strS[1000] = 'BG008N'
+goto_unless (intF[1107] == 1) @812
+intF[1107] = 0
+msgHide
+
+  @812
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @816
+goto_unless (!intF[4]) @813
+strS[1003] = 'SDT07'
+goto @814
+
+  @813
+goto_unless (intF[4] == 1) @814
+strS[1003] = 'SDT08'
+
+  @814
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @815
+objBgMove (83, 16, 16)
+goto @816
+
+  @815
+goto_unless (intB[2] == 1) @816
+objBgMove (83, 16, 66)
+
+  @816
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @817
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @817
+bgrMulti (strS[1000], 0)
+#res<0908>
+pause
+#res<0909>
+pause
+#res<0910>
+pause
+#res<0911>
+pause
+koePlay (1111368)
+#res<0912>
+pause
+#res<0913>
+pause
+
+  @818
+goto_unless (intF[408] != 1) @820
+intF[408] = 1
+intF[399] = select (#res<0914>, #res<0915>)
+goto_unless (!intF[399]) @819
+goto @760
+
+  @819
+goto_unless (intF[399] == 1) @820
+goto @712
+
+  @820
+goto @821
+
+  @821
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG010N'
+goto_unless (intF[1107] == 1) @822
+intF[1107] = 0
+msgHide
+
+  @822
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @826
+goto_unless (!intF[4]) @823
+strS[1003] = 'SDT07'
+goto @824
+
+  @823
+goto_unless (intF[4] == 1) @824
+strS[1003] = 'SDT08'
+
+  @824
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @825
+objBgMove (83, 16, 16)
+goto @826
+
+  @825
+goto_unless (intB[2] == 1) @826
+objBgMove (83, 16, 66)
+
+  @826
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @827
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @827
+bgrMulti (strS[1000], 48)
+#res<0916>
+pause
+#res<0917>
+pause
+#res<0918>
+pause
+#res<0919>
+pause
+#res<0920>
+pause
+#res<0921>
+pause
+#res<0922>
+pause
+goto_unless (intF[407] != 1 || intF[406] != 1) @956
+#res<0923>
+pause
+#res<0924>
+pause
+#res<0925>
+pause
+#res<0926>
+pause
+#res<0927>
+pause
+#res<0928>
+pause
+#res<0929>
+pause
+#res<0930>
+pause
+#res<0931>
+pause
+#res<0932>
+pause
+#res<0933>
+pause
+#res<0934>
+pause
+#res<0935>
+pause
+#res<0936>
+pause
+#res<0937>
+pause
+#res<0938>
+pause
+#res<0939>
+pause
+#res<0940>
+pause
+#res<0941>
+pause
+#res<0942>
+pause
+#res<0943>
+pause
+#res<0944>
+pause
+#res<0945>
+pause
+#res<0946>
+pause
+#res<0947>
+pause
+goto_unless (intF[1107] == 1) @828
+intF[1107] = 0
+msgHide
+
+  @828
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @832
+goto_unless (!intF[4]) @829
+strS[1003] = 'SDT07'
+goto @830
+
+  @829
+goto_unless (intF[4] == 1) @830
+strS[1003] = 'SDT08'
+
+  @830
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @831
+objBgMove (83, 16, 16)
+goto @832
+
+  @831
+goto_unless (intB[2] == 1) @832
+objBgMove (83, 16, 66)
+
+  @832
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @833
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @833
+bgrMulti (strS[1000], 60, copy('CGHI11TN', 61))
+koePlay (1111369)
+#res<0948>
+pause
+#res<0949>
+pause
+#res<0950>
+pause
+goto_unless (intF[1107] == 1) @834
+intF[1107] = 0
+msgHide
+
+  @834
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @838
+goto_unless (!intF[4]) @835
+strS[1003] = 'SDT07'
+goto @836
+
+  @835
+goto_unless (intF[4] == 1) @836
+strS[1003] = 'SDT08'
+
+  @836
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @837
+objBgMove (83, 16, 16)
+goto @838
+
+  @837
+goto_unless (intB[2] == 1) @838
+objBgMove (83, 16, 66)
+
+  @838
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @839
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @839
+bgrMulti (strS[1000], 60, copy('CGHI12TN', 61))
+koePlay (1111370)
+#res<0951>
+pause
+koePlay (1111371)
+#res<0952>
+pause
+#res<0953>
+pause
+#res<0954>
+pause
+goto_unless (intF[1107] == 1) @840
+intF[1107] = 0
+msgHide
+
+  @840
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @844
+goto_unless (!intF[4]) @841
+strS[1003] = 'SDT07'
+goto @842
+
+  @841
+goto_unless (intF[4] == 1) @842
+strS[1003] = 'SDT08'
+
+  @842
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @843
+objBgMove (83, 16, 16)
+goto @844
+
+  @843
+goto_unless (intB[2] == 1) @844
+objBgMove (83, 16, 66)
+
+  @844
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @845
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @845
+bgrMulti (strS[1000], 0)
+#res<0955>
+pause
+#res<0956>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016N1'
+goto_unless (intF[1107] == 1) @846
+intF[1107] = 0
+msgHide
+
+  @846
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @850
+goto_unless (!intF[4]) @847
+strS[1003] = 'SDT07'
+goto @848
+
+  @847
+goto_unless (intF[4] == 1) @848
+strS[1003] = 'SDT08'
+
+  @848
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @849
+objBgMove (83, 16, 16)
+goto @850
+
+  @849
+goto_unless (intB[2] == 1) @850
+objBgMove (83, 16, 66)
+
+  @850
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @851
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @851
+bgrMulti (strS[1000], 48)
+#res<0957>
+pause
+#res<0958>
+pause
+goto_unless (intF[1107] == 1) @852
+intF[1107] = 0
+msgHide
+
+  @852
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @856
+goto_unless (!intF[4]) @853
+strS[1003] = 'SDT07'
+goto @854
+
+  @853
+goto_unless (intF[4] == 1) @854
+strS[1003] = 'SDT08'
+
+  @854
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @855
+objBgMove (83, 16, 16)
+goto @856
+
+  @855
+goto_unless (intB[2] == 1) @856
+objBgMove (83, 16, 66)
+
+  @856
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @857
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @857
+bgrMulti (strS[1000], 60, copy('CGHI13T', 61))
+#res<0959>
+pause
+#res<0960>
+pause
+koePlay (1111372)
+#res<0961>
+pause
+#res<0962>
+pause
+koePlay (1111373)
+#res<0963>
+pause
+koePlay (1111374)
+#res<0964>
+pause
+goto_unless (intF[1107] == 1) @858
+intF[1107] = 0
+msgHide
+
+  @858
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @862
+goto_unless (!intF[4]) @859
+strS[1003] = 'SDT07'
+goto @860
+
+  @859
+goto_unless (intF[4] == 1) @860
+strS[1003] = 'SDT08'
+
+  @860
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @861
+objBgMove (83, 16, 16)
+goto @862
+
+  @861
+goto_unless (intB[2] == 1) @862
+objBgMove (83, 16, 66)
+
+  @862
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @863
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @863
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111375)
+#res<0965>
+pause
+#res<0966>
+pause
+koePlay (1111376)
+#res<0967>
+pause
+koePlay (1111377)
+#res<0968>
+pause
+goto_unless (intF[1107] == 1) @864
+intF[1107] = 0
+msgHide
+
+  @864
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @868
+goto_unless (!intF[4]) @865
+strS[1003] = 'SDT07'
+goto @866
+
+  @865
+goto_unless (intF[4] == 1) @866
+strS[1003] = 'SDT08'
+
+  @866
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @867
+objBgMove (83, 16, 16)
+goto @868
+
+  @867
+goto_unless (intB[2] == 1) @868
+objBgMove (83, 16, 66)
+
+  @868
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @869
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @869
+bgrMulti (strS[1000], 0)
+#res<0969>
+pause
+#res<0970>
+pause
+#res<0971>
+pause
+goto_unless (intF[1107] == 1) @870
+intF[1107] = 0
+msgHide
+
+  @870
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @874
+goto_unless (!intF[4]) @871
+strS[1003] = 'SDT07'
+goto @872
+
+  @871
+goto_unless (intF[4] == 1) @872
+strS[1003] = 'SDT08'
+
+  @872
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @873
+objBgMove (83, 16, 16)
+goto @874
+
+  @873
+goto_unless (intB[2] == 1) @874
+objBgMove (83, 16, 66)
+
+  @874
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @875
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @875
+bgrMulti (strS[1000], 60, copy('CGHI22T', 61))
+koePlay (1111378)
+#res<0972>
+pause
+#res<0973>
+pause
+#res<0974>
+pause
+#res<0975>
+pause
+koePlay (1111379)
+#res<0976>
+pause
+goto_unless (intF[1107] == 1) @876
+intF[1107] = 0
+msgHide
+
+  @876
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @880
+goto_unless (!intF[4]) @877
+strS[1003] = 'SDT07'
+goto @878
+
+  @877
+goto_unless (intF[4] == 1) @878
+strS[1003] = 'SDT08'
+
+  @878
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @879
+objBgMove (83, 16, 16)
+goto @880
+
+  @879
+goto_unless (intB[2] == 1) @880
+objBgMove (83, 16, 66)
+
+  @880
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @881
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @881
+bgrMulti (strS[1000], 60, copy('CGHI24T', 61))
+koePlay (1111380)
+#res<0977>
+pause
+#res<0978>
+pause
+koePlay (1111381)
+#res<0979>
+pause
+#res<0980>
+pause
+goto_unless (intF[1107] == 1) @882
+intF[1107] = 0
+msgHide
+
+  @882
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @886
+goto_unless (!intF[4]) @883
+strS[1003] = 'SDT07'
+goto @884
+
+  @883
+goto_unless (intF[4] == 1) @884
+strS[1003] = 'SDT08'
+
+  @884
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @885
+objBgMove (83, 16, 16)
+goto @886
+
+  @885
+goto_unless (intB[2] == 1) @886
+objBgMove (83, 16, 66)
+
+  @886
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @887
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @887
+bgrMulti (strS[1000], 0)
+#res<0981>
+pause
+#res<0982>
+pause
+#res<0983>
+pause
+#res<0984>
+pause
+#res<0985>
+pause
+#res<0986>
+pause
+#res<0987>
+pause
+#res<0988>
+pause
+#res<0989>
+pause
+#res<0990>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+intF[1107] = 1
+strS[1000] = 'BG016N2'
+goto_unless (intF[1107] == 1) @888
+intF[1107] = 0
+msgHide
+
+  @888
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @892
+goto_unless (!intF[4]) @889
+strS[1003] = 'SDT07'
+goto @890
+
+  @889
+goto_unless (intF[4] == 1) @890
+strS[1003] = 'SDT08'
+
+  @890
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @891
+objBgMove (83, 16, 16)
+goto @892
+
+  @891
+goto_unless (intB[2] == 1) @892
+objBgMove (83, 16, 66)
+
+  @892
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @893
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @893
+bgrMulti (strS[1000], 48)
+#res<0991>
+pause
+#res<0992>
+pause
+#res<0993>
+pause
+#res<0994>
+pause
+#res<0995>
+pause
+koePlay (1111382)
+#res<0996>
+pause
+koePlay (1111383)
+#res<0997>
+pause
+koePlay (1111384)
+#res<0998>
+pause
+#res<0999>
+pause
+#res<1000>
+pause
+#res<1001>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016N3'
+goto_unless (intF[1107] == 1) @894
+intF[1107] = 0
+msgHide
+
+  @894
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @898
+goto_unless (!intF[4]) @895
+strS[1003] = 'SDT07'
+goto @896
+
+  @895
+goto_unless (intF[4] == 1) @896
+strS[1003] = 'SDT08'
+
+  @896
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @897
+objBgMove (83, 16, 16)
+goto @898
+
+  @897
+goto_unless (intB[2] == 1) @898
+objBgMove (83, 16, 66)
+
+  @898
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @899
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @899
+bgrMulti (strS[1000], 0)
+koePlay (1111385)
+#res<1002>
+pause
+#res<1003>
+pause
+goto_unless (intF[1107] == 1) @900
+intF[1107] = 0
+msgHide
+
+  @900
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @904
+goto_unless (!intF[4]) @901
+strS[1003] = 'SDT07'
+goto @902
+
+  @901
+goto_unless (intF[4] == 1) @902
+strS[1003] = 'SDT08'
+
+  @902
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @903
+objBgMove (83, 16, 16)
+goto @904
+
+  @903
+goto_unless (intB[2] == 1) @904
+objBgMove (83, 16, 66)
+
+  @904
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @905
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @905
+bgrMulti (strS[1000], 60, copy('CGHI11TN', 61))
+koePlay (1111386)
+#res<1004>
+pause
+koePlay (1111387)
+#res<1005>
+pause
+#res<1006>
+pause
+koePlay (1111388)
+#res<1007>
+pause
+koePlay (1111389)
+#res<1008>
+pause
+koePlay (1111390)
+#res<1009>
+pause
+koePlay (1111391)
+#res<1010>
+pause
+koePlay (1111392)
+#res<1011>
+pause
+goto_unless (intF[1107] == 1) @906
+intF[1107] = 0
+msgHide
+
+  @906
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @910
+goto_unless (!intF[4]) @907
+strS[1003] = 'SDT07'
+goto @908
+
+  @907
+goto_unless (intF[4] == 1) @908
+strS[1003] = 'SDT08'
+
+  @908
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @909
+objBgMove (83, 16, 16)
+goto @910
+
+  @909
+goto_unless (intB[2] == 1) @910
+objBgMove (83, 16, 66)
+
+  @910
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @911
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @911
+bgrMulti (strS[1000], 60, copy('CGHI13TN', 61))
+#res<1012>
+pause
+koePlay (1111393)
+#res<1013>
+pause
+#res<1014>
+pause
+koePlay (1111394)
+#res<1015>
+pause
+koePlay (1111395)
+#res<1016>
+pause
+koePlay (1111396)
+#res<1017>
+pause
+koePlay (1111397)
+#res<1018>
+pause
+goto_unless (intF[1107] == 1) @912
+intF[1107] = 0
+msgHide
+
+  @912
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @916
+goto_unless (!intF[4]) @913
+strS[1003] = 'SDT07'
+goto @914
+
+  @913
+goto_unless (intF[4] == 1) @914
+strS[1003] = 'SDT08'
+
+  @914
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @915
+objBgMove (83, 16, 16)
+goto @916
+
+  @915
+goto_unless (intB[2] == 1) @916
+objBgMove (83, 16, 66)
+
+  @916
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @917
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @917
+bgrMulti (strS[1000], 60, copy('CGHI11TN', 61))
+#res<1019>
+pause
+koePlay (1111398)
+#res<1020>
+pause
+goto_unless (intF[405] == 1) @918
+koePlay (1111399)
+#res<1021>
+pause
+#res<1022>
+pause
+koePlay (1111400)
+#res<1023>
+pause
+goto @919
+
+  @918
+koePlay (1111401)
+#res<1024>
+pause
+#res<1025>
+pause
+koePlay (1111402)
+#res<1026>
+pause
+
+  @919
+koePlay (1111403)
+#res<1027>
+pause
+koePlay (1111404)
+#res<1028>
+pause
+goto_unless (intF[1107] == 1) @920
+intF[1107] = 0
+msgHide
+
+  @920
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @924
+goto_unless (!intF[4]) @921
+strS[1003] = 'SDT07'
+goto @922
+
+  @921
+goto_unless (intF[4] == 1) @922
+strS[1003] = 'SDT08'
+
+  @922
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @923
+objBgMove (83, 16, 16)
+goto @924
+
+  @923
+goto_unless (intB[2] == 1) @924
+objBgMove (83, 16, 66)
+
+  @924
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @925
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @925
+bgrMulti (strS[1000], 60, copy('CGHI13TN', 61))
+#res<1029>
+pause
+koePlay (1111405)
+#res<1030>
+pause
+koePlay (1111406)
+#res<1031>
+pause
+koePlay (1111407)
+#res<1032>
+pause
+koePlay (1111408)
+#res<1033>
+pause
+koePlay (1111409)
+#res<1034>
+pause
+goto_unless (intF[1107] == 1) @926
+intF[1107] = 0
+msgHide
+
+  @926
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @930
+goto_unless (!intF[4]) @927
+strS[1003] = 'SDT07'
+goto @928
+
+  @927
+goto_unless (intF[4] == 1) @928
+strS[1003] = 'SDT08'
+
+  @928
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @929
+objBgMove (83, 16, 16)
+goto @930
+
+  @929
+goto_unless (intB[2] == 1) @930
+objBgMove (83, 16, 66)
+
+  @930
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @931
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @931
+bgrMulti (strS[1000], 0)
+#res<1035>
+pause
+intF[1107] = 1
+strS[1000] = 'BG016N2'
+goto_unless (intF[1107] == 1) @932
+intF[1107] = 0
+msgHide
+
+  @932
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @936
+goto_unless (!intF[4]) @933
+strS[1003] = 'SDT07'
+goto @934
+
+  @933
+goto_unless (intF[4] == 1) @934
+strS[1003] = 'SDT08'
+
+  @934
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @935
+objBgMove (83, 16, 16)
+goto @936
+
+  @935
+goto_unless (intB[2] == 1) @936
+objBgMove (83, 16, 66)
+
+  @936
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @937
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @937
+bgrMulti (strS[1000], 0)
+#res<1036>
+pause
+#res<1037>
+pause
+#res<1038>
+pause
+#res<1039>
+pause
+intF[2] = 0
+title (#res<1040>)
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+#res<1041>
+pause
+#res<1042>
+pause
+#res<1043>
+pause
+koePlay (1111410)
+#res<1044>
+pause
+koePlay (1111411)
+#res<1045>
+pause
+#res<1046>
+pause
+#res<1047>
+pause
+koePlay (1111412)
+#res<1048>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 0)
+#res<1049>
+pause
+#res<1050>
+pause
+#res<1051>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+#res<1052>
+pause
+#res<1053>
+pause
+#res<1054>
+pause
+#res<1055>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG056', 0)
+#res<1056>
+pause
+#res<1057>
+pause
+#res<1058>
+pause
+#res<1059>
+pause
+#res<1060>
+pause
+koePlay (1111413)
+#res<1061>
+pause
+#res<1062>
+pause
+#res<1063>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('KURO', 48)
+#res<1064>
+pause
+intF[1107] = 1
+strS[1000] = 'BG010'
+goto_unless (intF[1107] == 1) @938
+intF[1107] = 0
+msgHide
+
+  @938
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @942
+goto_unless (!intF[4]) @939
+strS[1003] = 'SDT07'
+goto @940
+
+  @939
+goto_unless (intF[4] == 1) @940
+strS[1003] = 'SDT08'
+
+  @940
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @941
+objBgMove (83, 16, 16)
+goto @942
+
+  @941
+goto_unless (intB[2] == 1) @942
+objBgMove (83, 16, 66)
+
+  @942
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @943
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @943
+bgrMulti (strS[1000], 48)
+#res<1065>
+pause
+goto_unless (intF[1107] == 1) @944
+intF[1107] = 0
+msgHide
+
+  @944
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @948
+goto_unless (!intF[4]) @945
+strS[1003] = 'SDT07'
+goto @946
+
+  @945
+goto_unless (intF[4] == 1) @946
+strS[1003] = 'SDT08'
+
+  @946
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @947
+objBgMove (83, 16, 16)
+goto @948
+
+  @947
+goto_unless (intB[2] == 1) @948
+objBgMove (83, 16, 66)
+
+  @948
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @949
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @949
+bgrMulti (strS[1000], 60, copy('CGHI11T', 61))
+koePlay (1111414)
+#res<1066>
+pause
+koePlay (1111415)
+#res<1067>
+pause
+goto_unless (intF[1107] == 1) @950
+intF[1107] = 0
+msgHide
+
+  @950
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @954
+goto_unless (!intF[4]) @951
+strS[1003] = 'SDT07'
+goto @952
+
+  @951
+goto_unless (intF[4] == 1) @952
+strS[1003] = 'SDT08'
+
+  @952
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @953
+objBgMove (83, 16, 16)
+goto @954
+
+  @953
+goto_unless (intB[2] == 1) @954
+objBgMove (83, 16, 66)
+
+  @954
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @955
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @955
+bgrMulti (strS[1000], 60, copy('CGHI13T', 61))
+koePlay (1111416)
+#res<1068>
+pause
+koePlay (1111417)
+#res<1069>
+pause
+koePlay (1111418)
+#res<1070>
+pause
+#res<1071>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG052', 0)
+#res<1072>
+pause
+#res<1073>
+pause
+#res<1074>
+pause
+#res<1075>
+pause
+#res<1076>
+pause
+#res<1077>
+pause
+#res<1078>
+pause
+#res<1079>
+pause
+#res<1080>
+pause
+#res<1081>
+pause
+#res<1082>
+pause
+#res<1083>
+pause
+koePlay (1111419)
+#res<1084>
+pause
+#res<1085>
+pause
+#res<1086>
+pause
+#res<1087>
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+ReturnMenu
+
+  @956
+#res<1088>
+pause
+#res<1089>
+pause
+#res<1090>
+pause
+#res<1091>
+pause
+#res<1092>
+pause
+#res<1093>
+pause
+#res<1094>
+pause
+#res<1095>
+pause
+#res<1096>
+pause
+#res<1097>
+pause
+#res<1098>
+pause
+#res<1099>
+pause
+#res<1100>
+pause
+#res<1101>
+pause
+#res<1102>
+pause
+#res<1103>
+pause
+#res<1104>
+pause
+#res<1105>
+pause
+#res<1106>
+pause
+#res<1107>
+pause
+#res<1108>
+pause
+#res<1109>
+pause
+#res<1110>
+pause
+goto_unless (intF[1107] == 1) @957
+intF[1107] = 0
+msgHide
+
+  @957
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @961
+goto_unless (!intF[4]) @958
+strS[1003] = 'SDT07'
+goto @959
+
+  @958
+goto_unless (intF[4] == 1) @959
+strS[1003] = 'SDT08'
+
+  @959
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @960
+objBgMove (83, 16, 16)
+goto @961
+
+  @960
+goto_unless (intB[2] == 1) @961
+objBgMove (83, 16, 66)
+
+  @961
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @962
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @962
+bgrMulti (strS[1000], 60, copy('CGPO20H', 61))
+koePlay (1111420)
+#res<1111>
+pause
+koePlay (1111421)
+#res<1112>
+pause
+koePlay (1111422)
+#res<1113>
+pause
+#res<1114>
+pause
+#res<1115>
+pause
+#res<1116>
+pause
+goto_unless (intF[1107] == 1) @963
+intF[1107] = 0
+msgHide
+
+  @963
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @967
+goto_unless (!intF[4]) @964
+strS[1003] = 'SDT07'
+goto @965
+
+  @964
+goto_unless (intF[4] == 1) @965
+strS[1003] = 'SDT08'
+
+  @965
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @966
+objBgMove (83, 16, 16)
+goto @967
+
+  @966
+goto_unless (intB[2] == 1) @967
+objBgMove (83, 16, 66)
+
+  @967
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @968
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @968
+bgrMulti (strS[1000], 0)
+#res<1117>
+pause
+#res<1118>
+pause
+koePlay (1111423)
+#res<1119>
+pause
+koePlay (1111424)
+#res<1120>
+pause
+#res<1121>
+pause
+intF[1107] = 1
+strS[1000] = 'BG014N'
+goto_unless (intF[1107] == 1) @969
+intF[1107] = 0
+msgHide
+
+  @969
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @973
+goto_unless (!intF[4]) @970
+strS[1003] = 'SDT07'
+goto @971
+
+  @970
+goto_unless (intF[4] == 1) @971
+strS[1003] = 'SDT08'
+
+  @971
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @972
+objBgMove (83, 16, 16)
+goto @973
+
+  @972
+goto_unless (intB[2] == 1) @973
+objBgMove (83, 16, 66)
+
+  @973
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @974
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @974
+bgrMulti (strS[1000], 48)
+#res<1122>
+pause
+#res<1123>
+pause
+intF[1107] = 1
+strS[1000] = 'BG013N'
+goto_unless (intF[1107] == 1) @975
+intF[1107] = 0
+msgHide
+
+  @975
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @979
+goto_unless (!intF[4]) @976
+strS[1003] = 'SDT07'
+goto @977
+
+  @976
+goto_unless (intF[4] == 1) @977
+strS[1003] = 'SDT08'
+
+  @977
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @978
+objBgMove (83, 16, 16)
+goto @979
+
+  @978
+goto_unless (intB[2] == 1) @979
+objBgMove (83, 16, 66)
+
+  @979
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @980
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @980
+bgrMulti (strS[1000], 48)
+#res<1124>
+pause
+intF[1107] = 1
+strS[1000] = 'BG012N'
+goto_unless (intF[1107] == 1) @981
+intF[1107] = 0
+msgHide
+
+  @981
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @985
+goto_unless (!intF[4]) @982
+strS[1003] = 'SDT07'
+goto @983
+
+  @982
+goto_unless (intF[4] == 1) @983
+strS[1003] = 'SDT08'
+
+  @983
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @984
+objBgMove (83, 16, 16)
+goto @985
+
+  @984
+goto_unless (intB[2] == 1) @985
+objBgMove (83, 16, 66)
+
+  @985
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @986
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @986
+bgrMulti (strS[1000], 48)
+bgmFadeOut (50)
+#res<1125>
+pause
+#res<1126>
+pause
+#res<1127>
+pause
+#res<1128>
+pause
+bgmFadeOutEx
+bgmLoop ('BGM12')
+#res<1129>
+pause
+#res<1130>
+pause
+#res<1131>
+pause
+#res<1132>
+pause
+#res<1133>
+pause
+#res<1134>
+pause
+#res<1135>
+pause
+#res<1136>
+pause
+#res<1137>
+pause
+#res<1138>
+pause
+#res<1139>
+pause
+#res<1140>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA06', 0)
+koePlay (1111425)
+#res<1141>
+pause
+#res<1142>
+pause
+#res<1143>
+pause
+#res<1144>
+pause
+#res<1145>
+pause
+#res<1146>
+pause
+#res<1147>
+pause
+#res<1148>
+pause
+koePlay (1111426)
+#res<1149>
+pause
+#res<1150>
+pause
+koePlay (1111427)
+#res<1151>
+pause
+#res<1152>
+pause
+koePlay (1111428)
+#res<1153>
+pause
+#res<1154>
+pause
+#res<1155>
+pause
+#res<1156>
+pause
+#res<1157>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG054', 0)
+#res<1158>
+pause
+#res<1159>
+pause
+#res<1160>
+pause
+#res<1161>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('FGKA06', 0)
+koePlay (1111429)
+#res<1162>
+pause
+#res<1163>
+pause
+#res<1164>
+pause
+#res<1165>
+pause
+#res<1166>
+pause
+#res<1167>
+pause
+#res<1168>
+pause
+#res<1169>
+pause
+#res<1170>
+pause
+koePlay (1111430)
+#res<1171>
+pause
+#res<1172>
+pause
+#res<1173>
+pause
+#res<1174>
+pause
+#res<1175>
+pause
+#res<1176>
+pause
+koePlay (1111431)
+#res<1177>
+pause
+koePlay (1111432)
+#res<1178>
+pause
+#res<1179>
+pause
+#res<1180>
+pause
+#res<1181>
+pause
+#res<1182>
+pause
+#res<1183>
+pause
+#res<1184>
+pause
+intF[1107] = 1
+strS[1000] = 'BG012N'
+goto_unless (intF[1107] == 1) @987
+intF[1107] = 0
+msgHide
+
+  @987
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @991
+goto_unless (!intF[4]) @988
+strS[1003] = 'SDT07'
+goto @989
+
+  @988
+goto_unless (intF[4] == 1) @989
+strS[1003] = 'SDT08'
+
+  @989
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @990
+objBgMove (83, 16, 16)
+goto @991
+
+  @990
+goto_unless (intB[2] == 1) @991
+objBgMove (83, 16, 66)
+
+  @991
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @992
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @992
+bgrMulti (strS[1000], 0)
+koePlay (1111433)
+#res<1185>
+pause
+koePlay (1111434)
+#res<1186>
+pause
+#res<1187>
+pause
+#res<1188>
+pause
+#res<1189>
+pause
+#res<1190>
+pause
+#res<1191>
+pause
+#res<1192>
+pause
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+jump (504)
+eof

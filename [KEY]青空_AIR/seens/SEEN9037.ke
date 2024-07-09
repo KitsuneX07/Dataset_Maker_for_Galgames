@@ -1,0 +1,338 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9037.TXT'
+#resource 'SEEN9037.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objClear (0)
+objClear (10)
+objClear (20)
+objClear (21)
+objClear (22)
+objOfFile (0, 'S_TT_BG00')
+objOfFile (10, 'S_NAME_BG00')
+objOfFile (20, 'S_NAME_BTN00')
+objOfFile (21, 'S_NAME_BTN01')
+objOfFile (22, 'S_NAME_BTN02')
+objMove (0, 0, 0)
+objMove (10, 0, 0)
+objMove (20, 246, 236)
+objMove (21, 335, 305)
+objMove (22, 523, 301)
+objPattNo (0, 0)
+objPattNo (10, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objShow (0, 1)
+objShow (10, 1)
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+grpBuffer ('S_NAME_AREA00', 2)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @2
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @3
+intF[1000] = 1
+FlushClick
+goto @4
+
+  @3
+intF[1000] = 0
+
+  @4
+goto_unless (intF[1000] == 1) @5
+intC[0] = 0
+intC[1] = 255
+
+  @5
+objAlpha (10, intC[1])
+objAlpha (20, intC[1])
+objAlpha (21, intC[1])
+objAlpha (22, intC[1])
+refresh
+goto_unless (!intC[0]) @6
+goto @7
+
+  @6
+goto @2
+
+  @7
+objShow (0, 0)
+strS[0] = GetName (0)
+strS[1] = GetName (1)
+CreateInput (0, 259, 134, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+CreateInput (1, 449, 134, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+SetInput (0, strS[1])
+SetInput (1, strS[0])
+FocusInput (0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @8
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @9
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 1) @9
+intF[1006] = 0
+
+  @9
+goto_unless (intF[1006] == 99) @10
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 2) @10
+intF[1006] = 1
+
+  @10
+goto_unless (intF[1006] == 99) @11
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 3) @11
+intF[1006] = 2
+
+  @11
+goto_unless (!intF[1003]) @15
+goto_unless (intF[1006] != 99) @13
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @12
+sePlay (10)
+
+  @12
+intF[1009] = 2
+goto @14
+
+  @13
+intF[1009] = 0
+
+  @14
+goto @25
+
+  @15
+goto_unless (intF[1003] == 1) @21
+goto_unless (intF[1008] != -1) @19
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @17
+goto_unless (intF[1009] != 3) @16
+sePlay (10)
+
+  @16
+intF[1009] = 3
+goto @18
+
+  @17
+intF[1009] = 0
+
+  @18
+goto @20
+
+  @19
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @20
+goto @25
+
+  @21
+goto_unless (intF[1003] == 2) @25
+goto_unless (intF[1008] != -1) @24
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @22
+intF[1009] = 2
+intF[1012] = 1
+goto @23
+
+  @22
+intF[1009] = 0
+
+  @23
+intF[1008] = -1
+
+  @24
+FlushClick
+
+  @25
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @26
+intE[intF[1006]] = intF[1009]
+
+  @26
+objPattNo (20, intE[0])
+objPattNo (21, intE[1])
+objPattNo (22, intE[2])
+refresh
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+intA[0] = strlen (strS[0])
+intA[1] = strlen (strS[1])
+intA[100] = 0
+goto_unless (!intA[0] || !intA[1]) @27
+intA[100] = 1
+
+  @27
+goto_unless (intF[1012] == 1) @33
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto_unless (!intF[1013]) @30
+goto_unless (intA[100] == 1) @28
+sePlay (20)
+goto @29
+
+  @28
+goto_unless (!intA[100]) @29
+goto @35
+
+  @29
+FlushClick
+goto @32
+
+  @30
+goto_unless (intF[1013] == 1) @31
+sePlay (13)
+SetInput (0, '国崎')
+SetInput (1, '往人')
+FlushClick
+goto @32
+
+  @31
+goto @35
+
+  @32
+goto @34
+
+  @33
+goto_unless (intF[1004] == 2) @34
+intF[1013] = 2
+goto @35
+
+  @34
+goto @8
+
+  @35
+goto_unless (!intF[1013]) @42
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+SetName (0, strS[1])
+SetName (1, strS[0])
+intA[1] = 0
+intA[0] = strcmp (strS[0], 'たぶち')
+goto_unless (!intA[0]) @36
+intA[1] += 1
+
+  @36
+intA[0] = strcmp (strS[0], 'タブチ')
+goto_unless (!intA[0]) @37
+intA[1] += 1
+
+  @37
+intA[0] = strcmp (strS[0], '田淵')
+goto_unless (!intA[0]) @38
+intA[1] += 1
+
+  @38
+intA[0] = strcmp (strS[0], '田渕')
+goto_unless (!intA[0]) @39
+intA[1] += 1
+
+  @39
+goto_unless (0 < intA[1]) @40
+intG[9] = 1
+SetName (2, '衣笠')
+SetName (3, 'きぬがさ')
+goto @41
+
+  @40
+intG[9] = 0
+SetName (2, '田淵')
+SetName (3, 'たぶち')
+
+  @41
+goto @44
+
+  @42
+goto_unless (intF[1013] == 1) @43
+goto @44
+
+  @43
+goto_unless (intF[1013] == 2) @44
+sePlay (13)
+
+  @44
+CloseInput (0)
+CloseInput (1)
+objShow (0, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @45
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @46
+intF[1000] = 1
+FlushClick
+goto @47
+
+  @46
+intF[1000] = 0
+
+  @47
+goto_unless (intF[1000] == 1) @48
+intC[0] = 0
+intC[1] = 0
+
+  @48
+objAlpha (10, intC[1])
+objAlpha (20, intC[1])
+objAlpha (21, intC[1])
+objAlpha (22, intC[1])
+refresh
+goto_unless (!intC[0]) @49
+goto @50
+
+  @49
+goto @45
+
+  @50
+freeDC (2)
+objDelete (0)
+objDelete (10)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @51
+wavPlay ('NAMI', 0)
+intA[800] = 1
+jump (9032)
+goto @53
+
+  @51
+goto_unless (intF[1013] == 1) @52
+goto @53
+
+  @52
+goto_unless (intF[1013] == 2) @53
+wavPlay ('NAMI', 0)
+intA[800] = 1
+jump (9032)
+
+  @53
+eof

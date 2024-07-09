@@ -1,0 +1,395 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9038.TXT'
+#resource 'SEEN9038.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objClear (0)
+objClear (10)
+objClear (20)
+objClear (21)
+objClear (22)
+objClear (23)
+objOfFile (0, 'S_TT_BG00')
+objOfFile (10, 'S_SG_BG00')
+objOfFile (20, 'S_SG_BTN00')
+objOfFile (21, 'S_SG_BTN01')
+objOfFile (22, 'S_SG_BTN02')
+objOfFile (23, 'S_SG_BTN03')
+objMove (0, 0, 0)
+objMove (10, 0, 0)
+goto_case intG[12] { 0: @2; 1: @3; 2: @4; 3: @5; _: @6 }
+
+  @2
+objMove (20, 256, 139)
+objMove (21, 0, 0)
+objMove (22, 0, 0)
+goto @6
+
+  @3
+objMove (20, 256, 114)
+objMove (21, 256, 162)
+objMove (22, 0, 0)
+goto @6
+
+  @4
+objMove (20, 256, 89)
+objMove (21, 256, 137)
+objMove (22, 256, 185)
+goto @6
+
+  @5
+objMove (20, 256, 89)
+objMove (21, 256, 137)
+objMove (22, 256, 185)
+goto @6
+
+  @6
+objMove (23, 286, 417)
+objPattNo (0, 0)
+objPattNo (10, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objPattNo (23, 0)
+objShow (0, 1)
+objShow (10, 1)
+goto_case intG[12] { 0: @7; 1: @8; 2: @9; 3: @10; _: @11 }
+
+  @7
+objShow (20, 1)
+objShow (21, 0)
+objShow (22, 0)
+goto @11
+
+  @8
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 0)
+goto @11
+
+  @9
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+goto @11
+
+  @10
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+goto @11
+
+  @11
+objShow (23, 1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @12
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @13
+intF[1000] = 1
+FlushClick
+goto @14
+
+  @13
+intF[1000] = 0
+
+  @14
+goto_unless (intF[1000] == 1) @15
+intC[0] = 0
+intC[1] = 255
+
+  @15
+objAlpha (10, intC[1])
+objAlpha (20, intC[1])
+objAlpha (21, intC[1])
+objAlpha (22, intC[1])
+objAlpha (23, intC[1])
+refresh
+goto_unless (!intC[0]) @16
+goto @17
+
+  @16
+goto @12
+
+  @17
+objShow (0, 0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @18
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @19
+objGetPos (20, intA[1000], intA[1001])
+objGetDims (20, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @19
+goto_unless (0 <= intG[12]) @19
+intF[1006] = 0
+
+  @19
+goto_unless (intF[1006] == 99) @20
+objGetPos (21, intA[1000], intA[1001])
+objGetDims (21, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @20
+goto_unless (1 <= intG[12]) @20
+intF[1006] = 1
+
+  @20
+goto_unless (intF[1006] == 99) @21
+objGetPos (22, intA[1000], intA[1001])
+objGetDims (22, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @21
+goto_unless (2 <= intG[12]) @21
+intF[1006] = 2
+
+  @21
+goto_unless (intF[1006] == 99) @22
+objGetPos (23, intA[1000], intA[1001])
+objGetDims (23, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @22
+intF[1006] = 3
+
+  @22
+goto_unless (!intF[1003]) @26
+goto_unless (intF[1006] != 99) @24
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @23
+
+  @23
+intF[1009] = 2
+goto @25
+
+  @24
+intF[1009] = 0
+
+  @25
+goto @36
+
+  @26
+goto_unless (intF[1003] == 1) @32
+goto_unless (intF[1008] != -1) @30
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @28
+goto_unless (intF[1009] != 3) @27
+
+  @27
+intF[1009] = 3
+goto @29
+
+  @28
+intF[1009] = 0
+
+  @29
+goto @31
+
+  @30
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @31
+goto @36
+
+  @32
+goto_unless (intF[1003] == 2) @36
+goto_unless (intF[1008] != -1) @35
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @33
+intF[1009] = 2
+intF[1012] = 1
+goto @34
+
+  @33
+intF[1009] = 0
+
+  @34
+intF[1008] = -1
+
+  @35
+FlushClick
+
+  @36
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @37
+intE[intF[1006]] = intF[1009]
+
+  @37
+objPattNo (20, intE[0])
+objPattNo (21, intE[1])
+objPattNo (22, intE[2])
+objPattNo (23, intE[3])
+refresh
+goto_unless (intF[1012] == 1) @38
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @40
+goto @39
+
+  @38
+goto_unless (intF[1004] == 2) @39
+intF[1013] = 3
+goto @40
+
+  @39
+goto @18
+
+  @40
+goto_unless (!intF[1013]) @41
+goto @44
+
+  @41
+goto_unless (intF[1013] == 1) @42
+goto @44
+
+  @42
+goto_unless (intF[1013] == 2) @43
+goto @44
+
+  @43
+goto_unless (intF[1013] == 3) @44
+
+  @44
+objShow (0, 1)
+FlushClick
+goto_unless (0 <= intF[1013] && intF[1013] <= 2) @45
+intC[0] = 1500
+goto @46
+
+  @45
+intC[0] = 800
+
+  @46
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @47
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @48
+intF[1000] = 1
+FlushClick
+goto @49
+
+  @48
+intF[1000] = 0
+
+  @49
+goto_unless (intF[1000] == 1) @50
+intC[0] = 0
+intC[1] = 0
+
+  @50
+objAlpha (10, intC[1])
+goto_unless (intF[1013]) @51
+objAlpha (20, intC[1])
+
+  @51
+goto_unless (intF[1013] != 1) @52
+objAlpha (21, intC[1])
+
+  @52
+goto_unless (intF[1013] != 2) @53
+objAlpha (22, intC[1])
+
+  @53
+objAlpha (23, intC[1])
+refresh
+goto_unless (!intC[0]) @54
+goto @55
+
+  @54
+goto @47
+
+  @55
+goto_unless (0 <= intF[1013] && intF[1013] <= 2) @65
+waitC (2500)
+FlushClick
+intC[0] = 2000
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @56
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @57
+intF[1000] = 1
+FlushClick
+goto @58
+
+  @57
+intF[1000] = 0
+
+  @58
+goto_unless (intF[1000] == 1) @59
+intC[0] = 0
+intC[1] = 0
+
+  @59
+goto_unless (!intF[1013]) @60
+objAlpha (20, intC[1])
+
+  @60
+goto_unless (intF[1013] == 1) @61
+objAlpha (21, intC[1])
+
+  @61
+goto_unless (intF[1013] == 2) @62
+objAlpha (22, intC[1])
+
+  @62
+refresh
+goto_unless (!intC[0]) @63
+goto @64
+
+  @63
+goto @56
+
+  @64
+grpBuffer ('S_TT_BG00', 0)
+waitC (1000)
+
+  @65
+objDelete (0)
+objDelete (10)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+objDelete (23)
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @66
+jump (170)
+goto @69
+
+  @66
+goto_unless (intF[1013] == 1) @67
+jump (700)
+goto @69
+
+  @67
+goto_unless (intF[1013] == 2) @68
+jump (163)
+goto @69
+
+  @68
+goto_unless (intF[1013] == 3) @69
+wavPlay ('NAMI', 0)
+intA[800] = 1
+jump (9032)
+
+  @69
+eof

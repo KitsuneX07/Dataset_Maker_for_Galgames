@@ -1,0 +1,278 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN0234.TXT'
+#resource 'SEEN0234.utf'
+
+#kidoku_type 2
+#entrypoint 000
+bgmLoop ('BGM19')
+koePlay (606197)
+#res<0000>
+pause
+#res<0001>
+pause
+#res<0002>
+pause
+goto_unless (!intF[368]) @1
+#res<0003>
+pause
+#res<0004>
+pause
+
+  @1
+#res<0005>
+pause
+koePlay (606198)
+#res<0006>
+pause
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+koePlay (606199)
+#res<0010>
+pause
+#res<0011>
+pause
+koePlay (606200)
+#res<0012>
+pause
+#res<0013>
+pause
+#res<0014>
+pause
+#res<0015>
+pause
+#res<0016>
+pause
+koePlay (606201)
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+koePlay (606202)
+#res<0020>
+pause
+#res<0021>
+pause
+intF[1107] = 1
+strS[1000] = 'BG001'
+goto_unless (intF[1107] == 1) @2
+intF[1107] = 0
+msgHide
+
+  @2
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @6
+goto_unless (!intF[4]) @3
+strS[1003] = 'SDT07'
+goto @4
+
+  @3
+goto_unless (intF[4] == 1) @4
+strS[1003] = 'SDT08'
+
+  @4
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @5
+objBgMove (83, 16, 16)
+goto @6
+
+  @5
+goto_unless (intB[2] == 1) @6
+objBgMove (83, 16, 66)
+
+  @6
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @7
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @7
+bgrMulti (strS[1000], 48)
+#res<0022>
+pause
+koePlay (606203)
+#res<0023>
+pause
+#res<0024>
+pause
+koePlay (606204)
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+#res<0028>
+pause
+wavStopAll
+intF[1107] = 1
+strS[1000] = 'BG008'
+goto_unless (intF[1107] == 1) @8
+intF[1107] = 0
+msgHide
+
+  @8
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @12
+goto_unless (!intF[4]) @9
+strS[1003] = 'SDT07'
+goto @10
+
+  @9
+goto_unless (intF[4] == 1) @10
+strS[1003] = 'SDT08'
+
+  @10
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @11
+objBgMove (83, 16, 16)
+goto @12
+
+  @11
+goto_unless (intB[2] == 1) @12
+objBgMove (83, 16, 66)
+
+  @12
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @13
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @13
+bgrMulti (strS[1000], 48)
+#res<0029>
+pause
+koePlay (606205)
+#res<0030>
+pause
+#res<0031>
+pause
+koePlay (606206)
+#res<0032>
+pause
+#res<0033>
+pause
+#res<0034>
+pause
+#res<0035>
+pause
+koePlay (606207)
+#res<0036>
+pause
+#res<0037>
+pause
+#res<0038>
+pause
+#res<0039>
+pause
+koePlay (606208)
+#res<0040>
+pause
+#res<0041>
+pause
+koePlay (606209)
+#res<0042>
+pause
+#res<0043>
+pause
+#res<0044>
+pause
+#res<0045>
+pause
+koePlay (606210)
+#res<0046>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG051', 0)
+#res<0047>
+pause
+koePlay (606211)
+#res<0048>
+pause
+koePlay (606212)
+#res<0049>
+pause
+intF[1107] = 1
+strS[1000] = 'BG008'
+goto_unless (intF[1107] == 1) @14
+intF[1107] = 0
+msgHide
+
+  @14
+stackClear
+objBgClear (83)
+op<1:060:00001, 0> (83)
+goto_unless (intF[2] == 1) @18
+goto_unless (!intF[4]) @15
+strS[1003] = 'SDT07'
+goto @16
+
+  @15
+goto_unless (intF[4] == 1) @16
+strS[1003] = 'SDT08'
+
+  @16
+strS[0] = itoa (intF[3], 2)
+strS[1003] += strS[0]
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intB[2]) @17
+objBgMove (83, 16, 16)
+goto @18
+
+  @17
+goto_unless (intB[2] == 1) @18
+objBgMove (83, 16, 66)
+
+  @18
+objBgClear (81)
+objBgClear (82)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+goto_unless (intB[2] == 1) @19
+objBgOfRect (81, 0, 0, 640, 50, 1)
+objBgOfRect (82, 0, 430, 640, 50, 1)
+objBgColour (81, 0, 0, 0, 255)
+objBgColour (82, 0, 0, 0, 255)
+
+  @19
+bgrMulti (strS[1000], 0)
+#res<0050>
+pause
+#res<0051>
+pause
+#res<0052>
+pause
+intF[366] = 1
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+wait (3000)
+bgmStop
+jump (444)
+eof

@@ -1,0 +1,258 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9033.TXT'
+#resource 'SEEN9033.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objClear (0)
+objClear (10)
+objClear (20)
+objClear (21)
+objClear (22)
+objOfFile (0, 'S_TT_BG00')
+objOfFile (10, 'S_MSEL_BG00')
+objOfFile (20, 'S_MSEL_BTN00')
+objOfFile (21, 'S_MSEL_BTN01')
+objOfFile (22, 'S_MSEL_BTN02')
+objMove (0, 0, 0)
+objMove (10, 0, 0)
+objMove (20, 236, 282)
+objMove (21, 236, 332)
+objMove (22, 236, 382)
+objPattNo (0, 0)
+objPattNo (10, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objShow (0, 1)
+objShow (10, 1)
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @2
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @3
+intF[1000] = 1
+FlushClick
+goto @4
+
+  @3
+intF[1000] = 0
+
+  @4
+goto_unless (intF[1000] == 1) @5
+intC[0] = 0
+intC[1] = 255
+
+  @5
+objAlpha (10, intC[1])
+objAlpha (20, intC[1])
+objAlpha (21, intC[1])
+objAlpha (22, intC[1])
+refresh
+goto_unless (!intC[0]) @6
+goto @7
+
+  @6
+goto @2
+
+  @7
+objShow (0, 0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @8
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @9
+objGetPos (20, intA[1000], intA[1001])
+objGetDims (20, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @9
+intF[1006] = 0
+
+  @9
+goto_unless (intF[1006] == 99) @10
+objGetPos (21, intA[1000], intA[1001])
+objGetDims (21, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @10
+intF[1006] = 1
+
+  @10
+goto_unless (intF[1006] == 99) @11
+objGetPos (22, intA[1000], intA[1001])
+objGetDims (22, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @11
+intF[1006] = 2
+
+  @11
+goto_unless (!intF[1003]) @15
+goto_unless (intF[1006] != 99) @13
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @12
+
+  @12
+intF[1009] = 2
+goto @14
+
+  @13
+intF[1009] = 0
+
+  @14
+goto @25
+
+  @15
+goto_unless (intF[1003] == 1) @21
+goto_unless (intF[1008] != -1) @19
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @17
+goto_unless (intF[1009] != 3) @16
+
+  @16
+intF[1009] = 3
+goto @18
+
+  @17
+intF[1009] = 0
+
+  @18
+goto @20
+
+  @19
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @20
+goto @25
+
+  @21
+goto_unless (intF[1003] == 2) @25
+goto_unless (intF[1008] != -1) @24
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @22
+intF[1009] = 2
+intF[1012] = 1
+goto @23
+
+  @22
+intF[1009] = 0
+
+  @23
+intF[1008] = -1
+
+  @24
+FlushClick
+
+  @25
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @26
+intE[intF[1006]] = intF[1009]
+
+  @26
+objPattNo (20, intE[0])
+objPattNo (21, intE[1])
+objPattNo (22, intE[2])
+refresh
+goto_unless (intF[1012] == 1) @27
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @29
+goto @28
+
+  @27
+goto_unless (intF[1004] == 2) @28
+intF[1013] = 2
+goto @29
+
+  @28
+goto @8
+
+  @29
+goto_unless (!intF[1013]) @30
+goto @32
+
+  @30
+goto_unless (intF[1013] == 1) @31
+goto @32
+
+  @31
+goto_unless (intF[1013] == 2) @32
+
+  @32
+objShow (0, 1)
+FlushClick
+intC[0] = 600
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @33
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @34
+intF[1000] = 1
+FlushClick
+goto @35
+
+  @34
+intF[1000] = 0
+
+  @35
+goto_unless (intF[1000] == 1) @36
+intC[0] = 0
+intC[1] = 0
+
+  @36
+objAlpha (10, intC[1])
+objAlpha (20, intC[1])
+objAlpha (21, intC[1])
+objAlpha (22, intC[1])
+refresh
+goto_unless (!intC[0]) @37
+goto @38
+
+  @37
+goto @33
+
+  @38
+objDelete (0)
+objDelete (10)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @39
+intA[700] = 0
+jump (9034)
+goto @41
+
+  @39
+goto_unless (intF[1013] == 1) @40
+intA[700] = 0
+jump (9036, 0)
+goto @41
+
+  @40
+goto_unless (intF[1013] == 2) @41
+wavPlay ('NAMI', 0)
+intA[800] = 1
+jump (9032)
+
+  @41
+eof
