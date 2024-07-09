@@ -5,7 +5,7 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 # 1. 项目简介
 本仓库用于提供从**Galgame**中提取人物语音和对应文本用于制作**SVC**/**TTS**项目的数据集的经验分享与一些辅助脚本。同时也作为个人的解包记录。不过虽说名为**Galgame**，但可能包含的游戏实际上并不属于Galgame。<br>
 本文档为大致的介绍与使用说明。与此同时，每个脚本内也会含有对应的注释。一个成熟的创作者应该学会自己看代码了（逃）<br>
-本仓库不会提供任何游戏的解包工具的可执行文件（但会尽量给出源码的链接）或者游戏本体。请利用搜索引擎自行寻找途径。<br>
+本仓库可能不会提供游戏的解包工具的可执行文件（但会尽量给出源码的链接）或者游戏本体。请利用搜索引擎自行寻找途径。<br>
 <br>
 ![图片](https://github.com/KitsuneX07/Dataset_Maker_for_Galgames/blob/main/pictures/6bd238950a7b0208a6450fb175d9f2d3562cc822.jpg)
 <br>
@@ -29,7 +29,7 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 >> 你可以根据自己的需要修改这个脚本来适配不同游戏。<br>
 >> 输入：
 >>> `绝对路径`：包含所有待处理`.json`文件的文件夹的路径。<br>
->>> 其中，所有json文件是由对应游戏的解包工具生成的，格式为`{"File": "xxx", "Text": "xxx"}`。你可以进入任何一个子文件夹进行查看。对于每个游戏，我会尽量提供制作好的json文件。<br>
+>>> 其中，所有json文件是由对应游戏的解包工具生成的，格式为`{"File": "xxx", "Text": "xxx", "Name": "xxx"}`。你可以进入任何一个子文件夹进行查看。对于每个游戏，我会尽量提供制作好的json文件。<br>
 >>
 >> 输出：
 >>> 将直接对原文件进行操作。调试时请**注意备份！**<br>
@@ -41,4 +41,4 @@ Extract character voice and corresponding text from Galgame to create a dataset 
 > 
 > `List_Generator.py`
 >> 用于生成列表文件。这个文件可以用于训练模型。<br>
->> 调整参数一输出适合GPT_Sovits项目<https://github.com/RVC-Boss/GPT-SoVITS> 和 Bert_VITS2项目。<https://github.com/fishaudio/Bert-VITS2> <br>
+>> 调整参数以输出适合GPT_Sovits项目<https://github.com/RVC-Boss/GPT-SoVITS> 和 Bert_VITS2项目。<https://github.com/fishaudio/Bert-VITS2> <br>
