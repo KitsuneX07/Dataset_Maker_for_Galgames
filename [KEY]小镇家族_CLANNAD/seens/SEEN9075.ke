@@ -1,0 +1,328 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9075.TXT'
+#resource 'SEEN9075.utf'
+
+#entrypoint 000
+farcall (9075, 1)
+pause
+rtl
+#entrypoint 001
+HideSyscom
+'' 
+op<1:Sys:00302, 0>
+goto_case intF[1126] { 0: @1; 1: @2; 2: @3; 3: @4; 4: @5; _: @6 }
+
+  @1
+strclear (strS[1017])
+goto @6
+
+  @2
+goto @6
+
+  @3
+strS[1017] = GetName (0)
+goto @6
+
+  @4
+strS[1017] = GetName (1)
+goto @6
+
+  @5
+strS[1017] = GetName (0)
+strS[0] = GetName (1)
+strS[1017] += strS[0]
+goto @6
+
+  @6
+goto_case intF[1127] { 0: @7; 1: @8; 2: @9; 3: @10; 4: @11; _: @12 }
+
+  @7
+strclear (strS[1018])
+goto @12
+
+  @8
+goto @12
+
+  @9
+strS[1018] = GetName (0)
+goto @12
+
+  @10
+strS[1018] = GetName (1)
+goto @12
+
+  @11
+strS[1018] = GetName (0)
+strS[0] = GetName (1)
+strS[1018] += strS[0]
+goto @12
+
+  @12
+goto_case intF[1128] { 0: @13; 1: @14; 2: @15; 3: @16; 4: @17; _: @18 }
+
+  @13
+strclear (strS[1019])
+goto @18
+
+  @14
+goto @18
+
+  @15
+strS[1019] = GetName (0)
+goto @18
+
+  @16
+strS[1019] = GetName (1)
+goto @18
+
+  @17
+strS[1019] = GetName (0)
+strS[0] = GetName (1)
+strS[1019] += strS[0]
+goto @18
+
+  @18
+intA[0] = strlen (strS[1017])
+intA[1] = strlen (strS[1018])
+intA[2] = strlen (strS[1019])
+intA[3] = intA[0]
+goto_unless (intA[3] < intA[1]) @19
+intA[3] = intA[1]
+
+  @19
+goto_unless (intA[3] < intA[2]) @20
+intA[3] = intA[2]
+
+  @20
+goto_unless (!((intA[3] - intA[0]) % 2)) @23
+
+  @21
+goto_unless (intA[0] < intA[3]) @22
+strS[1017] += '  '
+intA[0] += 2
+goto @21
+
+  @22
+goto @26
+
+  @23
+
+  @24
+goto_unless (intA[0] < intA[3]) @25
+strS[1017] += ' '
+intA[0] += 1
+goto @24
+
+  @25
+
+  @26
+goto_unless (!((intA[3] - intA[1]) % 2)) @29
+
+  @27
+goto_unless (intA[1] < intA[3]) @28
+strS[1018] += '  '
+intA[1] += 2
+goto @27
+
+  @28
+goto @32
+
+  @29
+
+  @30
+goto_unless (intA[1] < intA[3]) @31
+strS[1018] += ' '
+intA[1] += 1
+goto @30
+
+  @31
+
+  @32
+goto_unless (!((intA[3] - intA[2]) % 2)) @35
+
+  @33
+goto_unless (intA[2] < intA[3]) @34
+strS[1019] += '  '
+intA[2] += 2
+goto @33
+
+  @34
+goto @38
+
+  @35
+
+  @36
+goto_unless (intA[2] < intA[3]) @37
+strS[1019] += ' '
+intA[2] += 1
+goto @36
+
+  @37
+
+  @38
+strS[1017] += strS[1020]
+strS[1018] += strS[1021]
+strS[1019] += strS[1022]
+strS[1020] = strS[1017]
+strS[1021] = strS[1018]
+strS[1022] = strS[1019]
+intA[0] = 0
+intA[1] = strcharlen (strS[1020])
+setrng (intA[30], intA[59], 99)
+
+  @39
+intA[0] += 1
+goto_unless (intA[1] < intA[0]) @40
+goto @41
+
+  @40
+strcpy (strS[0], strS[1020], intA[0])
+intA[2] = strlen (strS[0])
+intA[30 + (intA[2] - 1) / 2] = intA[0]
+goto @39
+
+  @41
+intA[0] = 0
+intA[1] = strcharlen (strS[1021])
+setrng (intA[60], intA[89], 99)
+
+  @42
+intA[0] += 1
+goto_unless (intA[1] < intA[0]) @43
+goto @44
+
+  @43
+strcpy (strS[0], strS[1021], intA[0])
+intA[2] = strlen (strS[0])
+intA[60 + (intA[2] - 1) / 2] = intA[0]
+goto @42
+
+  @44
+intA[0] = 0
+intA[1] = strcharlen (strS[1022])
+setrng (intA[90], intA[119], 99)
+
+  @45
+intA[0] += 1
+goto_unless (intA[1] < intA[0]) @46
+goto @47
+
+  @46
+strcpy (strS[0], strS[1022], intA[0])
+intA[2] = strlen (strS[0])
+intA[90 + (intA[2] - 1) / 2] = intA[0]
+goto @45
+
+  @47
+intF[1078] = MessageSpeed
+intF[1081] = MessageNoWait
+goto_unless (!intF[1081]) @48
+intF[1079] = 0
+intF[1080] = intG[1003]
+goto @50
+
+  @48
+goto_unless (intF[1081] == 1) @49
+intF[1079] = 1
+intF[1080] = 0
+goto @50
+
+  @49
+goto_unless (intF[1081] == 2) @50
+intF[1079] = 1
+intF[1080] = 1
+
+  @50
+DisableAutoSavepoints
+intA[0] = 0
+intA[1] = 0
+FlushClick
+
+  @51
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @52
+intF[1000] = 1
+goto @55
+
+  @52
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @53
+intF[1000] = 1
+goto @55
+
+  @53
+goto_unless (intA[1002] == 2) @54
+intF[1000] = 1
+FlushClick
+goto @55
+
+  @54
+intF[1000] = 0
+
+  @55
+goto_unless (intF[1000] == 1) @56
+intA[0] = 29
+
+  @56
+goto_unless (intF[1079] == 1) @57
+intA[0] = 29
+
+  @57
+intA[10] = intA[30 + intA[0]]
+intA[11] = intA[60 + intA[0]]
+intA[12] = intA[90 + intA[0]]
+FastText
+strS[0] = strS[1020]
+goto_unless (intA[10] != 99) @58
+strcpy (strS[0], strS[1020], intA[10])
+
+  @58
+'' 
+#res<0000>
+strS[0] = strS[1021]
+goto_unless (intA[11] != 99) @59
+strcpy (strS[0], strS[1021], intA[11])
+
+  @59
+'' 
+#res<0001>
+strS[0] = strS[1022]
+goto_unless (intA[12] != 99) @60
+strcpy (strS[0], strS[1022], intA[12])
+
+  @60
+'' 
+#res<0002>
+goto_unless (intA[10] == 99 && intA[11] == 99 && intA[12] == 99) @61
+goto @65
+
+  @61
+goto_unless (25 <= intF[1078]) @62
+intA[0] += 1
+wait (intF[1078] - 24)
+goto @64
+
+  @62
+goto_unless (13 <= intF[1078]) @63
+intA[0] += 2
+wait (intF[1078] - 12)
+goto @64
+
+  @63
+intA[0] += 3
+
+  @64
+msgClear
+goto @51
+
+  @65
+op<1:Sys:00301, 0>
+NormalText
+EnableAutoSavepoints
+EnableSyscom
+rtl
+eof

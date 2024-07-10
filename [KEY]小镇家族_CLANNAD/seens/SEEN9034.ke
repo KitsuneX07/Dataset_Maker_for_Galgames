@@ -1,0 +1,2783 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9034.TXT'
+#resource 'SEEN9034.utf'
+
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+grpBuffer ('SNAME00', 0)
+objClear (10)
+objClear (11)
+objClear (12)
+objClear (20)
+objClear (21)
+objClear (22)
+objClear (30)
+objOfFile (10, 'SNAME10')
+objOfFile (11, 'SNAME11')
+objOfFile (12, 'SNAME12')
+objOfFile (20, 'SNAME20')
+objOfFile (21, 'SNAME21')
+objOfFile (22, 'SNAME22')
+objOfFile (30, 'SIRO')
+objMove (10, 269, 288)
+objMove (11, 54, 415)
+objMove (12, 468, 415)
+objMove (20, 449, 83)
+objMove (21, 359, 103)
+objMove (22, 455, 103)
+objMove (30, 0, 0)
+objPattNo (10, 0)
+objPattNo (11, 0)
+objPattNo (12, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objPattNo (30, 0)
+objShow (10, 1)
+objShow (11, 1)
+objShow (12, 1)
+objShow (20, 0)
+objShow (21, 0)
+objShow (22, 0)
+objShow (30, 1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @2
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @3
+intF[1000] = 1
+FlushClick
+goto @4
+
+  @3
+intF[1000] = 0
+
+  @4
+goto_unless (intF[1000] == 1) @5
+intC[0] = 0
+intC[1] = 0
+
+  @5
+objAlpha (30, intC[1])
+refresh
+goto_unless (!intC[0]) @6
+goto @7
+
+  @6
+goto @2
+
+  @7
+strS[0] = GetName (0)
+strS[1] = GetName (1)
+CreateInput (0, 158, 184, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+CreateInput (1, 351, 184, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+SetInput (0, strS[0])
+SetInput (1, strS[1])
+FocusInput (0)
+
+  @8
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @9
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @10
+objGetPos (10, intA[1000], intA[1001])
+objGetDims (10, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @10
+intF[1006] = 0
+
+  @10
+goto_unless (intF[1006] == 99) @11
+objGetPos (11, intA[1000], intA[1001])
+objGetDims (11, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @11
+intF[1006] = 1
+
+  @11
+goto_unless (intF[1006] == 99) @12
+objGetPos (12, intA[1000], intA[1001])
+objGetDims (12, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @12
+intF[1006] = 2
+
+  @12
+goto_unless (!intF[1003]) @16
+goto_unless (intF[1006] != 99) @14
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @13
+sePlay (10)
+
+  @13
+intF[1009] = 2
+goto @15
+
+  @14
+intF[1009] = 0
+
+  @15
+goto @26
+
+  @16
+goto_unless (intF[1003] == 1) @22
+goto_unless (intF[1008] != -1) @20
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @18
+goto_unless (intF[1009] != 3) @17
+sePlay (10)
+
+  @17
+intF[1009] = 3
+goto @19
+
+  @18
+intF[1009] = 0
+
+  @19
+goto @21
+
+  @20
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @21
+goto @26
+
+  @22
+goto_unless (intF[1003] == 2) @26
+goto_unless (intF[1008] != -1) @25
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @23
+intF[1009] = 2
+intF[1012] = 1
+goto @24
+
+  @23
+intF[1009] = 0
+
+  @24
+intF[1008] = -1
+
+  @25
+FlushClick
+
+  @26
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @27
+intE[intF[1006]] = intF[1009]
+
+  @27
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+refresh
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+intA[0] = strlen (strS[0])
+intA[1] = strlen (strS[1])
+intA[100] = 0
+goto_unless (!intA[0] || !intA[1]) @28
+intA[100] = 1
+
+  @28
+goto_unless (intF[1012] == 1) @34
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto_unless (!intF[1013]) @31
+goto_unless (intA[100] == 1) @29
+sePlay (20)
+goto @30
+
+  @29
+goto_unless (!intA[100]) @30
+goto @36
+
+  @30
+FlushClick
+goto @33
+
+  @31
+goto_unless (intF[1013] == 1) @32
+sePlay (13)
+SetInput (0, '岡崎')
+SetInput (1, '朋也')
+FlushClick
+goto @33
+
+  @32
+goto @36
+
+  @33
+goto @35
+
+  @34
+goto_unless (intF[1004] == 2) @35
+intF[1013] = 2
+goto @36
+
+  @35
+goto @9
+
+  @36
+goto_unless (!intF[1013]) @476
+intA[0] = 0
+intA[1] = 0
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+intA[1000] = strcmp (strS[0], '古河')
+intA[1001] = strcmp (strS[1], '渚')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @37
+intA[1002] = 1
+
+  @37
+goto_unless (!intA[1001]) @38
+intA[1003] = 1
+
+  @38
+goto_unless (intA[0] == 1 && intA[1] == 1) @39
+goto @42
+
+  @39
+goto_unless (intA[0] == 1 || intA[1] == 1) @41
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @40
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @40
+goto @42
+
+  @41
+goto_unless (!intA[0] && !intA[1]) @42
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @42
+intA[1000] = strcmp (strS[0], '古河')
+intA[1001] = strcmp (strS[1], '秋生')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @43
+intA[1002] = 1
+
+  @43
+goto_unless (!intA[1001]) @44
+intA[1003] = 1
+
+  @44
+goto_unless (intA[0] == 1 && intA[1] == 1) @45
+goto @48
+
+  @45
+goto_unless (intA[0] == 1 || intA[1] == 1) @47
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @46
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @46
+goto @48
+
+  @47
+goto_unless (!intA[0] && !intA[1]) @48
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @48
+intA[1000] = strcmp (strS[0], '古河')
+intA[1001] = strcmp (strS[1], '早苗')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @49
+intA[1002] = 1
+
+  @49
+goto_unless (!intA[1001]) @50
+intA[1003] = 1
+
+  @50
+goto_unless (intA[0] == 1 && intA[1] == 1) @51
+goto @54
+
+  @51
+goto_unless (intA[0] == 1 || intA[1] == 1) @53
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @52
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @52
+goto @54
+
+  @53
+goto_unless (!intA[0] && !intA[1]) @54
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @54
+intA[1000] = strcmp (strS[0], '春原')
+intA[1001] = strcmp (strS[1], '陽平')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @55
+intA[1002] = 1
+
+  @55
+goto_unless (!intA[1001]) @56
+intA[1003] = 1
+
+  @56
+goto_unless (intA[0] == 1 && intA[1] == 1) @57
+goto @60
+
+  @57
+goto_unless (intA[0] == 1 || intA[1] == 1) @59
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @58
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @58
+goto @60
+
+  @59
+goto_unless (!intA[0] && !intA[1]) @60
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @60
+intA[1000] = strcmp (strS[0], '春原')
+intA[1001] = strcmp (strS[1], '芽衣')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @61
+intA[1002] = 1
+
+  @61
+goto_unless (!intA[1001]) @62
+intA[1003] = 1
+
+  @62
+goto_unless (intA[0] == 1 && intA[1] == 1) @63
+goto @66
+
+  @63
+goto_unless (intA[0] == 1 || intA[1] == 1) @65
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @64
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @64
+goto @66
+
+  @65
+goto_unless (!intA[0] && !intA[1]) @66
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @66
+intA[1000] = strcmp (strS[0], '坂上')
+intA[1001] = strcmp (strS[1], '智代')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @67
+intA[1002] = 1
+
+  @67
+goto_unless (!intA[1001]) @68
+intA[1003] = 1
+
+  @68
+goto_unless (intA[0] == 1 && intA[1] == 1) @69
+goto @72
+
+  @69
+goto_unless (intA[0] == 1 || intA[1] == 1) @71
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @70
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @70
+goto @72
+
+  @71
+goto_unless (!intA[0] && !intA[1]) @72
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @72
+intA[1000] = strcmp (strS[0], '伊吹')
+intA[1001] = strcmp (strS[1], '風子')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @73
+intA[1002] = 1
+
+  @73
+goto_unless (!intA[1001]) @74
+intA[1003] = 1
+
+  @74
+goto_unless (intA[0] == 1 && intA[1] == 1) @75
+goto @78
+
+  @75
+goto_unless (intA[0] == 1 || intA[1] == 1) @77
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @76
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @76
+goto @78
+
+  @77
+goto_unless (!intA[0] && !intA[1]) @78
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @78
+intA[1000] = strcmp (strS[0], '伊吹')
+intA[1001] = strcmp (strS[1], '公子')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @79
+intA[1002] = 1
+
+  @79
+goto_unless (!intA[1001]) @80
+intA[1003] = 1
+
+  @80
+goto_unless (intA[0] == 1 && intA[1] == 1) @81
+goto @84
+
+  @81
+goto_unless (intA[0] == 1 || intA[1] == 1) @83
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @82
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @82
+goto @84
+
+  @83
+goto_unless (!intA[0] && !intA[1]) @84
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @84
+intA[1000] = strcmp (strS[0], '芳野')
+intA[1001] = strcmp (strS[1], '祐介')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @85
+intA[1002] = 1
+
+  @85
+goto_unless (!intA[1001]) @86
+intA[1003] = 1
+
+  @86
+goto_unless (intA[0] == 1 && intA[1] == 1) @87
+goto @90
+
+  @87
+goto_unless (intA[0] == 1 || intA[1] == 1) @89
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @88
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @88
+goto @90
+
+  @89
+goto_unless (!intA[0] && !intA[1]) @90
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @90
+intA[1000] = strcmp (strS[0], '宮沢')
+intA[1001] = strcmp (strS[1], '有紀寧')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @91
+intA[1002] = 1
+
+  @91
+goto_unless (!intA[1001]) @92
+intA[1003] = 1
+
+  @92
+goto_unless (intA[0] == 1 && intA[1] == 1) @93
+goto @96
+
+  @93
+goto_unless (intA[0] == 1 || intA[1] == 1) @95
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @94
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @94
+goto @96
+
+  @95
+goto_unless (!intA[0] && !intA[1]) @96
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @96
+intA[1000] = strcmp (strS[0], '藤林')
+intA[1001] = strcmp (strS[1], '杏')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @97
+intA[1002] = 1
+
+  @97
+goto_unless (!intA[1001]) @98
+intA[1003] = 1
+
+  @98
+goto_unless (intA[0] == 1 && intA[1] == 1) @99
+goto @102
+
+  @99
+goto_unless (intA[0] == 1 || intA[1] == 1) @101
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @100
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @100
+goto @102
+
+  @101
+goto_unless (!intA[0] && !intA[1]) @102
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @102
+intA[1000] = strcmp (strS[0], '藤林')
+intA[1001] = strcmp (strS[1], '椋')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @103
+intA[1002] = 1
+
+  @103
+goto_unless (!intA[1001]) @104
+intA[1003] = 1
+
+  @104
+goto_unless (intA[0] == 1 && intA[1] == 1) @105
+goto @108
+
+  @105
+goto_unless (intA[0] == 1 || intA[1] == 1) @107
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @106
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @106
+goto @108
+
+  @107
+goto_unless (!intA[0] && !intA[1]) @108
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @108
+intA[1000] = strcmp (strS[0], '柊')
+intA[1001] = strcmp (strS[1], '勝平')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @109
+intA[1002] = 1
+
+  @109
+goto_unless (!intA[1001]) @110
+intA[1003] = 1
+
+  @110
+goto_unless (intA[0] == 1 && intA[1] == 1) @111
+goto @114
+
+  @111
+goto_unless (intA[0] == 1 || intA[1] == 1) @113
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @112
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @112
+goto @114
+
+  @113
+goto_unless (!intA[0] && !intA[1]) @114
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @114
+intA[1000] = strcmp (strS[0], '相楽')
+intA[1001] = strcmp (strS[1], '美佐枝')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @115
+intA[1002] = 1
+
+  @115
+goto_unless (!intA[1001]) @116
+intA[1003] = 1
+
+  @116
+goto_unless (intA[0] == 1 && intA[1] == 1) @117
+goto @120
+
+  @117
+goto_unless (intA[0] == 1 || intA[1] == 1) @119
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @118
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @118
+goto @120
+
+  @119
+goto_unless (!intA[0] && !intA[1]) @120
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @120
+intA[1000] = strcmp (strS[0], '一ノ瀬')
+intA[1001] = strcmp (strS[1], 'ことみ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @121
+intA[1002] = 1
+
+  @121
+goto_unless (!intA[1001]) @122
+intA[1003] = 1
+
+  @122
+goto_unless (intA[0] == 1 && intA[1] == 1) @123
+goto @126
+
+  @123
+goto_unless (intA[0] == 1 || intA[1] == 1) @125
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @124
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @124
+goto @126
+
+  @125
+goto_unless (!intA[0] && !intA[1]) @126
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @126
+intA[1000] = strcmp (strS[0], '一ノ瀬')
+intA[1001] = strcmp (strS[1], '鴻太郎')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @127
+intA[1002] = 1
+
+  @127
+goto_unless (!intA[1001]) @128
+intA[1003] = 1
+
+  @128
+goto_unless (intA[0] == 1 && intA[1] == 1) @129
+goto @132
+
+  @129
+goto_unless (intA[0] == 1 || intA[1] == 1) @131
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @130
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @130
+goto @132
+
+  @131
+goto_unless (!intA[0] && !intA[1]) @132
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @132
+intA[1000] = strcmp (strS[0], '一ノ瀬')
+intA[1001] = strcmp (strS[1], '水恵')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @133
+intA[1002] = 1
+
+  @133
+goto_unless (!intA[1001]) @134
+intA[1003] = 1
+
+  @134
+goto_unless (intA[0] == 1 && intA[1] == 1) @135
+goto @138
+
+  @135
+goto_unless (intA[0] == 1 || intA[1] == 1) @137
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @136
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @136
+goto @138
+
+  @137
+goto_unless (!intA[0] && !intA[1]) @138
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @138
+intA[1000] = strcmp (strS[0], '幸村')
+intA[1001] = strcmp (strS[1], '俊夫')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @139
+intA[1002] = 1
+
+  @139
+goto_unless (!intA[1001]) @140
+intA[1003] = 1
+
+  @140
+goto_unless (intA[0] == 1 && intA[1] == 1) @141
+goto @144
+
+  @141
+goto_unless (intA[0] == 1 || intA[1] == 1) @143
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @142
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @142
+goto @144
+
+  @143
+goto_unless (!intA[0] && !intA[1]) @144
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @144
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '史乃')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @145
+intA[1002] = 1
+
+  @145
+goto_unless (!intA[1001]) @146
+intA[1003] = 1
+
+  @146
+goto_unless (intA[0] == 1 && intA[1] == 1) @147
+goto @150
+
+  @147
+goto_unless (intA[0] == 1 || intA[1] == 1) @149
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @148
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @148
+goto @150
+
+  @149
+goto_unless (!intA[0] && !intA[1]) @150
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @150
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '直幸')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @151
+intA[1002] = 1
+
+  @151
+goto_unless (!intA[1001]) @152
+intA[1003] = 1
+
+  @152
+goto_unless (intA[0] == 1 && intA[1] == 1) @153
+goto @156
+
+  @153
+goto_unless (intA[0] == 1 || intA[1] == 1) @155
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @154
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @154
+goto @156
+
+  @155
+goto_unless (!intA[0] && !intA[1]) @156
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @156
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '汐')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @157
+intA[1002] = 1
+
+  @157
+goto_unless (!intA[1001]) @158
+intA[1003] = 1
+
+  @158
+goto_unless (intA[0] == 1 && intA[1] == 1) @159
+goto @162
+
+  @159
+goto_unless (intA[0] == 1 || intA[1] == 1) @161
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @160
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @160
+goto @162
+
+  @161
+goto_unless (!intA[0] && !intA[1]) @162
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @162
+intA[1000] = strcmp (strS[0], '志麻')
+intA[1001] = strcmp (strS[1], '賀津紀')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @163
+intA[1002] = 1
+
+  @163
+goto_unless (!intA[1001]) @164
+intA[1003] = 1
+
+  @164
+goto_unless (intA[0] == 1 && intA[1] == 1) @165
+goto @168
+
+  @165
+goto_unless (intA[0] == 1 || intA[1] == 1) @167
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @166
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @166
+goto @168
+
+  @167
+goto_unless (!intA[0] && !intA[1]) @168
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @168
+intA[1000] = strcmp (strS[0], 'ボタン')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @169
+intA[1002] = 1
+
+  @169
+goto_unless (!intA[1001]) @170
+intA[1003] = 1
+
+  @170
+goto_unless (intA[0] == 1 && intA[1] == 1) @171
+goto @174
+
+  @171
+goto_unless (intA[0] == 1 || intA[1] == 1) @173
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @172
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @172
+goto @174
+
+  @173
+goto_unless (!intA[0] && !intA[1]) @174
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @174
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'ボタン')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @175
+intA[1002] = 1
+
+  @175
+goto_unless (!intA[1001]) @176
+intA[1003] = 1
+
+  @176
+goto_unless (intA[0] == 1 && intA[1] == 1) @177
+goto @180
+
+  @177
+goto_unless (intA[0] == 1 || intA[1] == 1) @179
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @178
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @178
+goto @180
+
+  @179
+goto_unless (!intA[0] && !intA[1]) @180
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @180
+intA[1000] = strcmp (strS[0], '磯貝')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @181
+intA[1002] = 1
+
+  @181
+goto_unless (!intA[1001]) @182
+intA[1003] = 1
+
+  @182
+goto_unless (intA[0] == 1 && intA[1] == 1) @183
+goto @186
+
+  @183
+goto_unless (intA[0] == 1 || intA[1] == 1) @185
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @184
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @184
+goto @186
+
+  @185
+goto_unless (!intA[0] && !intA[1]) @186
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @186
+intA[1000] = strcmp (strS[0], '仁科')
+intA[1001] = strcmp (strS[1], 'りえ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @187
+intA[1002] = 1
+
+  @187
+goto_unless (!intA[1001]) @188
+intA[1003] = 1
+
+  @188
+goto_unless (intA[0] == 1 && intA[1] == 1) @189
+goto @192
+
+  @189
+goto_unless (intA[0] == 1 || intA[1] == 1) @191
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @190
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @190
+goto @192
+
+  @191
+goto_unless (!intA[0] && !intA[1]) @192
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @192
+intA[1000] = strcmp (strS[0], '杉坂')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @193
+intA[1002] = 1
+
+  @193
+goto_unless (!intA[1001]) @194
+intA[1003] = 1
+
+  @194
+goto_unless (intA[0] == 1 && intA[1] == 1) @195
+goto @198
+
+  @195
+goto_unless (intA[0] == 1 || intA[1] == 1) @197
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @196
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @196
+goto @198
+
+  @197
+goto_unless (!intA[0] && !intA[1]) @198
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @198
+intA[1000] = strcmp (strS[0], '坂上')
+intA[1001] = strcmp (strS[1], '鷹文')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @199
+intA[1002] = 1
+
+  @199
+goto_unless (!intA[1001]) @200
+intA[1003] = 1
+
+  @200
+goto_unless (intA[0] == 1 && intA[1] == 1) @201
+goto @204
+
+  @201
+goto_unless (intA[0] == 1 || intA[1] == 1) @203
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @202
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @202
+goto @204
+
+  @203
+goto_unless (!intA[0] && !intA[1]) @204
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @204
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '勇')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @205
+intA[1002] = 1
+
+  @205
+goto_unless (!intA[1001]) @206
+intA[1003] = 1
+
+  @206
+goto_unless (intA[0] == 1 && intA[1] == 1) @207
+goto @210
+
+  @207
+goto_unless (intA[0] == 1 || intA[1] == 1) @209
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @208
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @208
+goto @210
+
+  @209
+goto_unless (!intA[0] && !intA[1]) @210
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @210
+intA[1000] = strcmp (strS[0], '三井')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @211
+intA[1002] = 1
+
+  @211
+goto_unless (!intA[1001]) @212
+intA[1003] = 1
+
+  @212
+goto_unless (intA[0] == 1 && intA[1] == 1) @213
+goto @216
+
+  @213
+goto_unless (intA[0] == 1 || intA[1] == 1) @215
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @214
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @214
+goto @216
+
+  @215
+goto_unless (!intA[0] && !intA[1]) @216
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @216
+intA[1000] = strcmp (strS[0], '宮沢')
+intA[1001] = strcmp (strS[1], '和人')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @217
+intA[1002] = 1
+
+  @217
+goto_unless (!intA[1001]) @218
+intA[1003] = 1
+
+  @218
+goto_unless (intA[0] == 1 && intA[1] == 1) @219
+goto @222
+
+  @219
+goto_unless (intA[0] == 1 || intA[1] == 1) @221
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @220
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @220
+goto @222
+
+  @221
+goto_unless (!intA[0] && !intA[1]) @222
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @222
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '敦子')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @223
+intA[1002] = 1
+
+  @223
+goto_unless (!intA[1001]) @224
+intA[1003] = 1
+
+  @224
+goto_unless (intA[0] == 1 && intA[1] == 1) @225
+goto @228
+
+  @225
+goto_unless (intA[0] == 1 || intA[1] == 1) @227
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @226
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @226
+goto @228
+
+  @227
+goto_unless (!intA[0] && !intA[1]) @228
+intA[0] = intA[1002]
+intA[1] = intA[1003]
+
+  @228
+intA[10] = 0
+intA[11] = 0
+intA[1000] = strcmp (strS[0], '荒井')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @229
+intA[1002] = 1
+
+  @229
+goto_unless (!intA[1001]) @230
+intA[1003] = 1
+
+  @230
+goto_unless (intA[10] == 1 && intA[11] == 1) @231
+goto @234
+
+  @231
+goto_unless (intA[10] == 1 || intA[11] == 1) @233
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @232
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @232
+goto @234
+
+  @233
+goto_unless (!intA[10] && !intA[11]) @234
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @234
+intA[1000] = strcmp (strS[0], '草苅')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @235
+intA[1002] = 1
+
+  @235
+goto_unless (!intA[1001]) @236
+intA[1003] = 1
+
+  @236
+goto_unless (intA[10] == 1 && intA[11] == 1) @237
+goto @240
+
+  @237
+goto_unless (intA[10] == 1 || intA[11] == 1) @239
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @238
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @238
+goto @240
+
+  @239
+goto_unless (!intA[10] && !intA[11]) @240
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @240
+intA[1000] = strcmp (strS[0], '田嶋')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @241
+intA[1002] = 1
+
+  @241
+goto_unless (!intA[1001]) @242
+intA[1003] = 1
+
+  @242
+goto_unless (intA[10] == 1 && intA[11] == 1) @243
+goto @246
+
+  @243
+goto_unless (intA[10] == 1 || intA[11] == 1) @245
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @244
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @244
+goto @246
+
+  @245
+goto_unless (!intA[10] && !intA[11]) @246
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @246
+intA[1000] = strcmp (strS[0], '藤堂')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @247
+intA[1002] = 1
+
+  @247
+goto_unless (!intA[1001]) @248
+intA[1003] = 1
+
+  @248
+goto_unless (intA[10] == 1 && intA[11] == 1) @249
+goto @252
+
+  @249
+goto_unless (intA[10] == 1 || intA[11] == 1) @251
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @250
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @250
+goto @252
+
+  @251
+goto_unless (!intA[10] && !intA[11]) @252
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @252
+intA[1000] = strcmp (strS[0], '榎本')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @253
+intA[1002] = 1
+
+  @253
+goto_unless (!intA[1001]) @254
+intA[1003] = 1
+
+  @254
+goto_unless (intA[10] == 1 && intA[11] == 1) @255
+goto @258
+
+  @255
+goto_unless (intA[10] == 1 || intA[11] == 1) @257
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @256
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @256
+goto @258
+
+  @257
+goto_unless (!intA[10] && !intA[11]) @258
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @258
+intA[1000] = strcmp (strS[0], '大塚')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @259
+intA[1002] = 1
+
+  @259
+goto_unless (!intA[1001]) @260
+intA[1003] = 1
+
+  @260
+goto_unless (intA[10] == 1 && intA[11] == 1) @261
+goto @264
+
+  @261
+goto_unless (intA[10] == 1 || intA[11] == 1) @263
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @262
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @262
+goto @264
+
+  @263
+goto_unless (!intA[10] && !intA[11]) @264
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @264
+intA[1000] = strcmp (strS[0], '深沢')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @265
+intA[1002] = 1
+
+  @265
+goto_unless (!intA[1001]) @266
+intA[1003] = 1
+
+  @266
+goto_unless (intA[10] == 1 && intA[11] == 1) @267
+goto @270
+
+  @267
+goto_unless (intA[10] == 1 || intA[11] == 1) @269
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @268
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @268
+goto @270
+
+  @269
+goto_unless (!intA[10] && !intA[11]) @270
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @270
+intA[1000] = strcmp (strS[0], '溝口')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @271
+intA[1002] = 1
+
+  @271
+goto_unless (!intA[1001]) @272
+intA[1003] = 1
+
+  @272
+goto_unless (intA[10] == 1 && intA[11] == 1) @273
+goto @276
+
+  @273
+goto_unless (intA[10] == 1 || intA[11] == 1) @275
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @274
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @274
+goto @276
+
+  @275
+goto_unless (!intA[10] && !intA[11]) @276
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @276
+intA[1000] = strcmp (strS[0], '須藤')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @277
+intA[1002] = 1
+
+  @277
+goto_unless (!intA[1001]) @278
+intA[1003] = 1
+
+  @278
+goto_unless (intA[10] == 1 && intA[11] == 1) @279
+goto @282
+
+  @279
+goto_unless (intA[10] == 1 || intA[11] == 1) @281
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @280
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @280
+goto @282
+
+  @281
+goto_unless (!intA[10] && !intA[11]) @282
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @282
+intA[1000] = strcmp (strS[0], '小西')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @283
+intA[1002] = 1
+
+  @283
+goto_unless (!intA[1001]) @284
+intA[1003] = 1
+
+  @284
+goto_unless (intA[10] == 1 && intA[11] == 1) @285
+goto @288
+
+  @285
+goto_unless (intA[10] == 1 || intA[11] == 1) @287
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @286
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @286
+goto @288
+
+  @287
+goto_unless (!intA[10] && !intA[11]) @288
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @288
+intA[1000] = strcmp (strS[0], '辻本')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @289
+intA[1002] = 1
+
+  @289
+goto_unless (!intA[1001]) @290
+intA[1003] = 1
+
+  @290
+goto_unless (intA[10] == 1 && intA[11] == 1) @291
+goto @294
+
+  @291
+goto_unless (intA[10] == 1 || intA[11] == 1) @293
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @292
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @292
+goto @294
+
+  @293
+goto_unless (!intA[10] && !intA[11]) @294
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @294
+intA[1000] = strcmp (strS[0], '五十嵐')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @295
+intA[1002] = 1
+
+  @295
+goto_unless (!intA[1001]) @296
+intA[1003] = 1
+
+  @296
+goto_unless (intA[10] == 1 && intA[11] == 1) @297
+goto @300
+
+  @297
+goto_unless (intA[10] == 1 || intA[11] == 1) @299
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @298
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @298
+goto @300
+
+  @299
+goto_unless (!intA[10] && !intA[11]) @300
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @300
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'サキ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @301
+intA[1002] = 1
+
+  @301
+goto_unless (!intA[1001]) @302
+intA[1003] = 1
+
+  @302
+goto_unless (intA[10] == 1 && intA[11] == 1) @303
+goto @306
+
+  @303
+goto_unless (intA[10] == 1 || intA[11] == 1) @305
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @304
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @304
+goto @306
+
+  @305
+goto_unless (!intA[10] && !intA[11]) @306
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @306
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'ユキ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @307
+intA[1002] = 1
+
+  @307
+goto_unless (!intA[1001]) @308
+intA[1003] = 1
+
+  @308
+goto_unless (intA[10] == 1 && intA[11] == 1) @309
+goto @312
+
+  @309
+goto_unless (intA[10] == 1 || intA[11] == 1) @311
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @310
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @310
+goto @312
+
+  @311
+goto_unless (!intA[10] && !intA[11]) @312
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @312
+intA[1000] = strcmp (strS[0], '福島')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @313
+intA[1002] = 1
+
+  @313
+goto_unless (!intA[1001]) @314
+intA[1003] = 1
+
+  @314
+goto_unless (intA[10] == 1 && intA[11] == 1) @315
+goto @318
+
+  @315
+goto_unless (intA[10] == 1 || intA[11] == 1) @317
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @316
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @316
+goto @318
+
+  @317
+goto_unless (!intA[10] && !intA[11]) @318
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @318
+intA[1000] = strcmp (strS[0], '千石')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @319
+intA[1002] = 1
+
+  @319
+goto_unless (!intA[1001]) @320
+intA[1003] = 1
+
+  @320
+goto_unless (intA[10] == 1 && intA[11] == 1) @321
+goto @324
+
+  @321
+goto_unless (intA[10] == 1 || intA[11] == 1) @323
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @322
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @322
+goto @324
+
+  @323
+goto_unless (!intA[10] && !intA[11]) @324
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @324
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'ジョニー')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @325
+intA[1002] = 1
+
+  @325
+goto_unless (!intA[1001]) @326
+intA[1003] = 1
+
+  @326
+goto_unless (intA[10] == 1 && intA[11] == 1) @327
+goto @330
+
+  @327
+goto_unless (intA[10] == 1 || intA[11] == 1) @329
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @328
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @328
+goto @330
+
+  @329
+goto_unless (!intA[10] && !intA[11]) @330
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @330
+intA[1000] = strcmp (strS[0], '市井')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @331
+intA[1002] = 1
+
+  @331
+goto_unless (!intA[1001]) @332
+intA[1003] = 1
+
+  @332
+goto_unless (intA[10] == 1 && intA[11] == 1) @333
+goto @336
+
+  @333
+goto_unless (intA[10] == 1 || intA[11] == 1) @335
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @334
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @334
+goto @336
+
+  @335
+goto_unless (!intA[10] && !intA[11]) @336
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @336
+intA[1000] = strcmp (strS[0], '八木')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @337
+intA[1002] = 1
+
+  @337
+goto_unless (!intA[1001]) @338
+intA[1003] = 1
+
+  @338
+goto_unless (intA[10] == 1 && intA[11] == 1) @339
+goto @342
+
+  @339
+goto_unless (intA[10] == 1 || intA[11] == 1) @341
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @340
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @340
+goto @342
+
+  @341
+goto_unless (!intA[10] && !intA[11]) @342
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @342
+intA[1000] = strcmp (strS[0], '田村')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @343
+intA[1002] = 1
+
+  @343
+goto_unless (!intA[1001]) @344
+intA[1003] = 1
+
+  @344
+goto_unless (intA[10] == 1 && intA[11] == 1) @345
+goto @348
+
+  @345
+goto_unless (intA[10] == 1 || intA[11] == 1) @347
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @346
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @346
+goto @348
+
+  @347
+goto_unless (!intA[10] && !intA[11]) @348
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @348
+intA[1000] = strcmp (strS[0], '土方')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @349
+intA[1002] = 1
+
+  @349
+goto_unless (!intA[1001]) @350
+intA[1003] = 1
+
+  @350
+goto_unless (intA[10] == 1 && intA[11] == 1) @351
+goto @354
+
+  @351
+goto_unless (intA[10] == 1 || intA[11] == 1) @353
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @352
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @352
+goto @354
+
+  @353
+goto_unless (!intA[10] && !intA[11]) @354
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @354
+intA[1000] = strcmp (strS[0], '蓑島')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @355
+intA[1002] = 1
+
+  @355
+goto_unless (!intA[1001]) @356
+intA[1003] = 1
+
+  @356
+goto_unless (intA[10] == 1 && intA[11] == 1) @357
+goto @360
+
+  @357
+goto_unless (intA[10] == 1 || intA[11] == 1) @359
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @358
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @358
+goto @360
+
+  @359
+goto_unless (!intA[10] && !intA[11]) @360
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @360
+intA[1000] = strcmp (strS[0], '四條')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @361
+intA[1002] = 1
+
+  @361
+goto_unless (!intA[1001]) @362
+intA[1003] = 1
+
+  @362
+goto_unless (intA[10] == 1 && intA[11] == 1) @363
+goto @366
+
+  @363
+goto_unless (intA[10] == 1 || intA[11] == 1) @365
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @364
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @364
+goto @366
+
+  @365
+goto_unless (!intA[10] && !intA[11]) @366
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @366
+intA[1000] = strcmp (strS[0], '木下')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @367
+intA[1002] = 1
+
+  @367
+goto_unless (!intA[1001]) @368
+intA[1003] = 1
+
+  @368
+goto_unless (intA[10] == 1 && intA[11] == 1) @369
+goto @372
+
+  @369
+goto_unless (intA[10] == 1 || intA[11] == 1) @371
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @370
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @370
+goto @372
+
+  @371
+goto_unless (!intA[10] && !intA[11]) @372
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @372
+intA[1000] = strcmp (strS[0], '篠原')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @373
+intA[1002] = 1
+
+  @373
+goto_unless (!intA[1001]) @374
+intA[1003] = 1
+
+  @374
+goto_unless (intA[10] == 1 && intA[11] == 1) @375
+goto @378
+
+  @375
+goto_unless (intA[10] == 1 || intA[11] == 1) @377
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @376
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @376
+goto @378
+
+  @377
+goto_unless (!intA[10] && !intA[11]) @378
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @378
+intA[1000] = strcmp (strS[0], '乾')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @379
+intA[1002] = 1
+
+  @379
+goto_unless (!intA[1001]) @380
+intA[1003] = 1
+
+  @380
+goto_unless (intA[10] == 1 && intA[11] == 1) @381
+goto @384
+
+  @381
+goto_unless (intA[10] == 1 || intA[11] == 1) @383
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @382
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @382
+goto @384
+
+  @383
+goto_unless (!intA[10] && !intA[11]) @384
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @384
+intA[1000] = strcmp (strS[0], '大上')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @385
+intA[1002] = 1
+
+  @385
+goto_unless (!intA[1001]) @386
+intA[1003] = 1
+
+  @386
+goto_unless (intA[10] == 1 && intA[11] == 1) @387
+goto @390
+
+  @387
+goto_unless (intA[10] == 1 || intA[11] == 1) @389
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @388
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @388
+goto @390
+
+  @389
+goto_unless (!intA[10] && !intA[11]) @390
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @390
+intA[1000] = strcmp (strS[0], '雪島')
+intA[1001] = strcmp (strS[1], '美智子')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @391
+intA[1002] = 1
+
+  @391
+goto_unless (!intA[1001]) @392
+intA[1003] = 1
+
+  @392
+goto_unless (intA[10] == 1 && intA[11] == 1) @393
+goto @396
+
+  @393
+goto_unless (intA[10] == 1 || intA[11] == 1) @395
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @394
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @394
+goto @396
+
+  @395
+goto_unless (!intA[10] && !intA[11]) @396
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @396
+intA[1000] = strcmp (strS[0], '藤堂')
+intA[1001] = strcmp (strS[1], '沙紀')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @397
+intA[1002] = 1
+
+  @397
+goto_unless (!intA[1001]) @398
+intA[1003] = 1
+
+  @398
+goto_unless (intA[10] == 1 && intA[11] == 1) @399
+goto @402
+
+  @399
+goto_unless (intA[10] == 1 || intA[11] == 1) @401
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @400
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @400
+goto @402
+
+  @401
+goto_unless (!intA[10] && !intA[11]) @402
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @402
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '有紀')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @403
+intA[1002] = 1
+
+  @403
+goto_unless (!intA[1001]) @404
+intA[1003] = 1
+
+  @404
+goto_unless (intA[10] == 1 && intA[11] == 1) @405
+goto @408
+
+  @405
+goto_unless (intA[10] == 1 || intA[11] == 1) @407
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @406
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @406
+goto @408
+
+  @407
+goto_unless (!intA[10] && !intA[11]) @408
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @408
+intA[1000] = strcmp (strS[0], '関口')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @409
+intA[1002] = 1
+
+  @409
+goto_unless (!intA[1001]) @410
+intA[1003] = 1
+
+  @410
+goto_unless (intA[10] == 1 && intA[11] == 1) @411
+goto @414
+
+  @411
+goto_unless (intA[10] == 1 || intA[11] == 1) @413
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @412
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @412
+goto @414
+
+  @413
+goto_unless (!intA[10] && !intA[11]) @414
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @414
+intA[1000] = strcmp (strS[0], '薗部')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @415
+intA[1002] = 1
+
+  @415
+goto_unless (!intA[1001]) @416
+intA[1003] = 1
+
+  @416
+goto_unless (intA[10] == 1 && intA[11] == 1) @417
+goto @420
+
+  @417
+goto_unless (intA[10] == 1 || intA[11] == 1) @419
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @418
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @418
+goto @420
+
+  @419
+goto_unless (!intA[10] && !intA[11]) @420
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @420
+intA[1000] = strcmp (strS[0], '谷口')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @421
+intA[1002] = 1
+
+  @421
+goto_unless (!intA[1001]) @422
+intA[1003] = 1
+
+  @422
+goto_unless (intA[10] == 1 && intA[11] == 1) @423
+goto @426
+
+  @423
+goto_unless (intA[10] == 1 || intA[11] == 1) @425
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @424
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @424
+goto @426
+
+  @425
+goto_unless (!intA[10] && !intA[11]) @426
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @426
+intA[1000] = strcmp (strS[0], '柳本')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @427
+intA[1002] = 1
+
+  @427
+goto_unless (!intA[1001]) @428
+intA[1003] = 1
+
+  @428
+goto_unless (intA[10] == 1 && intA[11] == 1) @429
+goto @432
+
+  @429
+goto_unless (intA[10] == 1 || intA[11] == 1) @431
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @430
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @430
+goto @432
+
+  @431
+goto_unless (!intA[10] && !intA[11]) @432
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @432
+intA[1000] = strcmp (strS[0], '三谷')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @433
+intA[1002] = 1
+
+  @433
+goto_unless (!intA[1001]) @434
+intA[1003] = 1
+
+  @434
+goto_unless (intA[10] == 1 && intA[11] == 1) @435
+goto @438
+
+  @435
+goto_unless (intA[10] == 1 || intA[11] == 1) @437
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @436
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @436
+goto @438
+
+  @437
+goto_unless (!intA[10] && !intA[11]) @438
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @438
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], '雪野')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @439
+intA[1002] = 1
+
+  @439
+goto_unless (!intA[1001]) @440
+intA[1003] = 1
+
+  @440
+goto_unless (intA[10] == 1 && intA[11] == 1) @441
+goto @444
+
+  @441
+goto_unless (intA[10] == 1 || intA[11] == 1) @443
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @442
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @442
+goto @444
+
+  @443
+goto_unless (!intA[10] && !intA[11]) @444
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @444
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'ローズ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @445
+intA[1002] = 1
+
+  @445
+goto_unless (!intA[1001]) @446
+intA[1003] = 1
+
+  @446
+goto_unless (intA[10] == 1 && intA[11] == 1) @447
+goto @450
+
+  @447
+goto_unless (intA[10] == 1 || intA[11] == 1) @449
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @448
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @448
+goto @450
+
+  @449
+goto_unless (!intA[10] && !intA[11]) @450
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @450
+intA[1000] = strcmp (strS[0], '□□□□□')
+intA[1001] = strcmp (strS[1], 'ヤイバ')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @451
+intA[1002] = 1
+
+  @451
+goto_unless (!intA[1001]) @452
+intA[1003] = 1
+
+  @452
+goto_unless (intA[10] == 1 && intA[11] == 1) @453
+goto @456
+
+  @453
+goto_unless (intA[10] == 1 || intA[11] == 1) @455
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @454
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @454
+goto @456
+
+  @455
+goto_unless (!intA[10] && !intA[11]) @456
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @456
+intA[1000] = strcmp (strS[0], '竹下')
+intA[1001] = strcmp (strS[1], '□□□□□')
+intA[1002] = 0
+intA[1003] = 0
+goto_unless (!intA[1000]) @457
+intA[1002] = 1
+
+  @457
+goto_unless (!intA[1001]) @458
+intA[1003] = 1
+
+  @458
+goto_unless (intA[10] == 1 && intA[11] == 1) @459
+goto @462
+
+  @459
+goto_unless (intA[10] == 1 || intA[11] == 1) @461
+goto_unless (intA[1002] == 1 && intA[1003] == 1) @460
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @460
+goto @462
+
+  @461
+goto_unless (!intA[10] && !intA[11]) @462
+intA[10] = intA[1002]
+intA[11] = intA[1003]
+
+  @462
+goto_unless (intA[0] == 1 && !intA[1]) @463
+intA[110] = 0
+goto @469
+
+  @463
+goto_unless (!intA[0] && intA[1] == 1) @464
+intA[110] = 1
+goto @469
+
+  @464
+goto_unless (intA[0] == 1 && intA[1] == 1) @465
+intA[110] = 2
+goto @469
+
+  @465
+goto_unless (intA[10] == 1 && !intA[11]) @466
+intA[110] = 3
+goto @469
+
+  @466
+goto_unless (!intA[10] && intA[11] == 1) @467
+intA[110] = 4
+goto @469
+
+  @467
+goto_unless (intA[10] == 1 && intA[11] == 1) @468
+intA[110] = 5
+goto @469
+
+  @468
+intA[110] = -1
+
+  @469
+goto_unless (intA[110] != -1) @474
+sePlay (13)
+gosub @485
+goto_unless (!intF[1013]) @470
+goto @473
+
+  @470
+goto_unless (intF[1013] == 1) @473
+goto_unless (!intA[110] || intA[110] == 2 || intA[110] == 3 || intA[110] == 5) @471
+FocusInput (0)
+goto @472
+
+  @471
+goto_unless (intA[110] == 1 || intA[110] == 4) @472
+FocusInput (1)
+
+  @472
+goto @8
+
+  @473
+goto @475
+
+  @474
+goto_unless (intA[110] == -1) @475
+sePlay (11)
+
+  @475
+SetName (0, strS[0])
+SetName (1, strS[1])
+goto @478
+
+  @476
+goto_unless (intF[1013] == 1) @477
+goto @478
+
+  @477
+goto_unless (intF[1013] == 2) @478
+sePlay (13)
+
+  @478
+objPattNo (10, 0)
+objPattNo (11, 0)
+objPattNo (12, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objPattNo (30, 0)
+CloseInput (0)
+CloseInput (1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @479
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @480
+intF[1000] = 1
+FlushClick
+goto @481
+
+  @480
+intF[1000] = 0
+
+  @481
+goto_unless (intF[1000] == 1) @482
+intC[0] = 0
+intC[1] = 255
+
+  @482
+objAlpha (30, intC[1])
+refresh
+goto_unless (!intC[0]) @483
+goto @484
+
+  @483
+goto @479
+
+  @484
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+objShow (10, 0)
+objShow (11, 0)
+objShow (12, 0)
+objShow (20, 0)
+objShow (21, 0)
+objShow (22, 0)
+objShow (30, 0)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+objDelete (30)
+intG[1004] = 0
+intG[1005] = 0
+intG[1006] = 2
+DrawAuto
+EnableSyscom
+jump (9032)
+
+  @485
+goto_case intA[110] { 0: @486; 1: @487; 2: @488; 3: @489; 4: @490; 5: @491; _: @492 }
+
+  @486
+objPattNo (20, 0)
+goto @492
+
+  @487
+objPattNo (20, 1)
+goto @492
+
+  @488
+objPattNo (20, 2)
+goto @492
+
+  @489
+objPattNo (20, 3)
+goto @492
+
+  @490
+objPattNo (20, 4)
+goto @492
+
+  @491
+objPattNo (20, 5)
+goto @492
+
+  @492
+objShow (20, 1)
+FlushClick
+intC[0] = 150
+InitExFrames ({0, 0, 255, intC[0]}, {1, 110, 100, intC[0]})
+
+  @493
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @494
+intF[1000] = 1
+goto @496
+
+  @494
+goto_unless (intA[1002] == 2) @495
+intF[1000] = 1
+FlushClick
+goto @496
+
+  @495
+intF[1000] = 0
+
+  @496
+goto_unless (intF[1000] == 1) @497
+intC[0] = 0
+intC[1] = 255
+intC[2] = 100
+
+  @497
+objAlpha (20, intC[1])
+objScale (20, intC[2], intC[2])
+refresh
+goto_unless (!intC[0]) @498
+goto @499
+
+  @498
+goto @493
+
+  @499
+objShow (21, 1)
+objShow (22, 1)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @500
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @501
+objGetPos (21, intA[1000], intA[1001])
+objGetDims (21, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @501
+intF[1006] = 0
+
+  @501
+goto_unless (intF[1006] == 99) @502
+objGetPos (22, intA[1000], intA[1001])
+objGetDims (22, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @502
+intF[1006] = 1
+
+  @502
+goto_unless (!intF[1003]) @506
+goto_unless (intF[1006] != 99) @504
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @503
+sePlay (10)
+
+  @503
+intF[1009] = 2
+goto @505
+
+  @504
+intF[1009] = 0
+
+  @505
+goto @516
+
+  @506
+goto_unless (intF[1003] == 1) @512
+goto_unless (intF[1008] != -1) @510
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @508
+goto_unless (intF[1009] != 3) @507
+sePlay (10)
+
+  @507
+intF[1009] = 3
+goto @509
+
+  @508
+intF[1009] = 0
+
+  @509
+goto @511
+
+  @510
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @511
+goto @516
+
+  @512
+goto_unless (intF[1003] == 2) @516
+goto_unless (intF[1008] != -1) @515
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @513
+intF[1009] = 2
+intF[1012] = 1
+goto @514
+
+  @513
+intF[1009] = 0
+
+  @514
+intF[1008] = -1
+
+  @515
+FlushClick
+
+  @516
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @517
+intE[intF[1006]] = intF[1009]
+
+  @517
+objPattNo (21, intE[0])
+objPattNo (22, intE[1])
+refresh
+goto_unless (intF[1012] == 1) @518
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @520
+goto @519
+
+  @518
+goto_unless (intF[1004] == 2) @519
+intF[1013] = 1
+goto @520
+
+  @519
+goto @500
+
+  @520
+goto_unless (!intF[1013]) @521
+sePlay (11)
+goto @522
+
+  @521
+goto_unless (intF[1013] == 1) @522
+sePlay (12)
+
+  @522
+goto_case intA[110] { 0: @523; 1: @524; 2: @525; 3: @526; 4: @527; 5: @528; _: @529 }
+
+  @523
+objPattNo (20, 0)
+goto @529
+
+  @524
+objPattNo (20, 1)
+goto @529
+
+  @525
+objPattNo (20, 2)
+goto @529
+
+  @526
+objPattNo (20, 3)
+goto @529
+
+  @527
+objPattNo (20, 4)
+goto @529
+
+  @528
+objPattNo (20, 5)
+goto @529
+
+  @529
+objPattNo (21, 0)
+objPattNo (22, 0)
+objShow (21, 0)
+objShow (22, 0)
+FlushClick
+intC[0] = 150
+goto_unless (!intF[1013]) @530
+InitExFrames ({0, 255, 0, intC[0]}, {1, 100, 90, intC[0]})
+goto @531
+
+  @530
+goto_unless (intF[1013] == 1) @531
+InitExFrames ({0, 255, 0, intC[0]}, {1, 100, 110, intC[0]})
+
+  @531
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @532
+intF[1000] = 1
+goto @534
+
+  @532
+goto_unless (intA[1002] == 2) @533
+intF[1000] = 1
+FlushClick
+goto @534
+
+  @533
+intF[1000] = 0
+
+  @534
+goto_unless (intF[1000] == 1) @536
+intC[0] = 0
+intC[1] = 0
+goto_unless (!intF[1013]) @535
+intC[2] = 90
+goto @536
+
+  @535
+goto_unless (intF[1013] == 1) @536
+intC[2] = 110
+
+  @536
+objAlpha (20, intC[1])
+objScale (20, intC[2], intC[2])
+refresh
+goto_unless (!intC[0]) @537
+goto @538
+
+  @537
+goto @531
+
+  @538
+objShow (20, 0)
+ret
+eof

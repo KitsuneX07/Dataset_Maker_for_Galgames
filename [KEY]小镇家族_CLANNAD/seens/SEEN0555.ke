@@ -1,0 +1,435 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN0555.TXT'
+#resource 'SEEN0555.utf'
+
+#entrypoint 000
+strS[1000] = 'KURO'
+goto @2
+goto @1
+strS[1000] = 'SIRO'
+goto @2
+
+  @1
+strS[1000] = 'KURO'
+
+  @2
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+
+  @3
+bgmFadeOut (3000)
+#res<0000>
+pause
+bgmLoop ('BGM09A')
+intZ[517] = 1
+#res<0001>
+pause
+#res<0002>
+pause
+intF[1089] = select (#res<0003>, #res<0004>)
+goto_unless (!intF[1089]) @4
+bgmFadeOut (2000)
+#res<0005>
+wavPlay ('END')
+pause
+goto @25
+goto @5
+
+  @4
+goto_unless (intF[1089] == 1) @5
+
+  @5
+#res<0006>
+pause
+intF[1089] = select (#res<0007>, #res<0008>)
+goto_unless (!intF[1089]) @6
+bgmFadeOut (2000)
+#res<0009>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+goto @7
+
+  @6
+goto_unless (intF[1089] == 1) @7
+
+  @7
+#res<0010>
+pause
+intF[1089] = select (#res<0011>, #res<0012>)
+goto_unless (!intF[1089]) @8
+goto @9
+
+  @8
+goto_unless (intF[1089] == 1) @9
+bgmFadeOut (2000)
+#res<0013>
+pause
+bgmLoop ('BGM16A')
+intZ[524] = 1
+#res<0014>
+pause
+#res<0015>
+pause
+bgmFadeOut (2000)
+#res<0016>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+
+  @9
+bgmFadeOut (2000)
+#res<0017>
+pause
+#res<0018>
+wavPlay ('GABU')
+#res<0019>
+pause
+intF[1089] = select (#res<0020>, #res<0021>)
+goto_unless (!intF[1089]) @10
+goto @11
+
+  @10
+goto_unless (intF[1089] == 1) @11
+#res<0022>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+
+  @11
+bgmLoop ('BGM28')
+intZ[527] = 1
+#res<0023>
+pause
+#res<0024>
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+pause
+#res<0025>
+pause
+#res<0026>
+pause
+intF[1089] = select (#res<0027>, #res<0028>)
+goto_unless (!intF[1089]) @12
+goto @13
+
+  @12
+goto_unless (intF[1089] == 1) @13
+bgmFadeOut (2000)
+#res<0029>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+
+  @13
+bgmFadeOut (2000)
+#res<0030>
+wavPlay ('NAKAMA')
+wait (1500)
+pause
+bgmLoop ('BGM28')
+intZ[527] = 1
+#res<0031>
+pause
+#res<0032>
+pause
+intF[1089] = select (#res<0033>, #res<0034>)
+goto_unless (!intF[1089]) @14
+bgmFadeOut (2000)
+#res<0035>
+pause
+#res<0036>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+goto @15
+
+  @14
+goto_unless (intF[1089] == 1) @15
+
+  @15
+#res<0037>
+pause
+#res<0038>
+pause
+#res<0039>
+pause
+#res<0040>
+pause
+#res<0041>
+pause
+#res<0042>
+pause
+intF[1089] = select (#res<0043>, #res<0044>)
+goto_unless (!intF[1089]) @16
+goto @19
+
+  @16
+goto_unless (intF[1089] == 1) @19
+#res<0045>
+pause
+intF[1089] = select (#res<0046>, #res<0047>, #res<0048>)
+goto_unless (!intF[1089]) @17
+bgmFadeOut (2000)
+#res<0049>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+goto @19
+
+  @17
+goto_unless (intF[1089] == 1) @18
+#res<0050>
+pause
+bgmFadeOut (2000)
+#res<0051>
+wavPlay ('NAKAMA')
+wait (1500)
+pause
+goto @25
+goto @19
+
+  @18
+goto_unless (intF[1089] == 2) @19
+bgmFadeOut (2000)
+#res<0052>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+
+  @19
+bgmFadeOut (2000)
+#res<0053>
+wavPlay ('UOO')
+wait (2000)
+par
+#res<0054>
+wavPlay ('SHOURI')
+wait (1500)
+pause
+#res<0055>
+pause
+#res<0056>
+wavPlay ('NAKAMA')
+wait (1500)
+pause
+bgmLoop ('BGM15')
+intZ[520] = 1
+#res<0057>
+pause
+intF[1089] = select (#res<0058>, #res<0059>)
+goto_unless (!intF[1089]) @20
+bgmFadeOut (2000)
+#res<0060>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+goto @21
+
+  @20
+goto_unless (intF[1089] == 1) @21
+
+  @21
+bgmFadeOut (2000)
+#res<0061>
+pause
+bgmLoop ('BGM28')
+intZ[527] = 1
+#res<0062>
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+pause
+#res<0063>
+pause
+#res<0064>
+pause
+intF[1089] = select (#res<0065>, #res<0066>)
+goto_unless (!intF[1089]) @22
+bgmFadeOut (2000)
+#res<0067>
+wavPlay ('NAKAMA')
+wait (1500)
+pause
+#res<0068>
+wavPlay ('END')
+wait (1500)
+pause
+goto @25
+goto @23
+
+  @22
+goto_unless (intF[1089] == 1) @23
+
+  @23
+bgmFadeOut (2000)
+#res<0069>
+pause
+bgmLoop ('BGM28')
+intZ[527] = 1
+#res<0070>
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+wait (200)
+wavPlay ('BUNG')
+pause
+#res<0071>
+pause
+bgmFadeOut (2000)
+#res<0072>
+wavPlay ('NAKAMA')
+wait (1500)
+msgHide
+strS[1000] = 'BG046'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @24
+strclear (strS[1000])
+
+  @24
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 20
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0073>
+pause
+#res<0074>
+pause
+bgmLoop ('BGM08B')
+intZ[513] = 1
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGSH19B'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (303269)
+#res<0075>
+pause
+#res<0076>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGSH12B'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (303270)
+#res<0077>
+pause
+koePlay (303271)
+#res<0078>
+pause
+#res<0079>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+rtl
+
+  @25
+intF[1089] = select (#res<0080>, #res<0081>)
+goto_unless (!intF[1089]) @26
+goto @3
+goto @28
+
+  @26
+goto_unless (intF[1089] == 1) @28
+strS[1000] = 'BG046'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @27
+strclear (strS[1000])
+
+  @27
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0082>
+pause
+rtl
+
+  @28
+eof

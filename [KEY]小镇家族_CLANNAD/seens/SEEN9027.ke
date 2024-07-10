@@ -1,0 +1,196 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9027.TXT'
+
+#entrypoint 000
+intE[intF[1018]] = 0
+intE[intF[1018] + 1] = 0
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 0
+intE[intF[1018] + 4] = 0
+intE[intF[1018] + 5] = 0
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 7] = 0
+intE[intF[1018] + 8] = 0
+intE[intF[1018] + 9] = 0
+intE[intF[1018] + 10] = 0
+intE[intF[1018] + 11] = 0
+rtl
+#entrypoint 001
+intE[intF[1018]] = intE[intF[1018] + 12]
+rtl
+#entrypoint 002
+intE[intF[1018] + 1] = intE[intF[1018] + 13]
+intE[intF[1018] + 2] = intE[intF[1018] + 14]
+intE[intF[1018] + 3] = intE[intF[1018] + 15]
+intE[intF[1018] + 4] = intE[intF[1018] + 16]
+intE[intF[1018] + 5] = intE[intF[1018] + 17]
+intE[intF[1018] + 6] = intE[intF[1018] + 18]
+intE[intF[1018] + 7] = intE[intF[1018] + 19]
+intE[intF[1018] + 8] = intE[intF[1018] + 20]
+intE[intF[1018] + 9] = intE[intF[1018] + 21]
+intE[intF[1018] + 10] = intE[intF[1018] + 22]
+intE[intF[1018] + 11] = intE[intF[1018] + 23]
+rtl
+#entrypoint 003
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 0
+intE[intF[1018] + 4] = 0
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 8] = 0
+intE[intF[1018] + 10] = 0
+goto_unless (intE[intF[1018] + 1] == 3) @1
+ResetExTimer (intE[intF[1018]])
+
+  @1
+rtl
+#entrypoint 004
+intE[intF[1018] + 2] = intE[intF[1018] + 24]
+goto_unless (!intE[intF[1018] + 1]) @4
+goto_unless (intE[intF[1018] + 2] == 1) @2
+intE[intF[1018] + 2] = 1
+goto @3
+
+  @2
+goto_unless (!intE[intF[1018] + 2]) @3
+intE[intF[1018] + 2] = 0
+
+  @3
+goto @28
+
+  @4
+goto_unless (intE[intF[1018] + 1] == 1) @9
+goto_unless (intE[intF[1018] + 2] == 1) @7
+goto_unless (intE[intF[1018] + 3] == 1) @5
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 1
+goto @6
+
+  @5
+goto_unless (!intE[intF[1018] + 3]) @6
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+
+  @6
+goto @8
+
+  @7
+goto_unless (!intE[intF[1018] + 2]) @8
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 0
+
+  @8
+goto @28
+
+  @9
+goto_unless (intE[intF[1018] + 1] == 2) @19
+goto_unless (intE[intF[1018] + 2] == 1) @17
+goto_unless (intE[intF[1018] + 3] == 1) @15
+goto_unless (intE[intF[1018] + 4] <= intE[intF[1018] + 5]) @12
+intE[intF[1018] + 4] += 1
+goto_unless (intE[intF[1018] + 5] < intE[intF[1018] + 4]) @10
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+goto @11
+
+  @10
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 1
+
+  @11
+goto @14
+
+  @12
+intE[intF[1018] + 6] += 1
+goto_unless (intE[intF[1018] + 7] < intE[intF[1018] + 6]) @13
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+goto @14
+
+  @13
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 1
+
+  @14
+goto @16
+
+  @15
+goto_unless (!intE[intF[1018] + 3]) @16
+intE[intF[1018] + 4] = 0
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+
+  @16
+goto @18
+
+  @17
+goto_unless (!intE[intF[1018] + 2]) @18
+intE[intF[1018] + 4] = 0
+intE[intF[1018] + 6] = 0
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 0
+
+  @18
+goto @28
+
+  @19
+goto_unless (intE[intF[1018] + 1] == 3) @28
+goto_unless (intE[intF[1018] + 2] == 1) @27
+goto_unless (intE[intF[1018] + 3] == 1) @25
+goto_unless (intE[intF[1018] + 8] <= intE[intF[1018] + 9]) @22
+intE[intF[1018] + 8] = ExTimer (intE[intF[1018]])
+goto_unless (intE[intF[1018] + 9] < intE[intF[1018] + 8]) @20
+intE[intF[1018] + 10] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+ResetExTimer (intE[intF[1018]])
+goto @21
+
+  @20
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 1
+
+  @21
+goto @24
+
+  @22
+intE[intF[1018] + 10] = ExTimer (intE[intF[1018]])
+goto_unless (intE[intF[1018] + 11] < intE[intF[1018] + 10]) @23
+intE[intF[1018] + 10] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+ResetExTimer (intE[intF[1018]])
+goto @24
+
+  @23
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 1
+
+  @24
+goto @26
+
+  @25
+goto_unless (!intE[intF[1018] + 3]) @26
+intE[intF[1018] + 8] = 0
+intE[intF[1018] + 10] = 0
+intE[intF[1018] + 2] = 1
+intE[intF[1018] + 3] = 1
+ResetExTimer (intE[intF[1018]])
+
+  @26
+goto @28
+
+  @27
+goto_unless (!intE[intF[1018] + 2]) @28
+intE[intF[1018] + 8] = 0
+intE[intF[1018] + 10] = 0
+intE[intF[1018] + 2] = 0
+intE[intF[1018] + 3] = 0
+
+  @28
+intE[intF[1018] + 25] = intE[intF[1018] + 2]
+rtl
+eof

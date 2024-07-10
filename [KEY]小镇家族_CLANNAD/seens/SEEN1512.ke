@@ -1,0 +1,263 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN1512.TXT'
+#resource 'SEEN1512.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 5
+intF[1110] = 12
+intF[1111] = 1
+intF[1112] = 0
+strS[1004] = 'SDTA0512'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+Savepoint
+farcall (9053, 0)
+strS[1000] = 'KURO'
+goto @3
+goto @2
+strS[1000] = 'SIRO'
+goto @3
+
+  @2
+strS[1000] = 'KURO'
+
+  @3
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0001>
+pause
+strS[1000] = 'BG010N1'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @4
+strclear (strS[1000])
+
+  @4
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM08D')
+intZ[515] = 1
+koePlay (707418)
+#res<0002>
+pause
+#res<0003>
+pause
+koePlay (707419)
+#res<0004>
+pause
+#res<0005>
+pause
+koePlay (707420)
+#res<0006>
+pause
+koePlay (707421)
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+#res<0010>
+pause
+#res<0011>
+pause
+koePlay (707422)
+#res<0012>
+pause
+#res<0013>
+pause
+koePlay (707423)
+#res<0014>
+pause
+#res<0015>
+pause
+#res<0016>
+pause
+koePlay (707424)
+#res<0017>
+pause
+#res<0018>
+pause
+koePlay (707425)
+#res<0019>
+pause
+#res<0020>
+pause
+koePlay (707426)
+#res<0021>
+pause
+#res<0022>
+pause
+koePlay (707427)
+#res<0023>
+pause
+#res<0024>
+pause
+koePlay (707428)
+#res<0025>
+pause
+koePlay (707429)
+#res<0026>
+pause
+#res<0027>
+pause
+koePlay (707430)
+#res<0028>
+pause
+#res<0029>
+pause
+koePlay (707431)
+#res<0030>
+pause
+#res<0031>
+pause
+koePlay (707432)
+#res<0032>
+pause
+#res<0033>
+pause
+#res<0034>
+pause
+koePlay (707433)
+#res<0035>
+pause
+#res<0036>
+pause
+koePlay (707434)
+#res<0037>
+pause
+#res<0038>
+pause
+koePlay (707435)
+#res<0039>
+pause
+#res<0040>
+pause
+#res<0041>
+pause
+#res<0042>
+pause
+koePlay (707436)
+#res<0043>
+pause
+#res<0044>
+pause
+#res<0045>
+pause
+koePlay (707437)
+#res<0046>
+pause
+#res<0047>
+pause
+#res<0048>
+pause
+koePlay (707438)
+#res<0049>
+pause
+koePlay (707439)
+#res<0050>
+pause
+koePlay (707440)
+#res<0051>
+pause
+#res<0052>
+pause
+koePlay (707441)
+#res<0053>
+pause
+#res<0054>
+pause
+koePlay (707442)
+#res<0055>
+pause
+#res<0056>
+pause
+koePlay (707443)
+#res<0057>
+pause
+koePlay (707444)
+#res<0058>
+pause
+#res<0059>
+pause
+koePlay (707445)
+#res<0060>
+pause
+#res<0061>
+pause
+koePlay (707446)
+#res<0062>
+pause
+#res<0063>
+pause
+#res<0064>
+pause
+#res<0065>
+pause
+#res<0066>
+pause
+#res<0067>
+pause
+#res<0068>
+pause
+bgmFadeOut (3000)
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @5
+strclear (strS[1000])
+
+  @5
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+jump (1513)
+eof

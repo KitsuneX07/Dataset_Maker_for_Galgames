@@ -1,0 +1,913 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9999.TXT'
+
+#entrypoint 000
+msgHide
+HideCursor
+HideSyscom
+CtrlKeySkipOff
+goto_unless (intF[320] == 4) @1
+goto @2
+
+  @1
+grpMulti (strS[1000], 20, copy(strS[1001]))
+
+  @2
+op<1:060:00100, 0>
+op<1:060:00110, 0>
+goto_unless (intF[638] == 1) @3
+objOfFile (7, 'BG043B', 1, 0, 0)
+objOfFile (8, 'FGMS15', 1, 0, 0)
+objOfFile (9, 'SIRO', 0, 0, 0)
+objAlpha (9, 0)
+objShow (9, 1)
+
+  @3
+goto_unless (intF[820] == 1) @4
+objOfFile (10, 'SR_NAME1', 1, 0, 480)
+goto @6
+
+  @4
+goto_unless (intF[417] == 1) @5
+objOfFile (10, 'SR_NAME2', 1, 0, 480)
+goto @6
+
+  @5
+objOfFile (10, 'SR_NAME3', 1, 0, 480)
+
+  @6
+objOfFile (12, 'SIRO', 0, 0, 0)
+intA[50] = SkipAnimations
+SetSkipAnimations (0)
+intA[6] = 0
+intZ[542] = 1
+bgmPlay ('BGM33', 0, 4000)
+ResetTimer
+goto_unless (intF[638] == 1) @9
+InitFrame (0, 0, 255, 20000)
+InitFrame (1, 255, 0, 10000)
+intA[1] = 0
+intA[2] = 0
+
+  @7
+intA[1] = ReadFrame (0)
+intA[2] = ReadFrame (1)
+objAlpha (8, intA[2])
+objAlpha (9, intA[1])
+refresh
+goto_unless (intA[1] >= 255) @8
+goto @10
+
+  @8
+goto @7
+goto @10
+
+  @9
+grpFade (255, 255, 255, 20000)
+
+  @10
+time (21000)
+intA[1] = 0
+goto_unless (intF[820] == 1) @11
+InitFrame (0, 480, -2000, 118000)
+goto @13
+
+  @11
+goto_unless (intF[417] == 1) @12
+InitFrame (0, 480, -2000, 118000)
+goto @13
+
+  @12
+InitFrame (0, 480, -1900, 118000)
+
+  @13
+intA[1] = ReadFrame (0)
+objTop (10, intA[1])
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[41] == 1) @17
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @14
+goto_unless (intA[6] >= 255) @15
+intA[6] = 255
+
+  @15
+objAlpha (30, intA[6])
+objShow (30, 1)
+goto_unless (intA[6] == 255) @16
+wait (3000)
+grpOpenBg ('SIRO', 3)
+goto @28
+
+  @16
+intA[6] += 10
+wait (100)
+goto @14
+
+  @17
+goto_unless (intF[820] == 1) @19
+goto_unless (intA[1] <= -1850) @18
+goto @23
+
+  @18
+goto @22
+
+  @19
+goto_unless (intF[417] == 1) @21
+goto_unless (intA[1] <= -1800) @20
+goto @23
+
+  @20
+goto @22
+
+  @21
+goto_unless (intA[1] <= -1700) @22
+goto @23
+
+  @22
+refresh
+goto @13
+
+  @23
+objAlpha (12, 0)
+objShow (12, 1)
+intA[6] = 0
+goto_unless (intF[820] == 1) @24
+InitFrame (1, 0, 255, 4500)
+goto @25
+
+  @24
+InitFrame (1, 0, 255, 6000)
+
+  @25
+intA[6] = ReadFrame (1)
+intA[1] = ReadFrame (0)
+objAlpha (12, intA[6])
+objTop (10, intA[1])
+refresh
+goto_unless (intA[6] >= 255) @26
+goto @27
+
+  @26
+goto @25
+
+  @27
+op<1:060:00000, 0> (10)
+op<1:060:00000, 0> (12)
+time (137000)
+grpMulti ('SIRO', 5, area('SR_C_COPY', 0, 0, 177, 25, 455, 453))
+wait (2000)
+grpOpenBg ('SIRO', 5)
+time (154000)
+
+  @28
+wipe (0, 255, 255, 255)
+op<1:060:00100, 0>
+EnableSyscom
+ShowCursor
+CtrlKeySkipOn
+SetSkipAnimations (intA[50])
+intG[41] = 1
+goto_unless (intF[821] == 1) @29
+intF[821] = 0
+rtl
+goto @30
+
+  @29
+wait (2000)
+intG[1004] = 1
+intG[1005] = 1
+intG[1006] = 2
+ReturnMenu
+
+  @30
+intA[17] = 15000
+intA[16] = Timer
+intA[17] -= intA[16]
+intA[17] /= 58
+objAlpha (2, intA[14])
+objShow (2, 1)
+intA[14] = 255
+intA[14] -= intA[17]
+goto_unless (intA[14] <= 0) @31
+intA[14] = 0
+
+  @31
+goto_unless (intA[14] >= 255) @32
+intA[14] = 255
+
+  @32
+ret
+#entrypoint 001
+msgHide
+HideCursor
+HideSyscom
+CtrlKeySkipOff
+intA[50] = SkipAnimations
+SetSkipAnimations (0)
+op<1:060:00110, 0>
+objBgOfFile (10, 'SR_ALS_NAME', 0, 0, 480)
+objBgOfFile (50, 'ED3_01', 0)
+objBgOfFile (51, 'ED3_02', 0)
+objBgOfFile (52, 'ED3_03', 0)
+objBgOfFile (53, 'ED3_04', 0)
+objBgOfFile (54, 'ED3_05', 0)
+objBgOfFile (55, 'ED3_06', 0)
+objBgOfFile (56, 'ED3_07', 0)
+objBgOfFile (57, 'ED3_08', 0)
+objBgOfFile (58, 'ED3_09', 0)
+objBgOfFile (59, 'ED3_10', 0)
+objBgOfFile (60, 'ED3_11', 0)
+objBgOfFile (61, 'ED3_12', 0)
+objBgOfFile (62, 'ED3_13', 0)
+objBgOfFile (63, 'ED3_14', 0)
+objBgOfFile (64, 'ED3_15', 0)
+FlushClick
+ResetTimer
+bgmPlay ('BGM34')
+intZ[545] = 1
+grpFade (255, 255, 255, 25000)
+objBgOfFile (1, 'SIRO', 1)
+bgrLoadHaikei (20)
+objOfFile (2, 'SIRO', 1)
+objAlpha (10, 255)
+objShow (10, 1)
+intA[1] = 3000
+intA[2] = 0
+intA[3] = 0
+intA[4] = 39000
+intA[5] = 0
+intA[10] = 0
+intA[11] = 0
+intA[12] = 0
+intA[13] = 0
+intA[14] = 0
+intA[15] = 0
+intA[16] = 0
+intA[17] = 0
+intA[18] = 5000
+intA[20] = 0
+intA[21] = 480
+intA[22] = 255
+intA[23] = 0
+intA[24] = 0
+intA[25] = 0
+intA[26] = 0
+intA[30] = 0
+intA[31] = 47000
+intA[32] = 0
+intA[33] = 0
+intA[34] = 0
+intA[35] = 0
+intA[37] = 0
+intA[38] = 8000
+intA[40] = 0
+
+  @33
+intA[3] = Timer
+goto_unless (intA[3] >= intA[4] && intA[5] == intA[2]) @34
+objCopy (2, 1)
+intA[14] = 0
+gosub @50
+InitFrame (0, 0, 255, intA[18])
+
+  @34
+goto_unless (intA[14] < 255 && intA[2] >= 1) @35
+intA[14] = ReadFrame (0)
+objAlpha (2, intA[14])
+
+  @35
+goto_unless (intA[3] >= intA[31] && intA[30] == intA[34]) @36
+gosub @81
+
+  @36
+goto_unless (intA[32] < 256 && intA[30] >= 1 && intA[30] != 999) @38
+goto_unless (intA[30] == 10 && intA[32] <= 0) @37
+intA[30] = 999
+
+  @37
+intA[32] = ReadFrame (1)
+objAlpha (20, intA[32])
+
+  @38
+goto_unless (intA[3] >= 159000) @42
+goto_unless (!intA[20]) @39
+op<1:060:00000, 0> (20)
+InitFrame (2, 480, -1414, 86000)
+intA[20] = 1
+intA[22] = 255
+goto @42
+
+  @39
+goto_unless (intA[21] <= -1124 && !intA[23]) @40
+intA[23] = 1
+InitFrame (3, 255, 0, 3000)
+
+  @40
+goto_unless (intA[23] == 1) @41
+intA[22] = ReadFrame (3)
+
+  @41
+intA[21] = ReadFrame (2)
+objAlpha (10, intA[22])
+objTop (10, intA[21])
+
+  @42
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[44] == 1) @46
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @43
+goto_unless (intA[40] >= 255) @44
+intA[40] = 255
+
+  @44
+objAlpha (30, intA[40])
+objShow (30, 1)
+goto_unless (intA[40] == 255) @45
+wait (3000)
+goto @49
+
+  @45
+intA[40] += 10
+wait (100)
+goto @43
+
+  @46
+goto_unless (intA[3] >= 280000) @47
+goto @48
+
+  @47
+refresh
+goto @33
+
+  @48
+time (282000)
+
+  @49
+wait (2000)
+EnableSyscom
+ShowCursor
+CtrlKeySkipOn
+SetSkipAnimations (intA[50])
+op<1:060:00100, 0>
+grpOpenBg ('SIRO', 20)
+rtl
+
+  @50
+goto_case intA[2] { 0: @51; 1: @52; 2: @53; 3: @54; 4: @55; 5: @56; 6: @57; 7: @58; 8: @59; 9: @60; 10: @61; 11: @62; 12: @63; 13: @64; 14: @65; 15: @66; 16: @67; 17: @68; 18: @69; 19: @70; 20: @71; 21: @72; 22: @73; 23: @74; 24: @75; 25: @76; 26: @77; 27: @78; 28: @79; _: @80 }
+
+  @51
+objOfFile (2, 'ED1_01', 0)
+intA[4] = 58000
+goto @80
+
+  @52
+objOfFile (2, 'ED1_02', 0)
+intA[4] = 77000
+goto @80
+
+  @53
+objOfFile (2, 'ED1_03', 0)
+intA[4] = 100000
+goto @80
+
+  @54
+objOfFile (2, 'ED1_04', 0)
+intA[4] = 115000
+goto @80
+
+  @55
+objOfFile (2, 'SIRO', 0)
+intA[18] = 3000
+intA[4] = 119000
+goto @80
+
+  @56
+objOfFile (2, 'ED2_01', 0)
+intA[4] = 136000
+goto @80
+
+  @57
+objOfFile (2, 'SIRO', 0)
+intA[18] = 2000
+intA[4] = 138000
+goto @80
+
+  @58
+objOfFile (2, 'ED2_02', 0)
+intA[18] = 3000
+intA[4] = 155000
+goto @80
+
+  @59
+objOfFile (2, 'SIRO', 0)
+intA[4] = 159000
+goto @80
+
+  @60
+objOfFile (2, 'ED3_01', 0)
+intA[4] = 164400
+goto @80
+
+  @61
+objOfFile (2, 'ED3_02', 0)
+intA[4] = 169800
+goto @80
+
+  @62
+objOfFile (2, 'ED3_03', 0)
+intA[4] = 175200
+goto @80
+
+  @63
+objOfFile (2, 'ED3_04', 0)
+intA[4] = 180632
+goto @80
+
+  @64
+objOfFile (2, 'ED3_05', 0)
+intA[4] = 186000
+goto @80
+
+  @65
+objOfFile (2, 'ED3_06', 0)
+intA[4] = 191400
+goto @80
+
+  @66
+objOfFile (2, 'ED3_07', 0)
+intA[4] = 197000
+goto @80
+
+  @67
+objOfFile (2, 'ED3_08', 0)
+intA[4] = 201000
+goto @80
+
+  @68
+objOfFile (2, 'ED3_09', 0)
+intA[4] = 205000
+goto @80
+
+  @69
+objOfFile (2, 'ED3_10', 0)
+intA[4] = 209000
+goto @80
+
+  @70
+objOfFile (2, 'ED3_11', 0)
+intA[4] = 215000
+goto @80
+
+  @71
+objOfFile (2, 'ED3_12', 0)
+intA[4] = 219000
+goto @80
+
+  @72
+objOfFile (2, 'ED3_13', 0)
+intA[4] = 224000
+goto @80
+
+  @73
+objOfFile (2, 'ED3_14', 0)
+intA[4] = 228000
+goto @80
+
+  @74
+objOfFile (2, 'ED3_15', 0)
+intA[4] = 232000
+goto @80
+
+  @75
+objOfFile (2, 'SIRO', 0)
+intA[4] = 237000
+goto @80
+
+  @76
+objOfFile (2, 'ED4_01', 0)
+intA[4] = 254000
+goto @80
+
+  @77
+objOfFile (2, 'SIRO', 0)
+intA[4] = 259000
+goto @80
+
+  @78
+objOfFile (2, 'ED4_02', 0)
+intA[4] = 270000
+goto @80
+
+  @79
+objOfFile (2, 'SIRO', 0)
+intA[18] = 5000
+intA[4] = 999999
+goto @80
+
+  @80
+intA[2] += 1
+intA[5] += 1
+objAlpha (2, 0)
+objShow (2, 1)
+intA[15] = Timer
+intA[15] += intA[18]
+ret
+ret
+
+  @81
+goto_case intA[30] { 0: @82; 1: @83; 2: @84; 3: @85; 4: @86; 5: @87; 6: @88; 7: @89; 8: @90; 9: @91; _: @92 }
+
+  @82
+objOfFile (20, 'SR_ALS_1', 0, 400, 260)
+intA[31] += intA[38]
+intA[37] = 0
+objAlpha (20, 0)
+objShow (20, 1)
+goto @92
+
+  @83
+intA[31] = 60600
+intA[37] = 1
+goto @92
+
+  @84
+objOfFile (20, 'SR_ALS_2', 0, 400, 260)
+intA[31] += intA[38]
+intA[37] = 0
+objAlpha (20, 0)
+objShow (20, 1)
+goto @92
+
+  @85
+intA[31] = 74200
+intA[37] = 1
+goto @92
+
+  @86
+objOfFile (20, 'SR_ALS_3', 0, 400, 260)
+intA[31] += intA[38]
+intA[37] = 0
+objAlpha (20, 0)
+objShow (20, 1)
+goto @92
+
+  @87
+intA[31] = 87800
+intA[37] = 1
+goto @92
+
+  @88
+objOfFile (20, 'SR_ALS_4', 0, 400, 260)
+intA[31] += intA[38]
+intA[37] = 0
+objAlpha (20, 0)
+objShow (20, 1)
+goto @92
+
+  @89
+intA[31] = 101400
+intA[37] = 1
+goto @92
+
+  @90
+objOfFile (20, 'SR_ALS_5', 0, 400, 260)
+intA[31] += intA[38]
+intA[37] = 0
+objAlpha (20, 0)
+objShow (20, 1)
+goto @92
+
+  @91
+intA[31] = 115000
+intA[37] = 1
+goto @92
+
+  @92
+intA[30] += 1
+intA[34] += 1
+goto_unless (!intA[37]) @93
+InitFrame (1, 0, 255, 5000)
+goto @94
+
+  @93
+InitFrame (1, 255, 0, 5000)
+
+  @94
+ret
+#entrypoint 002
+grpOpenBg ('BG080', 20)
+HideSyscom
+CtrlKeySkipOff
+intA[50] = SkipAnimations
+SetSkipAnimations (0)
+op<1:060:00100, 0>
+op<1:060:00110, 0>
+objOfFile (9, 'CGSH10', 0, -200, 0)
+objOfFile (10, 'SR_YAKYU_00', 1, 15, 480)
+objOfFile (11, 'SR_YAKYU_01', 1, 0, 480)
+objOfFile (12, 'SR_KEYLOGO', 1, 284, 480)
+objBgOfFile (50, 'CGKY11', 0)
+objBgOfFile (51, 'CGMS10E', 0)
+objBgOfFile (52, 'CGNG10', 0)
+objBgOfFile (53, 'CGTM10', 0)
+objBgOfFile (54, 'CGYS13A', 0)
+objBgOfFile (55, 'CGME12', 0)
+objBgOfFile (56, 'CGFU12', 0)
+objBgOfFile (57, 'CGAK23A', 0)
+objBgOfFile (58, 'CGFU16', 0)
+intA[4] = 0
+intA[5] = 0
+bgmPlay ('BGM33')
+intZ[542] = 1
+ResetTimer
+time (3000)
+HideCursor
+time (10000)
+intF[1014] = GetOpenAnmMod (0)
+intF[1014] = GetCloseAnmMod (0)
+SetOpenAnmMod (0, 1)
+SetCloseAnmMod (0, 1)
+intF[1015] = GetOpenAnmTime (0)
+intF[1015] = GetCloseAnmTime (0)
+SetOpenAnmTime (0, 3000)
+SetCloseAnmTime (0, 3000)
+msgClear
+msgHide
+SetOpenAnmMod (0, intF[1014])
+SetCloseAnmMod (0, intF[1014])
+SetOpenAnmTime (0, intF[1015])
+SetCloseAnmTime (0, intF[1015])
+time (21000)
+InitFrame (2, 480, -1920, 85000)
+
+  @95
+objAlpha (9, 0)
+objShow (9, 1)
+InitFrame (0, -200, 100, 3500)
+InitFrame (1, 0, 200, 3000)
+ResetTimer (1)
+
+  @96
+intA[1] = ReadFrame (0)
+intA[2] = ReadFrame (1)
+intA[4] = ReadFrame (2)
+intA[3] = Timer (1)
+objLeft (9, intA[1])
+objAlpha (9, intA[2])
+objTop (11, intA[4])
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[42] == 1) @100
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @97
+goto_unless (intA[6] >= 255) @98
+intA[6] = 255
+
+  @98
+objAlpha (30, intA[6])
+objShow (30, 1)
+goto_unless (intA[6] == 255) @99
+wait (3000)
+grpOpenBg ('SIRO', 3)
+goto @127
+
+  @99
+intA[6] += 10
+wait (100)
+goto @97
+
+  @100
+refresh
+goto_unless (intA[5] == 7 && intA[3] >= 5800) @101
+gosub @138
+
+  @101
+goto_unless (intA[3] >= 6000) @102
+goto @103
+
+  @102
+goto @96
+
+  @103
+InitFrame (0, 100, 200, 2000)
+InitFrame (1, 200, 0, 2000)
+
+  @104
+intA[1] = ReadFrame (0)
+intA[2] = ReadFrame (1)
+intA[4] = ReadFrame (2)
+objLeft (9, intA[1])
+objAlpha (9, intA[2])
+objTop (11, intA[4])
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[42] == 1) @108
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @105
+goto_unless (intA[6] >= 255) @106
+intA[6] = 255
+
+  @106
+objAlpha (30, intA[6])
+objShow (30, 1)
+goto_unless (intA[6] == 255) @107
+wait (3000)
+grpOpenBg ('SIRO', 3)
+goto @127
+
+  @107
+intA[6] += 10
+wait (100)
+goto @105
+
+  @108
+refresh
+goto_unless (intA[2] <= 0 && intA[5] <= 8) @109
+goto @128
+
+  @109
+goto_unless (intA[2] <= 0 && intA[5] == 9) @110
+goto @111
+
+  @110
+goto @104
+
+  @111
+InitFrame (3, 500, -1900, 85000)
+
+  @112
+intA[4] = ReadFrame (2)
+intA[2] = ReadFrame (3)
+goto_unless (intA[2] <= 172) @113
+intA[2] = 172
+
+  @113
+objTop (11, intA[4])
+objTop (10, intA[2])
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[42] == 1) @117
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @114
+goto_unless (intA[6] >= 255) @115
+intA[6] = 255
+
+  @115
+objAlpha (30, intA[6])
+objShow (30, 1)
+goto_unless (intA[6] == 255) @116
+wait (3000)
+grpOpenBg ('SIRO', 3)
+goto @127
+
+  @116
+intA[6] += 10
+wait (100)
+goto @114
+
+  @117
+refresh
+goto_unless (intA[4] <= -1920) @118
+goto @119
+
+  @118
+goto @112
+
+  @119
+wait (7000)
+InitFrame (3, 170, 0, 4000)
+InitFrame (4, 255, 0, 4000)
+
+  @120
+intA[4] = ReadFrame (4)
+intA[2] = ReadFrame (3)
+objTop (10, intA[2])
+objAlpha (10, intA[4])
+GetCursorPos (intA[10], intA[11], intA[12], intA[13])
+goto_unless (intA[12] == 1 && intG[42] == 1) @124
+bgmFadeOut (5000)
+FlushClick
+objOfFile (30, 'SIRO', 0)
+objAlpha (30, 0)
+objShow (30, 1)
+
+  @121
+goto_unless (intA[6] >= 255) @122
+intA[6] = 255
+
+  @122
+objAlpha (30, intA[6])
+objShow (30, 1)
+goto_unless (intA[6] == 255) @123
+wait (3000)
+grpOpenBg ('SIRO', 3)
+goto @127
+
+  @123
+intA[6] += 10
+wait (100)
+goto @121
+
+  @124
+refresh
+goto_unless (intA[4] <= 0) @125
+goto @126
+
+  @125
+goto @120
+
+  @126
+op<1:060:00100, 0>
+wait (1500)
+grpMulti ('BG080', 5, area('SR_KEYLOGO', 0, 0, 71, 55, 284, 212))
+wait (3000)
+grpMulti ('SIRO', 5, area('SR_KEYLOGO', 0, 0, 71, 55, 284, 212))
+wait (2000)
+grpOpenBg ('SIRO', 4)
+wait (1000)
+grpMulti ('SIRO', 5, area('SR_C_COPY', 0, 0, 177, 25, 455, 453))
+wait (2000)
+grpOpenBg ('SIRO', 5)
+wait (6000)
+wipe (0, 255, 255, 255)
+
+  @127
+op<1:060:00100, 0>
+EnableSyscom
+ShowCursor
+CtrlKeySkipOn
+SetSkipAnimations (intA[50])
+intG[42] = 1
+intG[1004] = 1
+intG[1005] = 1
+intG[1006] = 2
+ReturnMenu
+
+  @128
+op<1:060:00000, 0> (9)
+intA[5] += 1
+goto_case intA[5] { 1: @129; 2: @130; 3: @131; 4: @132; 5: @133; 6: @134; 7: @135; 9: @136; _: @137 }
+
+  @129
+objOfFile (9, 'CGKY11', 0, -200, 0)
+goto @137
+
+  @130
+objOfFile (9, 'CGMS10E', 0, -200, 0)
+goto @137
+
+  @131
+objOfFile (9, 'CGNG10', 0, -200, 0)
+goto @137
+
+  @132
+objOfFile (9, 'CGTM10', 0, -200, 0)
+goto @137
+
+  @133
+objOfFile (9, 'CGYS13A', 0, -200, 0)
+goto @137
+
+  @134
+objOfFile (9, 'CGME12', 0, -200, 0)
+goto @137
+
+  @135
+objOfFile (9, 'CGFU12', 0, -200, 0)
+goto @137
+
+  @136
+objOfFile (9, 'CGAK23A', 0, -200, 0)
+goto @137
+
+  @137
+goto @95
+
+  @138
+objOfFile2 (9, 'CGFU16')
+intA[5] += 1
+ret
+eof

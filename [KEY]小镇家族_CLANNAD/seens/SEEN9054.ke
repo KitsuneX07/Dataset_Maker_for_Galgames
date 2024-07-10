@@ -1,0 +1,995 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9054.TXT'
+
+#entrypoint 000
+HideSyscom
+DrawManual
+objClear (0)
+goto_case intF[1119] { 1: @1; 2: @2; 3: @3; 4: @4; 5: @5; 6: @6; 7: @7; 8: @8; 9: @9; 10: @10; 11: @11; 12: @12; _: @13 }
+
+  @1
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @2
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @3
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @4
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @5
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @6
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @7
+grpBuffer ('SFWEC00', 2)
+goto @13
+
+  @8
+grpBuffer ('SFWEC01', 2)
+goto @13
+
+  @9
+grpBuffer ('SFWEC01', 2)
+goto @13
+
+  @10
+grpBuffer ('SFWEC02', 2)
+goto @13
+
+  @11
+grpBuffer ('SFWEC02', 2)
+goto @13
+
+  @12
+grpBuffer ('SFWEC02', 2)
+goto @13
+
+  @13
+objOfFile (0, 'SFWEC10')
+objMove (0, 372, 429)
+goto_case intF[1119] { 1: @14; 2: @15; 3: @16; 4: @17; 5: @18; 6: @19; 7: @20; 8: @21; 9: @22; 10: @23; 11: @24; 12: @25; _: @26 }
+
+  @14
+objPattNo (0, 0)
+goto @26
+
+  @15
+objPattNo (0, 1)
+goto @26
+
+  @16
+objPattNo (0, 2)
+goto @26
+
+  @17
+objPattNo (0, 3)
+goto @26
+
+  @18
+objPattNo (0, 4)
+goto @26
+
+  @19
+objPattNo (0, 5)
+goto @26
+
+  @20
+objPattNo (0, 6)
+goto @26
+
+  @21
+objPattNo (0, 7)
+goto @26
+
+  @22
+objPattNo (0, 8)
+goto @26
+
+  @23
+objPattNo (0, 9)
+goto @26
+
+  @24
+objPattNo (0, 10)
+goto @26
+
+  @25
+objPattNo (0, 11)
+goto @26
+
+  @26
+waitC (1000)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @27
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @28
+intF[1000] = 1
+goto @32
+
+  @28
+goto_unless (intA[1007] == 1) @29
+intF[1000] = 1
+goto @32
+
+  @29
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @30
+intF[1000] = 1
+goto @32
+
+  @30
+goto_unless (intA[1002] == 2) @31
+intF[1000] = 1
+FlushClick
+goto @32
+
+  @31
+intF[1000] = 0
+
+  @32
+goto_unless (intF[1000] == 1) @33
+intC[0] = 0
+intC[1] = 255
+
+  @33
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @34
+goto @35
+
+  @34
+goto @27
+
+  @35
+objShow (0, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @36
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @37
+intF[1000] = 1
+goto @41
+
+  @37
+goto_unless (intA[1007] == 1) @38
+intF[1000] = 1
+goto @41
+
+  @38
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @39
+intF[1000] = 1
+goto @41
+
+  @39
+goto_unless (intA[1002] == 2) @40
+intF[1000] = 1
+FlushClick
+goto @41
+
+  @40
+intF[1000] = 0
+
+  @41
+goto_unless (intF[1000] == 1) @42
+intC[0] = 0
+intC[1] = 255
+
+  @42
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @43
+goto @44
+
+  @43
+goto @36
+
+  @44
+waitC (3000)
+freeDC (2)
+op<1:060:00001, 0> (0)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 001
+HideSyscom
+DrawManual
+objClear (0)
+goto_case intF[1119] { 1: @45; 2: @46; 3: @47; 4: @48; 5: @49; 6: @50; 7: @51; 8: @52; 9: @53; 10: @54; 11: @55; 12: @56; _: @57 }
+
+  @45
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @46
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @47
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @48
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @49
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @50
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @51
+grpBuffer ('SFWEC00', 2)
+goto @57
+
+  @52
+grpBuffer ('SFWEC01', 2)
+goto @57
+
+  @53
+grpBuffer ('SFWEC01', 2)
+goto @57
+
+  @54
+grpBuffer ('SFWEC02', 2)
+goto @57
+
+  @55
+grpBuffer ('SFWEC02', 2)
+goto @57
+
+  @56
+grpBuffer ('SFWEC02', 2)
+goto @57
+
+  @57
+objOfFile (0, 'SFWEC10')
+objMove (0, 372, 429)
+goto_case intF[1119] { 1: @58; 2: @59; 3: @60; 4: @61; 5: @62; 6: @63; 7: @64; 8: @65; 9: @66; 10: @67; 11: @68; 12: @69; _: @70 }
+
+  @58
+objPattNo (0, 0)
+goto @70
+
+  @59
+objPattNo (0, 1)
+goto @70
+
+  @60
+objPattNo (0, 2)
+goto @70
+
+  @61
+objPattNo (0, 3)
+goto @70
+
+  @62
+objPattNo (0, 4)
+goto @70
+
+  @63
+objPattNo (0, 5)
+goto @70
+
+  @64
+objPattNo (0, 6)
+goto @70
+
+  @65
+objPattNo (0, 7)
+goto @70
+
+  @66
+objPattNo (0, 8)
+goto @70
+
+  @67
+objPattNo (0, 9)
+goto @70
+
+  @68
+objPattNo (0, 10)
+goto @70
+
+  @69
+objPattNo (0, 11)
+goto @70
+
+  @70
+waitC (1000)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @71
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @72
+intF[1000] = 1
+goto @76
+
+  @72
+goto_unless (intA[1007] == 1) @73
+intF[1000] = 1
+goto @76
+
+  @73
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @74
+intF[1000] = 1
+goto @76
+
+  @74
+goto_unless (intA[1002] == 2) @75
+intF[1000] = 1
+FlushClick
+goto @76
+
+  @75
+intF[1000] = 0
+
+  @76
+goto_unless (intF[1000] == 1) @77
+intC[0] = 0
+intC[1] = 255
+
+  @77
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @78
+goto @79
+
+  @78
+goto @71
+
+  @79
+objShow (0, 1)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @80
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @81
+intF[1000] = 1
+goto @85
+
+  @81
+goto_unless (intA[1007] == 1) @82
+intF[1000] = 1
+goto @85
+
+  @82
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @83
+intF[1000] = 1
+goto @85
+
+  @83
+goto_unless (intA[1002] == 2) @84
+intF[1000] = 1
+FlushClick
+goto @85
+
+  @84
+intF[1000] = 0
+
+  @85
+goto_unless (intF[1000] == 1) @86
+intC[0] = 0
+intC[1] = 255
+
+  @86
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @87
+goto @88
+
+  @87
+goto @80
+
+  @88
+waitC (2000)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]}, {1, 255, 0, intC[0]})
+
+  @89
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @90
+intF[1000] = 1
+goto @94
+
+  @90
+goto_unless (intA[1007] == 1) @91
+intF[1000] = 1
+goto @94
+
+  @91
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @92
+intF[1000] = 1
+goto @94
+
+  @92
+goto_unless (intA[1002] == 2) @93
+intF[1000] = 1
+FlushClick
+goto @94
+
+  @93
+intF[1000] = 0
+
+  @94
+goto_unless (intF[1000] == 1) @95
+intC[0] = 0
+intC[1] = 255
+intC[2] = 0
+
+  @95
+recCopy (0, 0, 640, 480, 2, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+objAlpha (0, intC[2])
+refresh
+goto_unless (!intC[0]) @96
+goto @97
+
+  @96
+goto @89
+
+  @97
+objShow (0, 0)
+waitC (1500)
+freeDC (2)
+objDelete (0)
+DrawAuto
+stackClear
+intF[1005] = 0
+DrawManual
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 002
+HideSyscom
+DrawManual
+objClear (0)
+goto_case intF[1119] { 1: @98; 2: @99; 3: @100; 4: @101; 5: @102; 6: @103; 7: @104; 8: @105; 9: @106; 10: @107; 11: @108; 12: @109; _: @110 }
+
+  @98
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @99
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @100
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @101
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @102
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @103
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @104
+grpBuffer ('SFWEC00', 2)
+goto @110
+
+  @105
+grpBuffer ('SFWEC01', 2)
+goto @110
+
+  @106
+grpBuffer ('SFWEC01', 2)
+goto @110
+
+  @107
+grpBuffer ('SFWEC02', 2)
+goto @110
+
+  @108
+grpBuffer ('SFWEC02', 2)
+goto @110
+
+  @109
+grpBuffer ('SFWEC02', 2)
+goto @110
+
+  @110
+goto_case intF[1119] { 1: @111; 2: @112; 3: @113; 4: @114; 5: @115; 6: @116; 7: @117; 8: @118; 9: @119; 10: @120; 11: @121; 12: @122; _: @123 }
+
+  @111
+objOfFile (0, 'SFWEC20')
+goto @123
+
+  @112
+objOfFile (0, 'SFWEC21')
+goto @123
+
+  @113
+objOfFile (0, 'SFWEC22')
+goto @123
+
+  @114
+objOfFile (0, 'SFWEC23')
+goto @123
+
+  @115
+objOfFile (0, 'SFWEC24')
+goto @123
+
+  @116
+objOfFile (0, 'SFWEC25')
+goto @123
+
+  @117
+objOfFile (0, 'SFWEC26')
+goto @123
+
+  @118
+objOfFile (0, 'SFWEC27')
+goto @123
+
+  @119
+objOfFile (0, 'SFWEC28')
+goto @123
+
+  @120
+objOfFile (0, 'SFWEC29')
+goto @123
+
+  @121
+objOfFile (0, 'SFWEC30')
+goto @123
+
+  @122
+objOfFile (0, 'SFWEC31')
+goto @123
+
+  @123
+objMove (0, 370, 427)
+objPattNo (0, 0)
+waitC (1000)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @124
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @125
+intF[1000] = 1
+goto @129
+
+  @125
+goto_unless (intA[1007] == 1) @126
+intF[1000] = 1
+goto @129
+
+  @126
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @127
+intF[1000] = 1
+goto @129
+
+  @127
+goto_unless (intA[1002] == 2) @128
+intF[1000] = 1
+FlushClick
+goto @129
+
+  @128
+intF[1000] = 0
+
+  @129
+goto_unless (intF[1000] == 1) @130
+intC[0] = 0
+intC[1] = 255
+
+  @130
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @131
+goto @132
+
+  @131
+goto @124
+
+  @132
+objShow (0, 1)
+objPlay (0, 40)
+FlushClick
+
+  @133
+op<1:073:00003, 0> (0)
+intC[0] = store
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @134
+intF[1000] = 1
+goto @138
+
+  @134
+goto_unless (intA[1007] == 1) @135
+intF[1000] = 1
+goto @138
+
+  @135
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @136
+intF[1000] = 1
+goto @138
+
+  @136
+goto_unless (intA[1002] == 2) @137
+intF[1000] = 1
+FlushClick
+goto @138
+
+  @137
+intF[1000] = 0
+
+  @138
+goto_unless (intF[1000] == 1) @139
+intC[0] = 0
+op<1:073:00000, 0> (0)
+objPattNo (0, 44)
+
+  @139
+refresh
+goto_unless (!intC[0]) @140
+goto @141
+
+  @140
+goto @133
+
+  @141
+waitC (3000)
+freeDC (2)
+op<1:060:00001, 0> (0)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 003
+HideSyscom
+DrawManual
+objClear (0)
+goto_case intF[1119] { 1: @142; 2: @143; 3: @144; 4: @145; 5: @146; 6: @147; 7: @148; 8: @149; 9: @150; 10: @151; 11: @152; 12: @153; _: @154 }
+
+  @142
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @143
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @144
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @145
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @146
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @147
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @148
+grpBuffer ('SFWEC00', 2)
+goto @154
+
+  @149
+grpBuffer ('SFWEC01', 2)
+goto @154
+
+  @150
+grpBuffer ('SFWEC01', 2)
+goto @154
+
+  @151
+grpBuffer ('SFWEC02', 2)
+goto @154
+
+  @152
+grpBuffer ('SFWEC02', 2)
+goto @154
+
+  @153
+grpBuffer ('SFWEC02', 2)
+goto @154
+
+  @154
+goto_case intF[1119] { 1: @155; 2: @156; 3: @157; 4: @158; 5: @159; 6: @160; 7: @161; 8: @162; 9: @163; 10: @164; 11: @165; 12: @166; _: @167 }
+
+  @155
+objOfFile (0, 'SFWEC20')
+goto @167
+
+  @156
+objOfFile (0, 'SFWEC21')
+goto @167
+
+  @157
+objOfFile (0, 'SFWEC22')
+goto @167
+
+  @158
+objOfFile (0, 'SFWEC23')
+goto @167
+
+  @159
+objOfFile (0, 'SFWEC24')
+goto @167
+
+  @160
+objOfFile (0, 'SFWEC25')
+goto @167
+
+  @161
+objOfFile (0, 'SFWEC26')
+goto @167
+
+  @162
+objOfFile (0, 'SFWEC27')
+goto @167
+
+  @163
+objOfFile (0, 'SFWEC28')
+goto @167
+
+  @164
+objOfFile (0, 'SFWEC29')
+goto @167
+
+  @165
+objOfFile (0, 'SFWEC30')
+goto @167
+
+  @166
+objOfFile (0, 'SFWEC31')
+goto @167
+
+  @167
+objMove (0, 370, 427)
+objPattNo (0, 0)
+waitC (1000)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @168
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @169
+intF[1000] = 1
+goto @173
+
+  @169
+goto_unless (intA[1007] == 1) @170
+intF[1000] = 1
+goto @173
+
+  @170
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @171
+intF[1000] = 1
+goto @173
+
+  @171
+goto_unless (intA[1002] == 2) @172
+intF[1000] = 1
+FlushClick
+goto @173
+
+  @172
+intF[1000] = 0
+
+  @173
+goto_unless (intF[1000] == 1) @174
+intC[0] = 0
+intC[1] = 255
+
+  @174
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @175
+goto @176
+
+  @175
+goto @168
+
+  @176
+objShow (0, 1)
+objPlay (0, 40)
+FlushClick
+
+  @177
+op<1:073:00003, 0> (0)
+intC[0] = store
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @178
+intF[1000] = 1
+goto @182
+
+  @178
+goto_unless (intA[1007] == 1) @179
+intF[1000] = 1
+goto @182
+
+  @179
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @180
+intF[1000] = 1
+goto @182
+
+  @180
+goto_unless (intA[1002] == 2) @181
+intF[1000] = 1
+FlushClick
+goto @182
+
+  @181
+intF[1000] = 0
+
+  @182
+goto_unless (intF[1000] == 1) @183
+intC[0] = 0
+op<1:073:00000, 0> (0)
+objPattNo (0, 44)
+
+  @183
+refresh
+goto_unless (!intC[0]) @184
+goto @185
+
+  @184
+goto @177
+
+  @185
+waitC (2000)
+FlushClick
+intC[0] = 800
+InitExFrames ({0, 0, 255, intC[0]}, {1, 255, 0, intC[0]})
+
+  @186
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @187
+intF[1000] = 1
+goto @191
+
+  @187
+goto_unless (intA[1007] == 1) @188
+intF[1000] = 1
+goto @191
+
+  @188
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @189
+intF[1000] = 1
+goto @191
+
+  @189
+goto_unless (intA[1002] == 2) @190
+intF[1000] = 1
+FlushClick
+goto @191
+
+  @190
+intF[1000] = 0
+
+  @191
+goto_unless (intF[1000] == 1) @192
+intC[0] = 0
+intC[1] = 255
+intC[2] = 0
+
+  @192
+recCopy (0, 0, 640, 480, 2, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+objAlpha (0, intC[2])
+refresh
+goto_unless (!intC[0]) @193
+goto @194
+
+  @193
+goto @186
+
+  @194
+objShow (0, 0)
+waitC (1500)
+freeDC (2)
+objDelete (0)
+DrawAuto
+stackClear
+intF[1005] = 0
+DrawManual
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+DrawAuto
+EnableSyscom
+rtl
+eof

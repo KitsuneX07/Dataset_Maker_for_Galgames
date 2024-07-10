@@ -1,0 +1,307 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN3504.TXT'
+#resource 'SEEN3504.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 5
+intF[1110] = 4
+intF[1111] = 0
+intF[1112] = 1
+strS[1004] = 'SDTA0504'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+Savepoint
+farcall (9053, 0)
+strS[1000] = 'KURO'
+goto @3
+goto @2
+strS[1000] = 'SIRO'
+goto @3
+
+  @2
+strS[1000] = 'KURO'
+
+  @3
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+strS[1000] = 'BG035'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @4
+strclear (strS[1000])
+
+  @4
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM09A')
+intZ[517] = 1
+#res<0001>
+pause
+#res<0002>
+pause
+#res<0003>
+pause
+#res<0004>
+pause
+#res<0005>
+pause
+#res<0006>
+pause
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+#res<0010>
+pause
+#res<0011>
+pause
+#res<0012>
+pause
+#res<0013>
+pause
+koePlay (1414707)
+#res<0014>
+pause
+#res<0015>
+pause
+koePlay (1414708)
+#res<0016>
+pause
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+koePlay (1414709)
+#res<0020>
+pause
+koePlay (1414710)
+#res<0021>
+pause
+#res<0022>
+pause
+#res<0023>
+pause
+koePlay (1414711)
+#res<0024>
+pause
+koePlay (1414712)
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+#res<0028>
+pause
+koePlay (1414713)
+#res<0029>
+pause
+#res<0030>
+pause
+#res<0031>
+pause
+koePlay (1414714)
+#res<0032>
+pause
+#res<0033>
+pause
+#res<0034>
+pause
+koePlay (1414715)
+#res<0035>
+pause
+#res<0036>
+pause
+#res<0037>
+pause
+koePlay (1414716)
+#res<0038>
+pause
+#res<0039>
+pause
+#res<0040>
+pause
+#res<0041>
+pause
+#res<0042>
+pause
+#res<0043>
+pause
+#res<0044>
+pause
+koePlay (1414717)
+#res<0045>
+pause
+#res<0046>
+pause
+#res<0047>
+pause
+#res<0048>
+pause
+#res<0049>
+pause
+#res<0050>
+pause
+#res<0051>
+pause
+koePlay (1414718)
+#res<0052>
+pause
+#res<0053>
+pause
+koePlay (1414719)
+#res<0054>
+pause
+#res<0055>
+pause
+#res<0056>
+pause
+intF[1089] = select (#res<0057>, #res<0058>)
+goto_unless (!intF[1089]) @5
+#res<0059>
+pause
+intF[311] = 1
+
+  @5
+goto_unless (intF[1089] == 1) @6
+#res<0060>
+pause
+intF[310] = 1
+
+  @6
+koePlay (1414720)
+#res<0061>
+pause
+#res<0062>
+pause
+koePlay (1414721)
+#res<0063>
+pause
+#res<0064>
+pause
+koePlay (1414722)
+#res<0065>
+pause
+koePlay (1414723)
+#res<0066>
+pause
+#res<0067>
+pause
+koePlay (1414724)
+#res<0068>
+pause
+koePlay (1414725)
+#res<0069>
+pause
+#res<0070>
+pause
+koePlay (1414726)
+#res<0071>
+pause
+#res<0072>
+pause
+koePlay (1414727)
+#res<0073>
+pause
+#res<0074>
+pause
+koePlay (1414728)
+#res<0075>
+pause
+#res<0076>
+pause
+koePlay (1414729)
+#res<0077>
+pause
+#res<0078>
+pause
+#res<0079>
+pause
+koePlay (1414730)
+#res<0080>
+pause
+#res<0081>
+pause
+koePlay (1414731)
+#res<0082>
+pause
+#res<0083>
+pause
+koePlay (1414732)
+#res<0084>
+pause
+#res<0085>
+pause
+#res<0086>
+pause
+#res<0087>
+pause
+#res<0088>
+pause
+#res<0089>
+pause
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @7
+strclear (strS[1000])
+
+  @7
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmFadeOut (3000)
+jump (3505)
+eof

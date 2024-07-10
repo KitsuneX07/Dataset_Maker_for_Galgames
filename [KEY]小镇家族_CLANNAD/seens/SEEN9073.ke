@@ -1,0 +1,147 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9073.TXT'
+
+#entrypoint 000
+objClear (100)
+objOfFileGan (100, '???', 'SNTEN00')
+objMove (100, 150, 270)
+objPattNo (100, 0)
+ganPlay2 (100, 0)
+rtl
+#entrypoint 001
+objShow (100, 0)
+objDelete (100)
+rtl
+#entrypoint 002
+DrawManual
+objClear (100)
+objOfFile (100, 'SNTEN00')
+objMove (100, 150, 270)
+objPattNo (100, 0)
+wait (200)
+objShow (100, 1)
+FlushClick
+intC[0] = 200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @2
+intF[1000] = 1
+goto @6
+
+  @2
+goto_unless (intA[1007] == 1) @3
+intF[1000] = 1
+goto @6
+
+  @3
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @4
+intF[1000] = 1
+goto @6
+
+  @4
+goto_unless (intA[1002] == 2) @5
+intF[1000] = 1
+FlushClick
+goto @6
+
+  @5
+intF[1000] = 0
+
+  @6
+goto_unless (intF[1000] == 1) @7
+intC[0] = 0
+intC[1] = 255
+
+  @7
+objAlpha (100, intC[1])
+refresh
+goto_unless (!intC[0]) @8
+goto @9
+
+  @8
+goto @1
+
+  @9
+waitC (2200)
+FlushClick
+intC[0] = 200
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @10
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+intA[1008] = SkipAnimations
+goto_unless (intA[1008] == 1) @11
+intF[1000] = 1
+goto @15
+
+  @11
+goto_unless (intA[1007] == 1) @12
+intF[1000] = 1
+goto @15
+
+  @12
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @13
+intF[1000] = 1
+goto @15
+
+  @13
+goto_unless (intA[1002] == 2) @14
+intF[1000] = 1
+FlushClick
+goto @15
+
+  @14
+intF[1000] = 0
+
+  @15
+goto_unless (intF[1000] == 1) @16
+intC[0] = 0
+intC[1] = 0
+
+  @16
+objAlpha (100, intC[1])
+refresh
+goto_unless (!intC[0]) @17
+goto @18
+
+  @17
+goto @10
+
+  @18
+objShow (100, 0)
+refresh
+wait (500)
+objDelete (100)
+DrawAuto
+rtl
+#entrypoint 003
+DrawManual
+objClear (100)
+objOfFile (100, 'SNTEN00')
+objMove (100, 150, 270)
+objPattNo (100, 0)
+wait (200)
+objShow (100, 1)
+refresh
+waitC (2500)
+objShow (100, 0)
+refresh
+wait (500)
+objDelete (100)
+DrawAuto
+rtl
+eof

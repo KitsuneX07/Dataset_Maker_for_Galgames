@@ -1,0 +1,1695 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9032.TXT'
+#resource 'SEEN9032.utf'
+
+#entrypoint 000
+goto @1
+
+  @1
+op<1:Sys:00300, 0>
+op<1:Sys:01231, 0>
+op<1:Sys:03503, 0>
+HideSyscom
+DrawManual
+title (#res<0000>)
+intA[100] = 0
+intA[101] = 0
+intA[102] = 0
+intA[103] = 0
+goto_unless (intG[1007] < 1) @2
+goto_unless (intG[1] == 1 || intG[2] == 1 || intG[3] == 1 || intG[4] == 1 || intG[5] == 1 || intG[6] == 1 || intG[9] == 1 || intG[12] == 1 || intG[13] == 1 || intG[15] == 1) @2
+intA[100] = 1
+intA[101] = 0
+intA[102] = 0
+
+  @2
+goto_unless (intG[1007] < 2) @3
+goto_unless (intG[1] == 1 && intG[2] == 1 && intG[3] == 1 && intG[4] == 1 && intG[5] == 1 && intG[6] == 1 && intG[9] == 1 && intG[12] == 1 && intG[13] == 1 && intG[15] == 1 && intG[30] == 1 && intG[31] == 1) @3
+intA[100] = 0
+intA[101] = 1
+intA[102] = 0
+
+  @3
+goto_unless (intG[1007] < 3) @4
+goto_unless (intG[45] == 1) @4
+intA[100] = 0
+intA[101] = 0
+intA[102] = 0
+intG[1007] = 3
+
+  @4
+goto_unless (intG[1007] != 3) @5
+grpBuffer ('STT_BG00', 0)
+goto @6
+
+  @5
+goto_unless (intG[1007] == 3) @6
+grpBuffer ('STT_BG10', 0)
+
+  @6
+objClear (10)
+objClear (20)
+objClear (21)
+objClear (22)
+objClear (23)
+objClear (24)
+objClear (25)
+objClear (26)
+objClear (27)
+objClear (30)
+objClear (31)
+objClear (32)
+objClear (33)
+objClear (34)
+objClear (35)
+objClear (36)
+objClear (37)
+objClear (38)
+objClear (39)
+objClear (40)
+objClear (41)
+objClear (42)
+objClear (50)
+objClear (60)
+objClear (61)
+objClear (62)
+objClear (63)
+objClear (70)
+objClear (71)
+objClear (72)
+
+  @7
+goto_case intG[1007] { 0: @8; 1: @9; 2: @10; 3: @11; _: @12 }
+
+  @8
+objOfFile (10, 'STT_MB00')
+goto @12
+
+  @9
+objOfFile (10, 'STT_MB10')
+goto @12
+
+  @10
+objOfFile (10, 'STT_MB20')
+goto @12
+
+  @11
+objOfFile (10, 'STT_MB20')
+goto @12
+
+  @12
+goto_unless (intA[103] == 1) @13
+goto @14
+
+  @13
+objOfFile (20, 'STT_MI00')
+objOfFile (21, 'STT_MI10')
+objOfFile (22, 'STT_MI20')
+objOfFile (23, 'STT_MI30')
+objOfFile (24, 'STT_MI40')
+objOfFile (25, 'STT_MI50')
+objOfFile (26, 'STT_MI60')
+objOfFile (27, 'STT_MI70')
+objOfFile (30, 'STT_LT00')
+objOfFile (31, 'STT_LT01')
+objOfFile (32, 'STT_LT02')
+objOfFile (33, 'STT_LT03')
+objOfFile (34, 'STT_LT04')
+objOfFile (35, 'STT_LT05')
+objOfFile (36, 'STT_LT06')
+objOfFile (37, 'STT_LT07')
+objOfFile (38, 'STT_LT08')
+objOfFile (39, 'STT_LT09')
+objOfFile (40, 'STT_LT10')
+objOfFile (41, 'STT_LT11')
+objOfFile (42, 'STT_LT12')
+objOfFileGan (50, '???', 'STT_LUM00')
+objOfFile (60, 'STT_LB00')
+objOfFile (61, 'STT_LB10')
+objOfFile (62, 'STT_LB20')
+objOfFile (63, 'STT_LB30')
+objOfFile (70, 'KURO')
+objOfFile (71, 'SIRO')
+objOfFile (72, 'SIRO')
+
+  @14
+objMove (10, 420, 167)
+goto_case intG[1007] { 0: @15; 1: @16; 2: @17; 3: @18; _: @19 }
+
+  @15
+objMove (20, 420, 205)
+objMove (21, 420, 232)
+objMove (25, 420, 259)
+objMove (26, 420, 286)
+objMove (27, 420, 313)
+goto @19
+
+  @16
+objMove (20, 420, 205)
+objMove (21, 420, 232)
+objMove (23, 420, 259)
+objMove (24, 420, 286)
+objMove (25, 420, 313)
+objMove (26, 420, 340)
+objMove (27, 420, 368)
+goto @19
+
+  @17
+objMove (20, 420, 205)
+objMove (21, 420, 232)
+objMove (22, 420, 259)
+objMove (23, 420, 286)
+objMove (24, 420, 313)
+objMove (25, 420, 340)
+objMove (26, 420, 368)
+objMove (27, 420, 394)
+goto @19
+
+  @18
+objMove (20, 420, 205)
+objMove (21, 420, 232)
+objMove (22, 420, 259)
+objMove (23, 420, 286)
+objMove (24, 420, 313)
+objMove (25, 420, 340)
+objMove (26, 420, 368)
+objMove (27, 420, 394)
+goto @19
+
+  @19
+objMove (30, 200, 429)
+objMove (31, 101, 436)
+objMove (32, 162, 407)
+objMove (33, 112, 403)
+objMove (34, 198, 376)
+objMove (35, 160, 373)
+objMove (36, 114, 362)
+objMove (37, 61, 357)
+objMove (38, 190, 340)
+objMove (39, 164, 330)
+objMove (40, 140, 313)
+objMove (41, 97, 304)
+objMove (42, 61, 308)
+objMove (50, 50, 300)
+objMove (60, 384, 42)
+objMove (61, 432, 96)
+objMove (62, 370, 140)
+objMove (63, 0, 460)
+objMove (70, 0, 0)
+objMove (71, 0, 0)
+objMove (72, 0, 0)
+objPattNo (10, 0)
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objPattNo (23, 0)
+objPattNo (24, 0)
+objPattNo (25, 0)
+objPattNo (26, 0)
+objPattNo (27, 0)
+objPattNo (30, 0)
+objPattNo (31, 0)
+objPattNo (32, 0)
+objPattNo (33, 0)
+objPattNo (34, 0)
+objPattNo (35, 0)
+objPattNo (36, 0)
+objPattNo (37, 0)
+objPattNo (38, 0)
+objPattNo (39, 0)
+objPattNo (40, 0)
+objPattNo (41, 0)
+objPattNo (42, 0)
+objPattNo (50, 0)
+objPattNo (60, 0)
+objPattNo (61, 0)
+objPattNo (62, 0)
+objPattNo (63, 0)
+objPattNo (70, 0)
+objPattNo (71, 0)
+objPattNo (72, 0)
+objShow (10, 1)
+goto_case intG[1007] { 0: @20; 1: @21; 2: @22; 3: @23; _: @24 }
+
+  @20
+objShow (20, 1)
+objShow (21, 1)
+objShow (25, 1)
+objShow (26, 1)
+objShow (27, 1)
+goto @24
+
+  @21
+objShow (20, 1)
+objShow (21, 1)
+objShow (23, 1)
+objShow (24, 1)
+objShow (25, 1)
+objShow (26, 1)
+objShow (27, 1)
+goto @24
+
+  @22
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+objShow (23, 1)
+objShow (24, 1)
+objShow (25, 1)
+objShow (26, 1)
+objShow (27, 1)
+goto @24
+
+  @23
+objShow (20, 1)
+objShow (21, 1)
+objShow (22, 1)
+objShow (23, 1)
+objShow (24, 1)
+objShow (25, 1)
+objShow (26, 1)
+objShow (27, 1)
+goto @24
+
+  @24
+goto_unless (!intG[43] && !intG[45]) @37
+goto_unless (1 <= intG[0]) @25
+objShow (36, 1)
+
+  @25
+goto_unless (2 <= intG[0]) @26
+objShow (35, 1)
+
+  @26
+goto_unless (3 <= intG[0]) @27
+objShow (33, 1)
+
+  @27
+goto_unless (4 <= intG[0]) @28
+objShow (41, 1)
+
+  @28
+goto_unless (5 <= intG[0]) @29
+objShow (32, 1)
+
+  @29
+goto_unless (6 <= intG[0]) @30
+objShow (30, 1)
+
+  @30
+goto_unless (7 <= intG[0]) @31
+objShow (37, 1)
+
+  @31
+goto_unless (8 <= intG[0]) @32
+objShow (38, 1)
+
+  @32
+goto_unless (9 <= intG[0]) @33
+objShow (34, 1)
+
+  @33
+goto_unless (10 <= intG[0]) @34
+objShow (40, 1)
+
+  @34
+goto_unless (11 <= intG[0]) @35
+objShow (31, 1)
+
+  @35
+goto_unless (12 <= intG[0]) @36
+objShow (42, 1)
+
+  @36
+goto_unless (13 <= intG[0]) @37
+objShow (39, 1)
+
+  @37
+objShow (50, 0)
+objShow (60, 1)
+objShow (61, 1)
+objShow (62, 1)
+objShow (63, 1)
+goto_case intG[1006] { 0: @38; 1: @39; 2: @40; _: @41 }
+
+  @38
+objShow (70, 1)
+objShow (71, 0)
+objShow (72, 0)
+goto @41
+
+  @39
+objShow (70, 0)
+objShow (71, 0)
+objShow (72, 1)
+goto @41
+
+  @40
+objShow (70, 0)
+objShow (71, 1)
+objShow (72, 1)
+goto @41
+
+  @41
+objAlpha (10, 0)
+objAlpha (20, 0)
+objAlpha (21, 0)
+objAlpha (22, 0)
+objAlpha (23, 0)
+objAlpha (24, 0)
+objAlpha (25, 0)
+objAlpha (26, 0)
+objAlpha (27, 0)
+objAlpha (30, 255)
+objAlpha (31, 255)
+objAlpha (32, 255)
+objAlpha (33, 255)
+objAlpha (34, 255)
+objAlpha (35, 255)
+objAlpha (36, 255)
+objAlpha (37, 255)
+objAlpha (38, 255)
+objAlpha (39, 255)
+objAlpha (40, 255)
+objAlpha (41, 255)
+objAlpha (42, 255)
+objAlpha (50, 200)
+goto_unless (!intG[1005]) @42
+objAlpha (60, 255)
+objAlpha (61, 255)
+objAlpha (62, 255)
+objAlpha (63, 255)
+goto @43
+
+  @42
+goto_unless (intG[1005] == 1) @43
+objAlpha (60, 0)
+objAlpha (61, 0)
+objAlpha (62, 0)
+objAlpha (63, 0)
+
+  @43
+objAlpha (70, 0)
+objAlpha (71, 0)
+objAlpha (72, 0)
+goto_case intG[1007] { 0: @44; 1: @45; 2: @46; 3: @47; _: @48 }
+
+  @44
+objRepOriginY (10, 105)
+goto @48
+
+  @45
+objRepOriginY (10, 133)
+goto @48
+
+  @46
+objRepOriginY (10, 144)
+goto @48
+
+  @47
+objRepOriginY (10, 144)
+goto @48
+
+  @48
+objComposite (10, 1)
+objComposite (50, 1)
+objComposite (71, 1)
+goto_unless (intA[103] == 1) @49
+objAlpha (70, 0)
+objAlpha (71, 0)
+objAlpha (72, 0)
+objAlpha (60, 255)
+objAlpha (61, 255)
+objAlpha (62, 255)
+objAlpha (63, 255)
+goto @115
+
+  @49
+bgmLoop ('BGM30')
+intZ[500] = 1
+goto_unless (13 <= intG[0]) @50
+goto_unless (!intG[43] && !intG[45]) @50
+wavLoop ('TSIGNAL', 1, 4000)
+
+  @50
+goto_unless (!intG[1004]) @51
+waitC (1200)
+goto @53
+
+  @51
+goto_unless (intG[1004] == 1) @52
+waitC (1800)
+goto @53
+
+  @52
+goto_unless (intG[1004] == 2) @53
+waitC (2200)
+
+  @53
+goto_unless (!intG[1006]) @63
+FlushClick
+goto_unless (!intG[1004]) @54
+intC[0] = 1500
+goto @56
+
+  @54
+goto_unless (intG[1004] == 1) @55
+intC[0] = 2400
+goto @56
+
+  @55
+goto_unless (intG[1004] == 2) @56
+intC[0] = 4000
+
+  @56
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @57
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @58
+intF[1000] = 1
+FlushClick
+goto @59
+
+  @58
+intF[1000] = 0
+
+  @59
+goto_unless (intF[1000] == 1) @60
+intC[0] = 0
+intC[1] = 0
+
+  @60
+objAlpha (70, intC[1])
+refresh
+goto_unless (!intC[0]) @61
+goto @62
+
+  @61
+goto @57
+
+  @62
+goto @83
+
+  @63
+goto_unless (intG[1006] == 1) @73
+FlushClick
+goto_unless (!intG[1004]) @64
+intC[0] = 1500
+goto @66
+
+  @64
+goto_unless (intG[1004] == 1) @65
+intC[0] = 2400
+goto @66
+
+  @65
+goto_unless (intG[1004] == 2) @66
+intC[0] = 4000
+
+  @66
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @67
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @68
+intF[1000] = 1
+FlushClick
+goto @69
+
+  @68
+intF[1000] = 0
+
+  @69
+goto_unless (intF[1000] == 1) @70
+intC[0] = 0
+intC[1] = 0
+
+  @70
+objAlpha (62, intC[1])
+refresh
+goto_unless (!intC[0]) @71
+goto @72
+
+  @71
+goto @67
+
+  @72
+goto @83
+
+  @73
+goto_unless (intG[1006] == 2) @83
+FlushClick
+goto_unless (!intG[1004]) @74
+intC[0] = 1500
+goto @76
+
+  @74
+goto_unless (intG[1004] == 1) @75
+intC[0] = 2400
+goto @76
+
+  @75
+goto_unless (intG[1004] == 2) @76
+intC[0] = 4000
+
+  @76
+InitExFrames ({0, 96, 0, intC[0]}, {1, 255, 0, intC[0]})
+
+  @77
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @78
+intF[1000] = 1
+FlushClick
+goto @79
+
+  @78
+intF[1000] = 0
+
+  @79
+goto_unless (intF[1000] == 1) @80
+intC[0] = 0
+intC[1] = 0
+intC[2] = 0
+
+  @80
+objAlpha (71, intC[1])
+objAlpha (72, intC[2])
+refresh
+goto_unless (!intC[0]) @81
+goto @82
+
+  @81
+goto @77
+
+  @82
+
+  @83
+goto_unless (!intG[1004]) @84
+goto @86
+
+  @84
+goto_unless (intG[1004] == 1) @85
+goto @86
+
+  @85
+goto_unless (intG[1004] == 2) @86
+waitC (2000)
+
+  @86
+goto_unless (intG[1005] == 1) @96
+FlushClick
+goto_unless (!intG[1004]) @87
+intC[0] = 1000
+goto @89
+
+  @87
+goto_unless (intG[1004] == 1) @88
+intC[0] = 1500
+goto @89
+
+  @88
+goto_unless (intG[1004] == 2) @89
+intC[0] = 1500
+
+  @89
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @90
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @91
+intF[1000] = 1
+FlushClick
+goto @92
+
+  @91
+intF[1000] = 0
+
+  @92
+goto_unless (intF[1000] == 1) @93
+intC[0] = 0
+intC[1] = 255
+
+  @93
+objAlpha (60, intC[1])
+objAlpha (61, intC[1])
+objAlpha (62, intC[1])
+objAlpha (63, intC[1])
+refresh
+goto_unless (!intC[0]) @94
+goto @95
+
+  @94
+goto @90
+
+  @95
+
+  @96
+FlushClick
+intC[0] = 1500
+InitExFramesDecel ({0, 400, 100, intC[0]})
+InitExFrames ({1, 0, 255, intC[0]})
+
+  @97
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @98
+intF[1000] = 1
+FlushClick
+goto @99
+
+  @98
+intF[1000] = 0
+
+  @99
+goto_unless (intF[1000] == 1) @100
+intC[0] = 0
+intC[1] = 100
+intC[2] = 255
+
+  @100
+objHeight (10, intC[1])
+objAlpha (10, intC[2])
+objAlpha (20, intC[2])
+objAlpha (21, intC[2])
+goto_unless (!intA[103] || !intA[101]) @101
+objAlpha (22, intC[2])
+
+  @101
+goto_unless (!intA[103] || !intA[100]) @102
+objAlpha (23, intC[2])
+objAlpha (24, intC[2])
+
+  @102
+objAlpha (25, intC[2])
+objAlpha (26, intC[2])
+objAlpha (27, intC[2])
+refresh
+goto_unless (!intC[0]) @103
+goto @104
+
+  @103
+goto @97
+
+  @104
+goto_unless (intA[103] == 1) @105
+goto @116
+
+  @105
+goto_unless (intA[100] == 1 || intA[101] == 1 || intA[102] == 1) @125
+waitC (1000)
+FlushClick
+intC[0] = 1000
+InitExFramesDecel ({0, 100, 400, intC[0]})
+InitExFrames ({1, 255, 0, intC[0]})
+
+  @106
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @107
+intF[1000] = 1
+FlushClick
+goto @108
+
+  @107
+intF[1000] = 0
+
+  @108
+goto_unless (intF[1000] == 1) @109
+intC[0] = 0
+intC[1] = 400
+intC[2] = 0
+
+  @109
+objHeight (10, intC[1])
+objAlpha (10, intC[2])
+objAlpha (20, intC[2])
+objAlpha (21, intC[2])
+objAlpha (22, intC[2])
+objAlpha (23, intC[2])
+objAlpha (24, intC[2])
+objAlpha (25, intC[2])
+objAlpha (26, intC[2])
+objAlpha (27, intC[2])
+refresh
+goto_unless (!intC[0]) @110
+goto @111
+
+  @110
+goto @106
+
+  @111
+goto_unless (intA[100] == 1) @112
+intG[1007] = 1
+goto @114
+
+  @112
+goto_unless (intA[101] == 1) @113
+intG[1007] = 2
+goto @114
+
+  @113
+goto_unless (intA[102] == 1) @114
+intG[1007] = 3
+
+  @114
+intA[103] = 1
+goto @7
+
+  @115
+waitC (1000)
+goto @96
+
+  @116
+waitC (200)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @117
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @118
+intF[1000] = 1
+FlushClick
+goto @119
+
+  @118
+intF[1000] = 0
+
+  @119
+goto_unless (intF[1000] == 1) @120
+intC[0] = 0
+intC[1] = 255
+
+  @120
+goto_unless (intA[101] == 1) @121
+objAlpha (22, intC[1])
+
+  @121
+goto_unless (intA[100] == 1) @122
+objAlpha (23, intC[1])
+objAlpha (24, intC[1])
+
+  @122
+refresh
+goto_unless (!intC[0]) @123
+goto @124
+
+  @123
+goto @117
+
+  @124
+intA[100] = 0
+intA[101] = 0
+intA[102] = 0
+intA[103] = 0
+
+  @125
+goto_unless (13 <= intG[0]) @126
+goto_unless (!intG[43] && !intG[45]) @126
+objAlpha (50, 128)
+objShow (50, 1)
+ganLoop2 (50, 0)
+
+  @126
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @127
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @128
+objGetPos (20, intA[1000], intA[1001])
+objGetDims (20, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @128
+intF[1006] = 0
+
+  @128
+goto_unless (intF[1006] == 99) @129
+objGetPos (21, intA[1000], intA[1001])
+objGetDims (21, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @129
+intF[1006] = 1
+
+  @129
+goto_unless (intF[1006] == 99) @130
+objGetPos (22, intA[1000], intA[1001])
+objGetDims (22, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @130
+goto_unless (2 <= intG[1007]) @130
+intF[1006] = 2
+
+  @130
+goto_unless (intF[1006] == 99) @131
+objGetPos (23, intA[1000], intA[1001])
+objGetDims (23, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @131
+goto_unless (1 <= intG[1007]) @131
+intF[1006] = 3
+
+  @131
+goto_unless (intF[1006] == 99) @132
+objGetPos (24, intA[1000], intA[1001])
+objGetDims (24, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @132
+goto_unless (1 <= intG[1007]) @132
+intF[1006] = 4
+
+  @132
+goto_unless (intF[1006] == 99) @133
+objGetPos (25, intA[1000], intA[1001])
+objGetDims (25, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @133
+intF[1006] = 5
+
+  @133
+goto_unless (intF[1006] == 99) @134
+objGetPos (26, intA[1000], intA[1001])
+objGetDims (26, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @134
+intF[1006] = 6
+
+  @134
+goto_unless (intF[1006] == 99) @135
+objGetPos (27, intA[1000], intA[1001])
+objGetDims (27, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @135
+intF[1006] = 7
+
+  @135
+goto_unless (!intF[1003]) @139
+goto_unless (intF[1006] != 99) @137
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @136
+sePlay (10)
+
+  @136
+intF[1009] = 2
+goto @138
+
+  @137
+intF[1009] = 0
+
+  @138
+goto @149
+
+  @139
+goto_unless (intF[1003] == 1) @145
+goto_unless (intF[1008] != -1) @143
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @141
+goto_unless (intF[1009] != 3) @140
+sePlay (10)
+
+  @140
+intF[1009] = 3
+goto @142
+
+  @141
+intF[1009] = 0
+
+  @142
+goto @144
+
+  @143
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @144
+goto @149
+
+  @145
+goto_unless (intF[1003] == 2) @149
+goto_unless (intF[1008] != -1) @148
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @146
+intF[1009] = 2
+intF[1012] = 1
+goto @147
+
+  @146
+intF[1009] = 0
+
+  @147
+intF[1008] = -1
+
+  @148
+FlushClick
+
+  @149
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @150
+intE[intF[1006]] = intF[1009]
+
+  @150
+objPattNo (20, intE[0])
+objPattNo (21, intE[1])
+objPattNo (22, intE[2])
+objPattNo (23, intE[3])
+objPattNo (24, intE[4])
+objPattNo (25, intE[5])
+objPattNo (26, intE[6])
+objPattNo (27, intE[7])
+refresh
+goto_unless (intF[1012] == 1) @151
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @153
+goto @152
+
+  @151
+goto_unless (intF[1004] == 2) @152
+
+  @152
+goto @127
+
+  @153
+intG[1004] = 0
+intG[1005] = 0
+intG[1006] = 0
+wavPlay ('TRET', 0)
+FlushClick
+intC[0] = 1000
+InitExFramesDecel ({0, 100, 400, intC[0]})
+InitExFrames ({1, 255, 0, intC[0]})
+
+  @154
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @155
+intF[1000] = 1
+FlushClick
+goto @156
+
+  @155
+intF[1000] = 0
+
+  @156
+goto_unless (intF[1000] == 1) @157
+intC[0] = 0
+intC[1] = 400
+intC[2] = 0
+
+  @157
+objHeight (10, intC[1])
+objAlpha (10, intC[2])
+objAlpha (20, intC[2])
+objAlpha (21, intC[2])
+objAlpha (22, intC[2])
+objAlpha (23, intC[2])
+objAlpha (24, intC[2])
+objAlpha (25, intC[2])
+objAlpha (26, intC[2])
+objAlpha (27, intC[2])
+goto_unless (intF[1013] == 1 || intF[1013] == 5) @158
+objAlpha (60, intC[2])
+objAlpha (61, intC[2])
+objAlpha (62, intC[2])
+objAlpha (63, intC[2])
+
+  @158
+refresh
+goto_unless (!intC[0]) @159
+goto @160
+
+  @159
+goto @154
+
+  @160
+goto_unless (!intF[1013]) @161
+bgmFadeOut (2000)
+wavFadeOut (1, 2000)
+goto @218
+
+  @161
+goto_unless (intF[1013] == 1) @162
+intF[1138] = 1
+farcall (9042, 1)
+intF[1013] = 1
+wait (100)
+intF[1138] = 0
+goto @218
+
+  @162
+goto_unless (intF[1013] == 2) @163
+bgmFadeOut (2000)
+wavFadeOut (1, 2000)
+goto @218
+
+  @163
+goto_unless (intF[1013] == 3) @164
+wavFadeOut (1, 2000)
+goto @218
+
+  @164
+goto_unless (intF[1013] == 4) @165
+wavFadeOut (1, 2000)
+goto @218
+
+  @165
+goto_unless (intF[1013] == 5) @216
+intF[1014] = GetOpenAnmMod (0)
+intF[1014] = GetCloseAnmMod (0)
+SetOpenAnmMod (0, 3)
+SetCloseAnmMod (0, 3)
+intF[1015] = GetOpenAnmTime (0)
+intF[1015] = GetCloseAnmTime (0)
+SetOpenAnmTime (0, 500)
+SetCloseAnmTime (0, 500)
+intA[1000] = ScreenMode
+goto_unless (!intA[1000]) @166
+intF[1056] = 1
+goto @167
+
+  @166
+goto_unless (intA[1000] == 1) @167
+intF[1056] = 0
+
+  @167
+intA[1000] = ShowObject1
+goto_unless (!intA[1000]) @168
+intF[1057] = 0
+goto @169
+
+  @168
+goto_unless (intA[1000] == 1) @169
+intF[1057] = 1
+
+  @169
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @170
+intF[1058] = 1
+goto @171
+
+  @170
+goto_unless (intA[1000] == 1) @171
+intF[1058] = 0
+
+  @171
+SetSkipAnimations (0)
+goto @172
+goto @172
+SetSkipAnimations (1)
+
+  @172
+intF[1078] = MessageSpeed
+intF[1081] = MessageNoWait
+goto_unless (!intF[1081]) @173
+intF[1079] = 0
+intF[1080] = intG[1003]
+goto @175
+
+  @173
+goto_unless (intF[1081] == 1) @174
+intF[1079] = 1
+intF[1080] = 0
+goto @175
+
+  @174
+goto_unless (intF[1081] == 2) @175
+intF[1079] = 1
+intF[1080] = 1
+
+  @175
+intA[0] = 2
+goto @176
+goto @176
+intA[0] = 1
+
+  @176
+goto @177
+goto @177
+intA[0] = 0
+goto @177
+goto @177
+intA[0] = 0
+
+  @177
+SetMessageNoWait (intA[0])
+intA[1000] = AutoMode
+goto_unless (!intA[1000]) @178
+intF[1032] = 0
+goto @179
+
+  @178
+goto_unless (intA[1000] == 1) @179
+intF[1032] = 1
+
+  @179
+intF[1033] = AutoCharTime
+intF[1034] = AutoBaseTime
+goto @180
+SetAutoMode (1)
+goto @181
+
+  @180
+SetAutoMode (0)
+
+  @181
+#res<0001>
+SetOpenAnmMod (0, intF[1014])
+SetCloseAnmMod (0, intF[1014])
+SetOpenAnmTime (0, intF[1015])
+SetCloseAnmTime (0, intF[1015])
+goto_unless (intF[1058] == 1) @182
+SetSkipAnimations (0)
+goto @183
+
+  @182
+goto_unless (!intF[1058]) @183
+SetSkipAnimations (1)
+
+  @183
+goto_unless (intF[1079] == 1) @186
+goto_unless (intF[1080] == 1) @184
+intF[1081] = 2
+goto @185
+
+  @184
+goto_unless (!intF[1080]) @185
+intF[1081] = 1
+
+  @185
+goto @188
+
+  @186
+goto_unless (!intF[1079]) @188
+goto_unless (intF[1080] == 1) @187
+intF[1081] = 0
+goto @188
+
+  @187
+goto_unless (!intF[1080]) @188
+intF[1081] = 0
+
+  @188
+SetMessageNoWait (intF[1081])
+goto_unless (intF[1032] == 1) @189
+SetAutoMode (1)
+goto @190
+
+  @189
+goto_unless (!intF[1032]) @190
+SetAutoMode (0)
+
+  @190
+refresh
+intF[1138] = 1
+farcall (9043, 0)
+intF[1013] = 5
+wait (100)
+intF[1138] = 0
+intF[1014] = GetOpenAnmMod (0)
+intF[1014] = GetCloseAnmMod (0)
+SetOpenAnmMod (0, 3)
+SetCloseAnmMod (0, 3)
+intF[1015] = GetOpenAnmTime (0)
+intF[1015] = GetCloseAnmTime (0)
+SetOpenAnmTime (0, 500)
+SetCloseAnmTime (0, 500)
+intA[1000] = ScreenMode
+goto_unless (!intA[1000]) @191
+intF[1056] = 1
+goto @192
+
+  @191
+goto_unless (intA[1000] == 1) @192
+intF[1056] = 0
+
+  @192
+intA[1000] = ShowObject1
+goto_unless (!intA[1000]) @193
+intF[1057] = 0
+goto @194
+
+  @193
+goto_unless (intA[1000] == 1) @194
+intF[1057] = 1
+
+  @194
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @195
+intF[1058] = 1
+goto @196
+
+  @195
+goto_unless (intA[1000] == 1) @196
+intF[1058] = 0
+
+  @196
+SetSkipAnimations (0)
+goto @197
+goto @197
+SetSkipAnimations (1)
+
+  @197
+intF[1078] = MessageSpeed
+intF[1081] = MessageNoWait
+goto_unless (!intF[1081]) @198
+intF[1079] = 0
+intF[1080] = intG[1003]
+goto @200
+
+  @198
+goto_unless (intF[1081] == 1) @199
+intF[1079] = 1
+intF[1080] = 0
+goto @200
+
+  @199
+goto_unless (intF[1081] == 2) @200
+intF[1079] = 1
+intF[1080] = 1
+
+  @200
+intA[0] = 2
+goto @201
+goto @201
+intA[0] = 1
+
+  @201
+goto @202
+goto @202
+intA[0] = 0
+goto @202
+goto @202
+intA[0] = 0
+
+  @202
+SetMessageNoWait (intA[0])
+intA[1000] = AutoMode
+goto_unless (!intA[1000]) @203
+intF[1032] = 0
+goto @204
+
+  @203
+goto_unless (intA[1000] == 1) @204
+intF[1032] = 1
+
+  @204
+intF[1033] = AutoCharTime
+intF[1034] = AutoBaseTime
+goto @205
+SetAutoMode (1)
+goto @206
+
+  @205
+SetAutoMode (0)
+
+  @206
+msgHide
+wait (100)
+SetOpenAnmMod (0, intF[1014])
+SetCloseAnmMod (0, intF[1014])
+SetOpenAnmTime (0, intF[1015])
+SetCloseAnmTime (0, intF[1015])
+goto_unless (intF[1058] == 1) @207
+SetSkipAnimations (0)
+goto @208
+
+  @207
+goto_unless (!intF[1058]) @208
+SetSkipAnimations (1)
+
+  @208
+goto_unless (intF[1079] == 1) @211
+goto_unless (intF[1080] == 1) @209
+intF[1081] = 2
+goto @210
+
+  @209
+goto_unless (!intF[1080]) @210
+intF[1081] = 1
+
+  @210
+goto @213
+
+  @211
+goto_unless (!intF[1079]) @213
+goto_unless (intF[1080] == 1) @212
+intF[1081] = 0
+goto @213
+
+  @212
+goto_unless (!intF[1080]) @213
+intF[1081] = 0
+
+  @213
+SetMessageNoWait (intF[1081])
+goto_unless (intF[1032] == 1) @214
+SetAutoMode (1)
+goto @215
+
+  @214
+goto_unless (!intF[1032]) @215
+SetAutoMode (0)
+
+  @215
+op<1:Sys:00300, 0>
+op<1:Sys:01231, 0>
+op<1:Sys:03503, 0>
+goto @218
+
+  @216
+goto_unless (intF[1013] == 6) @217
+wavFadeOut (1, 2000)
+goto @218
+
+  @217
+goto_unless (intF[1013] == 7) @218
+bgmFadeOut (2000)
+wavFadeOut (1, 2000)
+
+  @218
+goto_unless (intF[1013] == 1 || intF[1013] == 5) @225
+objPattNo (20, 0)
+objPattNo (21, 0)
+objPattNo (22, 0)
+objPattNo (23, 0)
+objPattNo (24, 0)
+objPattNo (25, 0)
+objPattNo (26, 0)
+objPattNo (27, 0)
+FlushClick
+intC[0] = 1000
+InitExFramesDecel ({0, 400, 100, intC[0]})
+InitExFrames ({1, 0, 255, intC[0]})
+
+  @219
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @220
+intF[1000] = 1
+FlushClick
+goto @221
+
+  @220
+intF[1000] = 0
+
+  @221
+goto_unless (intF[1000] == 1) @222
+intC[0] = 0
+intC[1] = 100
+intC[2] = 255
+
+  @222
+objHeight (10, intC[1])
+objAlpha (10, intC[2])
+objAlpha (20, intC[2])
+objAlpha (21, intC[2])
+objAlpha (22, intC[2])
+objAlpha (23, intC[2])
+objAlpha (24, intC[2])
+objAlpha (25, intC[2])
+objAlpha (26, intC[2])
+objAlpha (27, intC[2])
+objAlpha (60, intC[2])
+objAlpha (61, intC[2])
+objAlpha (62, intC[2])
+objAlpha (63, intC[2])
+refresh
+goto_unless (!intC[0]) @223
+goto @224
+
+  @223
+goto @219
+
+  @224
+goto @242
+
+  @225
+goto_unless (!intF[1013] || intF[1013] == 2 || intF[1013] == 3 || intF[1013] == 4 || intF[1013] == 6) @235
+objShow (70, 0)
+objShow (71, 1)
+objShow (72, 1)
+FlushClick
+goto_unless (!intF[1013] || intF[1013] == 2) @226
+intC[0] = 1500
+goto @227
+
+  @226
+goto_unless (intF[1013] == 3 || intF[1013] == 4 || intF[1013] == 6) @227
+intC[0] = 1200
+
+  @227
+InitExFrames ({0, 0, 96, intC[0]}, {1, 0, 255, intC[0]})
+
+  @228
+intC[0] = ReadExFrames ({0, intC[1]}, {1, intC[2]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @229
+intF[1000] = 1
+FlushClick
+goto @230
+
+  @229
+intF[1000] = 0
+
+  @230
+goto_unless (intF[1000] == 1) @231
+intC[0] = 0
+intC[1] = 96
+intC[2] = 255
+
+  @231
+objAlpha (71, intC[1])
+objAlpha (72, intC[2])
+refresh
+goto_unless (!intC[0]) @232
+goto @233
+
+  @232
+goto @228
+
+  @233
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+goto_unless (!intF[1013] || intF[1013] == 2) @234
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+
+  @234
+goto @242
+
+  @235
+goto_unless (intF[1013] == 7) @242
+objShow (70, 1)
+objShow (71, 0)
+objShow (72, 0)
+FlushClick
+intC[0] = 1500
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @236
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @237
+intF[1000] = 1
+FlushClick
+goto @238
+
+  @237
+intF[1000] = 0
+
+  @238
+goto_unless (intF[1000] == 1) @239
+intC[0] = 0
+intC[1] = 255
+
+  @239
+objAlpha (70, intC[1])
+refresh
+goto_unless (!intC[0]) @240
+goto @241
+
+  @240
+goto @236
+
+  @241
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+
+  @242
+goto_unless (!intF[1013]) @243
+goto @250
+
+  @243
+goto_unless (intF[1013] == 1) @244
+goto @126
+goto @250
+
+  @244
+goto_unless (intF[1013] == 2) @245
+goto @250
+
+  @245
+goto_unless (intF[1013] == 3) @246
+goto @250
+
+  @246
+goto_unless (intF[1013] == 4) @247
+goto @250
+
+  @247
+goto_unless (intF[1013] == 5) @248
+goto @126
+goto @250
+
+  @248
+goto_unless (intF[1013] == 6) @249
+goto @250
+
+  @249
+goto_unless (intF[1013] == 7) @250
+
+  @250
+objShow (10, 0)
+objShow (20, 0)
+objShow (21, 0)
+objShow (22, 0)
+objShow (23, 0)
+objShow (24, 0)
+objShow (25, 0)
+objShow (26, 0)
+objShow (27, 0)
+objShow (30, 0)
+objShow (31, 0)
+objShow (32, 0)
+objShow (33, 0)
+objShow (34, 0)
+objShow (35, 0)
+objShow (36, 0)
+objShow (37, 0)
+objShow (38, 0)
+objShow (39, 0)
+objShow (40, 0)
+objShow (41, 0)
+objShow (42, 0)
+objShow (50, 0)
+objShow (60, 0)
+objShow (61, 0)
+objShow (62, 0)
+objShow (63, 0)
+objShow (70, 0)
+objShow (71, 0)
+objShow (72, 0)
+refresh
+objDelete (10)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+objDelete (23)
+objDelete (24)
+objDelete (25)
+objDelete (26)
+objDelete (27)
+objDelete (30)
+objDelete (31)
+objDelete (32)
+objDelete (33)
+objDelete (34)
+objDelete (35)
+objDelete (36)
+objDelete (37)
+objDelete (38)
+objDelete (39)
+objDelete (40)
+objDelete (41)
+objDelete (42)
+objDelete (50)
+objDelete (60)
+objDelete (61)
+objDelete (62)
+objDelete (63)
+objDelete (70)
+objDelete (71)
+objDelete (72)
+goto_unless (!intF[1013]) @251
+goto @258
+
+  @251
+goto_unless (intF[1013] == 1) @252
+goto @258
+
+  @252
+goto_unless (intF[1013] == 2) @253
+goto @258
+
+  @253
+goto_unless (intF[1013] == 3) @254
+goto @258
+
+  @254
+goto_unless (intF[1013] == 4) @255
+goto @258
+
+  @255
+goto_unless (intF[1013] == 5) @256
+goto @258
+
+  @256
+goto_unless (intF[1013] == 6) @257
+goto @258
+
+  @257
+goto_unless (intF[1013] == 7) @258
+waitC (1000)
+end
+
+  @258
+intG[1004] = 0
+intG[1005] = 0
+intG[1006] = 0
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @259
+wait (1000)
+jump (414)
+goto @266
+
+  @259
+goto_unless (intF[1013] == 1) @260
+goto @266
+
+  @260
+goto_unless (intF[1013] == 2) @261
+wait (1500)
+farcall (9035, 2)
+wait (1000)
+jump (6800)
+goto @266
+
+  @261
+goto_unless (intF[1013] == 3) @262
+jump (9033, 0)
+goto @266
+
+  @262
+goto_unless (intF[1013] == 4) @263
+jump (9033, 1)
+goto @266
+
+  @263
+goto_unless (intF[1013] == 5) @264
+goto @266
+
+  @264
+goto_unless (intF[1013] == 6) @265
+jump (9034)
+goto @266
+
+  @265
+goto_unless (intF[1013] == 7) @266
+
+  @266
+ret
+eof

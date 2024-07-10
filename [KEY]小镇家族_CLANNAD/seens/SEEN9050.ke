@@ -1,0 +1,359 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9050.TXT'
+
+#entrypoint 000
+intA[0] = strcmp (strS[1000], 'KURO')
+goto_unless (!intA[0]) @1
+intF[1113] = 0
+goto @2
+
+  @1
+intA[0] = strcmp (strS[1000], 'SIRO')
+goto_unless (!intA[0]) @2
+intF[1113] = 0
+
+  @2
+intA[0] = strcmp (strS[1001], 'NONE')
+goto_unless (!intA[0]) @3
+strclear (strS[1001])
+
+  @3
+intA[0] = strcmp (strS[1002], 'NONE')
+goto_unless (!intA[0]) @4
+strclear (strS[1002])
+
+  @4
+intA[0] = strcmp (strS[1003], 'NONE')
+goto_unless (!intA[0]) @5
+strclear (strS[1003])
+
+  @5
+goto_unless (!intF[1101]) @83
+stackClear
+objBgClear (81)
+objBgClear (82)
+objBgClear (83)
+objBgClear (84)
+op<1:060:00001, 0> (81)
+op<1:060:00001, 0> (82)
+op<1:060:00001, 0> (83)
+op<1:060:00001, 0> (84)
+intA[0] = strlen (strS[1000])
+goto_unless (0 < intA[0]) @6
+grpBuffer (strS[1000], 1)
+goto @7
+
+  @6
+recFill (0, 0, 640, 480, 1, 0, 0, 0)
+
+  @7
+intA[0] = strlen (strS[1001])
+goto_unless (0 < intA[0]) @28
+goto_unless (0 < intF[225]) @13
+intA[0] = strpos (strS[1001], 'CGSH')
+goto_unless (intA[0] != -1) @13
+goto_case intF[225] { 0: @8; 1: @9; 2: @10; 3: @11; _: @12 }
+
+  @8
+goto @12
+
+  @9
+strS[1001] += 'X0'
+goto @12
+
+  @10
+strS[1001] += 'X1'
+goto @12
+
+  @11
+strS[1001] += 'X2'
+goto @12
+
+  @12
+
+  @13
+goto_case intF[1118] { 0: @14; 1: @15; 2: @16; 3: @17; 4: @18; 5: @19; 6: @20; 7: @21; 8: @22; 9: @23; 10: @24; _: @25 }
+
+  @14
+goto @25
+
+  @15
+strS[1001] += '?010'
+goto @25
+
+  @16
+strS[1001] += '?011'
+goto @25
+
+  @17
+strS[1001] += '?020'
+goto @25
+
+  @18
+strS[1001] += '?021'
+goto @25
+
+  @19
+strS[1001] += '?022'
+goto @25
+
+  @20
+strS[1001] += '?023'
+goto @25
+
+  @21
+strS[1001] += '?024'
+goto @25
+
+  @22
+strS[1001] += '?025'
+goto @25
+
+  @23
+strS[1001] += '?030'
+goto @25
+
+  @24
+strS[1001] += '?040'
+goto @25
+
+  @25
+objBgOfFile (81, strS[1001], 1)
+goto_unless (!intF[1104]) @26
+goto @28
+
+  @26
+goto_unless (intF[1104] == 1) @27
+objBgMove (81, -100, 0)
+goto @28
+
+  @27
+goto_unless (intF[1104] == 2) @28
+objBgMove (81, 100, 0)
+
+  @28
+intA[0] = strlen (strS[1002])
+goto_unless (0 < intA[0]) @43
+goto_case intF[1118] { 0: @29; 1: @30; 2: @31; 3: @32; 4: @33; 5: @34; 6: @35; 7: @36; 8: @37; 9: @38; 10: @39; _: @40 }
+
+  @29
+goto @40
+
+  @30
+strS[1002] += '?010'
+goto @40
+
+  @31
+strS[1002] += '?011'
+goto @40
+
+  @32
+strS[1002] += '?020'
+goto @40
+
+  @33
+strS[1002] += '?021'
+goto @40
+
+  @34
+strS[1002] += '?022'
+goto @40
+
+  @35
+strS[1002] += '?023'
+goto @40
+
+  @36
+strS[1002] += '?024'
+goto @40
+
+  @37
+strS[1002] += '?025'
+goto @40
+
+  @38
+strS[1002] += '?030'
+goto @40
+
+  @39
+strS[1002] += '?040'
+goto @40
+
+  @40
+objBgOfFile (82, strS[1002], 1)
+goto_unless (!intF[1105]) @41
+goto @43
+
+  @41
+goto_unless (intF[1105] == 1) @42
+objBgMove (82, 100, 0)
+goto @43
+
+  @42
+goto_unless (intF[1105] == 2) @43
+objBgMove (82, -100, 0)
+
+  @43
+intA[0] = strlen (strS[1003])
+goto_unless (0 < intA[0]) @56
+goto_case intF[1118] { 0: @44; 1: @45; 2: @46; 3: @47; 4: @48; 5: @49; 6: @50; 7: @51; 8: @52; 9: @53; 10: @54; _: @55 }
+
+  @44
+goto @55
+
+  @45
+strS[1003] += '?010'
+goto @55
+
+  @46
+strS[1003] += '?011'
+goto @55
+
+  @47
+strS[1003] += '?020'
+goto @55
+
+  @48
+strS[1003] += '?021'
+goto @55
+
+  @49
+strS[1003] += '?022'
+goto @55
+
+  @50
+strS[1003] += '?023'
+goto @55
+
+  @51
+strS[1003] += '?024'
+goto @55
+
+  @52
+strS[1003] += '?025'
+goto @55
+
+  @53
+strS[1003] += '?030'
+goto @55
+
+  @54
+strS[1003] += '?040'
+goto @55
+
+  @55
+objBgOfFile (83, strS[1003], 1)
+goto_unless (!intF[1104]) @56
+
+  @56
+goto_unless (intF[1113] == 1) @57
+intA[0] = strlen (strS[1004])
+goto_unless (0 < intA[0]) @57
+objBgOfFile (84, strS[1004], 1)
+objBgMove (84, 10, 10)
+
+  @57
+goto_case intF[1102] { 0: @58; 1: @61; 2: @62; 3: @63; 4: @64; 5: @65; 6: @66; 7: @67; 8: @68; 9: @69; 10: @70; 11: @71; 12: @72; 13: @73; 14: @74; 15: @75; 16: @76; 20: @77; 21: @78; 30: @79; 31: @80; _: @81 }
+
+  @58
+goto_unless (intF[1107] == 1) @59
+grpOpenBg ('?', 0)
+goto @60
+
+  @59
+goto_unless (!intF[1107]) @60
+grpOpenBg ('?', 30)
+
+  @60
+goto @82
+
+  @61
+grpOpenBg ('?', 1)
+goto @82
+
+  @62
+grpOpenBg ('?', 2)
+goto @82
+
+  @63
+grpOpenBg ('?', 3)
+goto @82
+
+  @64
+grpOpenBg ('?', 4)
+goto @82
+
+  @65
+grpOpenBg ('?', 5)
+goto @82
+
+  @66
+grpOpenBg ('?', 6)
+goto @82
+
+  @67
+grpOpenBg ('?', 7)
+goto @82
+
+  @68
+grpOpenBg ('?', 8)
+goto @82
+
+  @69
+grpOpenBg ('?', 9)
+goto @82
+
+  @70
+grpOpenBg ('?', 10)
+goto @82
+
+  @71
+grpOpenBg ('?', 11)
+goto @82
+
+  @72
+grpOpenBg ('?', 12)
+goto @82
+
+  @73
+grpOpenBg ('?', 13)
+goto @82
+
+  @74
+grpOpenBg ('?', 14)
+goto @82
+
+  @75
+grpOpenBg ('?', 15)
+goto @82
+
+  @76
+grpOpenBg ('?', 16)
+goto @82
+
+  @77
+grpOpenBg ('?', 20)
+goto @82
+
+  @78
+grpOpenBg ('?', 21)
+goto @82
+
+  @79
+grpOpenBg ('?', 30)
+goto @82
+
+  @80
+grpOpenBg ('?', 31)
+goto @82
+
+  @81
+grpOpenBg ('?', 0)
+goto @82
+
+  @82
+
+  @83
+rtl
+eof
