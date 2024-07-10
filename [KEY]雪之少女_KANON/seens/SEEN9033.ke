@@ -1,0 +1,286 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9033.TXT'
+#resource 'SEEN9033.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objBgClear (0)
+objBgClear (10)
+objBgClear (11)
+objBgClear (12)
+objBgClear (20)
+objBgClear (21)
+objBgClear (22)
+objBgClear (30)
+objBgOfFile (0, 'S_MSEL_BG00')
+objBgOfFile (10, 'S_MSEL_BTN00')
+objBgOfFile (11, 'S_MSEL_BTN01')
+objBgOfFile (12, 'S_MSEL_BTN02')
+objBgOfFile (20, 'S_MSEL_PER00')
+objBgOfFile (21, 'S_MSEL_PER00')
+objBgOfFile (22, 'S_MSEL_PER00')
+objBgOfFile (30, 'SIRO')
+objBgMove (0, 0, 0)
+objBgMove (10, 40, 153)
+objBgMove (11, 232, 153)
+objBgMove (12, 424, 153)
+objBgMove (20, 468, 70)
+objBgMove (21, 489, 70)
+objBgMove (22, 510, 70)
+objBgMove (30, 0, 0)
+objBgPattNo (0, 0)
+objBgPattNo (10, 0)
+objBgPattNo (11, 0)
+objBgPattNo (12, 0)
+objBgPattNo (20, 0)
+objBgPattNo (21, 0)
+objBgPattNo (22, 0)
+objBgPattNo (30, 0)
+objBgShow (0, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (20, 0)
+objBgShow (21, 0)
+objBgShow (22, 0)
+objBgShow (30, 0)
+intA[0] = cgGetViewedPcnt
+goto_unless (intA[0] < 100) @2
+intA[1] = intA[0] / 34
+goto @3
+
+  @2
+goto_unless (intA[0] == 100) @3
+intA[1] = 3
+
+  @3
+goto_unless (intA[0] < 10) @4
+objBgPattNo (20, 10 * intA[1])
+objBgPattNo (21, 10 * intA[1])
+objBgPattNo (22, 10 * intA[1] + intA[0] % 10)
+objBgAlpha (20, 0)
+objBgAlpha (21, 0)
+objBgAlpha (22, 255)
+goto @6
+
+  @4
+goto_unless (intA[0] < 100) @5
+objBgPattNo (20, 10 * intA[1])
+objBgPattNo (21, 10 * intA[1] + intA[0] / 10)
+objBgPattNo (22, 10 * intA[1] + intA[0] % 10)
+objBgAlpha (20, 0)
+objBgAlpha (21, 255)
+objBgAlpha (22, 255)
+goto @6
+
+  @5
+goto_unless (intA[0] == 100) @6
+objBgPattNo (20, 10 * intA[1] + 1)
+objBgPattNo (21, 10 * intA[1])
+objBgPattNo (22, 10 * intA[1])
+objBgAlpha (20, 255)
+objBgAlpha (21, 255)
+objBgAlpha (22, 255)
+
+  @6
+objBgShow (0, 1)
+objBgShow (10, 1)
+objBgShow (11, 1)
+objBgShow (12, 1)
+objBgShow (20, 1)
+objBgShow (21, 1)
+objBgShow (22, 1)
+objBgShow (30, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @7
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @8
+objGetPos (10, intA[1000], intA[1001])
+objGetDims (10, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @8
+intF[1006] = 0
+
+  @8
+goto_unless (intF[1006] == 99) @9
+objGetPos (11, intA[1000], intA[1001])
+objGetDims (11, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @9
+intF[1006] = 1
+
+  @9
+goto_unless (intF[1006] == 99) @10
+objGetPos (12, intA[1000], intA[1001])
+objGetDims (12, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @10
+intF[1006] = 2
+
+  @10
+goto_unless (!intF[1003]) @14
+goto_unless (intF[1006] != 99) @12
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @11
+
+  @11
+intF[1009] = 2
+goto @13
+
+  @12
+intF[1009] = 0
+
+  @13
+goto @24
+
+  @14
+goto_unless (intF[1003] == 1) @20
+goto_unless (intF[1008] != -1) @18
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @16
+goto_unless (intF[1009] != 3) @15
+
+  @15
+intF[1009] = 3
+goto @17
+
+  @16
+intF[1009] = 0
+
+  @17
+goto @19
+
+  @18
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @19
+goto @24
+
+  @20
+goto_unless (intF[1003] == 2) @24
+goto_unless (intF[1008] != -1) @23
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @21
+intF[1009] = 2
+intF[1012] = 1
+goto @22
+
+  @21
+intF[1009] = 0
+
+  @22
+intF[1008] = -1
+
+  @23
+FlushClick
+
+  @24
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @25
+intE[intF[1006]] = intF[1009]
+
+  @25
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+refresh
+goto_unless (intF[1012] == 1) @26
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @28
+goto @27
+
+  @26
+goto_unless (intF[1004] == 2) @27
+intF[1013] = 2
+goto @28
+
+  @27
+goto @7
+
+  @28
+goto_unless (!intF[1013]) @29
+jump (9034)
+goto @31
+
+  @29
+goto_unless (intF[1013] == 1) @30
+jump (9036)
+goto @31
+
+  @30
+goto_unless (intF[1013] == 2) @31
+objCopyFgToBg (0, 0)
+objCopyFgToBg (10, 0)
+objCopyFgToBg (11, 0)
+objCopyFgToBg (12, 0)
+objCopyFgToBg (20, 0)
+objCopyFgToBg (21, 0)
+objCopyFgToBg (22, 0)
+objCopyFgToBg (30, 0)
+objBgShow (0, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (20, 0)
+objBgShow (21, 0)
+objBgShow (22, 0)
+objBgShow (30, 1)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+
+  @31
+objDelete (0)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (20)
+objDelete (21)
+objDelete (22)
+objDelete (30)
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @32
+goto @36
+
+  @32
+goto_unless (intF[1013] == 1) @33
+goto @36
+
+  @33
+goto_unless (intF[1013] == 2) @36
+goto_unless (intG[1049] == 1) @35
+goto_unless (intG[1050] == 1) @34
+SetSkipAnimations (0)
+goto @35
+
+  @34
+goto_unless (!intG[1050]) @35
+SetSkipAnimations (1)
+
+  @35
+intG[1049] = 0
+intA[100] = 1
+jump (9032)
+
+  @36
+eof

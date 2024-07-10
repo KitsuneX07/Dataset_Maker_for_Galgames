@@ -1,0 +1,266 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9037.TXT'
+#resource 'SEEN9037.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objBgClear (0)
+objBgClear (10)
+objBgClear (11)
+objBgClear (12)
+objBgClear (20)
+objBgOfFile (0, 'S_NAME_BG00')
+objBgOfFile (10, 'S_NAME_BTN00')
+objBgOfFile (11, 'S_NAME_BTN01')
+objBgOfFile (12, 'S_NAME_BTN02')
+objBgOfFile (20, 'SIRO')
+objBgMove (0, 0, 0)
+objBgMove (10, 252, 318)
+objBgMove (11, 252, 417)
+objBgMove (12, 512, 35)
+objBgMove (20, 0, 0)
+objBgPattNo (0, 0)
+objBgPattNo (10, 0)
+objBgPattNo (11, 0)
+objBgPattNo (12, 0)
+objBgPattNo (20, 0)
+objBgShow (0, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (20, 0)
+grpBuffer ('S_NAME_AREA00', 2)
+objBgShow (0, 1)
+objBgShow (10, 1)
+objBgShow (11, 1)
+objBgShow (12, 1)
+objBgShow (20, 0)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+strS[0] = GetName (0)
+strS[1] = GetName (1)
+CreateInput (0, 155, 203, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+CreateInput (1, 345, 203, 136, 35, 36, 0, 0, 0, 255, 255, 255)
+SetInput (0, strS[1])
+SetInput (1, strS[0])
+FocusInput (0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @2
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @3
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 1) @3
+intF[1006] = 0
+
+  @3
+goto_unless (intF[1006] == 99) @4
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 2) @4
+intF[1006] = 1
+
+  @4
+goto_unless (intF[1006] == 99) @5
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 3) @5
+intF[1006] = 2
+
+  @5
+goto_unless (!intF[1003]) @9
+goto_unless (intF[1006] != 99) @7
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @6
+sePlay (10)
+
+  @6
+intF[1009] = 2
+goto @8
+
+  @7
+intF[1009] = 0
+
+  @8
+goto @19
+
+  @9
+goto_unless (intF[1003] == 1) @15
+goto_unless (intF[1008] != -1) @13
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @11
+goto_unless (intF[1009] != 3) @10
+sePlay (10)
+
+  @10
+intF[1009] = 3
+goto @12
+
+  @11
+intF[1009] = 0
+
+  @12
+goto @14
+
+  @13
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @14
+goto @19
+
+  @15
+goto_unless (intF[1003] == 2) @19
+goto_unless (intF[1008] != -1) @18
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @16
+intF[1009] = 2
+intF[1012] = 1
+goto @17
+
+  @16
+intF[1009] = 0
+
+  @17
+intF[1008] = -1
+
+  @18
+FlushClick
+
+  @19
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @20
+intE[intF[1006]] = intF[1009]
+
+  @20
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+refresh
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+intA[0] = strlen (strS[0])
+intA[1] = strlen (strS[1])
+intA[100] = 0
+goto_unless (!intA[0] || !intA[1]) @21
+intA[100] = 1
+
+  @21
+goto_unless (intF[1012] == 1) @27
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto_unless (!intF[1013]) @24
+goto_unless (intA[100] == 1) @22
+sePlay (20)
+goto @23
+
+  @22
+goto_unless (!intA[100]) @23
+goto @29
+
+  @23
+FlushClick
+goto @26
+
+  @24
+goto_unless (intF[1013] == 1) @25
+sePlay (13)
+SetInput (0, '相沢')
+SetInput (1, '祐一')
+FlushClick
+goto @26
+
+  @25
+goto @29
+
+  @26
+goto @28
+
+  @27
+goto_unless (intF[1004] == 2) @28
+intF[1013] = 2
+goto @29
+
+  @28
+goto @2
+
+  @29
+goto_unless (!intF[1013]) @30
+strS[0] = GetInput (0)
+strS[1] = GetInput (1)
+SetName (0, strS[1])
+SetName (1, strS[0])
+goto @32
+
+  @30
+goto_unless (intF[1013] == 1) @31
+goto @32
+
+  @31
+goto_unless (intF[1013] == 2) @32
+sePlay (13)
+
+  @32
+CloseInput (0)
+CloseInput (1)
+freeDC (2)
+objCopyFgToBg (0, 0)
+objCopyFgToBg (10, 0)
+objCopyFgToBg (11, 0)
+objCopyFgToBg (12, 0)
+objCopyFgToBg (20, 0)
+objBgShow (0, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (20, 1)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+objDelete (0)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (20)
+DrawAuto
+EnableSyscom
+goto_unless (!intF[1013]) @33
+goto @35
+
+  @33
+goto_unless (intF[1013] == 1) @34
+goto @35
+
+  @34
+goto_unless (intF[1013] == 2) @35
+
+  @35
+goto_unless (intG[1049] == 1) @37
+goto_unless (intG[1050] == 1) @36
+SetSkipAnimations (0)
+goto @37
+
+  @36
+goto_unless (!intG[1050]) @37
+SetSkipAnimations (1)
+
+  @37
+intG[1049] = 0
+intA[100] = 1
+jump (9032)
+eof

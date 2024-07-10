@@ -1,0 +1,81 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8514.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+DrawManual
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 358, 188, 611, 217, 358, 188)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 240, 77, 478, 127, 240, 77)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 27, 170, 208, 205, 27, 170)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 474, 262, 603, 295, 474, 262)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 123, 104, 186, 135, 123, 104)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 381, 332, 509, 366, 381, 332)
+gosub @1
+waitC (3000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+grpBuffer ('S_MAK2', 2, 124, 360, 195, 392, 124, 360)
+gosub @1
+waitC (4000)
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+gosub @1
+freeDC (1)
+freeDC (2)
+stackClear
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+DrawAuto
+EnableSyscom
+rtl
+
+  @1
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @2
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @3
+intF[1000] = 1
+FlushClick
+goto @4
+
+  @3
+intF[1000] = 0
+
+  @4
+goto_unless (intF[1000] == 1) @5
+intC[0] = 0
+intC[1] = 255
+
+  @5
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recCopy (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @6
+goto @7
+
+  @6
+goto @2
+
+  @7
+ret
+eof

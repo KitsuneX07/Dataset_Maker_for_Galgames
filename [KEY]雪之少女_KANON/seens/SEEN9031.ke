@@ -1,0 +1,233 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9031.TXT'
+#resource 'SEEN9031.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objClear (0)
+objClear (1)
+objClear (2)
+objOfFile (0, 'KEYLOGO')
+objDriftOfFile (1, 'SSNOW00')
+objDriftOfFile (2, 'SSNOW00')
+objMove (0, 0, 0)
+objMove (1, 0, 0)
+objMove (2, 0, 0)
+objPattNo (0, 0)
+objPattNo (1, 0)
+objPattNo (2, 1)
+objDriftOpts (1, 10, 0, 0, 0, 0, 4000, 3000, 1000, 1, 3, 14000, 150, 100, 490, 380)
+objDriftOpts (2, 10, 0, 1, 0, 0, 3000, 3000, 1000, 1, 3, 11000, 150, 100, 490, 380)
+objShow (0, 0)
+objShow (1, 0)
+objShow (2, 0)
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+refresh
+intA[0] = ScreenMode
+goto_unless (!intA[0]) @2
+wait (800)
+goto @3
+
+  @2
+goto_unless (intA[0] == 1) @3
+wait (200)
+
+  @3
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @4
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @5
+intF[1000] = 1
+FlushClick
+goto @6
+
+  @5
+intF[1000] = 0
+
+  @6
+goto_unless (intF[1000] == 1) @7
+intC[0] = 0
+intC[1] = 255
+
+  @7
+refresh
+goto_unless (!intC[0]) @8
+goto @9
+
+  @8
+goto @4
+
+  @9
+FlushClick
+intC[0] = 1200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @10
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @11
+intF[1000] = 1
+FlushClick
+goto @12
+
+  @11
+intF[1000] = 0
+
+  @12
+goto_unless (intF[1000] == 1) @13
+intC[0] = 0
+intC[1] = 255
+
+  @13
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @14
+goto @15
+
+  @14
+goto @10
+
+  @15
+FlushClick
+intC[0] = 200
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @16
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @17
+intF[1000] = 1
+FlushClick
+goto @18
+
+  @17
+intF[1000] = 0
+
+  @18
+goto_unless (intF[1000] == 1) @19
+intC[0] = 0
+intC[1] = 255
+
+  @19
+refresh
+goto_unless (!intC[0]) @20
+goto @21
+
+  @20
+goto @16
+
+  @21
+objShow (0, 1)
+objShow (1, 1)
+objShow (2, 1)
+FlushClick
+intC[0] = 5000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @22
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @23
+intF[1000] = 1
+FlushClick
+goto @24
+
+  @23
+intF[1000] = 0
+
+  @24
+goto_unless (intF[1000] == 1) @25
+intC[0] = 0
+intC[1] = 255
+
+  @25
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @26
+goto @27
+
+  @26
+goto @22
+
+  @27
+FlushClick
+intC[0] = 1000
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @28
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @29
+intF[1000] = 1
+FlushClick
+goto @30
+
+  @29
+intF[1000] = 0
+
+  @30
+goto_unless (intF[1000] == 1) @31
+intC[0] = 0
+intC[1] = 255
+
+  @31
+refresh
+goto_unless (!intC[0]) @32
+goto @33
+
+  @32
+goto @28
+
+  @33
+FlushClick
+intC[0] = 2800
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @34
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @35
+intF[1000] = 1
+FlushClick
+goto @36
+
+  @35
+intF[1000] = 0
+
+  @36
+goto_unless (intF[1000] == 1) @37
+intC[0] = 0
+intC[1] = 0
+
+  @37
+objAlpha (0, intC[1])
+objAlpha (1, intC[1])
+objAlpha (2, intC[1])
+refresh
+goto_unless (!intC[0]) @38
+goto @39
+
+  @38
+goto @34
+
+  @39
+waitC (2000)
+objDelete (0)
+objDelete (1)
+objDelete (2)
+DrawAuto
+EnableSyscom
+jump (9032)
+eof

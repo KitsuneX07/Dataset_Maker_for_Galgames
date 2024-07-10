@@ -1,0 +1,60 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN0316.TXT'
+#resource 'SEEN0316.utf'
+
+#kidoku_type 2
+#entrypoint 000
+intF[2] = 0
+title (#res<0000>)
+intF[3] = 31
+intA[1000] = 1611
+intA[1000] = 0
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+intF[1107] = 1
+strS[1000] = 'BG003b'
+goto_unless (intF[1107] == 1) @1
+intF[1107] = 0
+msgHide
+
+  @1
+stackClear
+grpBuffer (strS[1000], 2)
+objBgClear (84)
+op<1:060:00001, 0> (84)
+goto_unless (intF[2] == 1) @2
+strS[1004] = 'SDT01'
+strS[0] = itoa (intF[3], 2)
+strS[1004] += strS[0]
+objBgOfFile (84, strS[1004], 1)
+objBgMove (84, 8, 8)
+
+  @2
+grpMulti (2, 0)
+#res<0001>
+pause
+#res<0002>
+pause
+#res<0003>
+pause
+#res<0004>
+pause
+#res<0005>
+pause
+#res<0006>
+pause
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+intB[1611] = 1
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+bgmFadeOut (1200)
+jump (326)
+eof

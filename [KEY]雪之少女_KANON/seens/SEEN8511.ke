@@ -1,0 +1,258 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8511.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+HideCursor
+DrawManual
+goto_unless (!intF[1502]) @1
+msgHide
+waitC (2000)
+goto @2
+
+  @1
+goto_unless (intF[1502] == 1) @2
+
+  @2
+objClear (0)
+objOfFile (0, strS[1501])
+objMove (0, 100, 190)
+objPattNo (0, 0)
+objShow (0, 0)
+goto_unless (!intF[1502]) @3
+grpBuffer ('FGSR22', 1)
+goto @4
+
+  @3
+goto_unless (intF[1502] == 1) @4
+recCopy (0, 0, 640, 480, 0, 0, 0, 1)
+
+  @4
+FlushClick
+intC[0] = 3500
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @5
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @6
+intF[1000] = 1
+FlushClick
+goto @7
+
+  @6
+intF[1000] = 0
+
+  @7
+goto_unless (intF[1000] == 1) @8
+intC[0] = 0
+intC[1] = 0
+
+  @8
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @9
+goto @10
+
+  @9
+goto @5
+
+  @10
+freeDC (1)
+FlushClick
+intC[0] = 600
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @11
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @12
+intF[1000] = 1
+FlushClick
+goto @13
+
+  @12
+intF[1000] = 0
+
+  @13
+goto_unless (intF[1000] == 1) @14
+intC[0] = 0
+intC[1] = 255
+
+  @14
+refresh
+goto_unless (!intC[0]) @15
+goto @16
+
+  @15
+goto @11
+
+  @16
+objShow (0, 1)
+intA[100] = 0
+
+  @17
+goto_unless (intA[100] < intF[1503] - 1) @24
+objPattNo (0, intA[100])
+FlushClick
+intC[0] = 4600
+InitExFrames ({0, 0, 10000, intC[0]})
+
+  @18
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @19
+intF[1000] = 1
+FlushClick
+goto @20
+
+  @19
+intF[1000] = 0
+
+  @20
+goto_unless (intF[1000] == 1) @21
+intC[0] = 0
+intC[1] = 10000
+
+  @21
+intA[0] = index_series (intC[1], 0, 0, {0, 10000, 80})
+objAdjust (0, 0, 0, intA[0])
+intA[0] = index_series (intC[1], 0, 0, {0, 1000, 20}, {1000, 3000, 90}, {3000, 5000, 240}, {6500, 7000, 200}, {7000, 9000, 50}, {9000, 9800, 0})
+objAlpha (0, intA[0])
+refresh
+goto_unless (!intC[0]) @22
+goto @23
+
+  @22
+goto @18
+
+  @23
+intA[100] += 1
+goto @17
+
+  @24
+objMove (0, 100, 224)
+objAdjust (0, 0, 0, 0)
+objPattNo (0, intA[100])
+FlushClick
+intC[0] = 3000
+InitExFrames ({0, 0, 240, intC[0]})
+
+  @25
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @26
+intF[1000] = 1
+FlushClick
+goto @27
+
+  @26
+intF[1000] = 0
+
+  @27
+goto_unless (intF[1000] == 1) @28
+intC[0] = 0
+intC[1] = 240
+
+  @28
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @29
+goto @30
+
+  @29
+goto @25
+
+  @30
+goto_unless (!intF[1502]) @31
+waitC (2000)
+goto @32
+
+  @31
+goto_unless (intF[1502] == 1) @32
+waitC (5000)
+
+  @32
+goto_unless (!intF[1502]) @39
+grpBuffer ('FGSR22', 1)
+FlushClick
+intC[0] = 3500
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @33
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @34
+intF[1000] = 1
+FlushClick
+goto @35
+
+  @34
+intF[1000] = 0
+
+  @35
+goto_unless (intF[1000] == 1) @36
+intC[0] = 0
+intC[1] = 255
+
+  @36
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+refresh
+goto_unless (!intC[0]) @37
+goto @38
+
+  @37
+goto @33
+
+  @38
+freeDC (1)
+waitC (2000)
+goto @40
+
+  @39
+goto_unless (intF[1502] == 1) @40
+
+  @40
+FlushClick
+intC[0] = 3000
+InitExFrames ({0, 240, 0, intC[0]})
+
+  @41
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @42
+intF[1000] = 1
+FlushClick
+goto @43
+
+  @42
+intF[1000] = 0
+
+  @43
+goto_unless (intF[1000] == 1) @44
+intC[0] = 0
+intC[1] = 0
+
+  @44
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @45
+goto @46
+
+  @45
+goto @41
+
+  @46
+waitC (3000)
+objDelete (0)
+stackClear
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+DrawAuto
+ShowCursor
+EnableSyscom
+rtl
+eof

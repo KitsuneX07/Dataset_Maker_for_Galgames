@@ -1,0 +1,203 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN0259.TXT'
+#resource 'SEEN0259.utf'
+
+#kidoku_type 2
+#entrypoint 000
+intF[2] = 0
+title (#res<0000>)
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 0)
+farcall (9070, 0)
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+bgmLoop ('BGM11')
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 26)
+goto_unless (intF[310] == 1) @1
+intA[1000] = 1920
+intA[1000] = 0
+#res<0001>
+pause
+#res<0002>
+pause
+intB[1920] = 1
+
+  @1
+goto_unless (!intF[310]) @2
+intA[1000] = 1921
+intA[1000] = 0
+#res<0003>
+pause
+#res<0004>
+pause
+intB[1921] = 1
+
+  @2
+intA[1000] = 1922
+intA[1000] = 0
+#res<0005>
+pause
+#res<0006>
+pause
+#res<0007>
+pause
+#res<0008>
+pause
+#res<0009>
+pause
+msgHide
+intF[1107] = 1
+recOpenBg ('KURO', 0, 0, 640, 480, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+koePlay (2525000, 1)
+#res<0010>
+pause
+#res<0011>
+pause
+koePlay (2525001, 1)
+#res<0012>
+pause
+intF[1107] = 1
+strS[1000] = 'BG003b'
+goto_unless (intF[1107] == 1) @3
+intF[1107] = 0
+msgHide
+
+  @3
+stackClear
+grpBuffer (strS[1000], 2)
+objBgClear (84)
+op<1:060:00001, 0> (84)
+goto_unless (intF[2] == 1) @4
+strS[1004] = 'SDT01'
+strS[0] = itoa (intF[3], 2)
+strS[1004] += strS[0]
+objBgOfFile (84, strS[1004], 1)
+objBgMove (84, 8, 8)
+
+  @4
+grpMulti (2, 0)
+koePlay (2525002, 12)
+#res<0013>
+pause
+#res<0014>
+pause
+#res<0015>
+pause
+#res<0016>
+pause
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+#res<0020>
+pause
+#res<0021>
+pause
+#res<0022>
+pause
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG050', 26)
+koePlay (2525003, 1)
+#res<0023>
+pause
+#res<0024>
+pause
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+koePlay (2525004, 1)
+#res<0028>
+pause
+#res<0029>
+pause
+koePlay (2525005, 12)
+#res<0030>
+pause
+#res<0031>
+pause
+#res<0032>
+pause
+#res<0033>
+pause
+#res<0034>
+pause
+koePlay (2525006, 1)
+#res<0035>
+pause
+#res<0036>
+pause
+#res<0037>
+pause
+koePlay (2525007, 12)
+#res<0038>
+pause
+#res<0039>
+pause
+#res<0040>
+pause
+#res<0041>
+pause
+#res<0042>
+pause
+koePlay (2525008, 1)
+#res<0043>
+pause
+#res<0044>
+pause
+koePlay (2525009, 12)
+#res<0045>
+pause
+#res<0046>
+pause
+#res<0047>
+pause
+#res<0048>
+pause
+koePlay (2525010, 1)
+#res<0049>
+pause
+#res<0050>
+pause
+#res<0051>
+pause
+#res<0052>
+pause
+#res<0053>
+pause
+koePlay (2525011, 1)
+#res<0054>
+pause
+koePlay (2525012, 12)
+#res<0055>
+pause
+koePlay (2525013, 1)
+#res<0056>
+pause
+#res<0057>
+pause
+#res<0058>
+pause
+intB[1922] = 1
+bgmFadeOut (1200)
+msgHide
+intF[1107] = 1
+grpOpenBg ('SIRO', 26)
+bgmLoop ('BGM21')
+intF[1500] = 1
+strS[1500] = 'S_OP98'
+intF[1501] = 5
+farcall (8501, 0)
+wait (3000)
+ReturnMenu
+eof

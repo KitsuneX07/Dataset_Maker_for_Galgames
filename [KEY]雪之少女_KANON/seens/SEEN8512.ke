@@ -1,0 +1,103 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN8512.TXT'
+
+#kidoku_type 2
+#entrypoint 000
+HideSyscom
+DrawManual
+msgHide
+intF[1107] = 1
+grpOpenBg ('BG004N_2', 26)
+intA[100] = 0
+
+  @1
+goto_unless (intA[100] < 15) @2
+objClear (intA[100])
+objOfFile (intA[100], 'S_NAY1')
+objMove (intA[100], 0, 32 * intA[100])
+objPattNo (intA[100], intA[100])
+objShow (intA[100], 0)
+intA[100] += 1
+goto @1
+
+  @2
+waitC (800)
+intA[100] = 0
+
+  @3
+goto_unless (intA[100] < 15) @13
+intA[101] = 0
+
+  @4
+goto_unless (intA[101] < 15) @5
+objCopyFgToBg (intA[101])
+intA[101] += 1
+goto @4
+
+  @5
+objBgShow (intA[100], 1)
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @6
+intG[1050] = 1
+goto @7
+
+  @6
+goto_unless (intA[1000] == 1) @7
+intG[1050] = 0
+
+  @7
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @8
+intF[1017] = 1
+goto @9
+
+  @8
+goto_unless (intA[1000] == 1) @9
+intF[1017] = 0
+
+  @9
+SetSkipAnimations (0)
+goto @10
+goto @10
+SetSkipAnimations (1)
+
+  @10
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 4200, 120, 2, 0, 16, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @12
+goto_unless (intG[1050] == 1) @11
+SetSkipAnimations (0)
+goto @12
+
+  @11
+goto_unless (!intG[1050]) @12
+SetSkipAnimations (1)
+
+  @12
+intG[1049] = 0
+waitC (1400)
+intA[100] += 1
+goto @3
+
+  @13
+waitC (500)
+msgHide
+intF[1107] = 1
+grpMulti ('FGNY09', 105, copy('S_NAY1', 0))
+waitC (1000)
+intA[100] = 0
+
+  @14
+goto_unless (intA[100] < 15) @15
+objDelete (intA[100])
+intA[100] += 1
+goto @14
+
+  @15
+DrawAuto
+EnableSyscom
+rtl
+eof

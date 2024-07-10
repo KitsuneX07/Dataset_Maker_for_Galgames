@@ -1,0 +1,807 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9032.TXT'
+#resource 'SEEN9032.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+DrawManual
+title (#res<0000>)
+op<1:Sys:00300, 0>
+op<1:Sys:01231, 0>
+op<1:Sys:03503, 0>
+stackClear
+HideSyscom (25)
+HideSyscom (27)
+HideSyscom (26)
+HideSyscom (31)
+HideSyscom (0)
+HideSyscom (1)
+HideSyscom (14)
+HideSyscom (28)
+HideSyscom (29)
+SetAutoMode (0)
+objBgClear (0)
+objBgClear (1)
+objBgClear (2)
+objBgClear (10)
+objBgClear (11)
+objBgClear (12)
+objBgClear (13)
+objBgClear (14)
+objBgClear (15)
+objBgClear (20)
+goto_unless (!intG[2]) @2
+objBgOfFile (0, 'SIRO')
+objBgOfFile (1, 'S_TT_BG00')
+objBgOfFile (2, 'S_TT_BG01')
+objBgOfFile (10, 'S_TT_BTN00')
+objBgOfFile (11, 'S_TT_BTN01')
+objBgOfFile (12, 'S_TT_BTN02')
+objBgOfFile (14, 'S_TT_BTN04')
+objBgOfFile (20, 'SIRO')
+goto @3
+
+  @2
+goto_unless (intG[2] == 1) @3
+objBgOfFile (0, 'SIRO')
+objBgOfFile (1, 'S_TT_BG00')
+objBgOfFile (2, 'S_TT_BG01')
+objBgOfFile (10, 'S_TT_BTN10')
+objBgOfFile (11, 'S_TT_BTN11')
+objBgOfFile (12, 'S_TT_BTN12')
+objBgOfFile (13, 'S_TT_BTN13')
+objBgOfFile (14, 'S_TT_BTN14')
+objBgOfFile (15, 'S_TT_BTN15')
+objBgOfFile (20, 'SIRO')
+
+  @3
+goto_unless (!intG[2]) @4
+objBgMove (0, 0, 0)
+objBgMove (1, 0, 0)
+objBgMove (2, 0, 0)
+objBgMove (10, 205, 235)
+objBgMove (11, 205, 286)
+objBgMove (12, 205, 337)
+objBgMove (13, 0, 0)
+objBgMove (14, 205, 388)
+objBgMove (15, 0, 0)
+objBgMove (20, 0, 0)
+goto @5
+
+  @4
+goto_unless (intG[2] == 1) @5
+objBgMove (0, 0, 0)
+objBgMove (1, 0, 0)
+objBgMove (2, 0, 0)
+objBgMove (10, 205, 210)
+objBgMove (11, 205, 261)
+objBgMove (12, 205, 312)
+objBgMove (13, 205, 363)
+objBgMove (14, 205, 414)
+objBgMove (15, 539, 450)
+objBgMove (20, 0, 0)
+
+  @5
+objBgPattNo (0, 0)
+objBgPattNo (1, 0)
+objBgPattNo (2, 0)
+objBgPattNo (10, 0)
+objBgPattNo (11, 0)
+objBgPattNo (12, 0)
+objBgPattNo (13, 0)
+objBgPattNo (14, 0)
+objBgPattNo (15, 0)
+objBgPattNo (20, 0)
+objBgShow (0, 0)
+objBgShow (1, 0)
+objBgShow (2, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+objBgShow (20, 0)
+objBgShow (0, 0)
+objBgShow (1, 0)
+objBgShow (2, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+objBgShow (20, 0)
+objBgShow (0, 1)
+goto_unless (intA[100] == 1) @13
+intA[100] = 0
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @6
+intG[1050] = 1
+goto @7
+
+  @6
+goto_unless (intA[1000] == 1) @7
+intG[1050] = 0
+
+  @7
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @8
+intF[1017] = 1
+goto @9
+
+  @8
+goto_unless (intA[1000] == 1) @9
+intF[1017] = 0
+
+  @9
+SetSkipAnimations (0)
+goto @10
+goto @10
+SetSkipAnimations (1)
+
+  @10
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @12
+goto_unless (intG[1050] == 1) @11
+SetSkipAnimations (0)
+goto @12
+
+  @11
+goto_unless (!intG[1050]) @12
+SetSkipAnimations (1)
+
+  @12
+intG[1049] = 0
+EnableSyscom
+goto @21
+
+  @13
+goto_unless (!intA[100]) @21
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @14
+intG[1050] = 1
+goto @15
+
+  @14
+goto_unless (intA[1000] == 1) @15
+intG[1050] = 0
+
+  @15
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @16
+intF[1017] = 1
+goto @17
+
+  @16
+goto_unless (intA[1000] == 1) @17
+intF[1017] = 0
+
+  @17
+SetSkipAnimations (0)
+goto @18
+goto @18
+SetSkipAnimations (1)
+
+  @18
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @20
+goto_unless (intG[1050] == 1) @19
+SetSkipAnimations (0)
+goto @20
+
+  @19
+goto_unless (!intG[1050]) @20
+SetSkipAnimations (1)
+
+  @20
+intG[1049] = 0
+EnableSyscom
+
+  @21
+bgmLoop ('BGM11')
+objCopyFgToBg (0)
+objCopyFgToBg (1)
+objCopyFgToBg (2)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (20)
+objBgShow (2, 1)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @22
+intG[1050] = 1
+goto @23
+
+  @22
+goto_unless (intA[1000] == 1) @23
+intG[1050] = 0
+
+  @23
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @24
+intF[1017] = 1
+goto @25
+
+  @24
+goto_unless (intA[1000] == 1) @25
+intF[1017] = 0
+
+  @25
+SetSkipAnimations (0)
+goto @26
+goto @26
+SetSkipAnimations (1)
+
+  @26
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 249, 0, 0, 2200, 120, 0, 0, 16, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @28
+goto_unless (intG[1050] == 1) @27
+SetSkipAnimations (0)
+goto @28
+
+  @27
+goto_unless (!intG[1050]) @28
+SetSkipAnimations (1)
+
+  @28
+intG[1049] = 0
+EnableSyscom
+objCopyFgToBg (0)
+objCopyFgToBg (1)
+objCopyFgToBg (2)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (20)
+objBgShow (0, 0)
+objBgShow (1, 1)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @29
+intG[1050] = 1
+goto @30
+
+  @29
+goto_unless (intA[1000] == 1) @30
+intG[1050] = 0
+
+  @30
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @31
+intF[1017] = 1
+goto @32
+
+  @31
+goto_unless (intA[1000] == 1) @32
+intF[1017] = 0
+
+  @32
+SetSkipAnimations (0)
+goto @33
+goto @33
+SetSkipAnimations (1)
+
+  @33
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 1500, 50, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @35
+goto_unless (intG[1050] == 1) @34
+SetSkipAnimations (0)
+goto @35
+
+  @34
+goto_unless (!intG[1050]) @35
+SetSkipAnimations (1)
+
+  @35
+intG[1049] = 0
+EnableSyscom
+HideSyscom
+waitC (900)
+EnableSyscom
+objCopyFgToBg (0)
+objCopyFgToBg (1)
+objCopyFgToBg (2)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (20)
+objBgShow (10, 1)
+objBgShow (11, 1)
+objBgShow (12, 1)
+objBgShow (13, 1)
+objBgShow (14, 1)
+objBgShow (15, 1)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @36
+intG[1050] = 1
+goto @37
+
+  @36
+goto_unless (intA[1000] == 1) @37
+intG[1050] = 0
+
+  @37
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @38
+intF[1017] = 1
+goto @39
+
+  @38
+goto_unless (intA[1000] == 1) @39
+intF[1017] = 0
+
+  @39
+SetSkipAnimations (0)
+goto @40
+goto @40
+SetSkipAnimations (1)
+
+  @40
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 1800, 120, 0, 0, 16, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @42
+goto_unless (intG[1050] == 1) @41
+SetSkipAnimations (0)
+goto @42
+
+  @41
+goto_unless (!intG[1050]) @42
+SetSkipAnimations (1)
+
+  @42
+intG[1049] = 0
+EnableSyscom
+
+  @43
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @44
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @45
+objGetPos (10, intA[1000], intA[1001])
+objGetDims (10, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @45
+intF[1006] = 0
+
+  @45
+goto_unless (intF[1006] == 99) @46
+objGetPos (11, intA[1000], intA[1001])
+objGetDims (11, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @46
+intF[1006] = 1
+
+  @46
+goto_unless (intF[1006] == 99) @47
+objGetPos (12, intA[1000], intA[1001])
+objGetDims (12, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @47
+intF[1006] = 2
+
+  @47
+goto_unless (intF[1006] == 99) @48
+objGetPos (13, intA[1000], intA[1001])
+objGetDims (13, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @48
+goto_unless (intG[2] == 1) @48
+intF[1006] = 3
+
+  @48
+goto_unless (intF[1006] == 99) @49
+objGetPos (14, intA[1000], intA[1001])
+objGetDims (14, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @49
+intF[1006] = 4
+
+  @49
+goto_unless (intF[1006] == 99) @50
+objGetPos (15, intA[1000], intA[1001])
+objGetDims (15, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @50
+goto_unless (intG[2] == 1) @50
+intF[1006] = 5
+
+  @50
+goto_unless (!intF[1003]) @54
+goto_unless (intF[1006] != 99) @52
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @51
+
+  @51
+intF[1009] = 2
+goto @53
+
+  @52
+intF[1009] = 0
+
+  @53
+goto @64
+
+  @54
+goto_unless (intF[1003] == 1) @60
+goto_unless (intF[1008] != -1) @58
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @56
+goto_unless (intF[1009] != 3) @55
+
+  @55
+intF[1009] = 3
+goto @57
+
+  @56
+intF[1009] = 0
+
+  @57
+goto @59
+
+  @58
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @59
+goto @64
+
+  @60
+goto_unless (intF[1003] == 2) @64
+goto_unless (intF[1008] != -1) @63
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @61
+intF[1009] = 2
+intF[1012] = 1
+goto @62
+
+  @61
+intF[1009] = 0
+
+  @62
+intF[1008] = -1
+
+  @63
+FlushClick
+
+  @64
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @65
+intE[intF[1006]] = intF[1009]
+
+  @65
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+objPattNo (13, intE[3])
+objPattNo (14, intE[4])
+objPattNo (15, intE[5])
+refresh
+goto_unless (intF[1012] == 1) @69
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto_unless (intF[1013] == 5) @67
+sePlay (11)
+FlushClick
+intA[0] = ScreenMode
+goto_unless (!intA[0]) @66
+SetScreenMode (1)
+wait (500)
+
+  @66
+shell ('sys\\kanon_se_rev.html')
+wait (1000)
+goto @68
+
+  @67
+goto @71
+
+  @68
+goto @70
+
+  @69
+goto_unless (intF[1004] == 2) @70
+FlushClick
+
+  @70
+goto @44
+
+  @71
+goto_unless (!intF[1013]) @79
+bgmFadeOut (3000)
+objCopyFgToBg (0)
+objCopyFgToBg (1)
+objCopyFgToBg (2)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (20)
+objBgShow (0, 0)
+objBgShow (1, 0)
+objBgShow (2, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+objBgShow (20, 1)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @72
+intG[1050] = 1
+goto @73
+
+  @72
+goto_unless (intA[1000] == 1) @73
+intG[1050] = 0
+
+  @73
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @74
+intF[1017] = 1
+goto @75
+
+  @74
+goto_unless (intA[1000] == 1) @75
+intF[1017] = 0
+
+  @75
+SetSkipAnimations (0)
+goto @76
+goto @76
+SetSkipAnimations (1)
+
+  @76
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 1500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @78
+goto_unless (intG[1050] == 1) @77
+SetSkipAnimations (0)
+goto @78
+
+  @77
+goto_unless (!intG[1050]) @78
+SetSkipAnimations (1)
+
+  @78
+intG[1049] = 0
+EnableSyscom
+waitC (3000)
+op<1:Sys:00300, 0>
+op<1:Sys:01231, 0>
+op<1:Sys:03503, 0>
+stackClear
+EnableSyscom (25)
+EnableSyscom (27)
+EnableSyscom (26)
+EnableSyscom (31)
+EnableSyscom (0)
+EnableSyscom (1)
+EnableSyscom (14)
+EnableSyscom (28)
+EnableSyscom (29)
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+goto @101
+
+  @79
+goto_unless (intF[1013] == 1) @80
+menu_load
+goto @43
+goto @101
+
+  @80
+goto_unless (intF[1013] == 2) @86
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @81
+intG[1050] = 1
+goto @82
+
+  @81
+goto_unless (intA[1000] == 1) @82
+intG[1050] = 0
+
+  @82
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @83
+intF[1017] = 1
+goto @84
+
+  @83
+goto_unless (intA[1000] == 1) @84
+intF[1017] = 0
+
+  @84
+SetSkipAnimations (0)
+goto @85
+goto @85
+SetSkipAnimations (1)
+
+  @85
+bgmFadeOut (3000)
+jump (9037)
+goto @101
+
+  @86
+goto_unless (intF[1013] == 3) @92
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @87
+intG[1050] = 1
+goto @88
+
+  @87
+goto_unless (intA[1000] == 1) @88
+intG[1050] = 0
+
+  @88
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @89
+intF[1017] = 1
+goto @90
+
+  @89
+goto_unless (intA[1000] == 1) @90
+intF[1017] = 0
+
+  @90
+SetSkipAnimations (0)
+goto @91
+goto @91
+SetSkipAnimations (1)
+
+  @91
+bgmFadeOut (3000)
+jump (9033)
+goto @101
+
+  @92
+goto_unless (intF[1013] == 4) @100
+bgmFadeOut (3000)
+objCopyFgToBg (0)
+objCopyFgToBg (1)
+objCopyFgToBg (2)
+objCopyFgToBg (10)
+objCopyFgToBg (11)
+objCopyFgToBg (12)
+objCopyFgToBg (13)
+objCopyFgToBg (14)
+objCopyFgToBg (15)
+objCopyFgToBg (20)
+objBgShow (0, 0)
+objBgShow (1, 0)
+objBgShow (2, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+objBgShow (20, 0)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @93
+intG[1050] = 1
+goto @94
+
+  @93
+goto_unless (intA[1000] == 1) @94
+intG[1050] = 0
+
+  @94
+intG[1049] = 1
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @95
+intF[1017] = 1
+goto @96
+
+  @95
+goto_unless (intA[1000] == 1) @96
+intF[1017] = 0
+
+  @96
+SetSkipAnimations (0)
+goto @97
+goto @97
+SetSkipAnimations (1)
+
+  @97
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 1500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+goto_unless (intG[1049] == 1) @99
+goto_unless (intG[1050] == 1) @98
+SetSkipAnimations (0)
+goto @99
+
+  @98
+goto_unless (!intG[1050]) @99
+SetSkipAnimations (1)
+
+  @99
+intG[1049] = 0
+EnableSyscom
+waitC (2000)
+end
+goto @101
+
+  @100
+goto_unless (intF[1013] == 5) @101
+
+  @101
+objDelete (0)
+objDelete (1)
+objDelete (2)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (13)
+objDelete (14)
+objDelete (15)
+objDelete (20)
+DrawAuto
+goto_unless (!intF[1013]) @102
+jump (50)
+goto @107
+
+  @102
+goto_unless (intF[1013] == 1) @103
+goto @107
+
+  @103
+goto_unless (intF[1013] == 2) @104
+goto @107
+
+  @104
+goto_unless (intF[1013] == 3) @105
+goto @107
+
+  @105
+goto_unless (intF[1013] == 4) @106
+goto @107
+
+  @106
+goto_unless (intF[1013] == 5) @107
+
+  @107
+eof

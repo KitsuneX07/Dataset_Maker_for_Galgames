@@ -1,0 +1,309 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9034.TXT'
+#resource 'SEEN9034.utf'
+
+#kidoku_type 2
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+title (#res<0000>)
+objBgClear (0)
+objBgClear (1)
+objBgClear (10)
+objBgClear (11)
+objBgClear (12)
+objBgClear (13)
+objBgClear (14)
+objBgClear (15)
+objBgOfFile (0, 'S_CSEL_BG00')
+objBgOfFile (1, 'SIRO')
+objBgOfFile (10, 'S_CSEL_BTN00')
+objBgOfFile (11, 'S_CSEL_BTN01')
+objBgOfFile (12, 'S_CSEL_BTN02')
+objBgOfFile (13, 'S_CSEL_BTN03')
+objBgOfFile (14, 'S_CSEL_BTN04')
+objBgOfFile (15, 'S_CSEL_BTN05')
+objBgMove (0, 0, 0)
+objBgMove (1, 0, 0)
+objBgMove (10, 17, 68)
+objBgMove (11, 140, 68)
+objBgMove (12, 263, 68)
+objBgMove (13, 386, 68)
+objBgMove (14, 509, 68)
+objBgMove (15, 550, 16)
+objBgPattNo (0, 0)
+objBgPattNo (1, 0)
+objBgPattNo (10, 0)
+objBgPattNo (11, 0)
+objBgPattNo (12, 0)
+objBgPattNo (13, 0)
+objBgPattNo (14, 0)
+objBgPattNo (15, 0)
+objBgShow (0, 0)
+objBgShow (1, 0)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+grpBuffer ('S_CSEL_AREA00', 2)
+objBgShow (0, 1)
+objBgShow (1, 0)
+objBgShow (10, 1)
+objBgShow (11, 1)
+objBgShow (12, 1)
+objBgShow (13, 1)
+objBgShow (14, 1)
+objBgShow (15, 1)
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+intF[1006] = 99
+intF[1007] = intF[1006]
+intF[1008] = -1
+intF[1009] = 0
+intF[1010] = 0
+intF[1011] = 0
+intF[1012] = 0
+intF[1013] = 0
+setrng_stepped (intE[0], 1, 30, 0)
+FlushClick
+
+  @2
+GetCursorPos (intF[1001], intF[1002], intF[1003], intF[1004])
+intF[1007] = intF[1006]
+intF[1006] = 99
+goto_unless (intF[1006] == 99) @3
+objGetPos (10, intA[1000], intA[1001])
+objGetDims (10, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @3
+intF[1006] = 0
+
+  @3
+goto_unless (intF[1006] == 99) @4
+objGetPos (11, intA[1000], intA[1001])
+objGetDims (11, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @4
+intF[1006] = 1
+
+  @4
+goto_unless (intF[1006] == 99) @5
+objGetPos (12, intA[1000], intA[1001])
+objGetDims (12, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @5
+intF[1006] = 2
+
+  @5
+goto_unless (intF[1006] == 99) @6
+objGetPos (13, intA[1000], intA[1001])
+objGetDims (13, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @6
+intF[1006] = 3
+
+  @6
+goto_unless (intF[1006] == 99) @7
+objGetPos (14, intA[1000], intA[1001])
+objGetDims (14, intA[1002], intA[1003], 4)
+goto_unless (intA[1000] <= intF[1001] && intF[1001] <= intA[1000] + intA[1002] && intA[1001] <= intF[1002] && intF[1002] <= intA[1001] + intA[1003]) @7
+intF[1006] = 4
+
+  @7
+goto_unless (intF[1006] == 99) @8
+GetDCPixel (intF[1001], intF[1002], 2, intA[0], intA[1], intA[2])
+goto_unless (intA[0] == 1) @8
+intF[1006] = 5
+
+  @8
+goto_unless (!intF[1003]) @12
+goto_unless (intF[1006] != 99) @10
+goto_unless (intF[1009] != 2 || intF[1006] != intF[1007]) @9
+
+  @9
+intF[1009] = 2
+goto @11
+
+  @10
+intF[1009] = 0
+
+  @11
+goto @22
+
+  @12
+goto_unless (intF[1003] == 1) @18
+goto_unless (intF[1008] != -1) @16
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @14
+goto_unless (intF[1009] != 3) @13
+
+  @13
+intF[1009] = 3
+goto @15
+
+  @14
+intF[1009] = 0
+
+  @15
+goto @17
+
+  @16
+intF[1009] = 3
+intF[1008] = intF[1006]
+
+  @17
+goto @22
+
+  @18
+goto_unless (intF[1003] == 2) @22
+goto_unless (intF[1008] != -1) @21
+goto_unless (intF[1006] == intF[1008] && intF[1006] != 99) @19
+intF[1009] = 2
+intF[1012] = 1
+goto @20
+
+  @19
+intF[1009] = 0
+
+  @20
+intF[1008] = -1
+
+  @21
+FlushClick
+
+  @22
+setrng_stepped (intE[0], 1, 30, 0)
+goto_unless (intF[1006] != 99) @23
+intE[intF[1006]] = intF[1009]
+
+  @23
+objPattNo (10, intE[0])
+objPattNo (11, intE[1])
+objPattNo (12, intE[2])
+objPattNo (13, intE[3])
+objPattNo (14, intE[4])
+objPattNo (15, intE[5])
+refresh
+goto_unless (intF[1012] == 1) @24
+intF[1012] = 0
+intF[1013] = intF[1006]
+goto @26
+goto @25
+
+  @24
+goto_unless (intF[1004] == 2) @25
+intF[1013] = 5
+goto @26
+
+  @25
+goto @2
+
+  @26
+goto_unless (0 <= intF[1013] && intF[1013] <= 4) @27
+goto @28
+
+  @27
+goto_unless (intF[1013] == 5) @28
+
+  @28
+freeDC (2)
+goto_unless (0 <= intF[1013] && intF[1013] <= 4) @35
+objCopyFgToBg (0, 0)
+objCopyFgToBg (1, 0)
+objCopyFgToBg (10, 0)
+objCopyFgToBg (11, 0)
+objCopyFgToBg (12, 0)
+objCopyFgToBg (13, 0)
+objCopyFgToBg (14, 0)
+objCopyFgToBg (15, 0)
+objBgShow (0, 0)
+objBgShow (1, 1)
+objBgShow (10, 0)
+objBgShow (11, 0)
+objBgShow (12, 0)
+objBgShow (13, 0)
+objBgShow (14, 0)
+objBgShow (15, 0)
+goto_case intF[1013] { 0: @29; 1: @30; 2: @31; 3: @32; 4: @33; _: @34 }
+
+  @29
+objBgShow (10, 1)
+goto @34
+
+  @30
+objBgShow (11, 1)
+goto @34
+
+  @31
+objBgShow (12, 1)
+goto @34
+
+  @32
+objBgShow (13, 1)
+goto @34
+
+  @33
+objBgShow (14, 1)
+goto @34
+
+  @34
+msgHide
+intF[1107] = 1
+grpOpenBg ('?', 0, 0, 639, 479, 0, 0, 500, 0, 0, 0, 0, 0, 0, 0, 255, 0)
+goto @36
+
+  @35
+goto_unless (intF[1013] == 5) @36
+
+  @36
+goto_unless (0 <= intF[1013] && intF[1013] <= 4) @43
+goto_case intF[1013] { 0: @37; 1: @38; 2: @39; 3: @40; 4: @41; _: @42 }
+
+  @37
+intA[100] = 0
+intA[200] = 0
+goto @42
+
+  @38
+intA[100] = 1
+intA[200] = 0
+goto @42
+
+  @39
+intA[100] = 2
+intA[200] = 0
+goto @42
+
+  @40
+intA[100] = 3
+intA[200] = 0
+goto @42
+
+  @41
+intA[100] = 4
+intA[200] = 0
+goto @42
+
+  @42
+jump (9035)
+goto @44
+
+  @43
+goto_unless (intF[1013] == 5) @44
+jump (9033)
+
+  @44
+objDelete (0)
+objDelete (1)
+objDelete (10)
+objDelete (11)
+objDelete (12)
+objDelete (13)
+objDelete (14)
+objDelete (15)
+DrawAuto
+EnableSyscom
+jump (9033)
+eof
