@@ -1,0 +1,314 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN1508.TXT'
+#resource 'SEEN1508.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 5
+intF[1110] = 8
+intF[1111] = 4
+intF[1112] = 0
+strS[1004] = 'SDTA0508'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+Savepoint
+farcall (9053, 0)
+strS[1000] = 'KURO'
+goto @3
+goto @2
+strS[1000] = 'SIRO'
+goto @3
+
+  @2
+strS[1000] = 'KURO'
+
+  @3
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+strS[1000] = 'BG033A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @4
+strclear (strS[1000])
+
+  @4
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM15')
+intZ[520] = 1
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGNG10'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+strS[1901] = GetLocalName (4)
+strcmp (strS[1901], '岡崎さん')
+abs (store)
+koePlay (707043 + store)
+#res<0001>
+strS[0] = GetLocalName (4)
+intA[1000] = strcmp (strS[0], '岡崎さん')
+intA[1001] = strcmp (strS[0], '朋也くん')
+goto_unless (!intA[1000]) @5
+strS[0] = GetName (0)
+strS[0] += 'さん'
+goto @6
+
+  @5
+goto_unless (!intA[1001]) @6
+strS[0] = GetName (1)
+strS[0] += 'くん'
+
+  @6
+'' 
+#res<0002>
+pause
+#res<0003>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGNG17'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+strS[1901] = GetLocalName (4)
+strcmp (strS[1901], '岡崎さん')
+abs (store)
+koePlay (707045 + store)
+#res<0004>
+strS[0] = GetLocalName (4)
+intA[1000] = strcmp (strS[0], '岡崎さん')
+intA[1001] = strcmp (strS[0], '朋也くん')
+goto_unless (!intA[1000]) @7
+strS[0] = GetName (0)
+strS[0] += 'さん'
+goto @8
+
+  @7
+goto_unless (!intA[1001]) @8
+strS[0] = GetName (1)
+strS[0] += 'くん'
+
+  @8
+'' 
+#res<0005>
+pause
+#res<0006>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGNG10'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (707047)
+#res<0007>
+pause
+koePlay (707048)
+#res<0008>
+pause
+#res<0009>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGNG23'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (707049)
+#res<0010>
+pause
+#res<0011>
+pause
+strS[1000] = 'KURO'
+goto @10
+goto @9
+strS[1000] = 'SIRO'
+goto @10
+
+  @9
+strS[1000] = 'KURO'
+
+  @10
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+strS[1000] = 'BG017'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @11
+strclear (strS[1000])
+
+  @11
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 2
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0012>
+pause
+#res<0013>
+pause
+#res<0014>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGFU40'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0015>
+pause
+koePlay (707050)
+#res<0016>
+pause
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+#res<0020>
+pause
+#res<0021>
+pause
+#res<0022>
+pause
+#res<0023>
+pause
+#res<0024>
+pause
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+#res<0028>
+pause
+bgmFadeOut (3000)
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @12
+strclear (strS[1000])
+
+  @12
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+jump (1511)
+eof

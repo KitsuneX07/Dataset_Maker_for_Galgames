@@ -1,0 +1,97 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN4999.TXT'
+#resource 'SEEN4999.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 0
+intF[1110] = 0
+intF[1111] = 1
+intF[1112] = 0
+strS[1004] = 'SDTA4999'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+wait (2000)
+bgmLoop ('BGM15')
+intZ[520] = 1
+strS[1000] = 'BG023'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @2
+strclear (strS[1000])
+
+  @2
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0001>
+pause
+#res<0002>
+pause
+#res<0003>
+pause
+#res<0004>
+pause
+#res<0005>
+pause
+#res<0006>
+pause
+#res<0007>
+pause
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @3
+strclear (strS[1000])
+
+  @3
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0008>
+pause
+#res<0009>
+pause
+#res<0010>
+pause
+wait (500)
+msgHide
+bgmFadeOut (3000)
+wait (5000)
+wait (2000)
+intG[1004] = 0
+intG[1005] = 0
+intG[1006] = 0
+ReturnMenu
+eof

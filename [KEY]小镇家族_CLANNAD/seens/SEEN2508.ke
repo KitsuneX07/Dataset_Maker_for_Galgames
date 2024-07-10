@@ -1,0 +1,812 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN2508.TXT'
+#resource 'SEEN2508.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 5
+intF[1110] = 8
+intF[1111] = 4
+intF[1112] = 1
+strS[1004] = 'SDTA0508'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+Savepoint
+farcall (9053, 0)
+strS[1000] = 'KURO'
+goto @3
+goto @2
+strS[1000] = 'SIRO'
+goto @3
+
+  @2
+strS[1000] = 'KURO'
+
+  @3
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0001>
+pause
+strS[1000] = 'BG021D'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @4
+strclear (strS[1000])
+
+  @4
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM18A')
+intZ[529] = 1
+#res<0002>
+pause
+#res<0003>
+pause
+goto_unless (!intF[221] && !intF[222]) @6
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM22'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111100)
+#res<0004>
+pause
+koePlay (1111101)
+#res<0005>
+pause
+koePlay (1111102)
+#res<0006>
+pause
+#res<0007>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM32'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111103)
+#res<0008>
+pause
+koePlay (1111104)
+#res<0009>
+pause
+#res<0010>
+pause
+koePlay (1111105)
+#res<0011>
+pause
+koePlay (1111106)
+#res<0012>
+pause
+koePlay (1111107)
+#res<0013>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM31H'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111108)
+#res<0014>
+pause
+koePlay (1111109)
+#res<0015>
+pause
+koePlay (1111110)
+#res<0016>
+pause
+koePlay (1111111)
+#res<0017>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111112)
+#res<0018>
+pause
+#res<0019>
+pause
+strS[1000] = 'FGTM03A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @5
+strclear (strS[1000])
+
+  @5
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0020>
+pause
+#res<0021>
+pause
+bgmFadeOut (3000)
+#res<0022>
+pause
+#res<0023>
+pause
+#res<0024>
+pause
+bgmLoop ('BGM18B')
+intZ[530] = 1
+#res<0025>
+pause
+#res<0026>
+pause
+#res<0027>
+pause
+#res<0028>
+pause
+#res<0029>
+pause
+koePlay (1111113)
+#res<0030>
+pause
+#res<0031>
+pause
+koePlay (1111114)
+#res<0032>
+pause
+#res<0033>
+pause
+#res<0034>
+pause
+koePlay (1111115)
+#res<0035>
+pause
+#res<0036>
+pause
+koePlay (1111116)
+#res<0037>
+pause
+koePlay (1111117)
+#res<0038>
+pause
+koePlay (1111118)
+#res<0039>
+pause
+koePlay (1111119)
+#res<0040>
+pause
+koePlay (1111120)
+#res<0041>
+pause
+#res<0042>
+pause
+koePlay (1111121)
+#res<0043>
+pause
+#res<0044>
+pause
+koePlay (1111122)
+#res<0045>
+pause
+#res<0046>
+pause
+#res<0047>
+pause
+koePlay (1111123)
+#res<0048>
+pause
+#res<0049>
+pause
+koePlay (1111124)
+#res<0050>
+pause
+koePlay (1111125)
+#res<0051>
+pause
+koePlay (1111126)
+#res<0052>
+pause
+koePlay (1111127)
+#res<0053>
+pause
+koePlay (1111128)
+#res<0054>
+pause
+#res<0055>
+pause
+#res<0056>
+pause
+#res<0057>
+pause
+#res<0058>
+pause
+#res<0059>
+pause
+#res<0060>
+pause
+#res<0061>
+pause
+#res<0062>
+pause
+#res<0063>
+pause
+goto @15
+
+  @6
+goto_unless (intF[221] == 1 || intF[222] == 1) @15
+#res<0064>
+pause
+#res<0065>
+pause
+#res<0066>
+pause
+#res<0067>
+pause
+#res<0068>
+pause
+#res<0069>
+pause
+strS[1000] = 'FGTM03A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @7
+strclear (strS[1000])
+
+  @7
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0070>
+pause
+#res<0071>
+pause
+#res<0072>
+pause
+#res<0073>
+pause
+#res<0074>
+pause
+#res<0075>
+pause
+#res<0076>
+pause
+#res<0077>
+pause
+#res<0078>
+pause
+#res<0079>
+pause
+#res<0080>
+pause
+strS[1000] = 'KURO'
+goto @9
+goto @8
+strS[1000] = 'SIRO'
+goto @9
+
+  @8
+strS[1000] = 'KURO'
+
+  @9
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0081>
+pause
+#res<0082>
+pause
+#res<0083>
+pause
+#res<0084>
+pause
+bgmFadeOut (2000)
+strS[1000] = 'BG046'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @10
+strclear (strS[1000])
+
+  @10
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 3
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM08D')
+intZ[515] = 1
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGSH13B'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111129)
+#res<0085>
+pause
+#res<0086>
+pause
+koePlay (1111130)
+#res<0087>
+pause
+koePlay (1111131)
+#res<0088>
+pause
+#res<0089>
+pause
+koePlay (1111132)
+#res<0090>
+pause
+#res<0091>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGSH18B'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111133)
+#res<0092>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGSH15B'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111134)
+#res<0093>
+pause
+#res<0094>
+pause
+koePlay (1111135)
+#res<0095>
+pause
+#res<0096>
+pause
+#res<0097>
+pause
+#res<0098>
+pause
+bgmFadeOut (2000)
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @11
+strclear (strS[1000])
+
+  @11
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+bgmLoop ('BGM01')
+intZ[503] = 1
+#res<0099>
+pause
+#res<0100>
+pause
+#res<0101>
+pause
+#res<0102>
+pause
+intF[1112] = 0
+title (#res<0103>)
+strS[1000] = 'BG021Y'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @12
+strclear (strS[1000])
+
+  @12
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+intF[1118] = 3
+#res<0104>
+pause
+#res<0105>
+pause
+#res<0106>
+pause
+#res<0107>
+pause
+#res<0108>
+pause
+#res<0109>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM22'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111136)
+#res<0110>
+pause
+#res<0111>
+pause
+#res<0112>
+pause
+koePlay (1111137)
+#res<0113>
+pause
+#res<0114>
+pause
+koePlay (1111138)
+#res<0115>
+pause
+#res<0116>
+pause
+koePlay (1111139)
+#res<0117>
+pause
+#res<0118>
+pause
+koePlay (1111140)
+#res<0119>
+pause
+#res<0120>
+pause
+koePlay (1111141)
+#res<0121>
+pause
+#res<0122>
+pause
+koePlay (1111142)
+#res<0123>
+pause
+koePlay (1111143)
+#res<0124>
+pause
+koePlay (1111144)
+#res<0125>
+pause
+koePlay (1111145)
+#res<0126>
+pause
+#res<0127>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM15'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111146)
+#res<0128>
+pause
+#res<0129>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM22'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111147)
+#res<0130>
+pause
+koePlay (1111148)
+#res<0131>
+pause
+#res<0132>
+pause
+#res<0133>
+pause
+#res<0134>
+pause
+koePlay (1111149)
+#res<0135>
+pause
+#res<0136>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'CGTM21'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (1111150)
+#res<0137>
+pause
+koePlay (1111151)
+#res<0138>
+pause
+koePlay (1111152)
+#res<0139>
+pause
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0140>
+pause
+#res<0141>
+pause
+#res<0142>
+pause
+#res<0143>
+pause
+#res<0144>
+pause
+#res<0145>
+pause
+#res<0146>
+pause
+#res<0147>
+pause
+#res<0148>
+pause
+#res<0149>
+pause
+#res<0150>
+pause
+intF[1118] = 0
+bgmFadeOut (3000)
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @13
+strclear (strS[1000])
+
+  @13
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[128] == 1 && intG[22] == 1 && intG[45] == 1) @14
+intG[22] = 0
+
+  @14
+wait (2000)
+intG[1004] = 0
+intG[1005] = 0
+intG[1006] = 0
+ReturnMenu
+
+  @15
+bgmFadeOut (3000)
+strS[1000] = 'KURO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @16
+strclear (strS[1000])
+
+  @16
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+jump (2509)
+eof

@@ -1,0 +1,255 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9060.TXT'
+
+#entrypoint 000
+HideSyscom
+stackClear
+intF[1005] = 0
+intF[1005] = stackSize
+msgHide
+DrawManual
+stackTrunc (intF[1005])
+grpBuffer (strS[1010], 1)
+intF[1005] = stackSize
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+FlushClick
+intC[0] = intF[1120]
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @2
+intF[1000] = 1
+goto @5
+
+  @2
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @3
+intF[1000] = 1
+goto @5
+
+  @3
+goto_unless (intA[1002] == 2) @4
+intF[1000] = 1
+FlushClick
+goto @5
+
+  @4
+intF[1000] = 0
+
+  @5
+goto_unless (intF[1000] == 1) @6
+intC[0] = 0
+intC[1] = 0
+
+  @6
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recAdd (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @7
+goto @8
+
+  @7
+goto @1
+
+  @8
+freeDC (2)
+DrawAuto
+stackTrunc (intF[1005])
+DrawManual
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 001
+HideSyscom
+msgHide
+DrawManual
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+FlushClick
+intC[0] = intF[1120]
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @9
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @10
+intF[1000] = 1
+goto @13
+
+  @10
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @11
+intF[1000] = 1
+goto @13
+
+  @11
+goto_unless (intA[1002] == 2) @12
+intF[1000] = 1
+FlushClick
+goto @13
+
+  @12
+intF[1000] = 0
+
+  @13
+goto_unless (intF[1000] == 1) @14
+intC[0] = 0
+intC[1] = 255
+
+  @14
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recAdd (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @15
+goto @16
+
+  @15
+goto @9
+
+  @16
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+freeDC (2)
+DrawAuto
+stackClear
+intF[1005] = 0
+DrawManual
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 002
+HideSyscom
+stackClear
+intF[1005] = 0
+intF[1005] = stackSize
+msgHide
+DrawManual
+stackTrunc (intF[1005])
+grpBuffer (strS[1010], 1)
+intF[1005] = stackSize
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+FlushClick
+intC[0] = intF[1120]
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @17
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @18
+intF[1000] = 1
+goto @21
+
+  @18
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @19
+intF[1000] = 1
+goto @21
+
+  @19
+goto_unless (intA[1002] == 2) @20
+intF[1000] = 1
+FlushClick
+goto @21
+
+  @20
+intF[1000] = 0
+
+  @21
+goto_unless (intF[1000] == 1) @22
+intC[0] = 0
+intC[1] = 0
+
+  @22
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recSub (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @23
+goto @24
+
+  @23
+goto @17
+
+  @24
+freeDC (2)
+DrawAuto
+stackTrunc (intF[1005])
+DrawManual
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 003
+HideSyscom
+msgHide
+DrawManual
+recFill (0, 0, 640, 480, 2, 255, 255, 255)
+FlushClick
+intC[0] = intF[1120]
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @25
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+intA[1004] = CtrlKeySkip
+intA[1005] = CtrlPressed
+intA[1006] = ShiftPressed
+intA[1007] = LocalSkipMode
+goto_unless (intA[1007] == 1) @26
+intF[1000] = 1
+goto @29
+
+  @26
+goto_unless (intA[1004] == 1 && intA[1005] == 1 && !intA[1006]) @27
+intF[1000] = 1
+goto @29
+
+  @27
+goto_unless (intA[1002] == 2) @28
+intF[1000] = 1
+FlushClick
+goto @29
+
+  @28
+intF[1000] = 0
+
+  @29
+goto_unless (intF[1000] == 1) @30
+intC[0] = 0
+intC[1] = 255
+
+  @30
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+recSub (0, 0, 640, 480, 2, 0, 0, 0, intC[1])
+refresh
+goto_unless (!intC[0]) @31
+goto @32
+
+  @31
+goto @25
+
+  @32
+recFill (0, 0, 640, 480, 1, 0, 0, 0)
+freeDC (2)
+DrawAuto
+stackClear
+intF[1005] = 0
+DrawManual
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+recFill (0, 0, 640, 480, 1, 0, 0, 0)
+DrawAuto
+EnableSyscom
+rtl
+eof

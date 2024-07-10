@@ -1,0 +1,342 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9080.TXT'
+
+#entrypoint 000
+HideSyscom
+DrawManual
+intA[0] = strcmp (strS[1023], 'NONE')
+goto_unless (!intA[0]) @1
+intA[100] = 0
+goto @2
+
+  @1
+goto_unless (intA[0]) @2
+intA[100] = 1
+
+  @2
+intA[0] = strcmp (strS[1024], 'NONE')
+goto_unless (!intA[0]) @3
+intA[200] = 0
+goto @4
+
+  @3
+goto_unless (intA[0]) @4
+intA[200] = 1
+
+  @4
+goto_unless (intA[200] == 1) @5
+recCopy (0, 0, 640, 480, 0, 0, 0, 2)
+grpBuffer (strS[1024], 1)
+
+  @5
+goto_unless (intA[100] == 1) @6
+objClear (100 + intF[1132])
+objOfFile (100 + intF[1132], strS[1023])
+objMove (100 + intF[1132], intF[1134], intF[1135])
+objPattNo (100 + intF[1132], intF[1133])
+objShow (100 + intF[1132], 1)
+
+  @6
+FlushClick
+intC[0] = intF[1136]
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @7
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @8
+intF[1000] = 1
+FlushClick
+goto @9
+
+  @8
+intF[1000] = 0
+
+  @9
+goto_unless (intF[1000] == 1) @10
+intC[0] = 0
+intC[1] = 255
+
+  @10
+goto_unless (intA[100] == 1) @12
+goto_unless (!intF[1137]) @11
+objAlpha (100 + intF[1132], intC[1])
+goto @12
+
+  @11
+goto_unless (intF[1137] == 1) @12
+objAlpha (100, 255 - intC[1])
+objAlpha (101, 255 - intC[1])
+objAlpha (102, 255 - intC[1])
+objAlpha (103, 255 - intC[1])
+objAlpha (104, 255 - intC[1])
+objAlpha (105, 255 - intC[1])
+objAlpha (106, 255 - intC[1])
+objAlpha (107, 255 - intC[1])
+objAlpha (108, 255 - intC[1])
+objAlpha (109, 255 - intC[1])
+objAlpha (110, 255 - intC[1])
+objAlpha (111, 255 - intC[1])
+objAlpha (112, 255 - intC[1])
+objAlpha (113, 255 - intC[1])
+objAlpha (114, 255 - intC[1])
+objAlpha (115, 255 - intC[1])
+objAlpha (100 + intF[1132], intC[1])
+
+  @12
+goto_unless (intA[200] == 1) @13
+recCopy (0, 0, 640, 480, 2, 0, 0, 0)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, intC[1])
+
+  @13
+refresh
+goto_unless (!intC[0]) @14
+goto @15
+
+  @14
+goto @7
+
+  @15
+goto_unless (intA[100] == 1) @32
+goto_unless (!intF[1137]) @16
+goto @32
+
+  @16
+goto_unless (intF[1137] == 1) @32
+goto_unless (intF[1132]) @17
+objDelete (100)
+
+  @17
+goto_unless (intF[1132] != 1) @18
+objDelete (101)
+
+  @18
+goto_unless (intF[1132] != 2) @19
+objDelete (102)
+
+  @19
+goto_unless (intF[1132] != 3) @20
+objDelete (103)
+
+  @20
+goto_unless (intF[1132] != 4) @21
+objDelete (104)
+
+  @21
+goto_unless (intF[1132] != 5) @22
+objDelete (105)
+
+  @22
+goto_unless (intF[1132] != 6) @23
+objDelete (106)
+
+  @23
+goto_unless (intF[1132] != 7) @24
+objDelete (107)
+
+  @24
+goto_unless (intF[1132] != 8) @25
+objDelete (108)
+
+  @25
+goto_unless (intF[1132] != 9) @26
+objDelete (109)
+
+  @26
+goto_unless (intF[1132] != 10) @27
+objDelete (110)
+
+  @27
+goto_unless (intF[1132] != 11) @28
+objDelete (111)
+
+  @28
+goto_unless (intF[1132] != 12) @29
+objDelete (112)
+
+  @29
+goto_unless (intF[1132] != 13) @30
+objDelete (113)
+
+  @30
+goto_unless (intF[1132] != 14) @31
+objDelete (114)
+
+  @31
+goto_unless (intF[1132] != 15) @32
+objDelete (115)
+
+  @32
+goto_unless (intA[200] == 1) @33
+stackClear
+intF[1005] = 0
+grpBuffer (strS[1024], 1)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+refresh
+
+  @33
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 001
+HideSyscom
+DrawManual
+intA[0] = strcmp (strS[1024], 'NONE')
+goto_unless (!intA[0]) @34
+intA[200] = 0
+goto @35
+
+  @34
+goto_unless (intA[0]) @35
+intA[200] = 1
+
+  @35
+goto_unless (intA[200] == 1) @36
+recCopy (0, 0, 640, 480, 0, 0, 0, 2)
+grpBuffer (strS[1024], 1)
+
+  @36
+FlushClick
+intC[0] = intF[1136]
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @37
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @38
+intF[1000] = 1
+FlushClick
+goto @39
+
+  @38
+intF[1000] = 0
+
+  @39
+goto_unless (intF[1000] == 1) @40
+intC[0] = 0
+intC[1] = 0
+
+  @40
+objAlpha (100 + intF[1132], intC[1])
+goto_unless (intA[200] == 1) @41
+recCopy (0, 0, 640, 480, 2, 0, 0, 0)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 255 - intC[1])
+
+  @41
+refresh
+goto_unless (!intC[0]) @42
+goto @43
+
+  @42
+goto @37
+
+  @43
+objDelete (100 + intF[1132])
+goto_unless (intA[200] == 1) @44
+stackClear
+intF[1005] = 0
+grpBuffer (strS[1024], 1)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+refresh
+
+  @44
+DrawAuto
+EnableSyscom
+rtl
+#entrypoint 002
+HideSyscom
+DrawManual
+intA[0] = strcmp (strS[1024], 'NONE')
+goto_unless (!intA[0]) @45
+intA[200] = 0
+goto @46
+
+  @45
+goto_unless (intA[0]) @46
+intA[200] = 1
+
+  @46
+goto_unless (intA[200] == 1) @47
+recCopy (0, 0, 640, 480, 0, 0, 0, 2)
+grpBuffer (strS[1024], 1)
+
+  @47
+FlushClick
+intC[0] = intF[1136]
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @48
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @49
+intF[1000] = 1
+FlushClick
+goto @50
+
+  @49
+intF[1000] = 0
+
+  @50
+goto_unless (intF[1000] == 1) @51
+intC[0] = 0
+intC[1] = 0
+
+  @51
+objAlpha (100, intC[1])
+objAlpha (101, intC[1])
+objAlpha (102, intC[1])
+objAlpha (103, intC[1])
+objAlpha (104, intC[1])
+objAlpha (105, intC[1])
+objAlpha (106, intC[1])
+objAlpha (107, intC[1])
+objAlpha (108, intC[1])
+objAlpha (109, intC[1])
+objAlpha (110, intC[1])
+objAlpha (111, intC[1])
+objAlpha (112, intC[1])
+objAlpha (113, intC[1])
+objAlpha (114, intC[1])
+objAlpha (115, intC[1])
+goto_unless (intA[200] == 1) @52
+recCopy (0, 0, 640, 480, 2, 0, 0, 0)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 255 - intC[1])
+
+  @52
+refresh
+goto_unless (!intC[0]) @53
+goto @54
+
+  @53
+goto @48
+
+  @54
+objDelete (100)
+objDelete (101)
+objDelete (102)
+objDelete (103)
+objDelete (104)
+objDelete (105)
+objDelete (106)
+objDelete (107)
+objDelete (108)
+objDelete (109)
+objDelete (110)
+objDelete (111)
+objDelete (112)
+objDelete (113)
+objDelete (114)
+objDelete (115)
+goto_unless (intA[200] == 1) @55
+stackClear
+intF[1005] = 0
+grpBuffer (strS[1024], 1)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0)
+refresh
+
+  @55
+DrawAuto
+EnableSyscom
+rtl
+eof

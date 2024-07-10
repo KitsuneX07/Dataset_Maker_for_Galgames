@@ -1,0 +1,91 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9031.TXT'
+
+#entrypoint 000
+goto @1
+
+  @1
+HideSyscom
+DrawManual
+objClear (0)
+objOfFile (0, 'STT_LOGO00')
+objMove (0, 230, 180)
+objPattNo (0, 0)
+objAlpha (0, 0)
+objShow (0, 1)
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+refresh
+wait (1000)
+FlushClick
+intC[0] = 1300
+InitExFrames ({0, 0, 255, intC[0]})
+
+  @2
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @3
+intF[1000] = 1
+FlushClick
+goto @4
+
+  @3
+intF[1000] = 0
+
+  @4
+goto_unless (intF[1000] == 1) @5
+intC[0] = 0
+intC[1] = 255
+
+  @5
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+recFill (0, 0, 640, 480, 0, 255, 255, 255, intC[1])
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @6
+goto @7
+
+  @6
+goto @2
+
+  @7
+waitC (2800)
+FlushClick
+intC[0] = 1500
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @8
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @9
+intF[1000] = 1
+FlushClick
+goto @10
+
+  @9
+intF[1000] = 0
+
+  @10
+goto_unless (intF[1000] == 1) @11
+intC[0] = 0
+intC[1] = 0
+
+  @11
+objAlpha (0, intC[1])
+refresh
+goto_unless (!intC[0]) @12
+goto @13
+
+  @12
+goto @8
+
+  @13
+waitC (2000)
+objDelete (0)
+DrawAuto
+EnableSyscom
+intG[1004] = 1
+intG[1005] = 1
+intG[1006] = 2
+jump (9032)
+eof

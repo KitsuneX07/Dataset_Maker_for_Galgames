@@ -1,0 +1,31 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9083.TXT'
+
+#entrypoint 000
+HideSyscom
+DrawManual
+objClear (0)
+objClear (10)
+objOfFileGan (0, '???', 'SPAPA00')
+objOfFileGan (10, '???', 'SPAPA10')
+objMove (0, 0, 231)
+objMove (10, 0, 231)
+objPattNo (0, 0)
+objPattNo (10, 0)
+ganPlay2 (0, 0)
+op<1:073:00004, 0> (0)
+waitC (2400)
+ganPlay2 (0, 1)
+ganPlay2 (10, 0)
+op<1:073:00004, 0> (0)
+op<1:073:00004, 0> (10)
+waitC (2600)
+ganPlay2 (10, 1)
+op<1:073:00004, 0> (10)
+objDelete (0)
+objDelete (10)
+DrawAuto
+EnableSyscom
+rtl
+eof

@@ -1,0 +1,71 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9082.TXT'
+
+#entrypoint 000
+HideSyscom
+DrawManual
+objClear (0)
+objClear (10)
+objOfFileGan (0, '???', 'SCCEC00')
+objOfFileGan (10, '???', 'SCCEC10')
+objMove (0, 240, 410)
+objMove (10, 494, 446)
+objPattNo (0, 0)
+objPattNo (10, 0)
+objShow (0, 1)
+objShow (10, 1)
+waitC (800)
+ganPlay2 (0, 0)
+ganPlay2 (10, 0)
+op<1:073:00004, 0> (0)
+op<1:073:00004, 0> (10)
+bgmFadeOut (6000)
+waitC (4000)
+ganPlay2 (0, 1)
+ganPlay2 (10, 1)
+op<1:073:00004, 0> (0)
+op<1:073:00004, 0> (10)
+waitC (1000)
+FlushClick
+intC[0] = 3000
+InitExFrames ({0, 255, 0, intC[0]})
+
+  @1
+intC[0] = ReadExFrames ({0, intC[1]})
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @2
+intF[1000] = 1
+FlushClick
+goto @3
+
+  @2
+intF[1000] = 0
+
+  @3
+goto_unless (intF[1000] == 1) @4
+intC[0] = 0
+intC[1] = 0
+
+  @4
+recFill (0, 0, 640, 480, 0, intC[1], intC[1], intC[1])
+refresh
+goto_unless (!intC[0]) @5
+goto @6
+
+  @5
+goto @1
+
+  @6
+waitC (1000)
+objDelete (0)
+objDelete (10)
+stackClear
+intF[1005] = 0
+recFill (0, 0, 640, 480, 0, 0, 0, 0)
+recFill (0, 0, 640, 480, 1, 0, 0, 0)
+refresh
+DrawAuto
+EnableSyscom
+rtl
+eof

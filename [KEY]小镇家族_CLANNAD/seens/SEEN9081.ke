@@ -1,0 +1,527 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9081.TXT'
+
+#entrypoint 000
+intA[200] = 0
+goto @1
+#entrypoint 001
+intA[200] = 1
+goto @1
+
+  @1
+#entrypoint 002
+bgmLoop ('BGM26A')
+intZ[501] = 1
+DrawManual
+objDriftOfFile (100, 'SHGET36')
+objDriftOpts (100, 5, 0, 0, 0, 0, 14000, 30000, 20000, 3, 1, 50000, -1, -1, -1, -1)
+objFadeOpts (100, 128, 255, 2000, 2000, 3)
+objComposite (100, 1)
+objShow (100, 1)
+objDriftOfFile (101, 'SHGET36')
+objDriftOpts (101, 4, 0, 0, 0, 0, 12000, 25000, 15000, 3, 1, 30000, -1, -1, -1, -1)
+objFadeOpts (101, 128, 255, 2000, 2000, 3)
+objComposite (101, 1)
+objShow (101, 1)
+objDriftOfFile (102, 'SHGET36')
+objDriftOpts (102, 4, 0, 0, 0, 0, 12000, 25000, 15000, 1, 1, 30000, -1, -1, -1, -1)
+objFadeOpts (102, 128, 255, 2000, 2000, 3)
+objComposite (102, 1)
+objShow (102, 1)
+objDriftOfFile (103, 'SHGET36')
+objDriftOpts (103, 3, 0, 0, 0, 0, 10000, 20000, 10000, 3, 1, 20000, -1, -1, -1, -1)
+objFadeOpts (103, 128, 255, 2000, 2000, 3)
+objComposite (103, 1)
+objShow (103, 1)
+waitC (10000)
+ResetExTimer (0)
+intA[100] = 0
+
+  @2
+goto_unless (intA[100] < 1000) @6
+strS[0] = 'SZZA'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 64)
+goto_unless (!intA[200]) @3
+timeEx (120, 0)
+ResetExTimer (0)
+goto @4
+
+  @3
+goto_unless (intA[200] == 1) @4
+op<1:Dbg:00050, 0> (120)
+
+  @4
+refresh
+goto_unless (intA[200] == 1) @5
+__SaveBufferIdx ('SZZB')
+
+  @5
+intA[100] += 1
+goto @2
+
+  @6
+ResetExTimer (0)
+intA[100] = 1000
+
+  @7
+goto_unless (intA[100] < 1100) @11
+strS[0] = 'SZZA'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recCopy (0, 0, 640, 480, 1, 0, 0, 0, 64)
+goto_unless (!intA[200]) @8
+timeEx (120, 0)
+ResetExTimer (0)
+goto @9
+
+  @8
+goto_unless (intA[200] == 1) @9
+op<1:Dbg:00050, 0> (120)
+
+  @9
+refresh
+goto_unless (intA[200] == 1) @10
+__SaveBufferIdx ('SZZB')
+
+  @10
+intA[100] += 1
+goto @7
+
+  @11
+DrawAuto
+rtl
+#entrypoint 003
+HideSyscom
+DrawManual
+objClear (0)
+objClear (1)
+objClear (2)
+objClear (3)
+objOfFileGan (0, '???', 'SZZD00')
+objOfFileGan (1, '???', 'SZZD10')
+objOfFileGan (2, '???', 'SZZD20')
+objOfFileGan (3, '???', 'SZZD20')
+objMove (0, 0, 231)
+objMove (1, 0, 231)
+objMove (2, 205, 230)
+objMove (3, 315, 230)
+objPattNo (0, 0)
+objPattNo (1, 0)
+objPattNo (2, 0)
+objPattNo (3, 0)
+objShow (0, 0)
+objShow (1, 0)
+objShow (2, 0)
+objShow (3, 0)
+objAlpha (0, 208)
+objAlpha (1, 208)
+objAlpha (2, 208)
+objAlpha (3, 208)
+setrng (intB[0], intB[32], 140)
+setrng (intB[32], intB[70], 160)
+setrng (intB[70], intB[74], 180)
+setrng (intB[74], intB[148], 200)
+setrng (intB[148], intB[266], 190)
+setrng (intB[266], intB[305], 180)
+setrng (intB[305], intB[420], 170)
+setrng (intB[420], intB[440], 140)
+setrng (intB[440], intB[520], 120)
+setrng (intB[520], intB[612], 120)
+setrng (intB[612], intB[616], 160)
+setrng (intB[616], intB[714], 200)
+setrng (intB[714], intB[724], 180)
+setrng (intB[724], intB[787], 150)
+setrng (intB[787], intB[812], 140)
+setrng (intB[812], intB[958], 120)
+setrng (intB[958], intB[1199], 120)
+intA[0] = 0
+FlushClick
+ResetExTimer (0)
+intA[100] = 10
+
+  @12
+goto_unless (4 < intA[100]) @16
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @13
+intF[1000] = 1
+FlushClick
+goto @14
+
+  @13
+intF[1000] = 0
+
+  @14
+goto_unless (intF[1000] == 1) @15
+
+  @15
+refresh
+strS[0] = 'SZZC'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recStretchBlt (0, 0, 320, 240, 1, 0, 0, 640, 480, 0)
+intA[0] += 1
+recFill (0, 0, 640, 480, 0, 0, 0, 0, 255 - intA[0] * 36)
+timeEx (120, 0)
+ResetExTimer (0)
+intA[100] -= 1
+goto @12
+
+  @16
+FlushClick
+ResetExTimer (0)
+intA[100] = 4
+
+  @17
+goto_unless (intA[100] < 1000) @21
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @18
+intF[1000] = 1
+FlushClick
+goto @19
+
+  @18
+intF[1000] = 0
+
+  @19
+goto_unless (intF[1000] == 1) @20
+goto_unless (intG[43] == 1) @20
+goto_unless (intA[100] < 960) @20
+intA[100] = 960
+
+  @20
+refresh
+strS[0] = 'SZZC'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recStretchBlt (0, 0, 320, 240, 1, 0, 0, 640, 480, 0)
+timeEx (intB[intA[100]], 0)
+ResetExTimer (0)
+intA[100] += 1
+goto @17
+
+  @21
+intA[100] = 1000
+intA[200] = 0
+FlushClick
+ResetExTimer (0)
+
+  @22
+goto_unless (1100 <= intA[100]) @23
+intA[100] = 1000
+
+  @23
+refresh
+strS[0] = 'SZZC'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recStretchBlt (0, 0, 320, 240, 1, 0, 0, 640, 480, 0)
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @24
+intF[1000] = 1
+FlushClick
+goto @25
+
+  @24
+intF[1000] = 0
+
+  @25
+goto_unless (intF[1000] == 1) @26
+
+  @26
+goto_case intA[200] { 0: @27; 1: @28; 2: @30; 3: @32; 4: @34; 5: @36; 6: @38; 7: @40; 8: @42; 9: @44; 10: @46; 11: @48; 12: @50; 13: @52; 14: @54; 15: @56; 16: @58; 17: @60; 18: @62; _: @64 }
+
+  @27
+ganPlay2 (0, 0)
+intA[200] = 1
+goto @64
+
+  @28
+op<1:073:00003, 0> (0)
+intA[0] = store
+goto_unless (!intA[0]) @29
+ganPlay2 (0, 1)
+intA[200] = 2
+
+  @29
+goto @64
+
+  @30
+op<1:073:00003, 0> (0)
+intA[0] = store
+goto_unless (!intA[0]) @31
+ganPlay2 (1, 0)
+intA[200] = 3
+
+  @31
+goto @64
+
+  @32
+op<1:073:00003, 0> (1)
+intA[0] = store
+goto_unless (!intA[0]) @33
+ganPlay2 (1, 1)
+intA[200] = 4
+
+  @33
+goto @64
+
+  @34
+op<1:073:00003, 0> (1)
+intA[0] = store
+goto_unless (!intA[0]) @35
+ganPlay2 (2, 0)
+intA[200] = 5
+
+  @35
+goto @64
+
+  @36
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @37
+ganPlay2 (2, 1)
+intA[200] = 6
+
+  @37
+goto @64
+
+  @38
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @39
+ganPlay2 (2, 2)
+intA[200] = 7
+
+  @39
+goto @64
+
+  @40
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @41
+ganPlay2 (2, 3)
+intA[200] = 8
+
+  @41
+goto @64
+
+  @42
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @43
+ganPlay2 (2, 4)
+intA[200] = 9
+
+  @43
+goto @64
+
+  @44
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @45
+ganPlay2 (2, 5)
+intA[200] = 10
+
+  @45
+goto @64
+
+  @46
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @47
+ganPlay2 (2, 6)
+intA[200] = 11
+
+  @47
+goto @64
+
+  @48
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @49
+ganPlay2 (3, 8)
+intA[200] = 12
+
+  @49
+goto @64
+
+  @50
+op<1:073:00003, 0> (3)
+intA[0] = store
+goto_unless (!intA[0]) @51
+ganPlay2 (2, 7)
+ganPlay2 (3, 9)
+intA[200] = 13
+
+  @51
+goto @64
+
+  @52
+op<1:073:00003, 0> (3)
+intA[0] = store
+goto_unless (!intA[0]) @53
+ganPlay2 (2, 10)
+intA[200] = 14
+
+  @53
+goto @64
+
+  @54
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @55
+ganPlay2 (2, 11)
+intA[200] = 15
+
+  @55
+goto @64
+
+  @56
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @57
+ganPlay2 (2, 12)
+intA[200] = 16
+
+  @57
+goto @64
+
+  @58
+op<1:073:00003, 0> (2)
+intA[0] = store
+goto_unless (!intA[0]) @59
+ganPlay2 (3, 14)
+intA[200] = 17
+
+  @59
+goto @64
+
+  @60
+op<1:073:00003, 0> (3)
+intA[0] = store
+goto_unless (!intA[0]) @61
+ganPlay2 (2, 13)
+ganPlay2 (3, 15)
+intA[200] = 18
+
+  @61
+goto @64
+
+  @62
+op<1:073:00003, 0> (3)
+intA[0] = store
+goto_unless (!intA[0]) @63
+intA[200] = 19
+
+  @63
+goto @64
+
+  @64
+
+  @65
+intA[0] = ExTimer (0)
+goto_unless (120 <= intA[0]) @66
+goto @67
+
+  @66
+refresh
+goto @65
+
+  @67
+ResetExTimer (0)
+goto_unless (intA[200] == 19) @72
+goto_unless (intA[100] == 1019) @68
+intA[300] = 20
+goto @73
+goto @72
+
+  @68
+goto_unless (intA[100] == 1039) @69
+intA[300] = 40
+goto @73
+goto @72
+
+  @69
+goto_unless (intA[100] == 1059) @70
+intA[300] = 60
+goto @73
+goto @72
+
+  @70
+goto_unless (intA[100] == 1079) @71
+intA[300] = 80
+goto @73
+goto @72
+
+  @71
+goto_unless (intA[100] == 1099) @72
+intA[300] = 0
+goto @73
+
+  @72
+intA[100] += 1
+goto @22
+
+  @73
+FlushClick
+ResetExTimer (0)
+intA[100] = 1100 + intA[300]
+
+  @74
+goto_unless (intA[100] < 1100 + intA[300] + 20) @81
+GetCursorPos (intA[1000], intA[1001], intA[1002], intA[1003])
+goto_unless (intA[1002] == 2) @75
+intF[1000] = 1
+FlushClick
+goto @76
+
+  @75
+intF[1000] = 0
+
+  @76
+goto_unless (intF[1000] == 1) @77
+
+  @77
+refresh
+strS[0] = 'SZZC'
+strS[1] = itoa (intA[100], 4)
+strS[0] += strS[1]
+grpBuffer (strS[0], 1)
+recStretchBlt (0, 0, 320, 240, 1, 0, 0, 640, 480, 0)
+
+  @78
+intA[0] = ExTimer (0)
+goto_unless (120 <= intA[0]) @79
+goto @80
+
+  @79
+refresh
+goto @78
+
+  @80
+ResetExTimer (0)
+intA[100] += 1
+goto @74
+
+  @81
+objDelete (0)
+objDelete (1)
+objDelete (2)
+objDelete (3)
+stackClear
+intF[1005] = 0
+recFill (0, 0, 640, 480, 0, 255, 255, 255)
+recFill (0, 0, 640, 480, 1, 255, 255, 255)
+refresh
+DrawAuto
+EnableSyscom
+rtl
+eof

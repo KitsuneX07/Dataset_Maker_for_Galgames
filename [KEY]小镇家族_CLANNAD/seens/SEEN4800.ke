@@ -1,0 +1,818 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN4800.TXT'
+#resource 'SEEN4800.utf'
+
+#entrypoint 000
+intF[1108] = 0
+intF[1109] = 8
+intF[1110] = 0
+intF[1111] = 0
+intF[1112] = 0
+strS[1004] = 'SDTA0800'
+intA[1000] = strcmp (strS[1004], 'NONE')
+goto_unless (!intA[1000]) @1
+strclear (strS[1004])
+
+  @1
+title (#res<0000>)
+wavPlay ('KUMA', 0, 6000)
+wait (3000)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @2
+intF[1017] = 1
+goto @3
+
+  @2
+goto_unless (intA[1000] == 1) @3
+intF[1017] = 0
+
+  @3
+SetSkipAnimations (0)
+goto @4
+goto @4
+SetSkipAnimations (1)
+
+  @4
+strS[1000] = 'BG051L'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @5
+strclear (strS[1000])
+
+  @5
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @6
+SetSkipAnimations (0)
+goto @7
+
+  @6
+goto_unless (!intF[1017]) @7
+SetSkipAnimations (1)
+
+  @7
+EnableSyscom
+wait (4000)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @8
+intF[1017] = 1
+goto @9
+
+  @8
+goto_unless (intA[1000] == 1) @9
+intF[1017] = 0
+
+  @9
+SetSkipAnimations (0)
+goto @10
+goto @10
+SetSkipAnimations (1)
+
+  @10
+strS[1000] = 'BG051M'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @11
+strclear (strS[1000])
+
+  @11
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 5
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @12
+SetSkipAnimations (0)
+goto @13
+
+  @12
+goto_unless (!intF[1017]) @13
+SetSkipAnimations (1)
+
+  @13
+EnableSyscom
+wait (3000)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @14
+intF[1017] = 1
+goto @15
+
+  @14
+goto_unless (intA[1000] == 1) @15
+intF[1017] = 0
+
+  @15
+SetSkipAnimations (0)
+goto @16
+goto @16
+SetSkipAnimations (1)
+
+  @16
+strS[1000] = 'SIRO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @17
+strclear (strS[1000])
+
+  @17
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @18
+SetSkipAnimations (0)
+goto @19
+
+  @18
+goto_unless (!intF[1017]) @19
+SetSkipAnimations (1)
+
+  @19
+EnableSyscom
+bgmLoop ('BGM13')
+intZ[531] = 1
+ResetExTimer (4)
+timeEx (2000, 4)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @20
+intF[1017] = 1
+goto @21
+
+  @20
+goto_unless (intA[1000] == 1) @21
+intF[1017] = 0
+
+  @21
+SetSkipAnimations (0)
+goto @22
+goto @22
+SetSkipAnimations (1)
+
+  @22
+strS[1000] = 'BG050'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @23
+strclear (strS[1000])
+
+  @23
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 3
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @24
+SetSkipAnimations (0)
+goto @25
+
+  @24
+goto_unless (!intF[1017]) @25
+SetSkipAnimations (1)
+
+  @25
+EnableSyscom
+timeEx (4700, 4)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @26
+intF[1017] = 1
+goto @27
+
+  @26
+goto_unless (intA[1000] == 1) @27
+intF[1017] = 0
+
+  @27
+SetSkipAnimations (0)
+goto @28
+goto @28
+SetSkipAnimations (1)
+
+  @28
+strS[1000] = 'SIRO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @29
+strclear (strS[1000])
+
+  @29
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 3
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @30
+SetSkipAnimations (0)
+goto @31
+
+  @30
+goto_unless (!intF[1017]) @31
+SetSkipAnimations (1)
+
+  @31
+EnableSyscom
+timeEx (5700, 4)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @32
+intF[1017] = 1
+goto @33
+
+  @32
+goto_unless (intA[1000] == 1) @33
+intF[1017] = 0
+
+  @33
+SetSkipAnimations (0)
+goto @34
+goto @34
+SetSkipAnimations (1)
+
+  @34
+strS[1000] = 'FGKT08A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @35
+strclear (strS[1000])
+
+  @35
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 3
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @36
+SetSkipAnimations (0)
+goto @37
+
+  @36
+goto_unless (!intF[1017]) @37
+SetSkipAnimations (1)
+
+  @37
+EnableSyscom
+timeEx (9800, 4)
+ShowCursor
+#res<0001>
+pause
+wavFadeOut (0, 10000)
+#res<0002>
+pause
+#res<0003>
+pause
+#res<0004>
+pause
+#res<0005>
+pause
+strS[1000] = 'FGKT08B'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @38
+strclear (strS[1000])
+
+  @38
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (2020159)
+#res<0006>
+pause
+#res<0007>
+pause
+koePlay (2020160)
+#res<0008>
+pause
+#res<0009>
+pause
+#res<0010>
+pause
+#res<0011>
+pause
+koePlay (2020161)
+#res<0012>
+pause
+koePlay (2020162)
+#res<0013>
+pause
+#res<0014>
+pause
+#res<0015>
+pause
+#res<0016>
+pause
+#res<0017>
+pause
+#res<0018>
+pause
+#res<0019>
+pause
+#res<0020>
+pause
+strS[1000] = 'FGKT08A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @39
+strclear (strS[1000])
+
+  @39
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+#res<0021>
+pause
+koePlay (2020163)
+#res<0022>
+pause
+koePlay (2020164)
+#res<0023>
+pause
+koePlay (2020165)
+#res<0024>
+pause
+#res<0025>
+pause
+koePlay (2020166)
+#res<0026>
+pause
+strS[1000] = 'FGKT08B'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @40
+strclear (strS[1000])
+
+  @40
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (2020167)
+#res<0027>
+pause
+koePlay (2020168)
+#res<0028>
+pause
+koePlay (2020169)
+#res<0029>
+pause
+#res<0030>
+pause
+#res<0031>
+pause
+koePlay (2020170)
+#res<0032>
+pause
+#res<0033>
+pause
+strS[1000] = 'FGKT08A'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @41
+strclear (strS[1000])
+
+  @41
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (2020171)
+#res<0034>
+pause
+koePlay (2020172)
+#res<0035>
+pause
+#res<0036>
+pause
+koePlay (2020173)
+#res<0037>
+pause
+#res<0038>
+pause
+koePlay (2020174)
+#res<0039>
+pause
+#res<0040>
+pause
+koePlay (2020175)
+#res<0041>
+pause
+#res<0042>
+pause
+strS[1000] = 'FGKT08B'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @42
+strclear (strS[1000])
+
+  @42
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (2020176)
+#res<0043>
+pause
+strS[1000] = 'FGKT08C'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @43
+strclear (strS[1000])
+
+  @43
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 0
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+koePlay (2020177)
+#res<0044>
+pause
+#res<0045>
+pause
+wait (750)
+intF[1014] = GetOpenAnmMod (0)
+intF[1014] = GetCloseAnmMod (0)
+SetOpenAnmMod (0, 1)
+SetCloseAnmMod (0, 1)
+intF[1015] = GetOpenAnmTime (0)
+intF[1015] = GetCloseAnmTime (0)
+SetOpenAnmTime (0, 1500)
+SetCloseAnmTime (0, 1500)
+msgHide
+SetOpenAnmMod (0, intF[1014])
+SetCloseAnmMod (0, intF[1014])
+SetOpenAnmTime (0, intF[1015])
+SetCloseAnmTime (0, intF[1015])
+wait (1750)
+HideCursor
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @44
+intF[1017] = 1
+goto @45
+
+  @44
+goto_unless (intA[1000] == 1) @45
+intF[1017] = 0
+
+  @45
+SetSkipAnimations (0)
+goto @46
+goto @46
+SetSkipAnimations (1)
+
+  @46
+strS[1000] = 'SIRO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @47
+strclear (strS[1000])
+
+  @47
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @48
+SetSkipAnimations (0)
+goto @49
+
+  @48
+goto_unless (!intF[1017]) @49
+SetSkipAnimations (1)
+
+  @49
+EnableSyscom
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @50
+intF[1017] = 1
+goto @51
+
+  @50
+goto_unless (intA[1000] == 1) @51
+intF[1017] = 0
+
+  @51
+SetSkipAnimations (0)
+goto @52
+goto @52
+SetSkipAnimations (1)
+
+  @52
+strS[1000] = 'BG051N'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @53
+strclear (strS[1000])
+
+  @53
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @54
+SetSkipAnimations (0)
+goto @55
+
+  @54
+goto_unless (!intF[1017]) @55
+SetSkipAnimations (1)
+
+  @55
+EnableSyscom
+wait (3500)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @56
+intF[1017] = 1
+goto @57
+
+  @56
+goto_unless (intA[1000] == 1) @57
+intF[1017] = 0
+
+  @57
+SetSkipAnimations (0)
+goto @58
+goto @58
+SetSkipAnimations (1)
+
+  @58
+strS[1000] = 'BG051O'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @59
+strclear (strS[1000])
+
+  @59
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 4
+intF[1103] = 0
+strclear (strS[1001])
+intF[1104] = 0
+strclear (strS[1002])
+intF[1105] = 0
+strclear (strS[1003])
+intF[1106] = 0
+intF[1113] = 0
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @60
+SetSkipAnimations (0)
+goto @61
+
+  @60
+goto_unless (!intF[1017]) @61
+SetSkipAnimations (1)
+
+  @61
+EnableSyscom
+wait (2500)
+HideSyscom
+intA[1000] = SkipAnimations
+goto_unless (!intA[1000]) @62
+intF[1017] = 1
+goto @63
+
+  @62
+goto_unless (intA[1000] == 1) @63
+intF[1017] = 0
+
+  @63
+SetSkipAnimations (0)
+goto @64
+goto @64
+SetSkipAnimations (1)
+
+  @64
+bgmFadeOut (7000)
+strS[1000] = 'SIRO'
+intA[1000] = strcmp (strS[1000], 'NONE')
+goto_unless (!intA[1000]) @65
+strclear (strS[1000])
+
+  @65
+intF[1107] = 1
+op<1:Sys:00210, 0>
+op<1:Sys:00215, 0>
+intF[1101] = 0
+intF[1102] = 5
+intF[1103] = 0
+strS[1001] = 'NONE'
+intF[1104] = 0
+strS[1002] = 'NONE'
+intF[1105] = 0
+strS[1003] = 'NONE'
+intF[1106] = 0
+intF[1113] = intF[1112]
+farcall (9050, 0)
+intF[1107] = 0
+op<1:Sys:00211, 0>
+op<1:Sys:00216, 0>
+goto_unless (intF[1017] == 1) @66
+SetSkipAnimations (0)
+goto @67
+
+  @66
+goto_unless (!intF[1017]) @67
+SetSkipAnimations (1)
+
+  @67
+EnableSyscom
+wait (5000)
+intF[417] = 1
+msgClear
+HideCursor
+msgHide
+intF[821] = 1
+farcall (9999, 0)
+goto_unless (!intG[5]) @68
+intG[5] = 1
+intG[0] += 1
+msgHide
+intF[1131] = 1
+farcall (9079, 0)
+
+  @68
+wait (2000)
+intG[1004] = 1
+intG[1005] = 1
+intG[1006] = 2
+ReturnMenu
+eof

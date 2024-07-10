@@ -1,0 +1,112 @@
+{-# cp utf8 #- Disassembled with Kprl 1.41 -}
+
+#file 'SEEN9077.TXT'
+
+#entrypoint 000
+objOfFileGan (81, strS[1001], 'SSHREN00', 1)
+rtl
+#entrypoint 001
+ganPlay2 (81, 0)
+rtl
+#entrypoint 002
+ganPlay2 (81, 1)
+rtl
+#entrypoint 003
+ganLoop2 (81, 0)
+rtl
+#entrypoint 004
+ganLoop2 (81, 3)
+rtl
+#entrypoint 005
+ganLoop2 (81, 4)
+rtl
+#entrypoint 006
+ganLoop2 (81, 5)
+rtl
+#entrypoint 007
+op<1:073:03103, 0> (81, 6)
+op<1:073:00004, 0> (81)
+op<1:073:00000, 0> (81)
+rtl
+#entrypoint 008
+strS[1002] = 'SSHREN10'
+goto_case intF[1118] { 0: @1; 1: @2; 2: @3; 3: @4; 4: @5; 5: @6; 6: @7; 7: @8; 8: @9; 9: @10; 10: @11; _: @12 }
+
+  @1
+goto @12
+
+  @2
+strS[1002] += '?010'
+goto @12
+
+  @3
+strS[1002] += '?011'
+goto @12
+
+  @4
+strS[1002] += '?020'
+goto @12
+
+  @5
+strS[1002] += '?021'
+goto @12
+
+  @6
+strS[1002] += '?022'
+goto @12
+
+  @7
+strS[1002] += '?023'
+goto @12
+
+  @8
+strS[1002] += '?024'
+goto @12
+
+  @9
+strS[1002] += '?025'
+goto @12
+
+  @10
+strS[1002] += '?030'
+goto @12
+
+  @11
+strS[1002] += '?040'
+goto @12
+
+  @12
+objOfFileGan (81, strS[1001], 'SSHREN00', 1)
+objOfFileGan (82, strS[1002], 'SSHREN10', 0, 244, 111, 0)
+rtl
+#entrypoint 009
+rtl
+#entrypoint 010
+rtl
+#entrypoint 011
+rtl
+#entrypoint 012
+ganLoop2 (81, 3)
+ganLoop2 (82, 3)
+rtl
+#entrypoint 013
+ganLoop2 (81, 4)
+ganLoop2 (82, 4)
+rtl
+#entrypoint 014
+ganLoop2 (81, 5)
+ganLoop2 (82, 5)
+rtl
+#entrypoint 015
+op<1:073:03103, 0> (81, 6)
+op<1:073:03103, 0> (82, 6)
+op<1:073:00004, 0> (81)
+op<1:073:00004, 0> (82)
+op<1:073:00000, 0> (81)
+op<1:073:00000, 0> (82)
+objShow (82, 0)
+rtl
+#entrypoint 016
+ganPlay2 (81, 7)
+rtl
+eof
