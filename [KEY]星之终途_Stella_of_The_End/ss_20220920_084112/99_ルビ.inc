@@ -1,0 +1,11 @@
+#define		 総当たり攻撃（ブルートフォース）					ruby("ブルートフォース") 総当たり攻撃 ruby
+#define		 "運び屋"											ruby("・・・") 運び屋 ruby
+#define		 "知って"											ruby("・・・") 知って ruby
+#define		 "お宝"												ruby("端末") お宝 ruby
+#define		 "マンマシンインターフェイス"						ruby("ＭＭＩ") マンマシンインターフェイス ruby
+#define		 "頽"												ruby("くず") 頽 ruby
+#define		 "膠着"												ruby("こうちゃく") 膠着 ruby
+#define		 "挙措"												ruby("きょそ") 挙措 ruby
+#define		 "万朶"												ruby("ばんだ") 万朶 ruby
+#define		 "登攀"												ruby("とうはん") 登攀 ruby
+#define		 "傾"												ruby("かし") 傾 ruby
