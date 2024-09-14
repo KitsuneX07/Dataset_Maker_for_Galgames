@@ -34,7 +34,7 @@ def process_file(path, output_dir_path, searching_folder):
 
 
 if __name__ == "__main__":
-    script_folder = "D:\\projects\\python\\Dataset_Maker_for_Galgames\\[KEY]星之终途_Stella_of_The_End\\scripts_json"
-    search_folder = "E:\\gal\\星之终途\\unpack\\voice1"
+    script_folder = r"D:\projects\python\Dataset_Maker_for_Galgames\[KEY]时廻者_LOOPERS\scripts_json"
+    search_folder = r"D:\temp\voice"
     output_folder = "datasets"
     process_folder(script_folder, output_folder, search_folder)
